@@ -1,0 +1,73 @@
+credentials:
+  private_key: ''
+  api_key: ''
+  api_secret: ''
+  api_passphrase: ''
+  funder_address: ''
+  signature_type: 1
+mode:
+  trading: paper
+  log_level: INFO
+  log_dir: data/logs
+  log_retention_days: 7
+rules_strategy:
+  enabled: true
+  max_position_usd: 10.0
+  entry_window_stop: 5
+  min_win_rate: 0.5
+  maker_timeout_s: 20.0
+risk:
+  max_daily_loss_usd: 50.0
+  max_consecutive_losses: 10
+  cancel_unfilled_at_sec: 5
+  max_position_per_window_usd: 75.0
+connections:
+  binance_ws: wss://stream.binance.com:9443/stream?streams=btcusdt@trade/btcusdt@depth5@100ms
+  rtds_ws: wss://ws-live-data.polymarket.com
+  clob_market_ws: wss://ws-subscriptions-clob.polymarket.com/ws/market
+  clob_user_ws: wss://ws-subscriptions-clob.polymarket.com/ws/user
+  clob_rest: https://clob.polymarket.com
+  gamma_rest: https://gamma-api.polymarket.com
+  chain_id: 137
+  rtds_ping_interval_sec: 5
+  reconnect_base_delay_sec: 1.0
+  reconnect_max_delay_sec: 30.0
+  binance_stale_sec: 15.0
+  chainlink_stale_sec: 30.0
+  clob_book_stale_sec: 60.0
+paper:
+  log_every_window: true
+  simulated_fill_delay_sec: 2.5
+  starting_balance_usd: 1000.0
+ipc:
+  host: 0.0.0.0
+  port: 19731
+  stale_signal_warning_hours: 6
+signal_lifecycle:
+  fire_stall_windows: 50
+  shadow_tracking_windows: 500
+  bet_scaling_enabled: true
+  age_taper_start_windows: 300
+  age_taper_end_windows: 500
+  age_floor: 0.5
+  min_total_scale: 0.1
+  sprt_activation_minutes: 45
+  vol_lookback_windows: 24
+  vol_baseline_stddev_pct: 0.1
+  vol_elevated_stddev_pct: 0.2
+  vol_min_samples: 6
+  chop_lookback_windows: 6
+  chop_baseline_flips: 3.0
+  chop_elevated_flips: 5.0
+  chop_min_samples: 3
+  kelly_wr_max_shrink_pct: 3.0
+  kelly_fraction: 0.25
+  kelly_min_bet: 1.0
+  kelly_max_discount: 0.15
+  kelly_min_outcomes_for_feedback: 10
+  bankroll: 1000.0
+  max_chop_flips_hard_cutoff: 0
+  max_entry_discount_pct: 20.0
+  warmup_minutes: 30.0
+  cache_staleness_minutes: 30.0
+  kelly_max_bet_pct: 2.5

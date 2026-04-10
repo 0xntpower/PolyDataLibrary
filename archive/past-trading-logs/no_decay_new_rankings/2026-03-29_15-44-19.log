@@ -1,0 +1,76 @@
+2026-03-29 18:44:19.797 [INFO] utils.log: logging to file: logs\2026-03-29_15-44-19.log
+2026-03-29 18:44:19.797 [INFO] __main__: starting polymarket bot — mode=paper
+2026-03-29 18:44:19.798 [INFO] shared.ipc: IPC server listening on 127.0.0.1:19731
+2026-03-29 18:44:19.983 [INFO] __main__: gamma API: reachable
+2026-03-29 18:44:19.985 [INFO] risk.position_tracker: resumed paper state: daily_pnl=4.7962 total_pnl=4.7962 consecutive_losses=0
+2026-03-29 18:44:19.986 [INFO] __main__: resumed paper balance: $1004.80
+2026-03-29 18:44:19.986 [INFO] __main__: paper trading mode — orders will be simulated (balance=$1004.80)
+2026-03-29 18:44:19.987 [INFO] __main__: momentum signal accepted: rank=1 side=down observe=[290->90]s min_delta=0.00% max_var=0.050% oos_wr=97.0% (33 matches) bh_p=6.34e-07 avg_entry=0.86 ev=0.1094
+2026-03-29 18:44:20.297 [INFO] utils.reconnect: clob-market connected to wss://ws-subscriptions-clob.polymarket.com/ws/market
+2026-03-29 18:44:20.339 [INFO] utils.reconnect: rtds connected to wss://ws-live-data.polymarket.com
+2026-03-29 18:44:20.339 [INFO] market_data.rtds_ws: RTDS subscribed to chainlink
+2026-03-29 18:44:21.069 [INFO] utils.reconnect: binance connected to wss://stream.binance.com:9443/stream?streams=btcusdt@trade/btcusdt@depth5@100ms
+2026-03-29 18:44:21.513 [INFO] __main__: price feeds live: binance=66460.89 chainlink=66403.32 — waiting for depth stream
+2026-03-29 18:44:21.514 [INFO] __main__: all feeds live: binance=66460.89 chainlink=66403.32 obi=-0.1840
+2026-03-29 18:44:21.514 [INFO] strategy.window_tracker: new window: btc-updown-5m-1774798800 (ts=1774798800)
+2026-03-29 18:44:21.654 [INFO] __main__: window open price captured: 66403.32 (chainlink)
+2026-03-29 18:44:21.906 [INFO] __main__: status: t_remain=38s delta=0.0000% dir=none feeds_agree=True chain=66403.32 bin=66460.89 open=66403.32 obi=-0.1839 ask_up=0.00 ask_dn=0.00 bid_up=0.00 bid_dn=0.00 halted=False
+2026-03-29 18:44:22.295 [INFO] market_data.clob_market_ws: CLOB market subscribed for tokens up=410196230771 down=538669969715
+2026-03-29 18:44:52.000 [INFO] __main__: status: t_remain=8s delta=-0.0126% dir=down feeds_agree=False chain=66394.97 bin=66448.11 open=66403.32 obi=-0.0534 ask_up=1.00 ask_dn=0.01 bid_up=0.99 bid_dn=0.01 halted=False
+2026-03-29 18:45:00.059 [INFO] execution.paper_trading: paper window_ts=1774798800 [SKIP] pnl=0.0000 direction=down outcome=down - balance=$1004.80 bid_up=0.99 ask_up=1.00 bid_dn=0.01 ask_dn=0.01
+2026-03-29 18:45:00.059 [INFO] risk.position_tracker: 
+================ WINDOW SUMMARY ================
+ Window PnL:      $    0.0000
+------------------------------------------------
+ Session PnL:     $    4.7962 (net)
+ Session Won:     $    4.7962 (gross winnings)
+ Session Lost:    $    0.0000 (gross losses)
+ Session WinRate:     100.0% (4/4)
+ Consec Losses:   0
+================================================
+2026-03-29 18:45:00.067 [INFO] strategy.window_tracker: new window: btc-updown-5m-1774799100 (ts=1774799100)
+2026-03-29 18:45:00.278 [INFO] __main__: window open price captured: 66393.55 (chainlink)
+2026-03-29 18:45:00.863 [INFO] market_data.clob_market_ws: CLOB market subscribed for tokens up=153730346600 down=956559041995
+2026-03-29 18:45:22.041 [INFO] __main__: status: t_remain=278s delta=0.0274% dir=up feeds_agree=True chain=66411.72 bin=66479.46 open=66393.55 obi=0.9967 ask_up=0.99 ask_dn=0.99 bid_up=0.01 bid_dn=0.01 halted=False
+2026-03-29 18:45:23.798 [WARNING] utils.reconnect: clob-market disconnected: no close frame received or sent — reconnecting in 1.3s
+2026-03-29 18:45:25.330 [INFO] utils.reconnect: clob-market connected to wss://ws-subscriptions-clob.polymarket.com/ws/market
+2026-03-29 18:45:25.332 [INFO] market_data.clob_market_ws: CLOB market subscribed for tokens up=153730346600 down=956559041995
+2026-03-29 18:45:32.437 [WARNING] utils.reconnect: clob-market disconnected: no close frame received or sent — reconnecting in 1.2s
+2026-03-29 18:45:33.936 [INFO] utils.reconnect: clob-market connected to wss://ws-subscriptions-clob.polymarket.com/ws/market
+2026-03-29 18:45:33.938 [INFO] market_data.clob_market_ws: CLOB market subscribed for tokens up=153730346600 down=956559041995
+2026-03-29 18:45:52.131 [INFO] __main__: status: t_remain=248s delta=0.0089% dir=up feeds_agree=True chain=66399.46 bin=66449.31 open=66393.55 obi=0.7482 ask_up=0.52 ask_dn=0.49 bid_up=0.51 bid_dn=0.48 halted=False
+2026-03-29 18:45:56.421 [WARNING] utils.reconnect: clob-market disconnected: no close frame received or sent — reconnecting in 1.3s
+2026-03-29 18:45:57.948 [INFO] utils.reconnect: clob-market connected to wss://ws-subscriptions-clob.polymarket.com/ws/market
+2026-03-29 18:45:57.948 [INFO] market_data.clob_market_ws: CLOB market subscribed for tokens up=153730346600 down=956559041995
+2026-03-29 18:46:22.162 [INFO] __main__: status: t_remain=218s delta=0.0143% dir=up feeds_agree=True chain=66403.01 bin=66459.31 open=66393.55 obi=0.6137 ask_up=0.59 ask_dn=0.42 bid_up=0.58 bid_dn=0.41 halted=False
+2026-03-29 18:46:52.407 [INFO] __main__: status: t_remain=188s delta=0.0131% dir=up feeds_agree=True chain=66402.26 bin=66459.31 open=66393.55 obi=-0.0377 ask_up=0.53 ask_dn=0.48 bid_up=0.52 bid_dn=0.47 halted=False
+2026-03-29 18:47:22.659 [INFO] __main__: status: t_remain=157s delta=-0.0045% dir=down feeds_agree=False chain=66390.54 bin=66445.90 open=66393.55 obi=-0.2172 ask_up=0.39 ask_dn=0.62 bid_up=0.38 bid_dn=0.61 halted=False
+2026-03-29 18:47:52.666 [INFO] __main__: status: t_remain=127s delta=-0.0143% dir=down feeds_agree=False chain=66384.03 bin=66436.89 open=66393.55 obi=0.0118 ask_up=0.28 ask_dn=0.73 bid_up=0.27 bid_dn=0.72 halted=False
+2026-03-29 18:48:22.910 [INFO] __main__: status: t_remain=97s delta=-0.0233% dir=down feeds_agree=False chain=66378.06 bin=66436.89 open=66393.55 obi=-0.6620 ask_up=0.24 ask_dn=0.77 bid_up=0.23 bid_dn=0.76 halted=False
+2026-03-29 18:48:30.163 [INFO] strategy.momentum_signal: momentum_signal rank #1 [down]: no fire — latest_pct=0.0653% (need <=-0.00%), stddev=0.0184% (max 0.050%)
+2026-03-29 18:48:53.157 [INFO] __main__: status: t_remain=67s delta=0.0017% dir=up feeds_agree=True chain=66394.67 bin=66449.30 open=66393.55 obi=0.9883 ask_up=0.47 ask_dn=0.54 bid_up=0.46 bid_dn=0.53 halted=False
+2026-03-29 18:49:23.158 [INFO] __main__: status: t_remain=37s delta=0.0057% dir=up feeds_agree=True chain=66397.36 bin=66454.00 open=66393.55 obi=0.1167 ask_up=0.40 ask_dn=0.61 bid_up=0.39 bid_dn=0.60 halted=False
+2026-03-29 18:49:53.159 [INFO] __main__: status: t_remain=7s delta=-0.0004% dir=down feeds_agree=False chain=66393.28 bin=66449.91 open=66393.55 obi=0.1089 ask_up=0.04 ask_dn=0.97 bid_up=0.03 bid_dn=0.96 halted=False
+2026-03-29 18:50:00.204 [INFO] execution.paper_trading: paper window_ts=1774799100 [SKIP] pnl=0.0000 direction=down outcome=down - balance=$1004.80 bid_up=0.01 ask_up=0.02 bid_dn=0.98 ask_dn=0.99
+2026-03-29 18:50:00.204 [INFO] risk.position_tracker: 
+================ WINDOW SUMMARY ================
+ Window PnL:      $    0.0000
+------------------------------------------------
+ Session PnL:     $    4.7962 (net)
+ Session Won:     $    4.7962 (gross winnings)
+ Session Lost:    $    0.0000 (gross losses)
+ Session WinRate:     100.0% (4/4)
+ Consec Losses:   0
+================================================
+2026-03-29 18:50:00.206 [INFO] strategy.window_tracker: new window: btc-updown-5m-1774799400 (ts=1774799400)
+2026-03-29 18:50:00.421 [INFO] __main__: window open price captured: 66392.85 (chainlink)
+2026-03-29 18:50:00.956 [INFO] market_data.clob_market_ws: CLOB market subscribed for tokens up=103712691189 down=135637071173
+2026-03-29 18:50:23.161 [INFO] __main__: status: t_remain=277s delta=-0.0179% dir=down feeds_agree=False chain=66380.96 bin=66436.90 open=66392.85 obi=-0.1035 ask_up=0.51 ask_dn=0.50 bid_up=0.50 bid_dn=0.49 halted=False
+2026-03-29 18:50:53.407 [INFO] __main__: status: t_remain=247s delta=-0.0261% dir=down feeds_agree=False chain=66375.55 bin=66423.62 open=66392.85 obi=-0.6022 ask_up=0.40 ask_dn=0.63 bid_up=0.37 bid_dn=0.60 halted=False
+2026-03-29 18:51:23.408 [INFO] __main__: status: t_remain=217s delta=-0.0101% dir=down feeds_agree=False chain=66386.13 bin=66438.09 open=66392.85 obi=0.9589 ask_up=0.62 ask_dn=0.39 bid_up=0.61 bid_dn=0.38 halted=False
+2026-03-29 18:51:53.416 [INFO] __main__: status: t_remain=187s delta=-0.0067% dir=down feeds_agree=False chain=66388.40 bin=66447.01 open=66392.85 obi=0.0772 ask_up=0.66 ask_dn=0.37 bid_up=0.63 bid_dn=0.34 halted=False
+2026-03-29 18:52:23.661 [INFO] __main__: status: t_remain=156s delta=0.0030% dir=up feeds_agree=True chain=66394.85 bin=66454.26 open=66392.85 obi=0.9964 ask_up=0.77 ask_dn=0.24 bid_up=0.76 bid_dn=0.23 halted=False
+2026-03-29 18:52:53.912 [INFO] __main__: status: t_remain=126s delta=0.0254% dir=up feeds_agree=True chain=66409.71 bin=66463.35 open=66392.85 obi=0.9801 ask_up=0.81 ask_dn=0.20 bid_up=0.80 bid_dn=0.19 halted=False
+2026-03-29 18:53:24.159 [INFO] __main__: status: t_remain=96s delta=0.0066% dir=up feeds_agree=True chain=66397.26 bin=66450.06 open=66392.85 obi=0.9484 ask_up=0.72 ask_dn=0.29 bid_up=0.71 bid_dn=0.28 halted=False
+2026-03-29 18:53:30.158 [INFO] strategy.momentum_signal: momentum_signal rank #1 [down]: no fire — latest_pct=0.1081% (need <=-0.00%), stddev=0.0169% (max 0.050%)
+2026-03-29 18:53:54.407 [INFO] __main__: status: t_remain=66s delta=0.1093% dir=up feeds_agree=True chain=66465.42 bin=66520.47 open=66392.85 obi=0.9949 ask_up=0.97 ask_dn=0.04 bid_up=0.96 bid_dn=0.03 halted=False

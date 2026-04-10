@@ -1,0 +1,27 @@
+schedule:
+  run_interval_minutes: 15
+
+data_quality:
+  min_windows: 400
+  max_missing_fields_pct: 5.0
+  max_stale_hours: 2.0
+
+engine:
+  executable_path: PolySignalEngine/build/Release/PolySignalEngine.exe
+  data_dir: PolyDataCollector/data
+  output_dir: engine_output
+  timeout_seconds: 600
+  max_kept_summaries: 10
+
+signal_delivery:
+  min_score: 8.0
+  # min_folds gate moved to the engine (kMinWfFoldsForExport = 2 in Config.hpp).
+  # Signals with < 2 folds are filtered before scoring and never appear in the JSON.
+
+ipc:
+  bot_host: 127.0.0.1
+  bot_port: 19731
+
+logging:
+  level: INFO
+  log_dir: logs

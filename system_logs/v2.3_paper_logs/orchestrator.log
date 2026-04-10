@@ -1,0 +1,899 @@
+2026-04-10 03:48:15.296 [INFO    ] orchestrator: logging initialized — level=INFO file=C:\Users\operator\Desktop\PolySignalLab\SignalOrchestrator\logs\orchestrator.log
+2026-04-10 03:48:15.296 [INFO    ] shared.keystore: credential backend: Windows Credential Manager (DPAPI) — secrets encrypted at rest, tied to user account
+2026-04-10 03:48:15.303 [INFO    ] shared.keystore: HMAC key loaded from Windows Credential Manager
+2026-04-10 03:48:15.303 [INFO    ] orchestrator: orchestrator started — interval=15m min_windows=400 min_score=8.00
+2026-04-10 03:48:15.303 [INFO    ] orchestrator: --- cycle start [00:48:15 UTC] ---
+2026-04-10 03:48:15.311 [INFO    ] orchestrator: data quality check passed: 600 windows available
+2026-04-10 03:48:15.311 [INFO    ] orchestrator: starting engine: C:\Users\operator\Desktop\PolySignalLab\PolySignalEngine\build\Release\PolySignalEngine.exe C:\Users\operator\Desktop\PolySignalLab\PolyDataCollector\data --output-dir C:\Users\operator\Desktop\PolySignalLab\engine_output
+2026-04-10 03:48:28.825 [INFO    ] orchestrator: engine: ==========================================================
+2026-04-10 03:48:28.825 [INFO    ] orchestrator: engine:   SUMMARY
+2026-04-10 03:48:28.825 [INFO    ] orchestrator: engine: ==========================================================
+2026-04-10 03:48:28.825 [INFO    ] orchestrator: engine:   Total windows:         600 (305 UP, 295 DOWN)
+2026-04-10 03:48:28.825 [INFO    ] orchestrator: engine:   Walk-forward folds:    8 (6 test iterations)
+2026-04-10 03:48:28.825 [INFO    ] orchestrator: engine:   OOS base rate:         49.8% UP (450 test windows total)
+2026-04-10 03:48:28.825 [INFO    ] orchestrator: engine:   Configs swept:         201096
+2026-04-10 03:48:28.825 [INFO    ] orchestrator: engine:   Viable WF-OOS signals: 31
+2026-04-10 03:48:28.825 [INFO    ] orchestrator: engine:   Compute time:          12.30s
+2026-04-10 03:48:28.825 [INFO    ] orchestrator: engine: ==========================================================
+2026-04-10 03:48:28.825 [INFO    ] orchestrator: engine produced: signals_summary_1775782108.json
+2026-04-10 03:48:28.825 [INFO    ] orchestrator: cleaned up old summary: signals_summary_1775756247.json
+2026-04-10 03:48:28.825 [INFO    ] orchestrator: ranked 20 signals — top candidates:
+2026-04-10 03:48:28.825 [INFO    ] orchestrator:   #1 DOWN  score= 25.92  SILVER  folds=5/6  WR=88.6%  consWR=85.6%  entry=$0.76  ev=$0.0937
+2026-04-10 03:48:28.825 [INFO    ] orchestrator:   #2 UP    score= 10.80  BRONZE  folds=4/6  WR=97.7%  consWR=94.7%  entry=$0.93  ev=$0.0220
+2026-04-10 03:48:28.825 [INFO    ] orchestrator:   #3 DOWN  score=  9.64  SILVER  folds=5/6  WR=100.0%  consWR=97.0%  entry=$0.95  ev=$0.0220
+2026-04-10 03:48:28.825 [INFO    ] orchestrator:   #4 UP    score=  9.52  BRONZE  folds=4/6  WR=98.1%  consWR=95.1%  entry=$0.93  ev=$0.0192
+2026-04-10 03:48:28.825 [INFO    ] orchestrator:   #5 DOWN  score=  9.18  SILVER  folds=5/6  WR=87.1%  consWR=84.1%  entry=$0.82  ev=$0.0239
+2026-04-10 03:48:28.825 [INFO    ] orchestrator: DELIVERING SILVER signal: #1 Down [280s->250s] d>=0.07% v<=0.05%
+2026-04-10 03:48:28.835 [INFO    ] orchestrator:   score=25.92  WR=88.6%  consWR=85.6%  entry=$0.76  ev=$0.0937  folds=[3, 4, 5, 6, 7]
+2026-04-10 03:48:29.308 [INFO    ] shared.ipc: IPC: signal delivered successfully (authenticated ack)
+2026-04-10 03:48:29.308 [INFO    ] orchestrator: silver signal delivered to bot
+2026-04-10 04:03:29.318 [INFO    ] orchestrator: --- cycle start [01:03:29 UTC] ---
+2026-04-10 04:03:29.318 [INFO    ] orchestrator: data quality check passed: 600 windows available
+2026-04-10 04:03:29.318 [INFO    ] orchestrator: starting engine: C:\Users\operator\Desktop\PolySignalLab\PolySignalEngine\build\Release\PolySignalEngine.exe C:\Users\operator\Desktop\PolySignalLab\PolyDataCollector\data --output-dir C:\Users\operator\Desktop\PolySignalLab\engine_output
+2026-04-10 04:03:42.609 [INFO    ] orchestrator: engine: ==========================================================
+2026-04-10 04:03:42.609 [INFO    ] orchestrator: engine:   SUMMARY
+2026-04-10 04:03:42.609 [INFO    ] orchestrator: engine: ==========================================================
+2026-04-10 04:03:42.609 [INFO    ] orchestrator: engine:   Total windows:         600 (305 UP, 295 DOWN)
+2026-04-10 04:03:42.609 [INFO    ] orchestrator: engine:   Walk-forward folds:    8 (6 test iterations)
+2026-04-10 04:03:42.609 [INFO    ] orchestrator: engine:   OOS base rate:         50.4% UP (450 test windows total)
+2026-04-10 04:03:42.609 [INFO    ] orchestrator: engine:   Configs swept:         201096
+2026-04-10 04:03:42.609 [INFO    ] orchestrator: engine:   Viable WF-OOS signals: 28
+2026-04-10 04:03:42.609 [INFO    ] orchestrator: engine:   Compute time:          12.06s
+2026-04-10 04:03:42.609 [INFO    ] orchestrator: engine: ==========================================================
+2026-04-10 04:03:42.609 [INFO    ] orchestrator: engine produced: signals_summary_1775783022.json
+2026-04-10 04:03:42.614 [INFO    ] orchestrator: cleaned up old summary: signals_summary_1775757162.json
+2026-04-10 04:03:42.614 [INFO    ] orchestrator: ranked 20 signals — top candidates:
+2026-04-10 04:03:42.614 [INFO    ] orchestrator:   #1 DOWN  score= 26.68  SILVER  folds=5/6  WR=88.6%  consWR=85.6%  entry=$0.76  ev=$0.0937
+2026-04-10 04:03:42.614 [INFO    ] orchestrator:   #2 DOWN  score= 16.22  SILVER  folds=5/6  WR=94.7%  consWR=91.7%  entry=$0.89  ev=$0.0252
+2026-04-10 04:03:42.614 [INFO    ] orchestrator:   #3 UP    score= 16.14  SILVER  folds=5/6  WR=98.2%  consWR=95.2%  entry=$0.93  ev=$0.0236
+2026-04-10 04:03:42.614 [INFO    ] orchestrator:   #4 UP    score= 10.53  BRONZE  folds=4/6  WR=98.2%  consWR=95.2%  entry=$0.93  ev=$0.0211
+2026-04-10 04:03:42.614 [INFO    ] orchestrator:   #5 DOWN  score=  9.95  SILVER  folds=5/6  WR=100.0%  consWR=97.0%  entry=$0.95  ev=$0.0220
+2026-04-10 04:03:42.614 [INFO    ] orchestrator: DELIVERING SILVER signal: #1 Down [280s->250s] d>=0.07% v<=0.05%
+2026-04-10 04:03:42.626 [INFO    ] orchestrator:   score=26.68  WR=88.6%  consWR=85.6%  entry=$0.76  ev=$0.0937  folds=[3, 4, 5, 6, 7]
+2026-04-10 04:03:43.387 [INFO    ] shared.ipc: IPC: signal delivered successfully (authenticated ack)
+2026-04-10 04:03:43.388 [INFO    ] orchestrator: silver signal delivered to bot
+2026-04-10 04:18:43.403 [INFO    ] orchestrator: --- cycle start [01:18:43 UTC] ---
+2026-04-10 04:18:43.405 [INFO    ] orchestrator: data quality check passed: 600 windows available
+2026-04-10 04:18:43.405 [INFO    ] orchestrator: starting engine: C:\Users\operator\Desktop\PolySignalLab\PolySignalEngine\build\Release\PolySignalEngine.exe C:\Users\operator\Desktop\PolySignalLab\PolyDataCollector\data --output-dir C:\Users\operator\Desktop\PolySignalLab\engine_output
+2026-04-10 04:18:56.595 [INFO    ] orchestrator: engine: ==========================================================
+2026-04-10 04:18:56.611 [INFO    ] orchestrator: engine:   SUMMARY
+2026-04-10 04:18:56.611 [INFO    ] orchestrator: engine: ==========================================================
+2026-04-10 04:18:56.611 [INFO    ] orchestrator: engine:   Total windows:         600 (306 UP, 294 DOWN)
+2026-04-10 04:18:56.611 [INFO    ] orchestrator: engine:   Walk-forward folds:    8 (6 test iterations)
+2026-04-10 04:18:56.611 [INFO    ] orchestrator: engine:   OOS base rate:         50.7% UP (450 test windows total)
+2026-04-10 04:18:56.611 [INFO    ] orchestrator: engine:   Configs swept:         201096
+2026-04-10 04:18:56.611 [INFO    ] orchestrator: engine:   Viable WF-OOS signals: 23
+2026-04-10 04:18:56.611 [INFO    ] orchestrator: engine:   Compute time:          12.00s
+2026-04-10 04:18:56.611 [INFO    ] orchestrator: engine: ==========================================================
+2026-04-10 04:18:56.611 [INFO    ] orchestrator: engine produced: signals_summary_1775783936.json
+2026-04-10 04:18:56.611 [INFO    ] orchestrator: cleaned up old summary: signals_summary_1775758077.json
+2026-04-10 04:18:56.611 [INFO    ] orchestrator: ranked 20 signals — top candidates:
+2026-04-10 04:18:56.611 [INFO    ] orchestrator:   #1 DOWN  score= 24.17  SILVER  folds=5/6  WR=88.2%  consWR=85.2%  entry=$0.76  ev=$0.0879
+2026-04-10 04:18:56.611 [INFO    ] orchestrator:   #2 UP    score= 16.14  SILVER  folds=5/6  WR=98.2%  consWR=95.2%  entry=$0.93  ev=$0.0236
+2026-04-10 04:18:56.611 [INFO    ] orchestrator:   #3 DOWN  score= 16.06  SILVER  folds=5/6  WR=94.7%  consWR=91.7%  entry=$0.89  ev=$0.0253
+2026-04-10 04:18:56.611 [INFO    ] orchestrator:   #4 DOWN  score= 11.69  BRONZE  folds=2/6  WR=100.0%  consWR=97.0%  entry=$0.87  ev=$0.0967
+2026-04-10 04:18:56.611 [INFO    ] orchestrator:   #5 UP    score= 10.88  BRONZE  folds=4/6  WR=94.4%  consWR=91.4%  entry=$0.87  ev=$0.0422
+2026-04-10 04:18:56.611 [INFO    ] orchestrator: DELIVERING SILVER signal: #1 Down [280s->250s] d>=0.07% v<=0.05%
+2026-04-10 04:18:56.623 [INFO    ] orchestrator:   score=24.17  WR=88.2%  consWR=85.2%  entry=$0.76  ev=$0.0879  folds=[3, 4, 5, 6, 7]
+2026-04-10 04:18:57.036 [INFO    ] shared.ipc: IPC: signal delivered successfully (authenticated ack)
+2026-04-10 04:18:57.036 [INFO    ] orchestrator: silver signal delivered to bot
+2026-04-10 04:33:57.048 [INFO    ] orchestrator: --- cycle start [01:33:57 UTC] ---
+2026-04-10 04:33:57.048 [INFO    ] orchestrator: data quality check passed: 600 windows available
+2026-04-10 04:33:57.048 [INFO    ] orchestrator: starting engine: C:\Users\operator\Desktop\PolySignalLab\PolySignalEngine\build\Release\PolySignalEngine.exe C:\Users\operator\Desktop\PolySignalLab\PolyDataCollector\data --output-dir C:\Users\operator\Desktop\PolySignalLab\engine_output
+2026-04-10 04:34:10.342 [INFO    ] orchestrator: engine: ==========================================================
+2026-04-10 04:34:10.344 [INFO    ] orchestrator: engine:   SUMMARY
+2026-04-10 04:34:10.344 [INFO    ] orchestrator: engine: ==========================================================
+2026-04-10 04:34:10.344 [INFO    ] orchestrator: engine:   Total windows:         600 (307 UP, 293 DOWN)
+2026-04-10 04:34:10.344 [INFO    ] orchestrator: engine:   Walk-forward folds:    8 (6 test iterations)
+2026-04-10 04:34:10.344 [INFO    ] orchestrator: engine:   OOS base rate:         50.4% UP (450 test windows total)
+2026-04-10 04:34:10.344 [INFO    ] orchestrator: engine:   Configs swept:         201096
+2026-04-10 04:34:10.344 [INFO    ] orchestrator: engine:   Viable WF-OOS signals: 24
+2026-04-10 04:34:10.344 [INFO    ] orchestrator: engine:   Compute time:          12.09s
+2026-04-10 04:34:10.344 [INFO    ] orchestrator: engine: ==========================================================
+2026-04-10 04:34:10.344 [INFO    ] orchestrator: engine produced: signals_summary_1775784850.json
+2026-04-10 04:34:10.344 [INFO    ] orchestrator: cleaned up old summary: signals_summary_1775769372.json
+2026-04-10 04:34:10.344 [INFO    ] orchestrator: ranked 20 signals — top candidates:
+2026-04-10 04:34:10.344 [INFO    ] orchestrator:   #1 DOWN  score= 22.32  SILVER  folds=5/6  WR=87.9%  consWR=84.9%  entry=$0.76  ev=$0.0855
+2026-04-10 04:34:10.344 [INFO    ] orchestrator:   #2 UP    score= 18.86  BRONZE  folds=3/6  WR=100.0%  consWR=97.0%  entry=$0.91  ev=$0.0629
+2026-04-10 04:34:10.344 [INFO    ] orchestrator:   #3 DOWN  score= 14.91  SILVER  folds=5/6  WR=94.6%  consWR=91.6%  entry=$0.89  ev=$0.0235
+2026-04-10 04:34:10.344 [INFO    ] orchestrator:   #4 UP    score= 11.84  BRONZE  folds=4/6  WR=97.0%  consWR=94.0%  entry=$0.91  ev=$0.0321
+2026-04-10 04:34:10.344 [INFO    ] orchestrator:   #5 UP    score= 11.15  BRONZE  folds=4/6  WR=97.9%  consWR=94.9%  entry=$0.93  ev=$0.0228
+2026-04-10 04:34:10.344 [INFO    ] orchestrator: DELIVERING SILVER signal: #1 Down [280s->250s] d>=0.07% v<=0.05%
+2026-04-10 04:34:10.344 [INFO    ] orchestrator:   score=22.32  WR=87.9%  consWR=84.9%  entry=$0.76  ev=$0.0855  folds=[3, 4, 5, 6, 7]
+2026-04-10 04:34:10.780 [INFO    ] shared.ipc: IPC: signal delivered successfully (authenticated ack)
+2026-04-10 04:34:10.780 [INFO    ] orchestrator: silver signal delivered to bot
+2026-04-10 04:49:10.786 [INFO    ] orchestrator: --- cycle start [01:49:10 UTC] ---
+2026-04-10 04:49:10.786 [INFO    ] orchestrator: data quality check passed: 600 windows available
+2026-04-10 04:49:10.786 [INFO    ] orchestrator: starting engine: C:\Users\operator\Desktop\PolySignalLab\PolySignalEngine\build\Release\PolySignalEngine.exe C:\Users\operator\Desktop\PolySignalLab\PolyDataCollector\data --output-dir C:\Users\operator\Desktop\PolySignalLab\engine_output
+2026-04-10 04:49:24.176 [INFO    ] orchestrator: engine: ==========================================================
+2026-04-10 04:49:24.176 [INFO    ] orchestrator: engine:   SUMMARY
+2026-04-10 04:49:24.176 [INFO    ] orchestrator: engine: ==========================================================
+2026-04-10 04:49:24.176 [INFO    ] orchestrator: engine:   Total windows:         600 (309 UP, 291 DOWN)
+2026-04-10 04:49:24.176 [INFO    ] orchestrator: engine:   Walk-forward folds:    8 (6 test iterations)
+2026-04-10 04:49:24.176 [INFO    ] orchestrator: engine:   OOS base rate:         50.9% UP (450 test windows total)
+2026-04-10 04:49:24.176 [INFO    ] orchestrator: engine:   Configs swept:         201096
+2026-04-10 04:49:24.176 [INFO    ] orchestrator: engine:   Viable WF-OOS signals: 23
+2026-04-10 04:49:24.176 [INFO    ] orchestrator: engine:   Compute time:          12.17s
+2026-04-10 04:49:24.176 [INFO    ] orchestrator: engine: ==========================================================
+2026-04-10 04:49:24.176 [INFO    ] orchestrator: engine produced: signals_summary_1775785764.json
+2026-04-10 04:49:24.176 [INFO    ] orchestrator: cleaned up old summary: signals_summary_1775770449.json
+2026-04-10 04:49:24.176 [INFO    ] orchestrator: ranked 20 signals — top candidates:
+2026-04-10 04:49:24.176 [INFO    ] orchestrator:   #1 UP    score= 19.54  BRONZE  folds=4/6  WR=97.4%  consWR=94.4%  entry=$0.90  ev=$0.0438
+2026-04-10 04:49:24.176 [INFO    ] orchestrator:   #2 DOWN  score= 14.75  SILVER  folds=5/6  WR=94.5%  consWR=91.5%  entry=$0.89  ev=$0.0237
+2026-04-10 04:49:24.176 [INFO    ] orchestrator:   #3 DOWN  score= 14.63  SILVER  folds=5/6  WR=87.5%  consWR=84.5%  entry=$0.77  ev=$0.0781
+2026-04-10 04:49:24.176 [INFO    ] orchestrator:   #4 DOWN  score= 14.45  BRONZE  folds=3/6  WR=93.8%  consWR=90.8%  entry=$0.82  ev=$0.0894
+2026-04-10 04:49:24.176 [INFO    ] orchestrator:   #5 DOWN  score= 12.94  BRONZE  folds=4/6  WR=92.3%  consWR=89.3%  entry=$0.86  ev=$0.0329
+2026-04-10 04:49:24.176 [INFO    ] orchestrator: DELIVERING BRONZE signal: #1 Up [240s->140s] d>=0.07% v<=0.05%
+2026-04-10 04:49:24.192 [INFO    ] orchestrator:   score=19.54  WR=97.4%  consWR=94.4%  entry=$0.90  ev=$0.0438  folds=[4, 5, 6, 7]
+2026-04-10 04:49:24.351 [INFO    ] shared.ipc: IPC: signal delivered successfully (authenticated ack)
+2026-04-10 04:49:24.351 [INFO    ] orchestrator: bronze signal delivered to bot
+2026-04-10 05:04:24.356 [INFO    ] orchestrator: --- cycle start [02:04:24 UTC] ---
+2026-04-10 05:04:24.356 [INFO    ] orchestrator: data quality check passed: 600 windows available
+2026-04-10 05:04:24.356 [INFO    ] orchestrator: starting engine: C:\Users\operator\Desktop\PolySignalLab\PolySignalEngine\build\Release\PolySignalEngine.exe C:\Users\operator\Desktop\PolySignalLab\PolyDataCollector\data --output-dir C:\Users\operator\Desktop\PolySignalLab\engine_output
+2026-04-10 05:04:37.194 [INFO    ] orchestrator: engine: ==========================================================
+2026-04-10 05:04:37.194 [INFO    ] orchestrator: engine:   SUMMARY
+2026-04-10 05:04:37.194 [INFO    ] orchestrator: engine: ==========================================================
+2026-04-10 05:04:37.194 [INFO    ] orchestrator: engine:   Total windows:         600 (306 UP, 294 DOWN)
+2026-04-10 05:04:37.194 [INFO    ] orchestrator: engine:   Walk-forward folds:    8 (6 test iterations)
+2026-04-10 05:04:37.194 [INFO    ] orchestrator: engine:   OOS base rate:         50.7% UP (450 test windows total)
+2026-04-10 05:04:37.194 [INFO    ] orchestrator: engine:   Configs swept:         201096
+2026-04-10 05:04:37.194 [INFO    ] orchestrator: engine:   Viable WF-OOS signals: 22
+2026-04-10 05:04:37.194 [INFO    ] orchestrator: engine:   Compute time:          11.62s
+2026-04-10 05:04:37.194 [INFO    ] orchestrator: engine: ==========================================================
+2026-04-10 05:04:37.209 [INFO    ] orchestrator: engine produced: signals_summary_1775786677.json
+2026-04-10 05:04:37.209 [INFO    ] orchestrator: cleaned up old summary: signals_summary_1775771364.json
+2026-04-10 05:04:37.209 [INFO    ] orchestrator: ranked 20 signals — top candidates:
+2026-04-10 05:04:37.209 [INFO    ] orchestrator:   #1 UP    score= 15.26  BRONZE  folds=4/6  WR=95.3%  consWR=92.3%  entry=$0.89  ev=$0.0347
+2026-04-10 05:04:37.209 [INFO    ] orchestrator:   #2 DOWN  score= 14.42  SILVER  folds=5/6  WR=94.5%  consWR=91.5%  entry=$0.89  ev=$0.0237
+2026-04-10 05:04:37.209 [INFO    ] orchestrator:   #3 UP    score= 11.52  SILVER  folds=5/6  WR=95.3%  consWR=92.3%  entry=$0.90  ev=$0.0256
+2026-04-10 05:04:37.209 [INFO    ] orchestrator:   #4 DOWN  score= 10.49  BRONZE  folds=3/6  WR=93.5%  consWR=90.5%  entry=$0.86  ev=$0.0402
+2026-04-10 05:04:37.209 [INFO    ] orchestrator:   #5 DOWN  score=  9.64  BRONZE  folds=4/6  WR=91.0%  consWR=88.0%  entry=$0.86  ev=$0.0240
+2026-04-10 05:04:37.209 [INFO    ] orchestrator: DELIVERING BRONZE signal: #1 Up [210s->130s] d>=0.07% v<=0.05%
+2026-04-10 05:04:37.209 [INFO    ] orchestrator:   score=15.26  WR=95.3%  consWR=92.3%  entry=$0.89  ev=$0.0347  folds=[4, 5, 6, 7]
+2026-04-10 05:04:37.399 [INFO    ] shared.ipc: IPC: signal delivered successfully (authenticated ack)
+2026-04-10 05:04:37.400 [INFO    ] orchestrator: bronze signal delivered to bot
+2026-04-10 05:19:37.416 [INFO    ] orchestrator: --- cycle start [02:19:37 UTC] ---
+2026-04-10 05:19:37.416 [INFO    ] orchestrator: data quality check passed: 600 windows available
+2026-04-10 05:19:37.416 [INFO    ] orchestrator: starting engine: C:\Users\operator\Desktop\PolySignalLab\PolySignalEngine\build\Release\PolySignalEngine.exe C:\Users\operator\Desktop\PolySignalLab\PolyDataCollector\data --output-dir C:\Users\operator\Desktop\PolySignalLab\engine_output
+2026-04-10 05:19:50.103 [INFO    ] orchestrator: engine: ==========================================================
+2026-04-10 05:19:50.103 [INFO    ] orchestrator: engine:   SUMMARY
+2026-04-10 05:19:50.103 [INFO    ] orchestrator: engine: ==========================================================
+2026-04-10 05:19:50.103 [INFO    ] orchestrator: engine:   Total windows:         600 (307 UP, 293 DOWN)
+2026-04-10 05:19:50.103 [INFO    ] orchestrator: engine:   Walk-forward folds:    8 (6 test iterations)
+2026-04-10 05:19:50.103 [INFO    ] orchestrator: engine:   OOS base rate:         50.2% UP (450 test windows total)
+2026-04-10 05:19:50.103 [INFO    ] orchestrator: engine:   Configs swept:         201096
+2026-04-10 05:19:50.103 [INFO    ] orchestrator: engine:   Viable WF-OOS signals: 19
+2026-04-10 05:19:50.103 [INFO    ] orchestrator: engine:   Compute time:          11.48s
+2026-04-10 05:19:50.103 [INFO    ] orchestrator: engine: ==========================================================
+2026-04-10 05:19:50.103 [INFO    ] orchestrator: engine produced: signals_summary_1775787590.json
+2026-04-10 05:19:50.103 [INFO    ] orchestrator: cleaned up old summary: signals_summary_1775772278.json
+2026-04-10 05:19:50.118 [INFO    ] orchestrator: ranked 19 signals — top candidates:
+2026-04-10 05:19:50.118 [INFO    ] orchestrator:   #1 UP    score= 23.91  BRONZE  folds=4/6  WR=97.9%  consWR=94.9%  entry=$0.90  ev=$0.0479
+2026-04-10 05:19:50.118 [INFO    ] orchestrator:   #2 DOWN  score= 12.19  SILVER  folds=5/6  WR=92.5%  consWR=89.5%  entry=$0.87  ev=$0.0206
+2026-04-10 05:19:50.118 [INFO    ] orchestrator:   #3 UP    score= 12.19  SILVER  folds=5/6  WR=95.3%  consWR=92.3%  entry=$0.90  ev=$0.0256
+2026-04-10 05:19:50.118 [INFO    ] orchestrator:   #4 UP    score= 11.95  BRONZE  folds=3/6  WR=97.0%  consWR=94.0%  entry=$0.89  ev=$0.0491
+2026-04-10 05:19:50.118 [INFO    ] orchestrator:   #5 UP    score=  9.46  BRONZE  folds=3/6  WR=100.0%  consWR=97.0%  entry=$0.94  ev=$0.0316
+2026-04-10 05:19:50.118 [INFO    ] orchestrator: DELIVERING BRONZE signal: #1 Up [180s->140s] d>=0.07% v<=0.05%
+2026-04-10 05:19:50.118 [INFO    ] orchestrator:   score=23.91  WR=97.9%  consWR=94.9%  entry=$0.90  ev=$0.0479  folds=[4, 5, 6, 7]
+2026-04-10 05:19:50.290 [INFO    ] shared.ipc: IPC: signal delivered successfully (authenticated ack)
+2026-04-10 05:19:50.290 [INFO    ] orchestrator: bronze signal delivered to bot
+2026-04-10 05:34:50.300 [INFO    ] orchestrator: --- cycle start [02:34:50 UTC] ---
+2026-04-10 05:34:50.300 [INFO    ] orchestrator: data quality check passed: 600 windows available
+2026-04-10 05:34:50.300 [INFO    ] orchestrator: starting engine: C:\Users\operator\Desktop\PolySignalLab\PolySignalEngine\build\Release\PolySignalEngine.exe C:\Users\operator\Desktop\PolySignalLab\PolyDataCollector\data --output-dir C:\Users\operator\Desktop\PolySignalLab\engine_output
+2026-04-10 05:35:03.138 [INFO    ] orchestrator: engine: ==========================================================
+2026-04-10 05:35:03.138 [INFO    ] orchestrator: engine:   SUMMARY
+2026-04-10 05:35:03.139 [INFO    ] orchestrator: engine: ==========================================================
+2026-04-10 05:35:03.139 [INFO    ] orchestrator: engine:   Total windows:         600 (304 UP, 296 DOWN)
+2026-04-10 05:35:03.139 [INFO    ] orchestrator: engine:   Walk-forward folds:    8 (6 test iterations)
+2026-04-10 05:35:03.140 [INFO    ] orchestrator: engine:   OOS base rate:         49.8% UP (450 test windows total)
+2026-04-10 05:35:03.140 [INFO    ] orchestrator: engine:   Configs swept:         201096
+2026-04-10 05:35:03.140 [INFO    ] orchestrator: engine:   Viable WF-OOS signals: 18
+2026-04-10 05:35:03.140 [INFO    ] orchestrator: engine:   Compute time:          11.63s
+2026-04-10 05:35:03.141 [INFO    ] orchestrator: engine: ==========================================================
+2026-04-10 05:35:03.141 [INFO    ] orchestrator: engine produced: signals_summary_1775788503.json
+2026-04-10 05:35:03.142 [INFO    ] orchestrator: cleaned up old summary: signals_summary_1775779983.json
+2026-04-10 05:35:03.143 [INFO    ] orchestrator: ranked 18 signals — top candidates:
+2026-04-10 05:35:03.143 [INFO    ] orchestrator:   #1 UP    score= 24.63  BRONZE  folds=4/6  WR=97.9%  consWR=94.9%  entry=$0.90  ev=$0.0494
+2026-04-10 05:35:03.144 [INFO    ] orchestrator:   #2 UP    score= 12.31  SILVER  folds=5/6  WR=95.3%  consWR=92.3%  entry=$0.90  ev=$0.0256
+2026-04-10 05:35:03.144 [INFO    ] orchestrator:   #3 DOWN  score= 12.28  BRONZE  folds=4/6  WR=94.5%  consWR=91.5%  entry=$0.88  ev=$0.0351
+2026-04-10 05:35:03.144 [INFO    ] orchestrator:   #4 UP    score=  7.69  BRONZE  folds=3/6  WR=96.3%  consWR=93.3%  entry=$0.89  ev=$0.0411
+2026-04-10 05:35:03.145 [INFO    ] orchestrator:   #5 DOWN  score=  7.59  BRONZE  folds=4/6  WR=92.0%  consWR=89.0%  entry=$0.86  ev=$0.0300
+2026-04-10 05:35:03.146 [INFO    ] orchestrator: DELIVERING BRONZE signal: #1 Up [180s->140s] d>=0.07% v<=0.05%
+2026-04-10 05:35:03.152 [INFO    ] orchestrator:   score=24.63  WR=97.9%  consWR=94.9%  entry=$0.90  ev=$0.0494  folds=[4, 5, 6, 7]
+2026-04-10 05:35:03.314 [INFO    ] shared.ipc: IPC: signal delivered successfully (authenticated ack)
+2026-04-10 05:35:03.315 [INFO    ] orchestrator: bronze signal delivered to bot
+2026-04-10 05:50:03.326 [INFO    ] orchestrator: --- cycle start [02:50:03 UTC] ---
+2026-04-10 05:50:03.326 [INFO    ] orchestrator: data quality check passed: 600 windows available
+2026-04-10 05:50:03.326 [INFO    ] orchestrator: starting engine: C:\Users\operator\Desktop\PolySignalLab\PolySignalEngine\build\Release\PolySignalEngine.exe C:\Users\operator\Desktop\PolySignalLab\PolyDataCollector\data --output-dir C:\Users\operator\Desktop\PolySignalLab\engine_output
+2026-04-10 05:50:15.987 [INFO    ] orchestrator: engine: ==========================================================
+2026-04-10 05:50:15.987 [INFO    ] orchestrator: engine:   SUMMARY
+2026-04-10 05:50:15.987 [INFO    ] orchestrator: engine: ==========================================================
+2026-04-10 05:50:15.987 [INFO    ] orchestrator: engine:   Total windows:         600 (304 UP, 296 DOWN)
+2026-04-10 05:50:15.987 [INFO    ] orchestrator: engine:   Walk-forward folds:    8 (6 test iterations)
+2026-04-10 05:50:15.987 [INFO    ] orchestrator: engine:   OOS base rate:         49.3% UP (450 test windows total)
+2026-04-10 05:50:15.987 [INFO    ] orchestrator: engine:   Configs swept:         201096
+2026-04-10 05:50:15.987 [INFO    ] orchestrator: engine:   Viable WF-OOS signals: 13
+2026-04-10 05:50:15.987 [INFO    ] orchestrator: engine:   Compute time:          11.47s
+2026-04-10 05:50:15.987 [INFO    ] orchestrator: engine: ==========================================================
+2026-04-10 05:50:15.987 [INFO    ] orchestrator: engine produced: signals_summary_1775789415.json
+2026-04-10 05:50:15.987 [INFO    ] orchestrator: cleaned up old summary: signals_summary_1775780898.json
+2026-04-10 05:50:15.987 [INFO    ] orchestrator: ranked 13 signals — top candidates:
+2026-04-10 05:50:15.987 [INFO    ] orchestrator:   #1 UP    score= 25.06  BRONZE  folds=4/6  WR=97.8%  consWR=94.8%  entry=$0.90  ev=$0.0502
+2026-04-10 05:50:15.987 [INFO    ] orchestrator:   #2 UP    score= 21.34  BRONZE  folds=4/6  WR=100.0%  consWR=97.0%  entry=$0.93  ev=$0.0392
+2026-04-10 05:50:15.987 [INFO    ] orchestrator:   #3 DOWN  score= 12.28  BRONZE  folds=4/6  WR=94.5%  consWR=91.5%  entry=$0.88  ev=$0.0351
+2026-04-10 05:50:15.987 [INFO    ] orchestrator:   #4 UP    score= 11.15  BRONZE  folds=3/6  WR=97.1%  consWR=94.1%  entry=$0.89  ev=$0.0459
+2026-04-10 05:50:15.987 [INFO    ] orchestrator:   #5 UP    score= 11.07  BRONZE  folds=4/6  WR=94.1%  consWR=91.1%  entry=$0.88  ev=$0.0329
+2026-04-10 05:50:15.987 [INFO    ] orchestrator: DELIVERING BRONZE signal: #1 Up [180s->140s] d>=0.07% v<=0.05%
+2026-04-10 05:50:16.002 [INFO    ] orchestrator:   score=25.06  WR=97.8%  consWR=94.8%  entry=$0.90  ev=$0.0502  folds=[4, 5, 6, 7]
+2026-04-10 05:50:16.162 [INFO    ] shared.ipc: IPC: signal delivered successfully (authenticated ack)
+2026-04-10 05:50:16.163 [INFO    ] orchestrator: bronze signal delivered to bot
+2026-04-10 06:05:16.178 [INFO    ] orchestrator: --- cycle start [03:05:16 UTC] ---
+2026-04-10 06:05:16.178 [INFO    ] orchestrator: data quality check passed: 600 windows available
+2026-04-10 06:05:16.178 [INFO    ] orchestrator: starting engine: C:\Users\operator\Desktop\PolySignalLab\PolySignalEngine\build\Release\PolySignalEngine.exe C:\Users\operator\Desktop\PolySignalLab\PolyDataCollector\data --output-dir C:\Users\operator\Desktop\PolySignalLab\engine_output
+2026-04-10 06:05:28.634 [INFO    ] orchestrator: engine: ==========================================================
+2026-04-10 06:05:28.634 [INFO    ] orchestrator: engine:   SUMMARY
+2026-04-10 06:05:28.634 [INFO    ] orchestrator: engine: ==========================================================
+2026-04-10 06:05:28.634 [INFO    ] orchestrator: engine:   Total windows:         600 (301 UP, 299 DOWN)
+2026-04-10 06:05:28.634 [INFO    ] orchestrator: engine:   Walk-forward folds:    8 (6 test iterations)
+2026-04-10 06:05:28.634 [INFO    ] orchestrator: engine:   OOS base rate:         49.3% UP (450 test windows total)
+2026-04-10 06:05:28.634 [INFO    ] orchestrator: engine:   Configs swept:         201096
+2026-04-10 06:05:28.634 [INFO    ] orchestrator: engine:   Viable WF-OOS signals: 20
+2026-04-10 06:05:28.634 [INFO    ] orchestrator: engine:   Compute time:          11.25s
+2026-04-10 06:05:28.634 [INFO    ] orchestrator: engine: ==========================================================
+2026-04-10 06:05:28.634 [INFO    ] orchestrator: engine produced: signals_summary_1775790328.json
+2026-04-10 06:05:28.634 [INFO    ] orchestrator: cleaned up old summary: signals_summary_1775781811.json
+2026-04-10 06:05:28.634 [INFO    ] orchestrator: ranked 20 signals — top candidates:
+2026-04-10 06:05:28.634 [INFO    ] orchestrator:   #1 UP    score= 24.49  BRONZE  folds=4/6  WR=97.7%  consWR=94.7%  entry=$0.90  ev=$0.0491
+2026-04-10 06:05:28.634 [INFO    ] orchestrator:   #2 UP    score= 16.30  SILVER  folds=5/6  WR=98.2%  consWR=95.2%  entry=$0.93  ev=$0.0250
+2026-04-10 06:05:28.634 [INFO    ] orchestrator:   #3 UP    score= 13.53  SILVER  folds=6/6  WR=93.0%  consWR=90.0%  entry=$0.88  ev=$0.0179
+2026-04-10 06:05:28.634 [INFO    ] orchestrator:   #4 DOWN  score= 11.71  BRONZE  folds=4/6  WR=94.5%  consWR=91.5%  entry=$0.88  ev=$0.0335
+2026-04-10 06:05:28.634 [INFO    ] orchestrator:   #5 UP    score=  8.94  BRONZE  folds=4/6  WR=94.9%  consWR=91.9%  entry=$0.88  ev=$0.0387
+2026-04-10 06:05:28.634 [INFO    ] orchestrator: DELIVERING BRONZE signal: #1 Up [180s->140s] d>=0.07% v<=0.05%
+2026-04-10 06:05:28.657 [INFO    ] orchestrator:   score=24.49  WR=97.7%  consWR=94.7%  entry=$0.90  ev=$0.0491  folds=[4, 5, 6, 7]
+2026-04-10 06:05:28.827 [INFO    ] shared.ipc: IPC: signal delivered successfully (authenticated ack)
+2026-04-10 06:05:28.827 [INFO    ] orchestrator: bronze signal delivered to bot
+2026-04-10 06:20:28.829 [INFO    ] orchestrator: --- cycle start [03:20:28 UTC] ---
+2026-04-10 06:20:28.829 [INFO    ] orchestrator: data quality check passed: 600 windows available
+2026-04-10 06:20:28.829 [INFO    ] orchestrator: starting engine: C:\Users\operator\Desktop\PolySignalLab\PolySignalEngine\build\Release\PolySignalEngine.exe C:\Users\operator\Desktop\PolySignalLab\PolyDataCollector\data --output-dir C:\Users\operator\Desktop\PolySignalLab\engine_output
+2026-04-10 06:20:41.361 [INFO    ] orchestrator: engine: ==========================================================
+2026-04-10 06:20:41.361 [INFO    ] orchestrator: engine:   SUMMARY
+2026-04-10 06:20:41.361 [INFO    ] orchestrator: engine: ==========================================================
+2026-04-10 06:20:41.361 [INFO    ] orchestrator: engine:   Total windows:         600 (299 UP, 301 DOWN)
+2026-04-10 06:20:41.361 [INFO    ] orchestrator: engine:   Walk-forward folds:    8 (6 test iterations)
+2026-04-10 06:20:41.361 [INFO    ] orchestrator: engine:   OOS base rate:         49.1% UP (450 test windows total)
+2026-04-10 06:20:41.361 [INFO    ] orchestrator: engine:   Configs swept:         201096
+2026-04-10 06:20:41.361 [INFO    ] orchestrator: engine:   Viable WF-OOS signals: 21
+2026-04-10 06:20:41.361 [INFO    ] orchestrator: engine:   Compute time:          11.29s
+2026-04-10 06:20:41.361 [INFO    ] orchestrator: engine: ==========================================================
+2026-04-10 06:20:41.377 [INFO    ] orchestrator: engine produced: signals_summary_1775791241.json
+2026-04-10 06:20:41.377 [INFO    ] orchestrator: cleaned up old summary: signals_summary_1775782108.json
+2026-04-10 06:20:41.377 [INFO    ] orchestrator: ranked 20 signals — top candidates:
+2026-04-10 06:20:41.377 [INFO    ] orchestrator:   #1 UP    score= 22.51  BRONZE  folds=4/6  WR=97.7%  consWR=94.7%  entry=$0.90  ev=$0.0451
+2026-04-10 06:20:41.377 [INFO    ] orchestrator:   #2 UP    score= 22.11  BRONZE  folds=4/6  WR=100.0%  consWR=97.0%  entry=$0.93  ev=$0.0406
+2026-04-10 06:20:41.377 [INFO    ] orchestrator:   #3 DOWN  score= 12.60  SILVER  folds=5/6  WR=94.3%  consWR=91.3%  entry=$0.89  ev=$0.0196
+2026-04-10 06:20:41.377 [INFO    ] orchestrator:   #4 DOWN  score= 11.91  BRONZE  folds=4/6  WR=94.4%  consWR=91.4%  entry=$0.88  ev=$0.0333
+2026-04-10 06:20:41.377 [INFO    ] orchestrator:   #5 DOWN  score= 11.83  BRONZE  folds=4/6  WR=92.9%  consWR=89.9%  entry=$0.87  ev=$0.0275
+2026-04-10 06:20:41.377 [INFO    ] orchestrator: DELIVERING BRONZE signal: #1 Up [180s->140s] d>=0.07% v<=0.05%
+2026-04-10 06:20:41.377 [INFO    ] orchestrator:   score=22.51  WR=97.7%  consWR=94.7%  entry=$0.90  ev=$0.0451  folds=[4, 5, 6, 7]
+2026-04-10 06:20:41.559 [INFO    ] shared.ipc: IPC: signal delivered successfully (authenticated ack)
+2026-04-10 06:20:41.560 [INFO    ] orchestrator: bronze signal delivered to bot
+2026-04-10 06:35:41.563 [INFO    ] orchestrator: --- cycle start [03:35:41 UTC] ---
+2026-04-10 06:35:41.563 [INFO    ] orchestrator: data quality check passed: 600 windows available
+2026-04-10 06:35:41.563 [INFO    ] orchestrator: starting engine: C:\Users\operator\Desktop\PolySignalLab\PolySignalEngine\build\Release\PolySignalEngine.exe C:\Users\operator\Desktop\PolySignalLab\PolyDataCollector\data --output-dir C:\Users\operator\Desktop\PolySignalLab\engine_output
+2026-04-10 06:35:53.680 [INFO    ] orchestrator: engine: ==========================================================
+2026-04-10 06:35:53.680 [INFO    ] orchestrator: engine:   SUMMARY
+2026-04-10 06:35:53.680 [INFO    ] orchestrator: engine: ==========================================================
+2026-04-10 06:35:53.680 [INFO    ] orchestrator: engine:   Total windows:         600 (297 UP, 303 DOWN)
+2026-04-10 06:35:53.680 [INFO    ] orchestrator: engine:   Walk-forward folds:    8 (6 test iterations)
+2026-04-10 06:35:53.680 [INFO    ] orchestrator: engine:   OOS base rate:         48.9% UP (450 test windows total)
+2026-04-10 06:35:53.680 [INFO    ] orchestrator: engine:   Configs swept:         201096
+2026-04-10 06:35:53.680 [INFO    ] orchestrator: engine:   Viable WF-OOS signals: 28
+2026-04-10 06:35:53.680 [INFO    ] orchestrator: engine:   Compute time:          10.90s
+2026-04-10 06:35:53.680 [INFO    ] orchestrator: engine: ==========================================================
+2026-04-10 06:35:53.680 [INFO    ] orchestrator: engine produced: signals_summary_1775792153.json
+2026-04-10 06:35:53.680 [INFO    ] orchestrator: cleaned up old summary: signals_summary_1775783022.json
+2026-04-10 06:35:53.687 [INFO    ] orchestrator: ranked 20 signals — top candidates:
+2026-04-10 06:35:53.687 [INFO    ] orchestrator:   #1 DOWN  score= 23.12  GOLDEN  folds=6/6  WR=87.7%  consWR=84.7%  entry=$0.81  ev=$0.0336
+2026-04-10 06:35:53.687 [INFO    ] orchestrator:   #2 UP    score= 16.58  SILVER  folds=5/6  WR=95.1%  consWR=92.1%  entry=$0.89  ev=$0.0302
+2026-04-10 06:35:53.687 [INFO    ] orchestrator:   #3 UP    score= 16.54  BRONZE  folds=3/6  WR=100.0%  consWR=97.0%  entry=$0.92  ev=$0.0485
+2026-04-10 06:35:53.687 [INFO    ] orchestrator:   #4 DOWN  score= 13.23  SILVER  folds=5/6  WR=94.3%  consWR=91.3%  entry=$0.89  ev=$0.0196
+2026-04-10 06:35:53.690 [INFO    ] orchestrator:   #5 DOWN  score= 11.20  BRONZE  folds=4/6  WR=92.7%  consWR=89.7%  entry=$0.87  ev=$0.0249
+2026-04-10 06:35:53.691 [INFO    ] orchestrator: DELIVERING GOLDEN signal: #1 Down [230s->200s] d>=0.07% v<=0.05%
+2026-04-10 06:35:53.701 [INFO    ] orchestrator:   score=23.12  WR=87.7%  consWR=84.7%  entry=$0.81  ev=$0.0336  folds=[2, 3, 4, 5, 6, 7]
+2026-04-10 06:35:53.868 [INFO    ] shared.ipc: IPC: signal delivered successfully (authenticated ack)
+2026-04-10 06:35:53.868 [INFO    ] orchestrator: golden signal delivered to bot
+2026-04-10 06:50:53.879 [INFO    ] orchestrator: --- cycle start [03:50:53 UTC] ---
+2026-04-10 06:50:53.879 [INFO    ] orchestrator: data quality check passed: 600 windows available
+2026-04-10 06:50:53.879 [INFO    ] orchestrator: starting engine: C:\Users\operator\Desktop\PolySignalLab\PolySignalEngine\build\Release\PolySignalEngine.exe C:\Users\operator\Desktop\PolySignalLab\PolyDataCollector\data --output-dir C:\Users\operator\Desktop\PolySignalLab\engine_output
+2026-04-10 06:51:05.923 [INFO    ] orchestrator: engine: ==========================================================
+2026-04-10 06:51:05.923 [INFO    ] orchestrator: engine:   SUMMARY
+2026-04-10 06:51:05.923 [INFO    ] orchestrator: engine: ==========================================================
+2026-04-10 06:51:05.923 [INFO    ] orchestrator: engine:   Total windows:         600 (298 UP, 302 DOWN)
+2026-04-10 06:51:05.923 [INFO    ] orchestrator: engine:   Walk-forward folds:    8 (6 test iterations)
+2026-04-10 06:51:05.923 [INFO    ] orchestrator: engine:   OOS base rate:         49.3% UP (450 test windows total)
+2026-04-10 06:51:05.923 [INFO    ] orchestrator: engine:   Configs swept:         201096
+2026-04-10 06:51:05.923 [INFO    ] orchestrator: engine:   Viable WF-OOS signals: 19
+2026-04-10 06:51:05.923 [INFO    ] orchestrator: engine:   Compute time:          10.83s
+2026-04-10 06:51:05.923 [INFO    ] orchestrator: engine: ==========================================================
+2026-04-10 06:51:05.923 [INFO    ] orchestrator: engine produced: signals_summary_1775793065.json
+2026-04-10 06:51:05.923 [INFO    ] orchestrator: cleaned up old summary: signals_summary_1775783936.json
+2026-04-10 06:51:05.923 [INFO    ] orchestrator: ranked 19 signals — top candidates:
+2026-04-10 06:51:05.923 [INFO    ] orchestrator:   #1 DOWN  score= 21.00  BRONZE  folds=4/6  WR=94.3%  consWR=91.3%  entry=$0.87  ev=$0.0434
+2026-04-10 06:51:05.923 [INFO    ] orchestrator:   #2 DOWN  score= 20.34  BRONZE  folds=3/6  WR=92.3%  consWR=89.3%  entry=$0.80  ev=$0.0910
+2026-04-10 06:51:05.923 [INFO    ] orchestrator:   #3 UP    score= 18.07  SILVER  folds=5/6  WR=95.2%  consWR=92.2%  entry=$0.89  ev=$0.0307
+2026-04-10 06:51:05.923 [INFO    ] orchestrator:   #4 DOWN  score= 14.10  BRONZE  folds=3/6  WR=100.0%  consWR=97.0%  entry=$0.92  ev=$0.0532
+2026-04-10 06:51:05.923 [INFO    ] orchestrator:   #5 UP    score= 13.33  SILVER  folds=5/6  WR=98.5%  consWR=95.5%  entry=$0.93  ev=$0.0204
+2026-04-10 06:51:05.923 [INFO    ] orchestrator: DELIVERING BRONZE signal: #1 Down [280s->130s] d>=0.07% v<=0.05%
+2026-04-10 06:51:05.939 [INFO    ] orchestrator:   score=21.00  WR=94.3%  consWR=91.3%  entry=$0.87  ev=$0.0434  folds=[4, 5, 6, 7]
+2026-04-10 06:51:06.107 [INFO    ] shared.ipc: IPC: signal delivered successfully (authenticated ack)
+2026-04-10 06:51:06.108 [INFO    ] orchestrator: bronze signal delivered to bot
+2026-04-10 07:06:06.115 [INFO    ] orchestrator: --- cycle start [04:06:06 UTC] ---
+2026-04-10 07:06:06.115 [INFO    ] orchestrator: data quality check passed: 600 windows available
+2026-04-10 07:06:06.115 [INFO    ] orchestrator: starting engine: C:\Users\operator\Desktop\PolySignalLab\PolySignalEngine\build\Release\PolySignalEngine.exe C:\Users\operator\Desktop\PolySignalLab\PolyDataCollector\data --output-dir C:\Users\operator\Desktop\PolySignalLab\engine_output
+2026-04-10 07:06:18.175 [INFO    ] orchestrator: engine: ==========================================================
+2026-04-10 07:06:18.175 [INFO    ] orchestrator: engine:   SUMMARY
+2026-04-10 07:06:18.175 [INFO    ] orchestrator: engine: ==========================================================
+2026-04-10 07:06:18.175 [INFO    ] orchestrator: engine:   Total windows:         600 (296 UP, 304 DOWN)
+2026-04-10 07:06:18.175 [INFO    ] orchestrator: engine:   Walk-forward folds:    8 (6 test iterations)
+2026-04-10 07:06:18.175 [INFO    ] orchestrator: engine:   OOS base rate:         49.3% UP (450 test windows total)
+2026-04-10 07:06:18.175 [INFO    ] orchestrator: engine:   Configs swept:         201096
+2026-04-10 07:06:18.175 [INFO    ] orchestrator: engine:   Viable WF-OOS signals: 21
+2026-04-10 07:06:18.175 [INFO    ] orchestrator: engine:   Compute time:          10.84s
+2026-04-10 07:06:18.175 [INFO    ] orchestrator: engine: ==========================================================
+2026-04-10 07:06:18.180 [INFO    ] orchestrator: engine produced: signals_summary_1775793978.json
+2026-04-10 07:06:18.181 [INFO    ] orchestrator: cleaned up old summary: signals_summary_1775784850.json
+2026-04-10 07:06:18.182 [INFO    ] orchestrator: ranked 20 signals — top candidates:
+2026-04-10 07:06:18.183 [INFO    ] orchestrator:   #1 UP    score= 39.94  BRONZE  folds=4/6  WR=100.0%  consWR=97.0%  entry=$0.89  ev=$0.0791
+2026-04-10 07:06:18.183 [INFO    ] orchestrator:   #2 DOWN  score= 21.15  BRONZE  folds=4/6  WR=94.2%  consWR=91.2%  entry=$0.87  ev=$0.0440
+2026-04-10 07:06:18.183 [INFO    ] orchestrator:   #3 UP    score= 15.94  BRONZE  folds=4/6  WR=97.4%  consWR=94.4%  entry=$0.90  ev=$0.0455
+2026-04-10 07:06:18.184 [INFO    ] orchestrator:   #4 DOWN  score= 13.66  SILVER  folds=5/6  WR=94.1%  consWR=91.1%  entry=$0.89  ev=$0.0199
+2026-04-10 07:06:18.184 [INFO    ] orchestrator:   #5 UP    score= 13.61  SILVER  folds=5/6  WR=98.5%  consWR=95.5%  entry=$0.93  ev=$0.0204
+2026-04-10 07:06:18.184 [INFO    ] orchestrator: DELIVERING BRONZE signal: #1 Up [250s->160s] d>=0.07% v<=0.05%
+2026-04-10 07:06:18.193 [INFO    ] orchestrator:   score=39.94  WR=100.0%  consWR=97.0%  entry=$0.89  ev=$0.0791  folds=[4, 5, 6, 7]
+2026-04-10 07:06:18.360 [INFO    ] shared.ipc: IPC: signal delivered successfully (authenticated ack)
+2026-04-10 07:06:18.360 [INFO    ] orchestrator: bronze signal delivered to bot
+2026-04-10 07:21:18.372 [INFO    ] orchestrator: --- cycle start [04:21:18 UTC] ---
+2026-04-10 07:21:18.378 [INFO    ] orchestrator: data quality check passed: 600 windows available
+2026-04-10 07:21:18.379 [INFO    ] orchestrator: starting engine: C:\Users\operator\Desktop\PolySignalLab\PolySignalEngine\build\Release\PolySignalEngine.exe C:\Users\operator\Desktop\PolySignalLab\PolyDataCollector\data --output-dir C:\Users\operator\Desktop\PolySignalLab\engine_output
+2026-04-10 07:21:30.292 [INFO    ] orchestrator: engine: ==========================================================
+2026-04-10 07:21:30.294 [INFO    ] orchestrator: engine:   SUMMARY
+2026-04-10 07:21:30.294 [INFO    ] orchestrator: engine: ==========================================================
+2026-04-10 07:21:30.294 [INFO    ] orchestrator: engine:   Total windows:         600 (296 UP, 304 DOWN)
+2026-04-10 07:21:30.294 [INFO    ] orchestrator: engine:   Walk-forward folds:    8 (6 test iterations)
+2026-04-10 07:21:30.294 [INFO    ] orchestrator: engine:   OOS base rate:         49.6% UP (450 test windows total)
+2026-04-10 07:21:30.294 [INFO    ] orchestrator: engine:   Configs swept:         201096
+2026-04-10 07:21:30.294 [INFO    ] orchestrator: engine:   Viable WF-OOS signals: 21
+2026-04-10 07:21:30.294 [INFO    ] orchestrator: engine:   Compute time:          10.71s
+2026-04-10 07:21:30.294 [INFO    ] orchestrator: engine: ==========================================================
+2026-04-10 07:21:30.294 [INFO    ] orchestrator: engine produced: signals_summary_1775794890.json
+2026-04-10 07:21:30.294 [INFO    ] orchestrator: cleaned up old summary: signals_summary_1775785764.json
+2026-04-10 07:21:30.294 [INFO    ] orchestrator: ranked 20 signals — top candidates:
+2026-04-10 07:21:30.294 [INFO    ] orchestrator:   #1 UP    score= 18.36  BRONZE  folds=3/6  WR=100.0%  consWR=97.0%  entry=$0.89  ev=$0.0774
+2026-04-10 07:21:30.294 [INFO    ] orchestrator:   #2 UP    score= 14.55  SILVER  folds=6/6  WR=93.5%  consWR=90.5%  entry=$0.89  ev=$0.0179
+2026-04-10 07:21:30.294 [INFO    ] orchestrator:   #3 UP    score= 13.09  SILVER  folds=5/6  WR=98.4%  consWR=95.4%  entry=$0.93  ev=$0.0194
+2026-04-10 07:21:30.294 [INFO    ] orchestrator:   #4 UP    score= 12.54  SILVER  folds=5/6  WR=94.2%  consWR=91.2%  entry=$0.89  ev=$0.0192
+2026-04-10 07:21:30.294 [INFO    ] orchestrator:   #5 UP    score= 11.18  BRONZE  folds=3/6  WR=100.0%  consWR=97.0%  entry=$0.90  ev=$0.0700
+2026-04-10 07:21:30.294 [INFO    ] orchestrator: signal #1 Up [250s->150s] d>=0.07% v<=0.05% folds=[2, 5, 6] missing most-recent fold 7 — skipping (recency gate)
+2026-04-10 07:21:30.309 [INFO    ] orchestrator: DELIVERING SILVER signal: #2 Up [250s->140s] d>=0.07% v<=0.05%
+2026-04-10 07:21:30.309 [INFO    ] orchestrator:   score=14.55  WR=93.5%  consWR=90.5%  entry=$0.89  ev=$0.0179  folds=[2, 3, 4, 5, 6, 7]
+2026-04-10 07:21:30.478 [INFO    ] shared.ipc: IPC: signal delivered successfully (authenticated ack)
+2026-04-10 07:21:30.478 [INFO    ] orchestrator: silver signal delivered to bot
+2026-04-10 07:36:30.482 [INFO    ] orchestrator: --- cycle start [04:36:30 UTC] ---
+2026-04-10 07:36:30.488 [INFO    ] orchestrator: data quality check passed: 600 windows available
+2026-04-10 07:36:30.488 [INFO    ] orchestrator: starting engine: C:\Users\operator\Desktop\PolySignalLab\PolySignalEngine\build\Release\PolySignalEngine.exe C:\Users\operator\Desktop\PolySignalLab\PolyDataCollector\data --output-dir C:\Users\operator\Desktop\PolySignalLab\engine_output
+2026-04-10 07:36:42.443 [INFO    ] orchestrator: engine: ==========================================================
+2026-04-10 07:36:42.443 [INFO    ] orchestrator: engine:   SUMMARY
+2026-04-10 07:36:42.443 [INFO    ] orchestrator: engine: ==========================================================
+2026-04-10 07:36:42.443 [INFO    ] orchestrator: engine:   Total windows:         600 (296 UP, 304 DOWN)
+2026-04-10 07:36:42.443 [INFO    ] orchestrator: engine:   Walk-forward folds:    8 (6 test iterations)
+2026-04-10 07:36:42.443 [INFO    ] orchestrator: engine:   OOS base rate:         49.3% UP (450 test windows total)
+2026-04-10 07:36:42.443 [INFO    ] orchestrator: engine:   Configs swept:         201096
+2026-04-10 07:36:42.443 [INFO    ] orchestrator: engine:   Viable WF-OOS signals: 24
+2026-04-10 07:36:42.443 [INFO    ] orchestrator: engine:   Compute time:          10.72s
+2026-04-10 07:36:42.443 [INFO    ] orchestrator: engine: ==========================================================
+2026-04-10 07:36:42.443 [INFO    ] orchestrator: engine produced: signals_summary_1775795802.json
+2026-04-10 07:36:42.443 [INFO    ] orchestrator: cleaned up old summary: signals_summary_1775786677.json
+2026-04-10 07:36:42.443 [INFO    ] orchestrator: ranked 20 signals — top candidates:
+2026-04-10 07:36:42.443 [INFO    ] orchestrator:   #1 UP    score= 26.11  BRONZE  folds=4/6  WR=97.4%  consWR=94.4%  entry=$0.88  ev=$0.0611
+2026-04-10 07:36:42.443 [INFO    ] orchestrator:   #2 UP    score= 21.78  BRONZE  folds=4/6  WR=97.6%  consWR=94.6%  entry=$0.90  ev=$0.0431
+2026-04-10 07:36:42.451 [INFO    ] orchestrator:   #3 DOWN  score= 21.00  BRONZE  folds=4/6  WR=94.0%  consWR=91.0%  entry=$0.87  ev=$0.0448
+2026-04-10 07:36:42.451 [INFO    ] orchestrator:   #4 UP    score= 14.74  SILVER  folds=6/6  WR=93.5%  consWR=90.5%  entry=$0.89  ev=$0.0179
+2026-04-10 07:36:42.451 [INFO    ] orchestrator:   #5 UP    score= 12.91  BRONZE  folds=3/6  WR=100.0%  consWR=97.0%  entry=$0.90  ev=$0.0738
+2026-04-10 07:36:42.451 [INFO    ] orchestrator: DELIVERING BRONZE signal: #1 Up [290s->150s] d>=0.07% v<=0.05%
+2026-04-10 07:36:42.451 [INFO    ] orchestrator:   score=26.11  WR=97.4%  consWR=94.4%  entry=$0.88  ev=$0.0611  folds=[2, 5, 6, 7]
+2026-04-10 07:36:42.645 [INFO    ] shared.ipc: IPC: signal delivered successfully (authenticated ack)
+2026-04-10 07:36:42.646 [INFO    ] orchestrator: bronze signal delivered to bot
+2026-04-10 07:51:42.649 [INFO    ] orchestrator: --- cycle start [04:51:42 UTC] ---
+2026-04-10 07:51:42.656 [INFO    ] orchestrator: data quality check passed: 600 windows available
+2026-04-10 07:51:42.657 [INFO    ] orchestrator: starting engine: C:\Users\operator\Desktop\PolySignalLab\PolySignalEngine\build\Release\PolySignalEngine.exe C:\Users\operator\Desktop\PolySignalLab\PolyDataCollector\data --output-dir C:\Users\operator\Desktop\PolySignalLab\engine_output
+2026-04-10 07:51:54.460 [INFO    ] orchestrator: engine: ==========================================================
+2026-04-10 07:51:54.461 [INFO    ] orchestrator: engine:   SUMMARY
+2026-04-10 07:51:54.461 [INFO    ] orchestrator: engine: ==========================================================
+2026-04-10 07:51:54.461 [INFO    ] orchestrator: engine:   Total windows:         600 (298 UP, 302 DOWN)
+2026-04-10 07:51:54.462 [INFO    ] orchestrator: engine:   Walk-forward folds:    8 (6 test iterations)
+2026-04-10 07:51:54.462 [INFO    ] orchestrator: engine:   OOS base rate:         49.3% UP (450 test windows total)
+2026-04-10 07:51:54.462 [INFO    ] orchestrator: engine:   Configs swept:         201096
+2026-04-10 07:51:54.463 [INFO    ] orchestrator: engine:   Viable WF-OOS signals: 19
+2026-04-10 07:51:54.463 [INFO    ] orchestrator: engine:   Compute time:          10.59s
+2026-04-10 07:51:54.463 [INFO    ] orchestrator: engine: ==========================================================
+2026-04-10 07:51:54.464 [INFO    ] orchestrator: engine produced: signals_summary_1775796714.json
+2026-04-10 07:51:54.464 [INFO    ] orchestrator: cleaned up old summary: signals_summary_1775787590.json
+2026-04-10 07:51:54.466 [INFO    ] orchestrator: ranked 19 signals — top candidates:
+2026-04-10 07:51:54.466 [INFO    ] orchestrator:   #1 UP    score= 25.29  BRONZE  folds=4/6  WR=97.4%  consWR=94.4%  entry=$0.89  ev=$0.0549
+2026-04-10 07:51:54.466 [INFO    ] orchestrator:   #2 DOWN  score= 22.20  GOLDEN  folds=6/6  WR=87.3%  consWR=84.3%  entry=$0.81  ev=$0.0311
+2026-04-10 07:51:54.466 [INFO    ] orchestrator:   #3 DOWN  score= 20.97  BRONZE  folds=4/6  WR=94.0%  consWR=91.0%  entry=$0.87  ev=$0.0448
+2026-04-10 07:51:54.466 [INFO    ] orchestrator:   #4 UP    score= 19.79  BRONZE  folds=4/6  WR=96.9%  consWR=93.9%  entry=$0.88  ev=$0.0544
+2026-04-10 07:51:54.466 [INFO    ] orchestrator:   #5 DOWN  score=  9.03  SILVER  folds=6/6  WR=92.9%  consWR=89.9%  entry=$0.89  ev=$0.0102
+2026-04-10 07:51:54.466 [INFO    ] orchestrator: DELIVERING BRONZE signal: #1 Up [250s->150s] d>=0.07% v<=0.05%
+2026-04-10 07:51:54.477 [INFO    ] orchestrator:   score=25.29  WR=97.4%  consWR=94.4%  entry=$0.89  ev=$0.0549  folds=[2, 4, 5, 7]
+2026-04-10 07:51:54.661 [INFO    ] shared.ipc: IPC: signal delivered successfully (authenticated ack)
+2026-04-10 07:51:54.661 [INFO    ] orchestrator: bronze signal delivered to bot
+2026-04-10 08:06:54.669 [INFO    ] orchestrator: --- cycle start [05:06:54 UTC] ---
+2026-04-10 08:06:54.669 [INFO    ] orchestrator: data quality check passed: 600 windows available
+2026-04-10 08:06:54.669 [INFO    ] orchestrator: starting engine: C:\Users\operator\Desktop\PolySignalLab\PolySignalEngine\build\Release\PolySignalEngine.exe C:\Users\operator\Desktop\PolySignalLab\PolyDataCollector\data --output-dir C:\Users\operator\Desktop\PolySignalLab\engine_output
+2026-04-10 08:07:06.760 [INFO    ] orchestrator: engine: ==========================================================
+2026-04-10 08:07:06.760 [INFO    ] orchestrator: engine:   SUMMARY
+2026-04-10 08:07:06.760 [INFO    ] orchestrator: engine: ==========================================================
+2026-04-10 08:07:06.760 [INFO    ] orchestrator: engine:   Total windows:         600 (299 UP, 301 DOWN)
+2026-04-10 08:07:06.760 [INFO    ] orchestrator: engine:   Walk-forward folds:    8 (6 test iterations)
+2026-04-10 08:07:06.760 [INFO    ] orchestrator: engine:   OOS base rate:         49.6% UP (450 test windows total)
+2026-04-10 08:07:06.760 [INFO    ] orchestrator: engine:   Configs swept:         201096
+2026-04-10 08:07:06.760 [INFO    ] orchestrator: engine:   Viable WF-OOS signals: 13
+2026-04-10 08:07:06.760 [INFO    ] orchestrator: engine:   Compute time:          10.85s
+2026-04-10 08:07:06.760 [INFO    ] orchestrator: engine: ==========================================================
+2026-04-10 08:07:06.760 [INFO    ] orchestrator: engine produced: signals_summary_1775797626.json
+2026-04-10 08:07:06.760 [INFO    ] orchestrator: cleaned up old summary: signals_summary_1775788503.json
+2026-04-10 08:07:06.760 [INFO    ] orchestrator: ranked 13 signals — top candidates:
+2026-04-10 08:07:06.760 [INFO    ] orchestrator:   #1 DOWN  score= 15.83  BRONZE  folds=3/6  WR=93.5%  consWR=90.5%  entry=$0.82  ev=$0.0855
+2026-04-10 08:07:06.760 [INFO    ] orchestrator:   #2 DOWN  score=  8.72  BRONZE  folds=3/6  WR=94.1%  consWR=91.1%  entry=$0.87  ev=$0.0373
+2026-04-10 08:07:06.760 [INFO    ] orchestrator:   #3 UP    score=  6.25  BRONZE  folds=3/6  WR=100.0%  consWR=97.0%  entry=$0.95  ev=$0.0236
+2026-04-10 08:07:06.760 [INFO    ] orchestrator:   #4 DOWN  score=  5.61  BRONZE  folds=4/6  WR=87.5%  consWR=84.5%  entry=$0.82  ev=$0.0282
+2026-04-10 08:07:06.760 [INFO    ] orchestrator:   #5 UP    score=  2.32  BRONZE  folds=3/6  WR=92.0%  consWR=89.0%  entry=$0.87  ev=$0.0184
+2026-04-10 08:07:06.760 [INFO    ] orchestrator: DELIVERING BRONZE signal: #1 Down [280s->190s] d>=0.07% v<=0.05%
+2026-04-10 08:07:06.778 [INFO    ] orchestrator:   score=15.83  WR=93.5%  consWR=90.5%  entry=$0.82  ev=$0.0855  folds=[2, 5, 7]
+2026-04-10 08:07:06.949 [INFO    ] shared.ipc: IPC: signal delivered successfully (authenticated ack)
+2026-04-10 08:07:06.949 [INFO    ] orchestrator: bronze signal delivered to bot
+2026-04-10 08:22:06.950 [INFO    ] orchestrator: --- cycle start [05:22:06 UTC] ---
+2026-04-10 08:22:06.950 [INFO    ] orchestrator: data quality check passed: 600 windows available
+2026-04-10 08:22:06.950 [INFO    ] orchestrator: starting engine: C:\Users\operator\Desktop\PolySignalLab\PolySignalEngine\build\Release\PolySignalEngine.exe C:\Users\operator\Desktop\PolySignalLab\PolyDataCollector\data --output-dir C:\Users\operator\Desktop\PolySignalLab\engine_output
+2026-04-10 08:22:18.731 [INFO    ] orchestrator: engine: ==========================================================
+2026-04-10 08:22:18.731 [INFO    ] orchestrator: engine:   SUMMARY
+2026-04-10 08:22:18.731 [INFO    ] orchestrator: engine: ==========================================================
+2026-04-10 08:22:18.731 [INFO    ] orchestrator: engine:   Total windows:         600 (300 UP, 300 DOWN)
+2026-04-10 08:22:18.731 [INFO    ] orchestrator: engine:   Walk-forward folds:    8 (6 test iterations)
+2026-04-10 08:22:18.731 [INFO    ] orchestrator: engine:   OOS base rate:         49.6% UP (450 test windows total)
+2026-04-10 08:22:18.731 [INFO    ] orchestrator: engine:   Configs swept:         201096
+2026-04-10 08:22:18.731 [INFO    ] orchestrator: engine:   Viable WF-OOS signals: 14
+2026-04-10 08:22:18.731 [INFO    ] orchestrator: engine:   Compute time:          10.57s
+2026-04-10 08:22:18.731 [INFO    ] orchestrator: engine: ==========================================================
+2026-04-10 08:22:18.731 [INFO    ] orchestrator: engine produced: signals_summary_1775798538.json
+2026-04-10 08:22:18.731 [INFO    ] orchestrator: cleaned up old summary: signals_summary_1775789415.json
+2026-04-10 08:22:18.731 [INFO    ] orchestrator: ranked 14 signals — top candidates:
+2026-04-10 08:22:18.731 [INFO    ] orchestrator:   #1 UP    score= 12.52  BRONZE  folds=3/6  WR=100.0%  consWR=97.0%  entry=$0.90  ev=$0.0738
+2026-04-10 08:22:18.731 [INFO    ] orchestrator:   #2 DOWN  score=  7.03  BRONZE  folds=4/6  WR=87.9%  consWR=84.9%  entry=$0.82  ev=$0.0326
+2026-04-10 08:22:18.731 [INFO    ] orchestrator:   #3 DOWN  score=  6.32  BRONZE  folds=2/6  WR=100.0%  consWR=97.0%  entry=$0.89  ev=$0.0821
+2026-04-10 08:22:18.731 [INFO    ] orchestrator:   #4 UP    score=  5.75  BRONZE  folds=3/6  WR=96.9%  consWR=93.9%  entry=$0.91  ev=$0.0312
+2026-04-10 08:22:18.731 [INFO    ] orchestrator:   #5 DOWN  score=  3.29  BRONZE  folds=2/6  WR=100.0%  consWR=97.0%  entry=$0.94  ev=$0.0271
+2026-04-10 08:22:18.731 [INFO    ] orchestrator: signal #1 Up [260s->160s] d>=0.07% v<=0.05% folds=[4, 5, 6] missing most-recent fold 7 — skipping (recency gate)
+2026-04-10 08:22:18.749 [INFO    ] orchestrator: best signal below threshold: #2 Down [230s->200s] d>=0.07% v<=0.05%  score=7.03 (need 8.00)  consWR=84.9%  entry=$0.82
+2026-04-10 08:22:18.749 [INFO    ] orchestrator: no signal passed all delivery gates — not sending to bot
+2026-04-10 08:37:18.763 [INFO    ] orchestrator: --- cycle start [05:37:18 UTC] ---
+2026-04-10 08:37:18.763 [INFO    ] orchestrator: data quality check passed: 600 windows available
+2026-04-10 08:37:18.763 [INFO    ] orchestrator: starting engine: C:\Users\operator\Desktop\PolySignalLab\PolySignalEngine\build\Release\PolySignalEngine.exe C:\Users\operator\Desktop\PolySignalLab\PolyDataCollector\data --output-dir C:\Users\operator\Desktop\PolySignalLab\engine_output
+2026-04-10 08:37:30.480 [INFO    ] orchestrator: engine: ==========================================================
+2026-04-10 08:37:30.480 [INFO    ] orchestrator: engine:   SUMMARY
+2026-04-10 08:37:30.480 [INFO    ] orchestrator: engine: ==========================================================
+2026-04-10 08:37:30.480 [INFO    ] orchestrator: engine:   Total windows:         600 (301 UP, 299 DOWN)
+2026-04-10 08:37:30.480 [INFO    ] orchestrator: engine:   Walk-forward folds:    8 (6 test iterations)
+2026-04-10 08:37:30.480 [INFO    ] orchestrator: engine:   OOS base rate:         49.3% UP (450 test windows total)
+2026-04-10 08:37:30.480 [INFO    ] orchestrator: engine:   Configs swept:         201096
+2026-04-10 08:37:30.480 [INFO    ] orchestrator: engine:   Viable WF-OOS signals: 16
+2026-04-10 08:37:30.480 [INFO    ] orchestrator: engine:   Compute time:          10.49s
+2026-04-10 08:37:30.480 [INFO    ] orchestrator: engine: ==========================================================
+2026-04-10 08:37:30.480 [INFO    ] orchestrator: engine produced: signals_summary_1775799450.json
+2026-04-10 08:37:30.480 [INFO    ] orchestrator: cleaned up old summary: signals_summary_1775790328.json
+2026-04-10 08:37:30.480 [INFO    ] orchestrator: ranked 16 signals — top candidates:
+2026-04-10 08:37:30.480 [INFO    ] orchestrator:   #1 UP    score= 13.52  BRONZE  folds=3/6  WR=100.0%  consWR=97.0%  entry=$0.90  ev=$0.0744
+2026-04-10 08:37:30.480 [INFO    ] orchestrator:   #2 UP    score= 11.44  BRONZE  folds=4/6  WR=94.3%  consWR=91.3%  entry=$0.88  ev=$0.0331
+2026-04-10 08:37:30.480 [INFO    ] orchestrator:   #3 UP    score=  6.96  BRONZE  folds=3/6  WR=93.8%  consWR=90.8%  entry=$0.87  ev=$0.0331
+2026-04-10 08:37:30.480 [INFO    ] orchestrator:   #4 DOWN  score=  6.18  BRONZE  folds=4/6  WR=91.1%  consWR=88.1%  entry=$0.86  ev=$0.0189
+2026-04-10 08:37:30.480 [INFO    ] orchestrator:   #5 DOWN  score=  5.26  BRONZE  folds=3/6  WR=92.7%  consWR=89.7%  entry=$0.87  ev=$0.0317
+2026-04-10 08:37:30.480 [INFO    ] orchestrator: signal #1 Up [260s->160s] d>=0.07% v<=0.05% folds=[4, 5, 6] missing most-recent fold 7 — skipping (recency gate)
+2026-04-10 08:37:30.499 [INFO    ] orchestrator: DELIVERING BRONZE signal: #2 Up [260s->150s] d>=0.07% v<=0.05%
+2026-04-10 08:37:30.499 [INFO    ] orchestrator:   score=11.44  WR=94.3%  consWR=91.3%  entry=$0.88  ev=$0.0331  folds=[2, 3, 6, 7]
+2026-04-10 08:37:30.668 [INFO    ] shared.ipc: IPC: signal delivered successfully (authenticated ack)
+2026-04-10 08:37:30.668 [INFO    ] orchestrator: bronze signal delivered to bot
+2026-04-10 08:52:30.679 [INFO    ] orchestrator: --- cycle start [05:52:30 UTC] ---
+2026-04-10 08:52:30.679 [INFO    ] orchestrator: data quality check passed: 600 windows available
+2026-04-10 08:52:30.679 [INFO    ] orchestrator: starting engine: C:\Users\operator\Desktop\PolySignalLab\PolySignalEngine\build\Release\PolySignalEngine.exe C:\Users\operator\Desktop\PolySignalLab\PolyDataCollector\data --output-dir C:\Users\operator\Desktop\PolySignalLab\engine_output
+2026-04-10 08:52:42.543 [INFO    ] orchestrator: engine: ==========================================================
+2026-04-10 08:52:42.543 [INFO    ] orchestrator: engine:   SUMMARY
+2026-04-10 08:52:42.543 [INFO    ] orchestrator: engine: ==========================================================
+2026-04-10 08:52:42.543 [INFO    ] orchestrator: engine:   Total windows:         600 (301 UP, 299 DOWN)
+2026-04-10 08:52:42.543 [INFO    ] orchestrator: engine:   Walk-forward folds:    8 (6 test iterations)
+2026-04-10 08:52:42.543 [INFO    ] orchestrator: engine:   OOS base rate:         49.1% UP (450 test windows total)
+2026-04-10 08:52:42.543 [INFO    ] orchestrator: engine:   Configs swept:         201096
+2026-04-10 08:52:42.543 [INFO    ] orchestrator: engine:   Viable WF-OOS signals: 15
+2026-04-10 08:52:42.543 [INFO    ] orchestrator: engine:   Compute time:          10.65s
+2026-04-10 08:52:42.543 [INFO    ] orchestrator: engine: ==========================================================
+2026-04-10 08:52:42.543 [INFO    ] orchestrator: engine produced: signals_summary_1775800362.json
+2026-04-10 08:52:42.548 [INFO    ] orchestrator: cleaned up old summary: signals_summary_1775791241.json
+2026-04-10 08:52:42.548 [INFO    ] orchestrator: ranked 15 signals — top candidates:
+2026-04-10 08:52:42.548 [INFO    ] orchestrator:   #1 UP    score= 15.03  BRONZE  folds=4/6  WR=96.9%  consWR=93.9%  entry=$0.90  ev=$0.0428
+2026-04-10 08:52:42.548 [INFO    ] orchestrator:   #2 UP    score= 14.98  BRONZE  folds=4/6  WR=93.3%  consWR=90.3%  entry=$0.85  ev=$0.0517
+2026-04-10 08:52:42.548 [INFO    ] orchestrator:   #3 UP    score= 13.37  BRONZE  folds=3/6  WR=96.8%  consWR=93.8%  entry=$0.88  ev=$0.0545
+2026-04-10 08:52:42.548 [INFO    ] orchestrator:   #4 DOWN  score=  7.42  BRONZE  folds=4/6  WR=91.3%  consWR=88.3%  entry=$0.86  ev=$0.0217
+2026-04-10 08:52:42.548 [INFO    ] orchestrator:   #5 DOWN  score=  4.70  BRONZE  folds=5/6  WR=90.6%  consWR=87.6%  entry=$0.87  ev=$0.0077
+2026-04-10 08:52:42.548 [INFO    ] orchestrator: DELIVERING BRONZE signal: #1 Up [260s->150s] d>=0.07% v<=0.05%
+2026-04-10 08:52:42.548 [INFO    ] orchestrator:   score=15.03  WR=96.9%  consWR=93.9%  entry=$0.90  ev=$0.0428  folds=[2, 4, 6, 7]
+2026-04-10 08:52:42.729 [INFO    ] shared.ipc: IPC: signal delivered successfully (authenticated ack)
+2026-04-10 08:52:42.730 [INFO    ] orchestrator: bronze signal delivered to bot
+2026-04-10 09:07:42.741 [INFO    ] orchestrator: --- cycle start [06:07:42 UTC] ---
+2026-04-10 09:07:42.741 [INFO    ] orchestrator: data quality check passed: 600 windows available
+2026-04-10 09:07:42.741 [INFO    ] orchestrator: starting engine: C:\Users\operator\Desktop\PolySignalLab\PolySignalEngine\build\Release\PolySignalEngine.exe C:\Users\operator\Desktop\PolySignalLab\PolyDataCollector\data --output-dir C:\Users\operator\Desktop\PolySignalLab\engine_output
+2026-04-10 09:07:54.560 [INFO    ] orchestrator: engine: ==========================================================
+2026-04-10 09:07:54.560 [INFO    ] orchestrator: engine:   SUMMARY
+2026-04-10 09:07:54.560 [INFO    ] orchestrator: engine: ==========================================================
+2026-04-10 09:07:54.560 [INFO    ] orchestrator: engine:   Total windows:         600 (302 UP, 298 DOWN)
+2026-04-10 09:07:54.560 [INFO    ] orchestrator: engine:   Walk-forward folds:    8 (6 test iterations)
+2026-04-10 09:07:54.560 [INFO    ] orchestrator: engine:   OOS base rate:         49.1% UP (450 test windows total)
+2026-04-10 09:07:54.560 [INFO    ] orchestrator: engine:   Configs swept:         201096
+2026-04-10 09:07:54.560 [INFO    ] orchestrator: engine:   Viable WF-OOS signals: 13
+2026-04-10 09:07:54.560 [INFO    ] orchestrator: engine:   Compute time:          10.61s
+2026-04-10 09:07:54.560 [INFO    ] orchestrator: engine: ==========================================================
+2026-04-10 09:07:54.560 [INFO    ] orchestrator: engine produced: signals_summary_1775801274.json
+2026-04-10 09:07:54.560 [INFO    ] orchestrator: cleaned up old summary: signals_summary_1775792153.json
+2026-04-10 09:07:54.560 [INFO    ] orchestrator: ranked 13 signals — top candidates:
+2026-04-10 09:07:54.560 [INFO    ] orchestrator:   #1 UP    score= 14.83  BRONZE  folds=3/6  WR=96.9%  consWR=93.9%  entry=$0.88  ev=$0.0584
+2026-04-10 09:07:54.560 [INFO    ] orchestrator:   #2 UP    score= 11.37  BRONZE  folds=4/6  WR=94.3%  consWR=91.3%  entry=$0.88  ev=$0.0331
+2026-04-10 09:07:54.560 [INFO    ] orchestrator:   #3 DOWN  score= 11.11  BRONZE  folds=4/6  WR=91.8%  consWR=88.8%  entry=$0.86  ev=$0.0296
+2026-04-10 09:07:54.560 [INFO    ] orchestrator:   #4 DOWN  score=  7.22  BRONZE  folds=4/6  WR=91.3%  consWR=88.3%  entry=$0.86  ev=$0.0217
+2026-04-10 09:07:54.560 [INFO    ] orchestrator:   #5 DOWN  score=  4.29  BRONZE  folds=2/6  WR=96.5%  consWR=93.5%  entry=$0.89  ev=$0.0497
+2026-04-10 09:07:54.576 [INFO    ] orchestrator: DELIVERING BRONZE signal: #1 Up [240s->140s] d>=0.07% v<=0.05%
+2026-04-10 09:07:54.576 [INFO    ] orchestrator:   score=14.83  WR=96.9%  consWR=93.9%  entry=$0.88  ev=$0.0584  folds=[2, 6, 7]
+2026-04-10 09:07:54.770 [INFO    ] shared.ipc: IPC: signal delivered successfully (authenticated ack)
+2026-04-10 09:07:54.771 [INFO    ] orchestrator: bronze signal delivered to bot
+2026-04-10 09:22:54.776 [INFO    ] orchestrator: --- cycle start [06:22:54 UTC] ---
+2026-04-10 09:22:54.778 [INFO    ] orchestrator: data quality check passed: 600 windows available
+2026-04-10 09:22:54.778 [INFO    ] orchestrator: starting engine: C:\Users\operator\Desktop\PolySignalLab\PolySignalEngine\build\Release\PolySignalEngine.exe C:\Users\operator\Desktop\PolySignalLab\PolyDataCollector\data --output-dir C:\Users\operator\Desktop\PolySignalLab\engine_output
+2026-04-10 09:23:06.663 [INFO    ] orchestrator: engine: ==========================================================
+2026-04-10 09:23:06.663 [INFO    ] orchestrator: engine:   SUMMARY
+2026-04-10 09:23:06.663 [INFO    ] orchestrator: engine: ==========================================================
+2026-04-10 09:23:06.663 [INFO    ] orchestrator: engine:   Total windows:         600 (303 UP, 297 DOWN)
+2026-04-10 09:23:06.663 [INFO    ] orchestrator: engine:   Walk-forward folds:    8 (6 test iterations)
+2026-04-10 09:23:06.663 [INFO    ] orchestrator: engine:   OOS base rate:         49.1% UP (450 test windows total)
+2026-04-10 09:23:06.663 [INFO    ] orchestrator: engine:   Configs swept:         201096
+2026-04-10 09:23:06.663 [INFO    ] orchestrator: engine:   Viable WF-OOS signals: 15
+2026-04-10 09:23:06.663 [INFO    ] orchestrator: engine:   Compute time:          10.67s
+2026-04-10 09:23:06.663 [INFO    ] orchestrator: engine: ==========================================================
+2026-04-10 09:23:06.663 [INFO    ] orchestrator: engine produced: signals_summary_1775802186.json
+2026-04-10 09:23:06.663 [INFO    ] orchestrator: cleaned up old summary: signals_summary_1775793065.json
+2026-04-10 09:23:06.663 [INFO    ] orchestrator: ranked 15 signals — top candidates:
+2026-04-10 09:23:06.663 [INFO    ] orchestrator:   #1 UP    score= 13.82  BRONZE  folds=3/6  WR=96.7%  consWR=93.7%  entry=$0.88  ev=$0.0587
+2026-04-10 09:23:06.663 [INFO    ] orchestrator:   #2 DOWN  score= 10.95  BRONZE  folds=4/6  WR=91.8%  consWR=88.8%  entry=$0.86  ev=$0.0296
+2026-04-10 09:23:06.663 [INFO    ] orchestrator:   #3 UP    score=  9.90  BRONZE  folds=3/6  WR=97.0%  consWR=94.0%  entry=$0.89  ev=$0.0533
+2026-04-10 09:23:06.663 [INFO    ] orchestrator:   #4 DOWN  score=  7.27  BRONZE  folds=4/6  WR=91.3%  consWR=88.3%  entry=$0.86  ev=$0.0217
+2026-04-10 09:23:06.676 [INFO    ] orchestrator:   #5 DOWN  score=  6.18  BRONZE  folds=3/6  WR=93.5%  consWR=90.5%  entry=$0.87  ev=$0.0341
+2026-04-10 09:23:06.676 [INFO    ] orchestrator: DELIVERING BRONZE signal: #1 Up [240s->140s] d>=0.07% v<=0.05%
+2026-04-10 09:23:06.676 [INFO    ] orchestrator:   score=13.82  WR=96.7%  consWR=93.7%  entry=$0.88  ev=$0.0587  folds=[2, 6, 7]
+2026-04-10 09:23:06.869 [INFO    ] shared.ipc: IPC: signal delivered successfully (authenticated ack)
+2026-04-10 09:23:06.870 [INFO    ] orchestrator: bronze signal delivered to bot
+2026-04-10 09:38:06.886 [INFO    ] orchestrator: --- cycle start [06:38:06 UTC] ---
+2026-04-10 09:38:06.886 [INFO    ] orchestrator: data quality check passed: 600 windows available
+2026-04-10 09:38:06.886 [INFO    ] orchestrator: starting engine: C:\Users\operator\Desktop\PolySignalLab\PolySignalEngine\build\Release\PolySignalEngine.exe C:\Users\operator\Desktop\PolySignalLab\PolyDataCollector\data --output-dir C:\Users\operator\Desktop\PolySignalLab\engine_output
+2026-04-10 09:38:18.721 [INFO    ] orchestrator: engine: ==========================================================
+2026-04-10 09:38:18.721 [INFO    ] orchestrator: engine:   SUMMARY
+2026-04-10 09:38:18.737 [INFO    ] orchestrator: engine: ==========================================================
+2026-04-10 09:38:18.737 [INFO    ] orchestrator: engine:   Total windows:         600 (303 UP, 297 DOWN)
+2026-04-10 09:38:18.737 [INFO    ] orchestrator: engine:   Walk-forward folds:    8 (6 test iterations)
+2026-04-10 09:38:18.737 [INFO    ] orchestrator: engine:   OOS base rate:         48.7% UP (450 test windows total)
+2026-04-10 09:38:18.737 [INFO    ] orchestrator: engine:   Configs swept:         201096
+2026-04-10 09:38:18.737 [INFO    ] orchestrator: engine:   Viable WF-OOS signals: 13
+2026-04-10 09:38:18.737 [INFO    ] orchestrator: engine:   Compute time:          10.65s
+2026-04-10 09:38:18.737 [INFO    ] orchestrator: engine: ==========================================================
+2026-04-10 09:38:18.737 [INFO    ] orchestrator: engine produced: signals_summary_1775803098.json
+2026-04-10 09:38:18.737 [INFO    ] orchestrator: cleaned up old summary: signals_summary_1775793978.json
+2026-04-10 09:38:18.737 [INFO    ] orchestrator: ranked 13 signals — top candidates:
+2026-04-10 09:38:18.737 [INFO    ] orchestrator:   #1 UP    score= 39.14  GOLDEN  folds=6/6  WR=96.2%  consWR=93.2%  entry=$0.89  ev=$0.0457
+2026-04-10 09:38:18.737 [INFO    ] orchestrator:   #2 DOWN  score= 10.50  BRONZE  folds=4/6  WR=91.8%  consWR=88.8%  entry=$0.86  ev=$0.0296
+2026-04-10 09:38:18.737 [INFO    ] orchestrator:   #3 DOWN  score=  5.89  BRONZE  folds=6/6  WR=93.4%  consWR=90.4%  entry=$0.90  ev=$0.0073
+2026-04-10 09:38:18.737 [INFO    ] orchestrator:   #4 DOWN  score=  5.66  BRONZE  folds=3/6  WR=92.5%  consWR=89.5%  entry=$0.87  ev=$0.0265
+2026-04-10 09:38:18.737 [INFO    ] orchestrator:   #5 DOWN  score=  4.34  BRONZE  folds=2/6  WR=96.5%  consWR=93.5%  entry=$0.88  ev=$0.0534
+2026-04-10 09:38:18.737 [INFO    ] orchestrator: DELIVERING GOLDEN signal: #1 Up [260s->150s] d>=0.07% v<=0.05%
+2026-04-10 09:38:18.753 [INFO    ] orchestrator:   score=39.14  WR=96.2%  consWR=93.2%  entry=$0.89  ev=$0.0457  folds=[2, 3, 4, 5, 6, 7]
+2026-04-10 09:38:18.920 [INFO    ] shared.ipc: IPC: signal delivered successfully (authenticated ack)
+2026-04-10 09:38:18.920 [INFO    ] orchestrator: golden signal delivered to bot
+2026-04-10 09:53:18.921 [INFO    ] orchestrator: --- cycle start [06:53:18 UTC] ---
+2026-04-10 09:53:18.924 [INFO    ] orchestrator: data quality check passed: 600 windows available
+2026-04-10 09:53:18.924 [INFO    ] orchestrator: starting engine: C:\Users\operator\Desktop\PolySignalLab\PolySignalEngine\build\Release\PolySignalEngine.exe C:\Users\operator\Desktop\PolySignalLab\PolyDataCollector\data --output-dir C:\Users\operator\Desktop\PolySignalLab\engine_output
+2026-04-10 09:53:30.757 [INFO    ] orchestrator: engine: ==========================================================
+2026-04-10 09:53:30.757 [INFO    ] orchestrator: engine:   SUMMARY
+2026-04-10 09:53:30.757 [INFO    ] orchestrator: engine: ==========================================================
+2026-04-10 09:53:30.757 [INFO    ] orchestrator: engine:   Total windows:         600 (304 UP, 296 DOWN)
+2026-04-10 09:53:30.757 [INFO    ] orchestrator: engine:   Walk-forward folds:    8 (6 test iterations)
+2026-04-10 09:53:30.757 [INFO    ] orchestrator: engine:   OOS base rate:         48.7% UP (450 test windows total)
+2026-04-10 09:53:30.757 [INFO    ] orchestrator: engine:   Configs swept:         201096
+2026-04-10 09:53:30.757 [INFO    ] orchestrator: engine:   Viable WF-OOS signals: 13
+2026-04-10 09:53:30.757 [INFO    ] orchestrator: engine:   Compute time:          10.61s
+2026-04-10 09:53:30.757 [INFO    ] orchestrator: engine: ==========================================================
+2026-04-10 09:53:30.757 [INFO    ] orchestrator: engine produced: signals_summary_1775804010.json
+2026-04-10 09:53:30.757 [INFO    ] orchestrator: cleaned up old summary: signals_summary_1775794890.json
+2026-04-10 09:53:30.757 [INFO    ] orchestrator: ranked 13 signals — top candidates:
+2026-04-10 09:53:30.757 [INFO    ] orchestrator:   #1 UP    score= 19.33  BRONZE  folds=4/6  WR=96.9%  consWR=93.9%  entry=$0.89  ev=$0.0534
+2026-04-10 09:53:30.757 [INFO    ] orchestrator:   #2 UP    score=  6.41  BRONZE  folds=4/6  WR=95.2%  consWR=92.2%  entry=$0.90  ev=$0.0188
+2026-04-10 09:53:30.757 [INFO    ] orchestrator:   #3 DOWN  score=  5.51  BRONZE  folds=2/6  WR=96.7%  consWR=93.7%  entry=$0.88  ev=$0.0593
+2026-04-10 09:53:30.757 [INFO    ] orchestrator:   #4 UP    score=  5.31  BRONZE  folds=3/6  WR=92.3%  consWR=89.3%  entry=$0.85  ev=$0.0381
+2026-04-10 09:53:30.757 [INFO    ] orchestrator:   #5 DOWN  score=  5.21  BRONZE  folds=4/6  WR=90.2%  consWR=87.2%  entry=$0.86  ev=$0.0165
+2026-04-10 09:53:30.757 [INFO    ] orchestrator: DELIVERING BRONZE signal: #1 Up [260s->150s] d>=0.07% v<=0.05%
+2026-04-10 09:53:30.773 [INFO    ] orchestrator:   score=19.33  WR=96.9%  consWR=93.9%  entry=$0.89  ev=$0.0534  folds=[4, 5, 6, 7]
+2026-04-10 09:53:30.948 [INFO    ] shared.ipc: IPC: signal delivered successfully (authenticated ack)
+2026-04-10 09:53:30.948 [INFO    ] orchestrator: bronze signal delivered to bot
+2026-04-10 10:08:30.958 [INFO    ] orchestrator: --- cycle start [07:08:30 UTC] ---
+2026-04-10 10:08:30.958 [INFO    ] orchestrator: data quality check passed: 600 windows available
+2026-04-10 10:08:30.958 [INFO    ] orchestrator: starting engine: C:\Users\operator\Desktop\PolySignalLab\PolySignalEngine\build\Release\PolySignalEngine.exe C:\Users\operator\Desktop\PolySignalLab\PolyDataCollector\data --output-dir C:\Users\operator\Desktop\PolySignalLab\engine_output
+2026-04-10 10:08:42.891 [INFO    ] orchestrator: engine: ==========================================================
+2026-04-10 10:08:42.891 [INFO    ] orchestrator: engine:   SUMMARY
+2026-04-10 10:08:42.891 [INFO    ] orchestrator: engine: ==========================================================
+2026-04-10 10:08:42.891 [INFO    ] orchestrator: engine:   Total windows:         600 (301 UP, 299 DOWN)
+2026-04-10 10:08:42.891 [INFO    ] orchestrator: engine:   Walk-forward folds:    8 (6 test iterations)
+2026-04-10 10:08:42.891 [INFO    ] orchestrator: engine:   OOS base rate:         48.4% UP (450 test windows total)
+2026-04-10 10:08:42.891 [INFO    ] orchestrator: engine:   Configs swept:         201096
+2026-04-10 10:08:42.891 [INFO    ] orchestrator: engine:   Viable WF-OOS signals: 12
+2026-04-10 10:08:42.891 [INFO    ] orchestrator: engine:   Compute time:          10.68s
+2026-04-10 10:08:42.891 [INFO    ] orchestrator: engine: ==========================================================
+2026-04-10 10:08:42.891 [INFO    ] orchestrator: engine produced: signals_summary_1775804922.json
+2026-04-10 10:08:42.891 [INFO    ] orchestrator: cleaned up old summary: signals_summary_1775795802.json
+2026-04-10 10:08:42.891 [INFO    ] orchestrator: ranked 12 signals — top candidates:
+2026-04-10 10:08:42.891 [INFO    ] orchestrator:   #1 DOWN  score= 10.41  BRONZE  folds=3/6  WR=91.1%  consWR=88.1%  entry=$0.81  ev=$0.0722
+2026-04-10 10:08:42.891 [INFO    ] orchestrator:   #2 DOWN  score=  8.23  BRONZE  folds=2/6  WR=100.0%  consWR=97.0%  entry=$0.88  ev=$0.0935
+2026-04-10 10:08:42.891 [INFO    ] orchestrator:   #3 UP    score=  6.51  BRONZE  folds=3/6  WR=96.3%  consWR=93.3%  entry=$0.89  ev=$0.0467
+2026-04-10 10:08:42.891 [INFO    ] orchestrator:   #4 DOWN  score=  5.09  BRONZE  folds=4/6  WR=90.2%  consWR=87.2%  entry=$0.86  ev=$0.0165
+2026-04-10 10:08:42.891 [INFO    ] orchestrator:   #5 DOWN  score=  4.93  BRONZE  folds=2/6  WR=100.0%  consWR=97.0%  entry=$0.92  ev=$0.0500
+2026-04-10 10:08:42.891 [INFO    ] orchestrator: signal #1 Down [260s->200s] d>=0.07% v<=0.05% folds=[2, 3, 5] missing most-recent fold 7 — skipping (recency gate)
+2026-04-10 10:08:42.907 [INFO    ] orchestrator: signal #2 Down [250s->150s] d>=0.07% v<=0.05% folds=[4, 5] missing most-recent fold 7 — skipping (recency gate)
+2026-04-10 10:08:42.907 [INFO    ] orchestrator: best signal below threshold: #3 Up [250s->150s] d>=0.07% v<=0.05%  score=6.51 (need 8.00)  consWR=93.3%  entry=$0.89
+2026-04-10 10:08:42.907 [INFO    ] orchestrator: no signal passed all delivery gates — not sending to bot
+2026-04-10 10:23:42.920 [INFO    ] orchestrator: --- cycle start [07:23:42 UTC] ---
+2026-04-10 10:23:42.920 [INFO    ] orchestrator: data quality check passed: 600 windows available
+2026-04-10 10:23:42.920 [INFO    ] orchestrator: starting engine: C:\Users\operator\Desktop\PolySignalLab\PolySignalEngine\build\Release\PolySignalEngine.exe C:\Users\operator\Desktop\PolySignalLab\PolyDataCollector\data --output-dir C:\Users\operator\Desktop\PolySignalLab\engine_output
+2026-04-10 10:23:54.782 [INFO    ] orchestrator: engine: ==========================================================
+2026-04-10 10:23:54.782 [INFO    ] orchestrator: engine:   SUMMARY
+2026-04-10 10:23:54.782 [INFO    ] orchestrator: engine: ==========================================================
+2026-04-10 10:23:54.782 [INFO    ] orchestrator: engine:   Total windows:         600 (298 UP, 302 DOWN)
+2026-04-10 10:23:54.782 [INFO    ] orchestrator: engine:   Walk-forward folds:    8 (6 test iterations)
+2026-04-10 10:23:54.782 [INFO    ] orchestrator: engine:   OOS base rate:         47.8% UP (450 test windows total)
+2026-04-10 10:23:54.782 [INFO    ] orchestrator: engine:   Configs swept:         201096
+2026-04-10 10:23:54.782 [INFO    ] orchestrator: engine:   Viable WF-OOS signals: 14
+2026-04-10 10:23:54.782 [INFO    ] orchestrator: engine:   Compute time:          10.65s
+2026-04-10 10:23:54.798 [INFO    ] orchestrator: engine: ==========================================================
+2026-04-10 10:23:54.798 [INFO    ] orchestrator: engine produced: signals_summary_1775805834.json
+2026-04-10 10:23:54.798 [INFO    ] orchestrator: cleaned up old summary: signals_summary_1775796714.json
+2026-04-10 10:23:54.798 [INFO    ] orchestrator: ranked 14 signals — top candidates:
+2026-04-10 10:23:54.798 [INFO    ] orchestrator:   #1 DOWN  score=  9.80  BRONZE  folds=3/6  WR=90.9%  consWR=87.9%  entry=$0.81  ev=$0.0718
+2026-04-10 10:23:54.798 [INFO    ] orchestrator:   #2 UP    score=  7.97  BRONZE  folds=3/6  WR=96.2%  consWR=93.2%  entry=$0.89  ev=$0.0431
+2026-04-10 10:23:54.798 [INFO    ] orchestrator:   #3 DOWN  score=  7.86  SILVER  folds=5/6  WR=90.5%  consWR=87.5%  entry=$0.86  ev=$0.0149
+2026-04-10 10:23:54.798 [INFO    ] orchestrator:   #4 UP    score=  6.15  BRONZE  folds=4/6  WR=93.5%  consWR=90.5%  entry=$0.88  ev=$0.0210
+2026-04-10 10:23:54.798 [INFO    ] orchestrator:   #5 DOWN  score=  6.05  BRONZE  folds=2/6  WR=100.0%  consWR=97.0%  entry=$0.92  ev=$0.0529
+2026-04-10 10:23:54.798 [INFO    ] orchestrator: signal #1 Down [260s->200s] d>=0.07% v<=0.05% folds=[2, 3, 5] missing most-recent fold 7 — skipping (recency gate)
+2026-04-10 10:23:54.809 [INFO    ] orchestrator: best signal below threshold: #2 Up [240s->140s] d>=0.07% v<=0.05%  score=7.97 (need 8.00)  consWR=93.2%  entry=$0.89
+2026-04-10 10:23:54.809 [INFO    ] orchestrator: no signal passed all delivery gates — not sending to bot
+2026-04-10 10:38:54.815 [INFO    ] orchestrator: --- cycle start [07:38:54 UTC] ---
+2026-04-10 10:38:54.815 [INFO    ] orchestrator: data quality check passed: 600 windows available
+2026-04-10 10:38:54.815 [INFO    ] orchestrator: starting engine: C:\Users\operator\Desktop\PolySignalLab\PolySignalEngine\build\Release\PolySignalEngine.exe C:\Users\operator\Desktop\PolySignalLab\PolyDataCollector\data --output-dir C:\Users\operator\Desktop\PolySignalLab\engine_output
+2026-04-10 10:39:06.629 [INFO    ] orchestrator: engine: ==========================================================
+2026-04-10 10:39:06.629 [INFO    ] orchestrator: engine:   SUMMARY
+2026-04-10 10:39:06.629 [INFO    ] orchestrator: engine: ==========================================================
+2026-04-10 10:39:06.629 [INFO    ] orchestrator: engine:   Total windows:         600 (297 UP, 303 DOWN)
+2026-04-10 10:39:06.629 [INFO    ] orchestrator: engine:   Walk-forward folds:    8 (6 test iterations)
+2026-04-10 10:39:06.629 [INFO    ] orchestrator: engine:   OOS base rate:         47.6% UP (450 test windows total)
+2026-04-10 10:39:06.629 [INFO    ] orchestrator: engine:   Configs swept:         201096
+2026-04-10 10:39:06.629 [INFO    ] orchestrator: engine:   Viable WF-OOS signals: 11
+2026-04-10 10:39:06.629 [INFO    ] orchestrator: engine:   Compute time:          10.61s
+2026-04-10 10:39:06.629 [INFO    ] orchestrator: engine: ==========================================================
+2026-04-10 10:39:06.645 [INFO    ] orchestrator: engine produced: signals_summary_1775806746.json
+2026-04-10 10:39:06.645 [INFO    ] orchestrator: cleaned up old summary: signals_summary_1775797626.json
+2026-04-10 10:39:06.645 [INFO    ] orchestrator: ranked 11 signals — top candidates:
+2026-04-10 10:39:06.645 [INFO    ] orchestrator:   #1 UP    score= 12.29  SILVER  folds=5/6  WR=94.9%  consWR=91.9%  entry=$0.89  ev=$0.0249
+2026-04-10 10:39:06.645 [INFO    ] orchestrator:   #2 DOWN  score=  7.09  BRONZE  folds=2/6  WR=100.0%  consWR=97.0%  entry=$0.88  ev=$0.0892
+2026-04-10 10:39:06.645 [INFO    ] orchestrator:   #3 DOWN  score=  6.48  BRONZE  folds=2/6  WR=100.0%  consWR=97.0%  entry=$0.90  ev=$0.0668
+2026-04-10 10:39:06.645 [INFO    ] orchestrator:   #4 DOWN  score=  5.99  BRONZE  folds=3/6  WR=91.9%  consWR=88.9%  entry=$0.84  ev=$0.0495
+2026-04-10 10:39:06.645 [INFO    ] orchestrator:   #5 UP    score=  4.98  BRONZE  folds=3/6  WR=96.5%  consWR=93.5%  entry=$0.91  ev=$0.0297
+2026-04-10 10:39:06.645 [INFO    ] orchestrator: DELIVERING SILVER signal: #1 Up [260s->150s] d>=0.07% v<=0.05%
+2026-04-10 10:39:06.645 [INFO    ] orchestrator:   score=12.29  WR=94.9%  consWR=91.9%  entry=$0.89  ev=$0.0249  folds=[2, 3, 4, 6, 7]
+2026-04-10 10:39:06.826 [INFO    ] shared.ipc: IPC: signal delivered successfully (authenticated ack)
+2026-04-10 10:39:06.826 [INFO    ] orchestrator: silver signal delivered to bot
+2026-04-10 10:54:06.827 [INFO    ] orchestrator: --- cycle start [07:54:06 UTC] ---
+2026-04-10 10:54:06.827 [INFO    ] orchestrator: data quality check passed: 600 windows available
+2026-04-10 10:54:06.827 [INFO    ] orchestrator: starting engine: C:\Users\operator\Desktop\PolySignalLab\PolySignalEngine\build\Release\PolySignalEngine.exe C:\Users\operator\Desktop\PolySignalLab\PolyDataCollector\data --output-dir C:\Users\operator\Desktop\PolySignalLab\engine_output
+2026-04-10 10:54:18.732 [INFO    ] orchestrator: engine: ==========================================================
+2026-04-10 10:54:18.732 [INFO    ] orchestrator: engine:   SUMMARY
+2026-04-10 10:54:18.732 [INFO    ] orchestrator: engine: ==========================================================
+2026-04-10 10:54:18.732 [INFO    ] orchestrator: engine:   Total windows:         600 (297 UP, 303 DOWN)
+2026-04-10 10:54:18.732 [INFO    ] orchestrator: engine:   Walk-forward folds:    8 (6 test iterations)
+2026-04-10 10:54:18.748 [INFO    ] orchestrator: engine:   OOS base rate:         47.8% UP (450 test windows total)
+2026-04-10 10:54:18.748 [INFO    ] orchestrator: engine:   Configs swept:         201096
+2026-04-10 10:54:18.748 [INFO    ] orchestrator: engine:   Viable WF-OOS signals: 15
+2026-04-10 10:54:18.748 [INFO    ] orchestrator: engine:   Compute time:          10.71s
+2026-04-10 10:54:18.748 [INFO    ] orchestrator: engine: ==========================================================
+2026-04-10 10:54:18.748 [INFO    ] orchestrator: engine produced: signals_summary_1775807658.json
+2026-04-10 10:54:18.748 [INFO    ] orchestrator: cleaned up old summary: signals_summary_1775798538.json
+2026-04-10 10:54:18.748 [INFO    ] orchestrator: ranked 15 signals — top candidates:
+2026-04-10 10:54:18.748 [INFO    ] orchestrator:   #1 UP    score= 12.23  SILVER  folds=5/6  WR=94.9%  consWR=91.9%  entry=$0.90  ev=$0.0233
+2026-04-10 10:54:18.748 [INFO    ] orchestrator:   #2 DOWN  score= 10.29  BRONZE  folds=3/6  WR=97.1%  consWR=94.1%  entry=$0.89  ev=$0.0554
+2026-04-10 10:54:18.748 [INFO    ] orchestrator:   #3 DOWN  score=  8.82  SILVER  folds=5/6  WR=92.8%  consWR=89.8%  entry=$0.88  ev=$0.0186
+2026-04-10 10:54:18.748 [INFO    ] orchestrator:   #4 DOWN  score=  6.56  BRONZE  folds=3/6  WR=94.3%  consWR=91.3%  entry=$0.87  ev=$0.0386
+2026-04-10 10:54:18.748 [INFO    ] orchestrator:   #5 DOWN  score=  6.38  BRONZE  folds=3/6  WR=94.1%  consWR=91.1%  entry=$0.87  ev=$0.0450
+2026-04-10 10:54:18.748 [INFO    ] orchestrator: DELIVERING SILVER signal: #1 Up [260s->150s] d>=0.07% v<=0.05%
+2026-04-10 10:54:18.748 [INFO    ] orchestrator:   score=12.23  WR=94.9%  consWR=91.9%  entry=$0.90  ev=$0.0233  folds=[2, 3, 4, 6, 7]
+2026-04-10 10:54:18.930 [INFO    ] shared.ipc: IPC: signal delivered successfully (authenticated ack)
+2026-04-10 10:54:18.930 [INFO    ] orchestrator: silver signal delivered to bot
+2026-04-10 11:09:18.935 [INFO    ] orchestrator: --- cycle start [08:09:18 UTC] ---
+2026-04-10 11:09:18.935 [INFO    ] orchestrator: data quality check passed: 600 windows available
+2026-04-10 11:09:18.935 [INFO    ] orchestrator: starting engine: C:\Users\operator\Desktop\PolySignalLab\PolySignalEngine\build\Release\PolySignalEngine.exe C:\Users\operator\Desktop\PolySignalLab\PolyDataCollector\data --output-dir C:\Users\operator\Desktop\PolySignalLab\engine_output
+2026-04-10 11:09:30.931 [INFO    ] orchestrator: engine: ==========================================================
+2026-04-10 11:09:30.932 [INFO    ] orchestrator: engine:   SUMMARY
+2026-04-10 11:09:30.933 [INFO    ] orchestrator: engine: ==========================================================
+2026-04-10 11:09:30.933 [INFO    ] orchestrator: engine:   Total windows:         600 (295 UP, 305 DOWN)
+2026-04-10 11:09:30.933 [INFO    ] orchestrator: engine:   Walk-forward folds:    8 (6 test iterations)
+2026-04-10 11:09:30.934 [INFO    ] orchestrator: engine:   OOS base rate:         48.0% UP (450 test windows total)
+2026-04-10 11:09:30.934 [INFO    ] orchestrator: engine:   Configs swept:         201096
+2026-04-10 11:09:30.934 [INFO    ] orchestrator: engine:   Viable WF-OOS signals: 12
+2026-04-10 11:09:30.934 [INFO    ] orchestrator: engine:   Compute time:          10.78s
+2026-04-10 11:09:30.935 [INFO    ] orchestrator: engine: ==========================================================
+2026-04-10 11:09:30.935 [INFO    ] orchestrator: engine produced: signals_summary_1775808570.json
+2026-04-10 11:09:30.935 [INFO    ] orchestrator: cleaned up old summary: signals_summary_1775799450.json
+2026-04-10 11:09:30.937 [INFO    ] orchestrator: ranked 12 signals — top candidates:
+2026-04-10 11:09:30.937 [INFO    ] orchestrator:   #1 DOWN  score=  7.64  BRONZE  folds=2/6  WR=100.0%  consWR=97.0%  entry=$0.90  ev=$0.0731
+2026-04-10 11:09:30.937 [INFO    ] orchestrator:   #2 DOWN  score=  7.45  BRONZE  folds=3/6  WR=94.4%  consWR=91.4%  entry=$0.87  ev=$0.0419
+2026-04-10 11:09:30.937 [INFO    ] orchestrator:   #3 DOWN  score=  6.86  BRONZE  folds=3/6  WR=96.4%  consWR=93.4%  entry=$0.90  ev=$0.0291
+2026-04-10 11:09:30.937 [INFO    ] orchestrator:   #4 DOWN  score=  6.72  BRONZE  folds=2/6  WR=100.0%  consWR=97.0%  entry=$0.89  ev=$0.0765
+2026-04-10 11:09:30.937 [INFO    ] orchestrator:   #5 UP    score=  6.62  BRONZE  folds=3/6  WR=96.9%  consWR=93.9%  entry=$0.90  ev=$0.0353
+2026-04-10 11:09:30.937 [INFO    ] orchestrator: best signal below threshold: #1 Down [200s->170s] d>=0.07% v<=0.05%  score=7.64 (need 8.00)  consWR=97.0%  entry=$0.90
+2026-04-10 11:09:30.937 [INFO    ] orchestrator: no signal passed all delivery gates — not sending to bot
+2026-04-10 11:24:30.954 [INFO    ] orchestrator: --- cycle start [08:24:30 UTC] ---
+2026-04-10 11:24:30.961 [INFO    ] orchestrator: data quality check passed: 600 windows available
+2026-04-10 11:24:30.961 [INFO    ] orchestrator: starting engine: C:\Users\operator\Desktop\PolySignalLab\PolySignalEngine\build\Release\PolySignalEngine.exe C:\Users\operator\Desktop\PolySignalLab\PolyDataCollector\data --output-dir C:\Users\operator\Desktop\PolySignalLab\engine_output
+2026-04-10 11:24:42.990 [INFO    ] orchestrator: engine: ==========================================================
+2026-04-10 11:24:42.990 [INFO    ] orchestrator: engine:   SUMMARY
+2026-04-10 11:24:42.990 [INFO    ] orchestrator: engine: ==========================================================
+2026-04-10 11:24:42.990 [INFO    ] orchestrator: engine:   Total windows:         600 (294 UP, 306 DOWN)
+2026-04-10 11:24:42.990 [INFO    ] orchestrator: engine:   Walk-forward folds:    8 (6 test iterations)
+2026-04-10 11:24:42.990 [INFO    ] orchestrator: engine:   OOS base rate:         48.0% UP (450 test windows total)
+2026-04-10 11:24:42.990 [INFO    ] orchestrator: engine:   Configs swept:         201096
+2026-04-10 11:24:42.990 [INFO    ] orchestrator: engine:   Viable WF-OOS signals: 14
+2026-04-10 11:24:42.990 [INFO    ] orchestrator: engine:   Compute time:          10.82s
+2026-04-10 11:24:42.990 [INFO    ] orchestrator: engine: ==========================================================
+2026-04-10 11:24:42.990 [INFO    ] orchestrator: engine produced: signals_summary_1775809482.json
+2026-04-10 11:24:42.990 [INFO    ] orchestrator: cleaned up old summary: signals_summary_1775800362.json
+2026-04-10 11:24:42.990 [INFO    ] orchestrator: ranked 14 signals — top candidates:
+2026-04-10 11:24:43.006 [INFO    ] orchestrator:   #1 DOWN  score= 17.99  BRONZE  folds=4/6  WR=95.9%  consWR=92.9%  entry=$0.88  ev=$0.0520
+2026-04-10 11:24:43.006 [INFO    ] orchestrator:   #2 DOWN  score=  6.40  BRONZE  folds=3/6  WR=94.3%  consWR=91.3%  entry=$0.87  ev=$0.0397
+2026-04-10 11:24:43.006 [INFO    ] orchestrator:   #3 DOWN  score=  5.90  SILVER  folds=5/6  WR=90.2%  consWR=87.2%  entry=$0.86  ev=$0.0115
+2026-04-10 11:24:43.006 [INFO    ] orchestrator:   #4 UP    score=  4.13  BRONZE  folds=2/6  WR=100.0%  consWR=97.0%  entry=$0.93  ev=$0.0431
+2026-04-10 11:24:43.006 [INFO    ] orchestrator:   #5 DOWN  score=  3.71  BRONZE  folds=3/6  WR=90.9%  consWR=87.9%  entry=$0.84  ev=$0.0342
+2026-04-10 11:24:43.006 [INFO    ] orchestrator: signal #1 Down [270s->160s] d>=0.07% v<=0.05% folds=[2, 3, 4, 5] missing most-recent fold 7 — skipping (recency gate)
+2026-04-10 11:24:43.015 [INFO    ] orchestrator: best signal below threshold: #2 Down [290s->130s] d>=0.07% v<=0.05%  score=6.40 (need 8.00)  consWR=91.3%  entry=$0.87
+2026-04-10 11:24:43.016 [INFO    ] orchestrator: no signal passed all delivery gates — not sending to bot
+2026-04-10 11:39:43.021 [INFO    ] orchestrator: --- cycle start [08:39:43 UTC] ---
+2026-04-10 11:39:43.021 [INFO    ] orchestrator: data quality check passed: 600 windows available
+2026-04-10 11:39:43.021 [INFO    ] orchestrator: starting engine: C:\Users\operator\Desktop\PolySignalLab\PolySignalEngine\build\Release\PolySignalEngine.exe C:\Users\operator\Desktop\PolySignalLab\PolyDataCollector\data --output-dir C:\Users\operator\Desktop\PolySignalLab\engine_output
+2026-04-10 11:39:54.994 [INFO    ] orchestrator: engine: ==========================================================
+2026-04-10 11:39:54.994 [INFO    ] orchestrator: engine:   SUMMARY
+2026-04-10 11:39:54.994 [INFO    ] orchestrator: engine: ==========================================================
+2026-04-10 11:39:54.994 [INFO    ] orchestrator: engine:   Total windows:         600 (295 UP, 305 DOWN)
+2026-04-10 11:39:55.010 [INFO    ] orchestrator: engine:   Walk-forward folds:    8 (6 test iterations)
+2026-04-10 11:39:55.010 [INFO    ] orchestrator: engine:   OOS base rate:         48.4% UP (450 test windows total)
+2026-04-10 11:39:55.010 [INFO    ] orchestrator: engine:   Configs swept:         201096
+2026-04-10 11:39:55.010 [INFO    ] orchestrator: engine:   Viable WF-OOS signals: 11
+2026-04-10 11:39:55.010 [INFO    ] orchestrator: engine:   Compute time:          10.77s
+2026-04-10 11:39:55.010 [INFO    ] orchestrator: engine: ==========================================================
+2026-04-10 11:39:55.010 [INFO    ] orchestrator: engine produced: signals_summary_1775810394.json
+2026-04-10 11:39:55.010 [INFO    ] orchestrator: cleaned up old summary: signals_summary_1775801274.json
+2026-04-10 11:39:55.010 [INFO    ] orchestrator: ranked 11 signals — top candidates:
+2026-04-10 11:39:55.010 [INFO    ] orchestrator:   #1 UP    score= 14.83  SILVER  folds=5/6  WR=95.6%  consWR=92.6%  entry=$0.90  ev=$0.0282
+2026-04-10 11:39:55.010 [INFO    ] orchestrator:   #2 UP    score=  9.31  BRONZE  folds=3/6  WR=96.7%  consWR=93.7%  entry=$0.89  ev=$0.0507
+2026-04-10 11:39:55.010 [INFO    ] orchestrator:   #3 DOWN  score=  6.00  BRONZE  folds=3/6  WR=94.1%  consWR=91.1%  entry=$0.87  ev=$0.0374
+2026-04-10 11:39:55.010 [INFO    ] orchestrator:   #4 DOWN  score=  4.45  BRONZE  folds=2/6  WR=100.0%  consWR=97.0%  entry=$0.93  ev=$0.0403
+2026-04-10 11:39:55.010 [INFO    ] orchestrator:   #5 UP    score=  4.37  BRONZE  folds=2/6  WR=100.0%  consWR=97.0%  entry=$0.93  ev=$0.0422
+2026-04-10 11:39:55.010 [INFO    ] orchestrator: DELIVERING SILVER signal: #1 Up [250s->160s] d>=0.07% v<=0.05%
+2026-04-10 11:39:55.026 [INFO    ] orchestrator:   score=14.83  WR=95.6%  consWR=92.6%  entry=$0.90  ev=$0.0282  folds=[2, 4, 5, 6, 7]
+2026-04-10 11:39:55.195 [INFO    ] shared.ipc: IPC: signal delivered successfully (authenticated ack)
+2026-04-10 11:39:55.196 [INFO    ] orchestrator: silver signal delivered to bot
+2026-04-10 11:54:55.205 [INFO    ] orchestrator: --- cycle start [08:54:55 UTC] ---
+2026-04-10 11:54:55.212 [INFO    ] orchestrator: data quality check passed: 600 windows available
+2026-04-10 11:54:55.212 [INFO    ] orchestrator: starting engine: C:\Users\operator\Desktop\PolySignalLab\PolySignalEngine\build\Release\PolySignalEngine.exe C:\Users\operator\Desktop\PolySignalLab\PolyDataCollector\data --output-dir C:\Users\operator\Desktop\PolySignalLab\engine_output
+2026-04-10 11:55:07.247 [INFO    ] orchestrator: engine: ==========================================================
+2026-04-10 11:55:07.247 [INFO    ] orchestrator: engine:   SUMMARY
+2026-04-10 11:55:07.247 [INFO    ] orchestrator: engine: ==========================================================
+2026-04-10 11:55:07.247 [INFO    ] orchestrator: engine:   Total windows:         600 (295 UP, 305 DOWN)
+2026-04-10 11:55:07.247 [INFO    ] orchestrator: engine:   Walk-forward folds:    8 (6 test iterations)
+2026-04-10 11:55:07.247 [INFO    ] orchestrator: engine:   OOS base rate:         48.0% UP (450 test windows total)
+2026-04-10 11:55:07.247 [INFO    ] orchestrator: engine:   Configs swept:         201096
+2026-04-10 11:55:07.247 [INFO    ] orchestrator: engine:   Viable WF-OOS signals: 14
+2026-04-10 11:55:07.247 [INFO    ] orchestrator: engine:   Compute time:          10.79s
+2026-04-10 11:55:07.247 [INFO    ] orchestrator: engine: ==========================================================
+2026-04-10 11:55:07.247 [INFO    ] orchestrator: engine produced: signals_summary_1775811307.json
+2026-04-10 11:55:07.247 [INFO    ] orchestrator: cleaned up old summary: signals_summary_1775802186.json
+2026-04-10 11:55:07.247 [INFO    ] orchestrator: ranked 14 signals — top candidates:
+2026-04-10 11:55:07.247 [INFO    ] orchestrator:   #1 UP    score= 59.77  SILVER  folds=5/6  WR=100.0%  consWR=97.0%  entry=$0.89  ev=$0.0786
+2026-04-10 11:55:07.247 [INFO    ] orchestrator:   #2 UP    score=  4.48  BRONZE  folds=2/6  WR=100.0%  consWR=97.0%  entry=$0.93  ev=$0.0404
+2026-04-10 11:55:07.247 [INFO    ] orchestrator:   #3 UP    score=  4.38  BRONZE  folds=3/6  WR=85.7%  consWR=82.7%  entry=$0.79  ev=$0.0411
+2026-04-10 11:55:07.247 [INFO    ] orchestrator:   #4 DOWN  score=  4.07  BRONZE  folds=2/6  WR=96.5%  consWR=93.5%  entry=$0.89  ev=$0.0476
+2026-04-10 11:55:07.247 [INFO    ] orchestrator:   #5 UP    score=  3.88  BRONZE  folds=2/6  WR=100.0%  consWR=97.0%  entry=$0.94  ev=$0.0350
+2026-04-10 11:55:07.247 [INFO    ] orchestrator: DELIVERING SILVER signal: #1 Up [250s->160s] d>=0.07% v<=0.05%
+2026-04-10 11:55:07.257 [INFO    ] orchestrator:   score=59.77  WR=100.0%  consWR=97.0%  entry=$0.89  ev=$0.0786  folds=[3, 4, 5, 6, 7]
+2026-04-10 11:55:07.431 [INFO    ] shared.ipc: IPC: signal delivered successfully (authenticated ack)
+2026-04-10 11:55:07.432 [INFO    ] orchestrator: silver signal delivered to bot
+2026-04-10 12:10:07.445 [INFO    ] orchestrator: --- cycle start [09:10:07 UTC] ---
+2026-04-10 12:10:07.445 [INFO    ] orchestrator: data quality check passed: 600 windows available
+2026-04-10 12:10:07.445 [INFO    ] orchestrator: starting engine: C:\Users\operator\Desktop\PolySignalLab\PolySignalEngine\build\Release\PolySignalEngine.exe C:\Users\operator\Desktop\PolySignalLab\PolyDataCollector\data --output-dir C:\Users\operator\Desktop\PolySignalLab\engine_output
+2026-04-10 12:10:19.558 [INFO    ] orchestrator: engine: ==========================================================
+2026-04-10 12:10:19.558 [INFO    ] orchestrator: engine:   SUMMARY
+2026-04-10 12:10:19.558 [INFO    ] orchestrator: engine: ==========================================================
+2026-04-10 12:10:19.558 [INFO    ] orchestrator: engine:   Total windows:         600 (295 UP, 305 DOWN)
+2026-04-10 12:10:19.558 [INFO    ] orchestrator: engine:   Walk-forward folds:    8 (6 test iterations)
+2026-04-10 12:10:19.558 [INFO    ] orchestrator: engine:   OOS base rate:         48.4% UP (450 test windows total)
+2026-04-10 12:10:19.558 [INFO    ] orchestrator: engine:   Configs swept:         201096
+2026-04-10 12:10:19.558 [INFO    ] orchestrator: engine:   Viable WF-OOS signals: 17
+2026-04-10 12:10:19.558 [INFO    ] orchestrator: engine:   Compute time:          10.86s
+2026-04-10 12:10:19.558 [INFO    ] orchestrator: engine: ==========================================================
+2026-04-10 12:10:19.558 [INFO    ] orchestrator: engine produced: signals_summary_1775812219.json
+2026-04-10 12:10:19.558 [INFO    ] orchestrator: cleaned up old summary: signals_summary_1775803098.json
+2026-04-10 12:10:19.558 [INFO    ] orchestrator: ranked 17 signals — top candidates:
+2026-04-10 12:10:19.558 [INFO    ] orchestrator:   #1 UP    score= 11.45  SILVER  folds=5/6  WR=94.6%  consWR=91.6%  entry=$0.89  ev=$0.0278
+2026-04-10 12:10:19.558 [INFO    ] orchestrator:   #2 DOWN  score=  8.03  BRONZE  folds=2/6  WR=100.0%  consWR=97.0%  entry=$0.87  ev=$0.0984
+2026-04-10 12:10:19.558 [INFO    ] orchestrator:   #3 UP    score=  7.10  BRONZE  folds=4/6  WR=94.9%  consWR=91.9%  entry=$0.89  ev=$0.0256
+2026-04-10 12:10:19.573 [INFO    ] orchestrator:   #4 UP    score=  4.61  BRONZE  folds=3/6  WR=96.2%  consWR=93.2%  entry=$0.90  ev=$0.0335
+2026-04-10 12:10:19.573 [INFO    ] orchestrator:   #5 DOWN  score=  4.45  BRONZE  folds=2/6  WR=93.1%  consWR=90.1%  entry=$0.84  ev=$0.0617
+2026-04-10 12:10:19.573 [INFO    ] orchestrator: DELIVERING SILVER signal: #1 Up [250s->160s] d>=0.07% v<=0.05%
+2026-04-10 12:10:19.581 [INFO    ] orchestrator:   score=11.45  WR=94.6%  consWR=91.6%  entry=$0.89  ev=$0.0278  folds=[2, 3, 5, 6, 7]
+2026-04-10 12:10:19.767 [INFO    ] shared.ipc: IPC: signal delivered successfully (authenticated ack)
+2026-04-10 12:10:19.768 [INFO    ] orchestrator: silver signal delivered to bot
+2026-04-10 12:25:19.782 [INFO    ] orchestrator: --- cycle start [09:25:19 UTC] ---
+2026-04-10 12:25:19.786 [INFO    ] orchestrator: data quality check passed: 600 windows available
+2026-04-10 12:25:19.786 [INFO    ] orchestrator: starting engine: C:\Users\operator\Desktop\PolySignalLab\PolySignalEngine\build\Release\PolySignalEngine.exe C:\Users\operator\Desktop\PolySignalLab\PolyDataCollector\data --output-dir C:\Users\operator\Desktop\PolySignalLab\engine_output
+2026-04-10 12:25:31.845 [INFO    ] orchestrator: engine: ==========================================================
+2026-04-10 12:25:31.845 [INFO    ] orchestrator: engine:   SUMMARY
+2026-04-10 12:25:31.845 [INFO    ] orchestrator: engine: ==========================================================
+2026-04-10 12:25:31.845 [INFO    ] orchestrator: engine:   Total windows:         600 (295 UP, 305 DOWN)
+2026-04-10 12:25:31.845 [INFO    ] orchestrator: engine:   Walk-forward folds:    8 (6 test iterations)
+2026-04-10 12:25:31.845 [INFO    ] orchestrator: engine:   OOS base rate:         48.4% UP (450 test windows total)
+2026-04-10 12:25:31.845 [INFO    ] orchestrator: engine:   Configs swept:         201096
+2026-04-10 12:25:31.852 [INFO    ] orchestrator: engine:   Viable WF-OOS signals: 16
+2026-04-10 12:25:31.852 [INFO    ] orchestrator: engine:   Compute time:          10.85s
+2026-04-10 12:25:31.852 [INFO    ] orchestrator: engine: ==========================================================
+2026-04-10 12:25:31.852 [INFO    ] orchestrator: engine produced: signals_summary_1775813131.json
+2026-04-10 12:25:31.852 [INFO    ] orchestrator: cleaned up old summary: signals_summary_1775804010.json
+2026-04-10 12:25:31.852 [INFO    ] orchestrator: ranked 16 signals — top candidates:
+2026-04-10 12:25:31.852 [INFO    ] orchestrator:   #1 UP    score= 28.45  BRONZE  folds=4/6  WR=100.0%  consWR=97.0%  entry=$0.88  ev=$0.0904
+2026-04-10 12:25:31.852 [INFO    ] orchestrator:   #2 DOWN  score=  8.29  BRONZE  folds=2/6  WR=100.0%  consWR=97.0%  entry=$0.87  ev=$0.1000
+2026-04-10 12:25:31.852 [INFO    ] orchestrator:   #3 UP    score=  6.37  BRONZE  folds=2/6  WR=100.0%  consWR=97.0%  entry=$0.90  ev=$0.0708
+2026-04-10 12:25:31.852 [INFO    ] orchestrator:   #4 DOWN  score=  5.49  BRONZE  folds=2/6  WR=100.0%  consWR=97.0%  entry=$0.92  ev=$0.0543
+2026-04-10 12:25:31.852 [INFO    ] orchestrator:   #5 UP    score=  5.26  BRONZE  folds=4/6  WR=97.6%  consWR=94.6%  entry=$0.93  ev=$0.0161
+2026-04-10 12:25:31.852 [INFO    ] orchestrator: DELIVERING BRONZE signal: #1 Up [250s->160s] d>=0.07% v<=0.05%
+2026-04-10 12:25:31.852 [INFO    ] orchestrator:   score=28.45  WR=100.0%  consWR=97.0%  entry=$0.88  ev=$0.0904  folds=[3, 5, 6, 7]
+2026-04-10 12:25:32.049 [INFO    ] shared.ipc: IPC: signal delivered successfully (authenticated ack)
+2026-04-10 12:25:32.049 [INFO    ] orchestrator: bronze signal delivered to bot
+2026-04-10 12:40:32.059 [INFO    ] orchestrator: --- cycle start [09:40:32 UTC] ---
+2026-04-10 12:40:32.059 [INFO    ] orchestrator: data quality check passed: 600 windows available
+2026-04-10 12:40:32.059 [INFO    ] orchestrator: starting engine: C:\Users\operator\Desktop\PolySignalLab\PolySignalEngine\build\Release\PolySignalEngine.exe C:\Users\operator\Desktop\PolySignalLab\PolyDataCollector\data --output-dir C:\Users\operator\Desktop\PolySignalLab\engine_output
+2026-04-10 12:40:44.262 [INFO    ] orchestrator: engine: ==========================================================
+2026-04-10 12:40:44.262 [INFO    ] orchestrator: engine:   SUMMARY
+2026-04-10 12:40:44.262 [INFO    ] orchestrator: engine: ==========================================================
+2026-04-10 12:40:44.262 [INFO    ] orchestrator: engine:   Total windows:         600 (296 UP, 304 DOWN)
+2026-04-10 12:40:44.262 [INFO    ] orchestrator: engine:   Walk-forward folds:    8 (6 test iterations)
+2026-04-10 12:40:44.262 [INFO    ] orchestrator: engine:   OOS base rate:         48.4% UP (450 test windows total)
+2026-04-10 12:40:44.262 [INFO    ] orchestrator: engine:   Configs swept:         201096
+2026-04-10 12:40:44.262 [INFO    ] orchestrator: engine:   Viable WF-OOS signals: 12
+2026-04-10 12:40:44.262 [INFO    ] orchestrator: engine:   Compute time:          10.90s
+2026-04-10 12:40:44.262 [INFO    ] orchestrator: engine: ==========================================================
+2026-04-10 12:40:44.262 [INFO    ] orchestrator: engine produced: signals_summary_1775814044.json
+2026-04-10 12:40:44.262 [INFO    ] orchestrator: cleaned up old summary: signals_summary_1775804922.json
+2026-04-10 12:40:44.262 [INFO    ] orchestrator: ranked 12 signals — top candidates:
+2026-04-10 12:40:44.262 [INFO    ] orchestrator:   #1 DOWN  score=  6.39  BRONZE  folds=2/6  WR=100.0%  consWR=97.0%  entry=$0.91  ev=$0.0586
+2026-04-10 12:40:44.262 [INFO    ] orchestrator:   #2 UP    score=  4.93  BRONZE  folds=4/6  WR=97.6%  consWR=94.6%  entry=$0.93  ev=$0.0161
+2026-04-10 12:40:44.262 [INFO    ] orchestrator:   #3 DOWN  score=  4.04  BRONZE  folds=2/6  WR=96.2%  consWR=93.2%  entry=$0.87  ev=$0.0596
+2026-04-10 12:40:44.262 [INFO    ] orchestrator:   #4 UP    score=  3.69  BRONZE  folds=3/6  WR=96.0%  consWR=93.0%  entry=$0.90  ev=$0.0292
+2026-04-10 12:40:44.262 [INFO    ] orchestrator:   #5 UP    score=  3.22  BRONZE  folds=3/6  WR=96.0%  consWR=93.0%  entry=$0.90  ev=$0.0264
+2026-04-10 12:40:44.262 [INFO    ] orchestrator: best signal below threshold: #1 Down [250s->150s] d>=0.07% v<=0.05%  score=6.39 (need 8.00)  consWR=97.0%  entry=$0.91
+2026-04-10 12:40:44.285 [INFO    ] orchestrator: no signal passed all delivery gates — not sending to bot

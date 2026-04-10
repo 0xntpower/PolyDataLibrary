@@ -1,0 +1,22 @@
+{
+  "rank":             14,
+  "side":             "Up",
+  "observeFromS":     140.0,
+  "observeToS":       90.0,
+  "minDeltaPct":      0.10,
+  "maxVariancePct":   0.850,
+  "trainWins":        26,
+  "trainMatches":     28,
+  "trainWinRatePct":  92.86,
+  "oosWins":          16,
+  "oosMatches":       20,
+  "oosWinRatePct":    80.00,
+  "bhAdjustedPValue": 3.20143e-06,
+  "oosBhAdjustedPValue": 0.0173371,
+  "lag1Autocorrelation": -0.0797,
+  "effectiveN":       28,
+  "wfFoldsAppeared":  1,
+  "wfTotalTestFolds": 3,
+  "wfMinFoldWinRatePct": 80.00,
+  "wfMaxFoldWinRatePct": 80.00
+}

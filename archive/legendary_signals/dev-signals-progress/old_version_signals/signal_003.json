@@ -1,0 +1,15 @@
+{
+  "rank":             3,
+  "side":             "Up",
+  "observeFromS":     120.0,
+  "observeToS":       90.0,
+  "minDeltaPct":      0.10,
+  "maxVariancePct":   0.050,
+  "trainWins":        48,
+  "trainMatches":     54,
+  "trainWinRatePct":  88.89,
+  "oosWins":          23,
+  "oosMatches":       25,
+  "oosWinRatePct":    92.00,
+  "bhAdjustedPValue": 7.69274e-09
+}

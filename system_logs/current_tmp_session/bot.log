@@ -1,0 +1,388 @@
+
+[92mpre-flight checks passed[0m
+
+2026-04-09 21:15:34.132 [INFO] utils.log: logging to file: /opt/polytrader/bot/data/logs/2026-04-09_21-15-34.log
+[92m[1m2026-04-09 21:15:34.132 [INFO] __main__: starting polymarket bot — mode=paper[0m
+2026-04-09 21:15:34.132 [INFO] __main__: data paths: bankroll=/opt/polytrader/bot/data/paper/bankroll.json journal=/opt/polytrader/bot/data/paper/journal.jsonl state=/opt/polytrader/bot/data/paper/state.json results=/opt/polytrader/bot/data/paper/results
+2026-04-09 21:15:34.135 [INFO] shared.keystore: SSH host key detected: /etc/ssh/ssh_host_ed25519_key (ed25519)
+2026-04-09 21:15:34.140 [INFO] shared.keystore: HMAC key loaded from age secrets file
+2026-04-09 21:15:34.141 [INFO] shared.ipc: IPC server listening on 127.0.0.1:19731
+2026-04-09 21:15:34.141 [INFO] shared.keystore: SSH host key detected: /etc/ssh/ssh_host_ed25519_key (ed25519)
+2026-04-09 21:15:34.146 [INFO] shared.keystore: HMAC key loaded from age secrets file
+2026-04-09 21:15:34.146 [INFO] shared.state_publisher: state publisher listening on 0.0.0.0:19732
+2026-04-09 21:15:34.165 [INFO] __main__: gamma API: reachable
+2026-04-09 21:15:34.296 [INFO] utils.reconnect: rtds connected to wss://ws-live-data.polymarket.com
+2026-04-09 21:15:34.297 [INFO] market_data.rtds_ws: RTDS subscribed to chainlink
+2026-04-09 21:15:35.027 [INFO] utils.reconnect: binance connected to wss://stream.binance.com:9443/stream?streams=btcusdt@trade/btcusdt@depth5@100ms
+2026-04-09 21:15:35.172 [INFO] __main__: price feeds live: binance=72323.34 chainlink=72324.95 — waiting for depth stream
+[92m[1m2026-04-09 21:15:35.673 [INFO] __main__: all feeds live: binance=72323.35 chainlink=72324.95 obi=0.5735[0m
+2026-04-09 21:15:35.674 [INFO] __main__: no signal file provided -- waiting for orchestrator to deliver first signal...
+2026-04-09 21:16:12.450 [INFO] shared.ipc: IPC: received authenticated signal_update (summary=signals_summary_1775769372.json)
+2026-04-09 21:16:12.450 [INFO] __main__: received new signal from orchestrator: rank=1 side=Down
+2026-04-09 21:16:12.551 [INFO] __main__: first signal received from orchestrator: rank=1 side=down signal_id=down_270.0_200.0_0.07_0.05
+2026-04-09 21:16:12.551 [INFO] __main__: SIGNAL_SWAP_ACTIVE: {"rank":1,"side":"down","observeFromS":270.0,"observeToS":200.0,"minDeltaPct":0.07,"maxVariancePct":0.05,"trainWinRatePct":86.3,"oosWinRatePct":92.16,"oosBhAdjustedPValue":6.3418e-11,"oosMatches":51,"avgEntryPrice":0.8092,"evPerTrade":0.0824,"smartScore":34.89,"wfFoldsAppeared":4,"wfTotalTestFolds":6,"wfFoldIndices":[3,4,6,7]}
+[93m2026-04-09 21:16:12.552 [WARNING] risk.position_tracker: STATE SIGNAL MISMATCH: saved signal_id=down_280.0_250.0_0.07_0.05 but current=down_270.0_200.0_0.07_0.05 — state may be stale, resetting totals[0m
+2026-04-09 21:16:12.553 [INFO] __main__: resumed paper balance: $927.55
+[92m2026-04-09 21:16:12.553 [INFO] __main__: paper trading mode — orders will be simulated (balance=$927.55)[0m
+2026-04-09 21:16:12.554 [INFO] strategy.kelly: Loaded bankroll from /opt/polytrader/bot/data/paper/bankroll.json: $850.57
+[96m[1m2026-04-09 21:16:12.554 [INFO] strategy.window_tracker: new window: btc-updown-5m-1775769300 (ts=1775769300)[0m
+2026-04-09 21:16:12.632 [INFO] utils.reconnect: clob-market connected to wss://ws-subscriptions-clob.polymarket.com/ws/market
+2026-04-09 21:16:12.633 [INFO] market_data.clob_market_ws: CLOB market subscribed for tokens up=483643800237 down=378230434458
+[96m2026-04-09 21:16:12.639 [INFO] strategy.window_handler: REGIME vol_stddev=0.000% chop_flips=0.0 outcome=no data sprt=dormant llr=0.00 age=0w bankroll=$850.57[0m
+[96m2026-04-09 21:16:12.639 [INFO] __main__: window open price captured: 72353.31 (chainlink)[0m
+[96m2026-04-09 21:16:12.640 [INFO] __main__: window open price captured: 72344.48 (binance)[0m
+2026-04-09 21:16:12.640 [INFO] strategy.momentum_signal: momentum_signal: waiting for full market data
+[2m2026-04-09 21:16:12.892 [INFO] __main__: STATUS t=227s delta=0.0000% dir=none agree=False chain=72353.31 bin=72344.48 open=72353.31 obi=0.1216 ask_up=0.57 ask_dn=0.44 bid_up=0.56 bid_dn=0.43 halted=False[0m
+2026-04-09 21:16:40.246 [INFO] strategy.momentum_signal: signal_eval rank=1 side=down latest_pct=-0.0371 stddev=0.0081 n=109 min_delta=0.07 max_var=0.050
+[37m2026-04-09 21:16:40.246 [INFO] strategy.momentum_signal: [SKIP] rank=1 side=down reason=conditions_not_met latest_pct=-0.0371 need=<=-0.07 stddev=0.0081 max_var=0.050[0m
+[2m2026-04-09 21:16:43.008 [INFO] __main__: STATUS t=197s delta=-0.0219% dir=down agree=True chain=72337.43 bin=72326.50 open=72353.31 obi=0.4700 ask_up=0.49 ask_dn=0.52 bid_up=0.48 bid_dn=0.51 halted=False[0m
+[2m2026-04-09 21:17:13.148 [INFO] __main__: STATUS t=167s delta=-0.0596% dir=down agree=True chain=72310.17 bin=72298.53 open=72353.31 obi=0.5586 ask_up=0.32 ask_dn=0.69 bid_up=0.31 bid_dn=0.68 halted=False[0m
+[2m2026-04-09 21:17:43.265 [INFO] __main__: STATUS t=137s delta=-0.0821% dir=down agree=True chain=72293.88 bin=72288.84 open=72353.31 obi=0.7098 ask_up=0.25 ask_dn=0.76 bid_up=0.24 bid_dn=0.75 halted=False[0m
+[2m2026-04-09 21:18:13.395 [INFO] __main__: STATUS t=107s delta=-0.0911% dir=down agree=True chain=72287.37 bin=72280.77 open=72353.31 obi=-0.9003 ask_up=0.15 ask_dn=0.86 bid_up=0.14 bid_dn=0.85 halted=False[0m
+[2m2026-04-09 21:18:43.509 [INFO] __main__: STATUS t=76s delta=-0.0754% dir=down agree=True chain=72298.74 bin=72291.66 open=72353.31 obi=0.8493 ask_up=0.26 ask_dn=0.75 bid_up=0.25 bid_dn=0.74 halted=False[0m
+[2m2026-04-09 21:19:13.629 [INFO] __main__: STATUS t=46s delta=-0.0688% dir=down agree=True chain=72303.49 bin=72297.04 open=72353.31 obi=-0.8022 ask_up=0.16 ask_dn=0.85 bid_up=0.15 bid_dn=0.84 halted=False[0m
+[2m2026-04-09 21:19:43.747 [INFO] __main__: STATUS t=16s delta=-0.0680% dir=down agree=True chain=72304.09 bin=72297.04 open=72353.31 obi=-0.1132 ask_up=0.03 ask_dn=0.98 bid_up=0.02 bid_dn=0.97 halted=False[0m
+[37m2026-04-09 21:20:00.073 [INFO] execution.paper_trading: paper window_ts=1775769300 [SKIP] pnl=0.0000 direction=down outcome=down - balance=$927.55 bid_up=0.01 ask_up=0.01 bid_dn=0.99 ask_dn=1.00[0m
+[93m[1m2026-04-09 21:20:00.073 [INFO] risk.position_tracker: WINDOW_SUMMARY window_pnl=$0.0000 session_pnl=$0.0000 won=$0.0000 lost=$0.0000 wr=0.0% (0/0) consec_losses=0[0m
+[37m2026-04-09 21:20:00.085 [INFO] strategy.window_handler: WINDOW_DECISION [SKIP] rank=1 side=down pnl=$0.0000 entry=0.00 size=$0.00 (conditions not met)[0m
+[96m[1m2026-04-09 21:20:00.086 [INFO] strategy.window_tracker: new window: btc-updown-5m-1775769600 (ts=1775769600)[0m
+[96m2026-04-09 21:20:00.157 [INFO] strategy.window_handler: REGIME vol_stddev=0.000% chop_flips=1.0 outcome=0U/1D over 1w sprt=dormant llr=0.00 age=1w bankroll=$850.57[0m
+[96m2026-04-09 21:20:00.158 [INFO] __main__: window open price captured: 72285.73 (chainlink)[0m
+[96m2026-04-09 21:20:00.158 [INFO] __main__: window open price captured: 72273.85 (binance)[0m
+2026-04-09 21:20:00.158 [INFO] strategy.momentum_signal: momentum_signal: waiting for full market data
+2026-04-09 21:20:00.786 [INFO] market_data.clob_market_ws: CLOB market subscribed for tokens up=207813961429 down=907246330876
+[2m2026-04-09 21:20:13.760 [INFO] __main__: STATUS t=286s delta=-0.0679% dir=down agree=True chain=72236.63 bin=72233.06 open=72285.73 obi=0.5783 ask_up=0.28 ask_dn=0.73 bid_up=0.27 bid_dn=0.72 halted=False[0m
+[2m2026-04-09 21:20:43.884 [INFO] __main__: STATUS t=256s delta=-0.1573% dir=down agree=True chain=72172.06 bin=72173.67 open=72285.73 obi=0.3324 ask_up=0.16 ask_dn=0.85 bid_up=0.15 bid_dn=0.84 halted=False[0m
+[2m2026-04-09 21:21:13.998 [INFO] __main__: STATUS t=226s delta=-0.1467% dir=down agree=True chain=72179.71 bin=72168.44 open=72285.73 obi=-0.3349 ask_up=0.19 ask_dn=0.82 bid_up=0.18 bid_dn=0.81 halted=False[0m
+2026-04-09 21:21:40.098 [INFO] strategy.momentum_signal: signal_eval rank=1 side=down latest_pct=-0.1717 stddev=0.0144 n=279 min_delta=0.07 max_var=0.050
+[93m2026-04-09 21:21:40.098 [INFO] strategy.momentum_signal: WARMUP clamping bet=$42.53 to min=$1.00[0m
+[96m2026-04-09 21:21:40.098 [INFO] strategy.momentum_signal: KELLY sizing: p_adj=0.892 base=0.892 total_disc=0.000 vol=0.000 chop=0.000 outcome=0.000 feedback=+0.000[0m
+[96m2026-04-09 21:21:40.099 [INFO] strategy.momentum_signal: KELLY bet: entry=0.86 raw_f=0.226 frac_f=0.056 bankroll=$850.57 kelly_bet=$42.53 sprt=1.00 final=$1.00[0m
+[92m[1m2026-04-09 21:21:40.099 [INFO] strategy.momentum_signal: FIRED rank=1 side=down t=199.9s dir=-0.1717% stddev=0.0144% n=279 oos_wr=92.2% bh_p=6.34e-11 avg_entry=0.81 ask=0.86 size=$1.00[0m
+2026-04-09 21:21:40.099 [INFO] execution.paper_trading: paper momentum1 maker: id=paper-1 price=0.85 size=1.1765 [resting]
+2026-04-09 21:21:40.099 [INFO] strategy.momentum_signal: MAKER PLACED rank=1 side=down price=0.85 (ask=0.86 -1tick) size=$1.00 timeout=15s
+[2m2026-04-09 21:21:44.115 [INFO] __main__: STATUS t=196s delta=-0.1592% dir=down agree=True chain=72170.62 bin=72161.65 open=72285.73 obi=-0.1746 ask_up=0.13 ask_dn=0.88 bid_up=0.12 bid_dn=0.87 halted=False[0m
+[92m[1m2026-04-09 21:21:46.877 [INFO] execution.paper_trading: paper momentum1 maker fill: id=paper-1 price=0.85[0m
+2026-04-09 21:21:46.878 [INFO] strategy.momentum_signal: MAKER FILLED rank=1 side=down price=0.85 size=$1.00
+2026-04-09 21:21:47.129 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.1639 ema=0.1639 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1435%
+2026-04-09 21:21:47.381 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.1639 ema=0.1639 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1435%
+2026-04-09 21:21:47.632 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.1639 ema=0.1639 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1435%
+2026-04-09 21:21:47.882 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.1638 ema=0.1639 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1435%
+2026-04-09 21:21:48.134 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.1638 ema=0.1639 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1435%
+2026-04-09 21:21:48.385 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.1639 ema=0.1639 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1435%
+2026-04-09 21:21:48.637 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.1639 ema=0.1639 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1435%
+2026-04-09 21:21:48.888 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.1639 ema=0.1639 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1435%
+2026-04-09 21:21:49.139 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.1639 ema=0.1639 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1435%
+2026-04-09 21:21:49.390 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.1639 ema=0.1639 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1435%
+2026-04-09 21:21:49.641 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.1639 ema=0.1639 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1435%
+2026-04-09 21:21:49.893 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.1639 ema=0.1639 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1435%
+2026-04-09 21:21:50.144 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.1639 ema=0.1639 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1435%
+2026-04-09 21:21:50.395 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.1639 ema=0.1639 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1435%
+2026-04-09 21:21:50.646 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.1639 ema=0.1639 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1435%
+2026-04-09 21:21:50.897 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.1639 ema=0.1639 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1435%
+2026-04-09 21:21:51.149 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.1639 ema=0.1639 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1435%
+2026-04-09 21:21:51.399 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.1639 ema=0.1639 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1435%
+2026-04-09 21:21:51.650 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.1639 ema=0.1639 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1435%
+2026-04-09 21:21:51.901 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.1639 ema=0.1639 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1435%
+2026-04-09 21:21:52.153 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.1638 ema=0.1639 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1435%
+2026-04-09 21:21:52.404 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.1638 ema=0.1639 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1435%
+2026-04-09 21:21:52.656 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.1638 ema=0.1639 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1435%
+2026-04-09 21:21:52.907 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.1639 ema=0.1639 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1435%
+2026-04-09 21:21:53.158 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.2644 ema=0.1740 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1263%
+2026-04-09 21:21:53.409 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.2644 ema=0.1830 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1263%
+2026-04-09 21:21:53.660 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.3090 ema=0.1956 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1186%
+2026-04-09 21:21:53.911 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.3091 ema=0.2069 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1186%
+2026-04-09 21:21:54.162 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.3091 ema=0.2172 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1186%
+2026-04-09 21:21:54.414 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.3091 ema=0.2264 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1186%
+2026-04-09 21:21:54.665 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.3091 ema=0.2346 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1186%
+2026-04-09 21:21:54.916 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.3091 ema=0.2421 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1186%
+2026-04-09 21:21:55.167 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.3090 ema=0.2488 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1186%
+2026-04-09 21:21:55.418 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.3090 ema=0.2548 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1186%
+2026-04-09 21:21:55.670 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.3090 ema=0.2602 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1186%
+2026-04-09 21:21:55.921 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.3090 ema=0.2651 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1186%
+2026-04-09 21:21:56.173 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.3091 ema=0.2695 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1186%
+2026-04-09 21:21:56.424 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.3091 ema=0.2734 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1186%
+2026-04-09 21:21:56.675 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.3091 ema=0.2770 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1186%
+2026-04-09 21:21:56.927 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.3091 ema=0.2802 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1186%
+2026-04-09 21:21:57.178 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.3091 ema=0.2831 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1186%
+2026-04-09 21:21:57.429 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.3091 ema=0.2857 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1186%
+2026-04-09 21:21:57.680 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.3091 ema=0.2880 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1186%
+2026-04-09 21:21:57.931 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.3091 ema=0.2901 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1186%
+2026-04-09 21:21:58.182 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.3091 ema=0.2920 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1186%
+2026-04-09 21:21:58.433 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.3091 ema=0.2937 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1186%
+2026-04-09 21:21:58.684 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.3091 ema=0.2953 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1186%
+2026-04-09 21:21:58.935 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.3091 ema=0.2967 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1186%
+2026-04-09 21:21:59.186 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.3091 ema=0.2979 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1186%
+2026-04-09 21:21:59.439 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.3091 ema=0.2990 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1186%
+2026-04-09 21:21:59.690 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.3091 ema=0.3000 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1186%
+2026-04-09 21:21:59.941 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.3091 ema=0.3009 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1186%
+2026-04-09 21:22:00.192 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.3091 ema=0.3017 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1186%
+2026-04-09 21:22:00.444 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.3091 ema=0.3025 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1186%
+2026-04-09 21:22:00.695 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.3091 ema=0.3031 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1186%
+2026-04-09 21:22:00.946 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.3091 ema=0.3037 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1186%
+2026-04-09 21:22:01.199 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.3091 ema=0.3043 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1186%
+2026-04-09 21:22:01.450 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.3091 ema=0.3047 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1186%
+2026-04-09 21:22:01.702 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.3090 ema=0.3052 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1186%
+2026-04-09 21:22:01.956 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.3090 ema=0.3056 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1186%
+2026-04-09 21:22:02.208 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.3090 ema=0.3059 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1186%
+2026-04-09 21:22:02.459 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.3090 ema=0.3062 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1186%
+2026-04-09 21:22:02.711 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.3090 ema=0.3065 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1186%
+2026-04-09 21:22:02.962 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.3090 ema=0.3067 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1186%
+2026-04-09 21:22:03.213 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.3090 ema=0.3070 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1186%
+2026-04-09 21:22:03.463 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.3090 ema=0.3072 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1186%
+2026-04-09 21:22:03.715 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.3090 ema=0.3073 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1186%
+2026-04-09 21:22:03.966 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.3090 ema=0.3075 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1186%
+2026-04-09 21:22:04.218 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.3090 ema=0.3077 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1186%
+2026-04-09 21:22:04.469 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.3091 ema=0.3078 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1186%
+2026-04-09 21:22:04.720 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.3091 ema=0.3079 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1186%
+2026-04-09 21:22:04.972 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.3091 ema=0.3080 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1186%
+2026-04-09 21:22:05.223 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.3091 ema=0.3081 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1186%
+2026-04-09 21:22:05.474 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.3091 ema=0.3082 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1186%
+2026-04-09 21:22:05.725 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.3091 ema=0.3083 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1186%
+2026-04-09 21:22:05.977 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.3091 ema=0.3084 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1186%
+2026-04-09 21:22:06.228 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.3090 ema=0.3085 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1186%
+2026-04-09 21:22:06.479 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.3091 ema=0.3085 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1186%
+2026-04-09 21:22:06.730 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.3091 ema=0.3086 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1186%
+2026-04-09 21:22:06.982 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.3090 ema=0.3086 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1186%
+2026-04-09 21:22:07.233 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.3090 ema=0.3087 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1186%
+2026-04-09 21:22:07.484 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.3090 ema=0.3087 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1186%
+2026-04-09 21:22:07.735 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.3090 ema=0.3087 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1186%
+2026-04-09 21:22:07.987 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.3090 ema=0.3087 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1186%
+2026-04-09 21:22:08.238 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.3090 ema=0.3088 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1186%
+2026-04-09 21:22:08.488 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.3090 ema=0.3088 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1186%
+2026-04-09 21:22:08.739 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.3090 ema=0.3088 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1186%
+2026-04-09 21:22:08.991 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.3090 ema=0.3088 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1186%
+2026-04-09 21:22:09.242 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.3090 ema=0.3088 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1186%
+2026-04-09 21:22:09.493 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.3090 ema=0.3089 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1186%
+2026-04-09 21:22:09.743 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.3090 ema=0.3089 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1186%
+2026-04-09 21:22:09.994 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.3090 ema=0.3089 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1186%
+2026-04-09 21:22:10.246 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.3090 ema=0.3089 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1186%
+2026-04-09 21:22:10.497 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.3090 ema=0.3089 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1186%
+2026-04-09 21:22:10.749 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.3090 ema=0.3089 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1186%
+2026-04-09 21:22:11.000 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.3090 ema=0.3089 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1186%
+2026-04-09 21:22:11.251 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.3091 ema=0.3089 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1186%
+2026-04-09 21:22:11.503 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.3091 ema=0.3090 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1186%
+2026-04-09 21:22:11.754 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.3091 ema=0.3090 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1186%
+2026-04-09 21:22:12.005 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.3091 ema=0.3090 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1186%
+2026-04-09 21:22:12.257 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.3091 ema=0.3090 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1186%
+2026-04-09 21:22:12.507 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.3091 ema=0.3090 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1186%
+2026-04-09 21:22:12.758 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.3091 ema=0.3090 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1186%
+2026-04-09 21:22:13.009 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.2508 ema=0.3032 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1286%
+2026-04-09 21:22:13.260 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.2508 ema=0.2979 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1286%
+2026-04-09 21:22:13.511 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.2508 ema=0.2932 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1286%
+2026-04-09 21:22:13.762 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.2508 ema=0.2890 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1286%
+2026-04-09 21:22:14.014 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.2508 ema=0.2852 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1286%
+[2m2026-04-09 21:22:14.265 [INFO] __main__: STATUS t=166s delta=-0.1092% dir=down agree=True chain=72206.77 bin=72192.78 open=72285.73 obi=-0.7583 ask_up=0.19 ask_dn=0.82 bid_up=0.18 bid_dn=0.81 halted=False[0m
+2026-04-09 21:22:14.265 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.2509 ema=0.2817 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1286%
+2026-04-09 21:22:14.517 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.2509 ema=0.2787 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1286%
+2026-04-09 21:22:14.768 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.2509 ema=0.2759 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1286%
+2026-04-09 21:22:15.019 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.2509 ema=0.2734 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1286%
+2026-04-09 21:22:15.271 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.2509 ema=0.2711 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1286%
+2026-04-09 21:22:15.522 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.2509 ema=0.2691 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1286%
+2026-04-09 21:22:15.773 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.2509 ema=0.2673 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1286%
+2026-04-09 21:22:16.023 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.2509 ema=0.2656 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1286%
+2026-04-09 21:22:16.274 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.2509 ema=0.2642 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1286%
+2026-04-09 21:22:16.525 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.2509 ema=0.2628 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1286%
+2026-04-09 21:22:16.776 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.2509 ema=0.2616 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1286%
+2026-04-09 21:22:17.027 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.2509 ema=0.2606 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1286%
+2026-04-09 21:22:17.278 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.2509 ema=0.2596 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1286%
+2026-04-09 21:22:17.530 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.2509 ema=0.2587 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1286%
+2026-04-09 21:22:17.781 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.2509 ema=0.2579 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1286%
+2026-04-09 21:22:18.032 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.2509 ema=0.2572 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1286%
+2026-04-09 21:22:18.283 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.2508 ema=0.2566 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1286%
+2026-04-09 21:22:18.534 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.2509 ema=0.2560 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1286%
+2026-04-09 21:22:18.785 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.2508 ema=0.2555 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1286%
+2026-04-09 21:22:19.036 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.2509 ema=0.2550 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1286%
+2026-04-09 21:22:19.287 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.2508 ema=0.2546 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1286%
+2026-04-09 21:22:19.538 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.2509 ema=0.2542 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1286%
+2026-04-09 21:22:19.789 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.2508 ema=0.2539 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1286%
+2026-04-09 21:22:20.041 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.2508 ema=0.2536 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1286%
+2026-04-09 21:22:20.292 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.2508 ema=0.2533 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1286%
+2026-04-09 21:22:20.543 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.2508 ema=0.2531 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1286%
+2026-04-09 21:22:20.794 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.2508 ema=0.2528 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1286%
+2026-04-09 21:22:21.045 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.2508 ema=0.2526 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1286%
+2026-04-09 21:22:21.296 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.2509 ema=0.2525 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1286%
+2026-04-09 21:22:21.548 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.2509 ema=0.2523 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1286%
+2026-04-09 21:22:21.798 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.2509 ema=0.2522 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1286%
+2026-04-09 21:22:22.050 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.2509 ema=0.2520 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1286%
+2026-04-09 21:22:22.301 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.2509 ema=0.2519 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1286%
+2026-04-09 21:22:22.552 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.2509 ema=0.2518 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1286%
+2026-04-09 21:22:22.803 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.2509 ema=0.2517 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1286%
+2026-04-09 21:22:23.055 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.2509 ema=0.2516 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1286%
+2026-04-09 21:22:23.305 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.2509 ema=0.2516 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1286%
+2026-04-09 21:22:23.556 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.2509 ema=0.2515 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1286%
+2026-04-09 21:22:23.807 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.2508 ema=0.2514 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1286%
+2026-04-09 21:22:24.058 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.2508 ema=0.2514 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1286%
+2026-04-09 21:22:24.309 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.2644 ema=0.2527 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1263%
+2026-04-09 21:22:24.560 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.2674 ema=0.2541 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1258%
+2026-04-09 21:22:24.811 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.3403 ema=0.2628 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1132%
+2026-04-09 21:22:25.062 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.3403 ema=0.2705 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1132%
+2026-04-09 21:22:25.313 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.3403 ema=0.2775 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1132%
+2026-04-09 21:22:25.564 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.3404 ema=0.2838 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1132%
+2026-04-09 21:22:25.816 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.3404 ema=0.2895 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1132%
+2026-04-09 21:22:26.067 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.3640 ema=0.2969 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1092%
+2026-04-09 21:22:26.318 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.3640 ema=0.3036 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1092%
+2026-04-09 21:22:26.569 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.3640 ema=0.3096 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1092%
+2026-04-09 21:22:26.820 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.3640 ema=0.3151 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1092%
+2026-04-09 21:22:27.071 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.3640 ema=0.3200 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1092%
+2026-04-09 21:22:27.323 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.3640 ema=0.3244 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1092%
+2026-04-09 21:22:27.574 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.3640 ema=0.3283 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.1092%
+2026-04-09 21:22:27.825 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.4267 ema=0.3382 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0984%
+2026-04-09 21:22:28.076 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.4267 ema=0.3470 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0984%
+2026-04-09 21:22:28.327 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.4267 ema=0.3550 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0984%
+2026-04-09 21:22:28.578 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.4267 ema=0.3622 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0984%
+2026-04-09 21:22:28.829 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.4267 ema=0.3686 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0984%
+2026-04-09 21:22:29.080 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.4267 ema=0.3744 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0984%
+2026-04-09 21:22:29.332 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.4267 ema=0.3797 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0984%
+2026-04-09 21:22:29.584 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.4267 ema=0.3844 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0984%
+2026-04-09 21:22:29.835 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.4288 ema=0.3888 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0981%
+2026-04-09 21:22:30.086 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.4287 ema=0.3928 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0981%
+2026-04-09 21:22:30.337 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.4287 ema=0.3964 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0981%
+2026-04-09 21:22:30.588 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.4287 ema=0.3996 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0981%
+2026-04-09 21:22:30.839 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.4287 ema=0.4025 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0981%
+2026-04-09 21:22:31.090 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.4288 ema=0.4051 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0981%
+2026-04-09 21:22:31.341 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.4288 ema=0.4075 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0981%
+2026-04-09 21:22:31.593 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.4375 ema=0.4105 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0966%
+2026-04-09 21:22:31.843 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.4735 ema=0.4168 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0904%
+2026-04-09 21:22:32.094 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.4735 ema=0.4225 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0904%
+2026-04-09 21:22:32.345 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.4735 ema=0.4276 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0904%
+2026-04-09 21:22:32.597 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.5235 ema=0.4372 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0818%
+2026-04-09 21:22:32.849 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.5235 ema=0.4458 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0818%
+2026-04-09 21:22:33.100 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.5235 ema=0.4536 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0818%
+2026-04-09 21:22:33.351 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.5235 ema=0.4605 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0818%
+2026-04-09 21:22:33.602 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.5235 ema=0.4668 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0818%
+2026-04-09 21:22:33.854 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.5235 ema=0.4725 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0818%
+2026-04-09 21:22:34.105 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.5235 ema=0.4776 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0818%
+2026-04-09 21:22:34.356 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.5235 ema=0.4822 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0818%
+2026-04-09 21:22:34.606 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.5235 ema=0.4863 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0818%
+2026-04-09 21:22:34.858 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.5235 ema=0.4901 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0818%
+2026-04-09 21:22:35.109 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.5235 ema=0.4934 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0818%
+2026-04-09 21:22:35.360 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.5235 ema=0.4964 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0818%
+2026-04-09 21:22:35.611 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.5235 ema=0.4991 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0818%
+2026-04-09 21:22:35.863 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.5235 ema=0.5015 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0818%
+2026-04-09 21:22:36.114 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.5235 ema=0.5037 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0818%
+2026-04-09 21:22:36.365 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.5235 ema=0.5057 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0818%
+2026-04-09 21:22:36.616 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.5235 ema=0.5075 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0818%
+2026-04-09 21:22:36.867 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.5235 ema=0.5091 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0818%
+2026-04-09 21:22:37.118 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.5235 ema=0.5105 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0818%
+2026-04-09 21:22:37.369 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.5235 ema=0.5118 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0818%
+2026-04-09 21:22:37.621 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.5235 ema=0.5130 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0818%
+2026-04-09 21:22:37.872 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.5235 ema=0.5140 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0818%
+2026-04-09 21:22:38.124 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.5235 ema=0.5150 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0818%
+2026-04-09 21:22:38.375 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.5235 ema=0.5158 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0818%
+2026-04-09 21:22:38.627 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.5235 ema=0.5166 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0818%
+2026-04-09 21:22:38.877 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.5235 ema=0.5173 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0818%
+2026-04-09 21:22:39.129 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.5235 ema=0.5179 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0818%
+2026-04-09 21:22:39.381 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.5235 ema=0.5184 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0818%
+2026-04-09 21:22:39.632 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.5235 ema=0.5190 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0818%
+2026-04-09 21:22:39.883 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.5235 ema=0.5194 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0818%
+2026-04-09 21:22:40.133 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.5235 ema=0.5198 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0818%
+2026-04-09 21:22:40.385 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.5235 ema=0.5202 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0818%
+2026-04-09 21:22:40.636 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.5235 ema=0.5205 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0818%
+2026-04-09 21:22:40.887 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.5235 ema=0.5208 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0818%
+2026-04-09 21:22:41.138 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.5235 ema=0.5211 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0818%
+2026-04-09 21:22:41.391 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.5235 ema=0.5213 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0818%
+2026-04-09 21:22:41.642 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.5235 ema=0.5216 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0818%
+2026-04-09 21:22:41.893 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.5235 ema=0.5217 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0818%
+2026-04-09 21:22:42.145 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.5235 ema=0.5219 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0818%
+2026-04-09 21:22:42.397 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.5235 ema=0.5221 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0818%
+2026-04-09 21:22:42.648 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.5235 ema=0.5222 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0818%
+2026-04-09 21:22:42.900 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.5235 ema=0.5223 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0818%
+2026-04-09 21:22:43.151 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.5235 ema=0.5224 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0818%
+2026-04-09 21:22:43.403 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.5235 ema=0.5226 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0818%
+2026-04-09 21:22:43.654 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.5235 ema=0.5227 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0818%
+2026-04-09 21:22:43.905 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.5235 ema=0.5227 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0818%
+2026-04-09 21:22:44.157 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.5235 ema=0.5228 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0818%
+[2m2026-04-09 21:22:44.408 [INFO] __main__: STATUS t=136s delta=-0.0756% dir=down agree=True chain=72231.08 bin=72226.61 open=72285.73 obi=0.3155 ask_up=0.27 ask_dn=0.74 bid_up=0.26 bid_dn=0.73 halted=False[0m
+2026-04-09 21:22:44.408 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.5235 ema=0.5229 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0818%
+2026-04-09 21:22:44.659 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.5235 ema=0.5230 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0818%
+2026-04-09 21:22:44.910 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.5235 ema=0.5230 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0818%
+2026-04-09 21:22:45.160 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.5235 ema=0.5230 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0818%
+2026-04-09 21:22:45.412 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.5235 ema=0.5231 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0818%
+2026-04-09 21:22:45.663 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.5235 ema=0.5231 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0818%
+2026-04-09 21:22:45.914 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.5235 ema=0.5232 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0818%
+2026-04-09 21:22:46.165 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.5235 ema=0.5232 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0818%
+2026-04-09 21:22:46.416 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.5235 ema=0.5232 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0818%
+2026-04-09 21:22:46.667 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.5235 ema=0.5233 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0818%
+2026-04-09 21:22:46.918 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.5235 ema=0.5233 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0818%
+2026-04-09 21:22:47.169 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.5235 ema=0.5233 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0818%
+2026-04-09 21:22:47.420 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.5235 ema=0.5233 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0818%
+2026-04-09 21:22:47.671 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.5235 ema=0.5234 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0818%
+2026-04-09 21:22:47.922 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.5235 ema=0.5234 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0818%
+2026-04-09 21:22:48.173 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.5235 ema=0.5234 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0818%
+2026-04-09 21:22:48.424 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.5235 ema=0.5234 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0818%
+2026-04-09 21:22:48.675 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.5235 ema=0.5234 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0818%
+2026-04-09 21:22:48.926 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.5774 ema=0.5288 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0725%
+2026-04-09 21:22:49.178 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.5774 ema=0.5337 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0725%
+2026-04-09 21:22:49.429 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.5773 ema=0.5380 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0726%
+2026-04-09 21:22:49.680 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.6141 ema=0.5456 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0662%
+2026-04-09 21:22:49.930 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.6141 ema=0.5525 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0662%
+2026-04-09 21:22:50.181 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.6141 ema=0.5586 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0662%
+2026-04-09 21:22:50.432 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.6141 ema=0.5642 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0662%
+2026-04-09 21:22:50.684 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.6141 ema=0.5692 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0662%
+2026-04-09 21:22:50.935 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.6141 ema=0.5737 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0662%
+2026-04-09 21:22:51.186 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.6141 ema=0.5777 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0662%
+2026-04-09 21:22:51.438 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.6141 ema=0.5814 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0662%
+2026-04-09 21:22:51.689 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.6141 ema=0.5846 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0662%
+2026-04-09 21:22:51.939 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.6142 ema=0.5876 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0662%
+2026-04-09 21:22:52.190 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.6142 ema=0.5903 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0662%
+2026-04-09 21:22:52.441 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.6142 ema=0.5927 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0662%
+2026-04-09 21:22:52.693 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.6142 ema=0.5948 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0662%
+2026-04-09 21:22:52.944 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.6142 ema=0.5967 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0662%
+2026-04-09 21:22:53.195 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.6142 ema=0.5985 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0662%
+2026-04-09 21:22:53.447 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.6142 ema=0.6001 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0662%
+2026-04-09 21:22:53.698 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.6142 ema=0.6015 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0662%
+2026-04-09 21:22:53.950 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.6142 ema=0.6027 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0662%
+2026-04-09 21:22:54.201 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.6142 ema=0.6039 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0662%
+2026-04-09 21:22:54.452 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.6142 ema=0.6049 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0662%
+2026-04-09 21:22:54.703 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.6142 ema=0.6059 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0662%
+2026-04-09 21:22:54.955 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.6142 ema=0.6067 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0662%
+2026-04-09 21:22:55.207 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.6142 ema=0.6074 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0662%
+2026-04-09 21:22:55.458 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.6142 ema=0.6081 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0662%
+2026-04-09 21:22:55.709 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.6142 ema=0.6087 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0662%
+2026-04-09 21:22:55.960 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.6142 ema=0.6093 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0662%
+2026-04-09 21:22:56.211 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.6142 ema=0.6098 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0662%
+2026-04-09 21:22:56.462 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.6142 ema=0.6102 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0662%
+2026-04-09 21:22:56.713 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.6141 ema=0.6106 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0662%
+2026-04-09 21:22:56.964 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.6142 ema=0.6110 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0662%
+2026-04-09 21:22:57.216 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.6142 ema=0.6113 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0662%
+2026-04-09 21:22:57.467 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.6142 ema=0.6116 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0662%
+2026-04-09 21:22:57.718 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.6142 ema=0.6118 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0662%
+2026-04-09 21:22:57.970 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.6142 ema=0.6121 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0662%
+2026-04-09 21:22:58.222 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.6142 ema=0.6123 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0662%
+2026-04-09 21:22:58.473 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.6141 ema=0.6125 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0662%
+2026-04-09 21:22:58.724 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.6141 ema=0.6126 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0662%
+2026-04-09 21:22:58.975 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.6141 ema=0.6128 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0662%
+2026-04-09 21:22:59.227 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.6141 ema=0.6129 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0662%
+2026-04-09 21:22:59.478 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.6141 ema=0.6130 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0662%
+2026-04-09 21:22:59.729 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.6142 ema=0.6132 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0662%
+2026-04-09 21:22:59.980 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.6142 ema=0.6133 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0662%
+2026-04-09 21:23:00.231 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.6142 ema=0.6134 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0662%
+2026-04-09 21:23:00.482 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.6142 ema=0.6134 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0662%
+2026-04-09 21:23:00.733 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.6141 ema=0.6135 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0662%
+2026-04-09 21:23:00.984 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.6141 ema=0.6136 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0662%
+2026-04-09 21:23:01.236 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.6141 ema=0.6136 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0662%
+2026-04-09 21:23:01.488 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.6141 ema=0.6137 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0662%
+2026-04-09 21:23:01.740 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.6141 ema=0.6137 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0662%
+2026-04-09 21:23:01.992 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.6142 ema=0.6138 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0662%
+2026-04-09 21:23:02.245 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.6142 ema=0.6138 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0662%
+2026-04-09 21:23:02.497 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.6142 ema=0.6138 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0662%
+2026-04-09 21:23:02.750 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.6142 ema=0.6139 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0662%
+2026-04-09 21:23:03.001 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.6142 ema=0.6139 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0662%
+2026-04-09 21:23:03.253 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.6142 ema=0.6139 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0662%
+2026-04-09 21:23:03.504 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.6142 ema=0.6140 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0662%
+2026-04-09 21:23:03.756 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.6142 ema=0.6140 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0662%
+2026-04-09 21:23:04.007 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.6142 ema=0.6140 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0662%
+2026-04-09 21:23:04.259 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.6142 ema=0.6140 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0662%
+2026-04-09 21:23:04.510 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.6142 ema=0.6140 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0662%
+2026-04-09 21:23:04.762 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.6142 ema=0.6141 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0662%
+2026-04-09 21:23:05.014 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.6142 ema=0.6141 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0662%
+2026-04-09 21:23:05.265 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.6141 ema=0.6141 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0662%
+2026-04-09 21:23:05.517 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.6141 ema=0.6141 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0662%
+2026-04-09 21:23:05.768 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.6141 ema=0.6141 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0662%
+2026-04-09 21:23:06.020 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.6141 ema=0.6141 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0662%
+2026-04-09 21:23:06.270 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.6142 ema=0.6141 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0662%
+2026-04-09 21:23:06.522 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.6142 ema=0.6141 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0662%
+2026-04-09 21:23:06.773 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.6142 ema=0.6141 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0662%
+2026-04-09 21:23:07.024 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.6141 ema=0.6141 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0662%
+2026-04-09 21:23:07.275 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.6141 ema=0.6141 cusum=0.000/0.800 threshold=1.1113 fire=-0.1717% current=-0.0662%
