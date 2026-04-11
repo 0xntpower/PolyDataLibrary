@@ -8,7 +8,7 @@ rules_strategy:
   max_position_usd: 75.0
   entry_window_stop: 5
   min_win_rate: 0.5
-  maker_timeout_s: 15.0
+  maker_timeout_s: 5.0
   max_chop_flips: 0
   max_entry_gap_pct: 20.0
 risk:
@@ -58,7 +58,7 @@ sizing:
   bankroll: 1000.0
   warmup_minutes: 30.0
   wilson_max_shrink_pct: 3.0
-  kelly_regime_cap: 0.12
+  kelly_regime_cap: 0.08
   vol_weight: 1.0
   chop_weight: 1.0
   outcome_weight: 0.8
@@ -69,7 +69,7 @@ regime:
   vol_high_pct: 0.3
   vol_min_samples: 6
   chop_lookback_windows: 6
-  chop_normal_flips: 3.0
+  chop_normal_flips: 5.0
   chop_high_flips: 10.0
   chop_min_samples: 3
   outcome_lookback_windows: 6
