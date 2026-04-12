@@ -1,0 +1,87 @@
+mode:
+  trading: paper
+  log_level: INFO
+  log_dir: data/logs
+  log_retention_days: 7
+rules_strategy:
+  enabled: true
+  max_position_usd: 75.0
+  entry_window_stop: 5
+  min_win_rate: 0.5
+  maker_timeout_s: 3.0
+  max_chop_flips: 0
+  max_entry_gap_pct: 15.0
+  skip_maker_max_stddev_pct: 0.035
+  skip_maker_min_oos_wr_pct: 96.0
+  variance_subsample_interval_s: 1.0
+risk:
+  max_daily_loss_usd: 100.0
+  max_consecutive_losses: 10
+  cancel_unfilled_at_sec: 5
+  max_position_per_window_usd: 75.0
+connections:
+  binance_ws: wss://stream.binance.com:9443/stream?streams=btcusdt@trade/btcusdt@depth5@100ms
+  rtds_ws: wss://ws-live-data.polymarket.com
+  clob_market_ws: wss://ws-subscriptions-clob.polymarket.com/ws/market
+  clob_user_ws: wss://ws-subscriptions-clob.polymarket.com/ws/user
+  clob_rest: https://clob.polymarket.com
+  gamma_rest: https://gamma-api.polymarket.com
+  chain_id: 137
+  signature_type: 1
+  rtds_ping_interval_sec: 5
+  reconnect_base_delay_sec: 1.0
+  reconnect_max_delay_sec: 30.0
+  binance_stale_sec: 15.0
+  chainlink_stale_sec: 30.0
+  clob_book_stale_sec: 60.0
+paper:
+  log_every_window: true
+  simulated_fill_delay_sec: 2.5
+  starting_balance_usd: 1000.0
+ipc:
+  host: 127.0.0.1
+  port: 19731
+  stale_signal_warning_hours: 6
+  visualizer_enabled: true
+  visualizer_host: 127.0.0.1
+  visualizer_port: 19732
+signal_lifecycle:
+  fire_stall_windows: 50
+  shadow_tracking_windows: 500
+  bet_scaling_enabled: true
+  age_taper_start_windows: 300
+  age_taper_end_windows: 500
+  age_floor: 0.5
+  min_bet_scale: 0.1
+  sprt_activation_minutes: 45
+sizing:
+  kelly_fraction: 0.25
+  kelly_min_bet: 1.0
+  kelly_max_bet_pct: 5.0
+  bankroll: 1000.0
+  warmup_minutes: 30.0
+  wilson_max_shrink_pct: 3.0
+  kelly_regime_cap: 0.12
+  vol_weight: 1.0
+  chop_weight: 1.0
+  outcome_weight: 0.8
+  feedback_min_trades: 10
+regime:
+  vol_lookback_windows: 24
+  vol_normal_pct: 0.1
+  vol_high_pct: 0.3
+  vol_min_samples: 6
+  chop_lookback_windows: 6
+  chop_normal_flips: 5.0
+  chop_high_flips: 10.0
+  chop_min_samples: 3
+  outcome_lookback_windows: 6
+  outcome_normal_agreement: 0.5
+  outcome_high_agreement: 0.15
+  cache_staleness_minutes: 30.0
+erosion:
+  ema_alpha: 0.1
+  cusum_tolerance: 0.05
+  cusum_limit: 0.8
+  cusum_decay: 0.95
+  panic_multiplier: 1.5
