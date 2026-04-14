@@ -4792,3 +4792,1015 @@
 [2m2026-04-14 12:42:38.929 [INFO] __main__: STATUS t=141s delta=0.0253% dir=up agree=False chain=74394.85 bin=74360.94 open=74376.02 obi=0.6942 ask_up=0.99 ask_dn=0.35 bid_up=0.01 bid_dn=0.34 halted=False[0m
 [2m2026-04-14 12:43:09.079 [INFO] __main__: STATUS t=111s delta=0.0130% dir=up agree=False chain=74385.69 bin=74360.94 open=74376.02 obi=0.3443 ask_up=0.69 ask_dn=0.32 bid_up=0.68 bid_dn=0.31 halted=False[0m
 [2m2026-04-14 12:43:39.193 [INFO] __main__: STATUS t=81s delta=0.0029% dir=up agree=False chain=74378.17 bin=74359.85 open=74376.02 obi=-0.6101 ask_up=0.61 ask_dn=0.40 bid_up=0.60 bid_dn=0.39 halted=False[0m
+[2m2026-04-14 12:44:09.352 [INFO] __main__: STATUS t=51s delta=-0.0525% dir=down agree=True chain=74336.95 bin=74315.16 open=74376.02 obi=0.0270 ask_up=0.14 ask_dn=0.87 bid_up=0.13 bid_dn=0.86 halted=False[0m
+[2m2026-04-14 12:44:39.467 [INFO] __main__: STATUS t=21s delta=-0.0322% dir=down agree=True chain=74352.08 bin=74330.15 open=74376.02 obi=-0.0827 ask_up=0.31 ask_dn=0.70 bid_up=0.30 bid_dn=0.69 halted=False[0m
+[37m2026-04-14 12:45:00.045 [INFO] execution.paper_trading: paper window_ts=1776170400 [SKIP] pnl=0.0000 direction=down outcome=down - balance=$828.54 bid_up=0.01 ask_up=0.01 bid_dn=0.99 ask_dn=1.00[0m
+[93m[1m2026-04-14 12:45:00.046 [INFO] risk.position_tracker: WINDOW_SUMMARY window_pnl=$0.0000 session_pnl=$-49.0991 won=$22.5544 lost=$71.6535 wr=44.4% (4/9) consec_losses=0[0m
+[37m2026-04-14 12:45:00.051 [INFO] strategy.window_handler: WINDOW_DECISION [SKIP] rank=1 side=up pnl=$0.0000 entry=0.00 size=$0.00 (conditions not met)[0m
+[95m2026-04-14 12:45:00.051 [INFO] strategy.window_handler: Signal refreshed (same pattern): up_230.0_200.0_0.06_0.05 — rank 1->1, keeping SPRT state (age=124w, trades=3, LLR=1.46)[0m
+2026-04-14 12:45:00.051 [INFO] strategy.window_handler: SIGNAL_SWAP_ACTIVE: {"rank":1,"side":"up","observeFromS":230.0,"observeToS":200.0,"minDeltaPct":0.06,"maxVariancePct":0.05,"trainWinRatePct":97.56,"oosWinRatePct":96.55,"oosBhAdjustedPValue":1.02685e-09,"oosMatches":29,"avgEntryPrice":0.8497,"evPerTrade":0.0859,"smartScore":7.83,"wfFoldsAppeared":5,"wfTotalTestFolds":6,"wfFoldIndices":[3,4,5,6,7]}
+2026-04-14 12:45:00.051 [INFO] strategy.window_handler: switched to new signal: #1 up (previous: #1 up)
+[96m[1m2026-04-14 12:45:00.051 [INFO] strategy.window_tracker: new window: btc-updown-5m-1776170700 (ts=1776170700)[0m
+2026-04-14 12:45:00.063 [INFO] strategy.window_tracker: Gamma priceToBeat not yet available for btc-updown-5m-1776170700 — fetching in background
+[96m2026-04-14 12:45:00.136 [INFO] strategy.window_handler: REGIME vol_stddev=0.067% chop_flips=4.7 outcome=3U/3D over 6w sprt=dormant llr=1.46 age=124w bankroll=$828.54[0m
+[96m2026-04-14 12:45:00.138 [WARNING] __main__: window open price captured: 74349.78 (RTDS boundary fallback, oracle_age=2000ms)[0m
+[96m2026-04-14 12:45:00.139 [INFO] __main__: window open price captured: 74307.87 (binance)[0m
+2026-04-14 12:45:00.139 [INFO] strategy.momentum_signal: momentum_signal: waiting for full market data
+2026-04-14 12:45:00.795 [INFO] market_data.clob_market_ws: CLOB market subscribed for tokens up=986036031044 down=270818504595
+[2m2026-04-14 12:45:09.684 [INFO] __main__: STATUS t=290s delta=-0.0101% dir=down agree=True chain=74342.26 bin=74309.04 open=74349.78 obi=-0.1143 ask_up=0.55 ask_dn=0.49 bid_up=0.51 bid_dn=0.45 halted=False[0m
+[2m2026-04-14 12:45:39.821 [INFO] __main__: STATUS t=260s delta=-0.0001% dir=down agree=True chain=74349.68 bin=74332.77 open=74349.78 obi=0.9962 ask_up=0.56 ask_dn=0.45 bid_up=0.55 bid_dn=0.44 halted=False[0m
+[2m2026-04-14 12:46:09.962 [INFO] __main__: STATUS t=230s delta=0.0084% dir=up agree=False chain=74356.04 bin=74335.24 open=74349.78 obi=0.3777 ask_up=0.56 ask_dn=0.45 bid_up=0.55 bid_dn=0.44 halted=False[0m
+[93m2026-04-14 12:46:21.263 [WARNING] __main__: feed stale: clob_book — suppressing trading[0m
+[2m2026-04-14 12:46:40.095 [INFO] __main__: STATUS t=200s delta=0.0093% dir=up agree=False chain=74356.69 bin=74333.99 open=74349.78 obi=0.2292 ask_up=0.56 ask_dn=0.45 bid_up=0.55 bid_dn=0.44 halted=False[0m
+[93m2026-04-14 12:46:51.393 [WARNING] __main__: feed stale: clob_book — suppressing trading[0m
+[2m2026-04-14 12:47:10.227 [INFO] __main__: STATUS t=170s delta=0.0127% dir=up agree=False chain=74359.22 bin=74341.27 open=74349.78 obi=0.9956 ask_up=0.56 ask_dn=0.45 bid_up=0.55 bid_dn=0.44 halted=False[0m
+[93m2026-04-14 12:47:21.531 [WARNING] __main__: feed stale: clob_book — suppressing trading[0m
+[2m2026-04-14 12:47:40.367 [INFO] __main__: STATUS t=140s delta=0.0071% dir=up agree=False chain=74355.04 bin=74333.99 open=74349.78 obi=-0.3579 ask_up=0.56 ask_dn=0.45 bid_up=0.55 bid_dn=0.44 halted=False[0m
+2026-04-14 12:47:43.131 [INFO] strategy.momentum_signal: signal_eval rank=1 side=up latest_pct=-0.0322 stddev=0.0061 n=11 min_delta=0.06 max_var=0.050
+[37m2026-04-14 12:47:43.132 [INFO] strategy.momentum_signal: [SKIP] rank=1 side=up reason=conditions_not_met latest_pct=-0.0322 need=>=0.06 stddev=0.0061 max_var=0.050[0m
+[2m2026-04-14 12:48:10.519 [INFO] __main__: STATUS t=109s delta=0.0394% dir=up agree=True chain=74379.09 bin=74358.00 open=74349.78 obi=0.2853 ask_up=0.74 ask_dn=0.30 bid_up=0.70 bid_dn=0.26 halted=False[0m
+[2m2026-04-14 12:48:40.634 [INFO] __main__: STATUS t=79s delta=0.0347% dir=up agree=True chain=74375.59 bin=74354.95 open=74349.78 obi=0.5571 ask_up=0.79 ask_dn=0.23 bid_up=0.77 bid_dn=0.21 halted=False[0m
+[2m2026-04-14 12:49:10.779 [INFO] __main__: STATUS t=49s delta=0.0451% dir=up agree=True chain=74383.34 bin=74362.38 open=74349.78 obi=0.9131 ask_up=0.93 ask_dn=0.08 bid_up=0.92 bid_dn=0.07 halted=False[0m
+[2m2026-04-14 12:49:40.903 [INFO] __main__: STATUS t=19s delta=0.0689% dir=up agree=True chain=74401.04 bin=74378.87 open=74349.78 obi=0.6898 ask_up=1.00 ask_dn=0.01 bid_up=0.99 bid_dn=0.01 halted=False[0m
+[37m2026-04-14 12:50:00.238 [INFO] execution.paper_trading: paper window_ts=1776170700 [SKIP] pnl=0.0000 direction=up outcome=up - balance=$828.54 bid_up=0.99 ask_up=1.00 bid_dn=0.01 ask_dn=0.01[0m
+[93m[1m2026-04-14 12:50:00.238 [INFO] risk.position_tracker: WINDOW_SUMMARY window_pnl=$0.0000 session_pnl=$-49.0991 won=$22.5544 lost=$71.6535 wr=44.4% (4/9) consec_losses=0[0m
+[96m2026-04-14 12:50:00.240 [INFO] strategy.window_handler: REGIME chop_detected flips=3 delta_range=0.1083% avg_flips=4.5 over=6_windows[0m
+[37m2026-04-14 12:50:00.243 [INFO] strategy.window_handler: WINDOW_DECISION [SKIP] rank=1 side=up pnl=$0.0000 entry=0.00 size=$0.00 (conditions not met)[0m
+[96m[1m2026-04-14 12:50:00.243 [INFO] strategy.window_tracker: new window: btc-updown-5m-1776171000 (ts=1776171000)[0m
+2026-04-14 12:50:00.254 [INFO] strategy.window_tracker: Gamma priceToBeat not yet available for btc-updown-5m-1776171000 — fetching in background
+[96m2026-04-14 12:50:00.291 [INFO] strategy.window_handler: REGIME vol_stddev=0.068% chop_flips=4.5 outcome=3U/3D over 6w sprt=dormant llr=1.46 age=125w bankroll=$828.54[0m
+[96m2026-04-14 12:50:00.292 [WARNING] __main__: window open price captured: 74399.87 (RTDS boundary fallback, oracle_age=1000ms)[0m
+[96m2026-04-14 12:50:00.292 [INFO] __main__: window open price captured: 74377.42 (binance)[0m
+2026-04-14 12:50:00.292 [INFO] strategy.momentum_signal: momentum_signal: waiting for full market data
+2026-04-14 12:50:01.035 [INFO] market_data.clob_market_ws: CLOB market subscribed for tokens up=340969592817 down=100167093117
+[2m2026-04-14 12:50:11.129 [INFO] __main__: STATUS t=289s delta=0.0114% dir=up agree=False chain=74408.36 bin=74385.34 open=74399.87 obi=0.7951 ask_up=0.58 ask_dn=0.43 bid_up=0.57 bid_dn=0.42 halted=False[0m
+[2m2026-04-14 12:50:41.247 [INFO] __main__: STATUS t=259s delta=0.0163% dir=up agree=False chain=74412.01 bin=74393.16 open=74399.87 obi=0.8867 ask_up=0.65 ask_dn=0.36 bid_up=0.64 bid_dn=0.35 halted=False[0m
+[2m2026-04-14 12:51:11.373 [INFO] __main__: STATUS t=229s delta=0.0312% dir=up agree=True chain=74423.09 bin=74406.63 open=74399.87 obi=0.2726 ask_up=0.72 ask_dn=0.29 bid_up=0.71 bid_dn=0.28 halted=False[0m
+[2m2026-04-14 12:51:41.486 [INFO] __main__: STATUS t=199s delta=0.0466% dir=up agree=True chain=74434.58 bin=74411.53 open=74399.87 obi=0.6866 ask_up=0.78 ask_dn=0.23 bid_up=0.77 bid_dn=0.22 halted=False[0m
+2026-04-14 12:51:50.019 [INFO] strategy.momentum_signal: signal_eval rank=1 side=up latest_pct=0.0202 stddev=0.0044 n=40 min_delta=0.06 max_var=0.050
+[37m2026-04-14 12:51:50.019 [INFO] strategy.momentum_signal: [SKIP] rank=1 side=up reason=conditions_not_met latest_pct=0.0202 need=>=0.06 stddev=0.0044 max_var=0.050[0m
+[2m2026-04-14 12:52:11.600 [INFO] __main__: STATUS t=168s delta=0.0315% dir=up agree=False chain=74423.32 bin=74399.43 open=74399.87 obi=-0.5940 ask_up=0.67 ask_dn=0.34 bid_up=0.66 bid_dn=0.33 halted=False[0m
+[2m2026-04-14 12:52:41.713 [INFO] __main__: STATUS t=138s delta=0.0227% dir=up agree=False chain=74416.73 bin=74399.43 open=74399.87 obi=0.6599 ask_up=0.76 ask_dn=0.25 bid_up=0.75 bid_dn=0.24 halted=False[0m
+[2m2026-04-14 12:53:11.865 [INFO] __main__: STATUS t=108s delta=0.0158% dir=up agree=False chain=74411.63 bin=74390.13 open=74399.87 obi=0.4574 ask_up=0.63 ask_dn=0.38 bid_up=0.62 bid_dn=0.37 halted=False[0m
+[2m2026-04-14 12:53:41.979 [INFO] __main__: STATUS t=78s delta=0.0052% dir=up agree=False chain=74403.71 bin=74380.01 open=74399.87 obi=0.1733 ask_up=0.56 ask_dn=0.45 bid_up=0.55 bid_dn=0.44 halted=False[0m
+[2m2026-04-14 12:54:12.126 [INFO] __main__: STATUS t=48s delta=-0.0552% dir=down agree=True chain=74358.80 bin=74338.82 open=74399.87 obi=0.0140 ask_up=0.11 ask_dn=0.90 bid_up=0.10 bid_dn=0.89 halted=False[0m
+[2m2026-04-14 12:54:42.240 [INFO] __main__: STATUS t=18s delta=0.0076% dir=up agree=False chain=74405.54 bin=74385.15 open=74399.87 obi=0.1239 ask_up=0.73 ask_dn=0.28 bid_up=0.72 bid_dn=0.27 halted=False[0m
+[37m2026-04-14 12:55:00.057 [INFO] execution.paper_trading: paper window_ts=1776171000 [SKIP] pnl=0.0000 direction=up outcome=up - balance=$828.54 bid_up=0.99 ask_up=1.00 bid_dn=0.01 ask_dn=0.01[0m
+[93m[1m2026-04-14 12:55:00.057 [INFO] risk.position_tracker: WINDOW_SUMMARY window_pnl=$0.0000 session_pnl=$-49.0991 won=$22.5544 lost=$71.6535 wr=44.4% (4/9) consec_losses=0[0m
+[96m2026-04-14 12:55:00.059 [INFO] strategy.window_handler: REGIME chop_detected flips=4 delta_range=0.1106% avg_flips=5.0 over=6_windows[0m
+[37m2026-04-14 12:55:00.063 [INFO] strategy.window_handler: WINDOW_DECISION [SKIP] rank=1 side=up pnl=$0.0000 entry=0.00 size=$0.00 (conditions not met)[0m
+[96m[1m2026-04-14 12:55:00.063 [INFO] strategy.window_tracker: new window: btc-updown-5m-1776171300 (ts=1776171300)[0m
+2026-04-14 12:55:00.074 [INFO] strategy.window_tracker: Gamma priceToBeat not yet available for btc-updown-5m-1776171300 — fetching in background
+[96m2026-04-14 12:55:00.105 [INFO] strategy.window_handler: REGIME vol_stddev=0.067% chop_flips=5.0 outcome=4U/2D over 6w sprt=dormant llr=1.46 age=126w bankroll=$828.54[0m
+[96m2026-04-14 12:55:00.105 [WARNING] __main__: window open price captured: 74418.63 (RTDS boundary fallback, oracle_age=2000ms)[0m
+[96m2026-04-14 12:55:00.106 [INFO] __main__: window open price captured: 74399.42 (binance)[0m
+2026-04-14 12:55:00.106 [INFO] strategy.momentum_signal: momentum_signal: waiting for full market data
+2026-04-14 12:55:00.262 [INFO] market_data.clob_market_ws: CLOB market subscribed for tokens up=115412720930 down=761705053154
+[2m2026-04-14 12:55:12.418 [INFO] __main__: STATUS t=288s delta=0.0013% dir=up agree=False chain=74419.63 bin=74399.43 open=74418.63 obi=0.4912 ask_up=0.53 ask_dn=0.48 bid_up=0.52 bid_dn=0.47 halted=False[0m
+[2m2026-04-14 12:55:42.528 [INFO] __main__: STATUS t=257s delta=0.0222% dir=up agree=False chain=74435.14 bin=74414.86 open=74418.63 obi=0.6505 ask_up=0.63 ask_dn=0.38 bid_up=0.62 bid_dn=0.37 halted=False[0m
+[2m2026-04-14 12:56:12.702 [INFO] __main__: STATUS t=227s delta=0.0084% dir=up agree=False chain=74424.90 bin=74404.29 open=74418.63 obi=-0.0602 ask_up=0.48 ask_dn=0.53 bid_up=0.47 bid_dn=0.52 halted=False[0m
+2026-04-14 12:56:14.474 [INFO] shared.ipc: IPC: received authenticated signal_update (summary=signals_summary_1776171374.json)
+2026-04-14 12:56:14.474 [INFO] __main__: received new signal from orchestrator: rank=1 side=Up
+[2m2026-04-14 12:56:42.815 [INFO] __main__: STATUS t=197s delta=0.0215% dir=up agree=False chain=74434.61 bin=74417.39 open=74418.63 obi=0.2471 ask_up=0.64 ask_dn=0.37 bid_up=0.63 bid_dn=0.36 halted=False[0m
+2026-04-14 12:56:50.095 [INFO] strategy.momentum_signal: signal_eval rank=1 side=up latest_pct=0.0310 stddev=0.0134 n=40 min_delta=0.06 max_var=0.050
+[37m2026-04-14 12:56:50.095 [INFO] strategy.momentum_signal: [SKIP] rank=1 side=up reason=conditions_not_met latest_pct=0.0310 need=>=0.06 stddev=0.0134 max_var=0.050[0m
+[2m2026-04-14 12:57:12.945 [INFO] __main__: STATUS t=167s delta=0.0737% dir=up agree=True chain=74473.50 bin=74449.99 open=74418.63 obi=-0.2927 ask_up=0.87 ask_dn=0.14 bid_up=0.86 bid_dn=0.13 halted=False[0m
+[2m2026-04-14 12:57:43.062 [INFO] __main__: STATUS t=137s delta=0.0737% dir=up agree=True chain=74473.48 bin=74449.65 open=74418.63 obi=-0.0571 ask_up=0.82 ask_dn=0.19 bid_up=0.81 bid_dn=0.18 halted=False[0m
+[2m2026-04-14 12:58:13.191 [INFO] __main__: STATUS t=107s delta=0.0146% dir=up agree=False chain=74429.51 bin=74409.16 open=74418.63 obi=-0.8434 ask_up=0.52 ask_dn=0.49 bid_up=0.51 bid_dn=0.48 halted=False[0m
+[2m2026-04-14 12:58:43.309 [INFO] __main__: STATUS t=77s delta=0.0654% dir=up agree=True chain=74467.32 bin=74443.68 open=74418.63 obi=0.8225 ask_up=0.85 ask_dn=0.16 bid_up=0.84 bid_dn=0.15 halted=False[0m
+[2m2026-04-14 12:59:13.436 [INFO] __main__: STATUS t=47s delta=0.0623% dir=up agree=True chain=74465.00 bin=74445.01 open=74418.63 obi=-0.6760 ask_up=0.80 ask_dn=0.21 bid_up=0.79 bid_dn=0.20 halted=False[0m
+[2m2026-04-14 12:59:43.560 [INFO] __main__: STATUS t=16s delta=0.0701% dir=up agree=True chain=74470.76 bin=74451.99 open=74418.63 obi=0.7417 ask_up=0.95 ask_dn=0.06 bid_up=0.94 bid_dn=0.05 halted=False[0m
+[37m2026-04-14 13:00:00.134 [INFO] execution.paper_trading: paper window_ts=1776171300 [SKIP] pnl=0.0000 direction=up outcome=up - balance=$828.54 bid_up=0.99 ask_up=1.00 bid_dn=0.01 ask_dn=0.01[0m
+[93m[1m2026-04-14 13:00:00.135 [INFO] risk.position_tracker: WINDOW_SUMMARY window_pnl=$0.0000 session_pnl=$-49.0991 won=$22.5544 lost=$71.6535 wr=44.4% (4/9) consec_losses=0[0m
+[96m2026-04-14 13:00:00.137 [INFO] strategy.window_handler: REGIME chop_detected flips=4 delta_range=0.1013% avg_flips=5.0 over=6_windows[0m
+[37m2026-04-14 13:00:00.144 [INFO] strategy.window_handler: WINDOW_DECISION [SKIP] rank=1 side=up pnl=$0.0000 entry=0.00 size=$0.00 (conditions not met)[0m
+[95m2026-04-14 13:00:00.144 [INFO] strategy.window_handler: Signal refreshed (same pattern): up_230.0_200.0_0.06_0.05 — rank 1->1, keeping SPRT state (age=127w, trades=3, LLR=1.46)[0m
+2026-04-14 13:00:00.145 [INFO] strategy.window_handler: SIGNAL_SWAP_ACTIVE: {"rank":1,"side":"up","observeFromS":230.0,"observeToS":200.0,"minDeltaPct":0.06,"maxVariancePct":0.05,"trainWinRatePct":97.56,"oosWinRatePct":96.55,"oosBhAdjustedPValue":1.02685e-09,"oosMatches":29,"avgEntryPrice":0.8497,"evPerTrade":0.0859,"smartScore":7.83,"wfFoldsAppeared":5,"wfTotalTestFolds":6,"wfFoldIndices":[3,4,5,6,7]}
+2026-04-14 13:00:00.146 [INFO] strategy.window_handler: switched to new signal: #1 up (previous: #1 up)
+[96m[1m2026-04-14 13:00:00.148 [INFO] strategy.window_tracker: new window: btc-updown-5m-1776171600 (ts=1776171600)[0m
+2026-04-14 13:00:00.160 [INFO] strategy.window_tracker: Gamma priceToBeat not yet available for btc-updown-5m-1776171600 — fetching in background
+[96m2026-04-14 13:00:00.291 [INFO] strategy.window_handler: REGIME vol_stddev=0.069% chop_flips=5.0 outcome=5U/1D over 6w sprt=dormant llr=1.46 age=127w bankroll=$828.54[0m
+[96m2026-04-14 13:00:00.291 [WARNING] __main__: window open price captured: 74475.05 (RTDS boundary fallback, oracle_age=1000ms)[0m
+[96m2026-04-14 13:00:00.291 [INFO] __main__: window open price captured: 74452.00 (binance)[0m
+2026-04-14 13:00:00.292 [INFO] strategy.momentum_signal: momentum_signal: waiting for full market data
+2026-04-14 13:00:00.461 [INFO] market_data.clob_market_ws: CLOB market subscribed for tokens up=323003454442 down=100729448215
+[2m2026-04-14 13:00:13.654 [INFO] __main__: STATUS t=286s delta=-0.0450% dir=down agree=True chain=74441.50 bin=74407.75 open=74475.05 obi=-0.0879 ask_up=0.32 ask_dn=0.69 bid_up=0.31 bid_dn=0.68 halted=False[0m
+[2m2026-04-14 13:00:43.771 [INFO] __main__: STATUS t=256s delta=0.0138% dir=up agree=False chain=74485.32 bin=74464.13 open=74475.05 obi=0.0865 ask_up=0.56 ask_dn=0.45 bid_up=0.55 bid_dn=0.44 halted=False[0m
+[2m2026-04-14 13:01:13.906 [INFO] __main__: STATUS t=226s delta=0.0588% dir=up agree=True chain=74518.86 bin=74499.99 open=74475.05 obi=-0.4282 ask_up=0.76 ask_dn=0.25 bid_up=0.75 bid_dn=0.24 halted=False[0m
+[2m2026-04-14 13:01:44.023 [INFO] __main__: STATUS t=196s delta=0.0571% dir=up agree=True chain=74517.56 bin=74504.04 open=74475.05 obi=0.3274 ask_up=0.79 ask_dn=0.22 bid_up=0.78 bid_dn=0.21 halted=False[0m
+2026-04-14 13:01:50.045 [INFO] strategy.momentum_signal: signal_eval rank=1 side=up latest_pct=0.0416 stddev=0.0062 n=40 min_delta=0.06 max_var=0.050
+[37m2026-04-14 13:01:50.045 [INFO] strategy.momentum_signal: [SKIP] rank=1 side=up reason=conditions_not_met latest_pct=0.0416 need=>=0.06 stddev=0.0062 max_var=0.050[0m
+[2m2026-04-14 13:02:14.148 [INFO] __main__: STATUS t=166s delta=0.1069% dir=up agree=True chain=74554.69 bin=74541.31 open=74475.05 obi=0.1050 ask_up=0.92 ask_dn=0.09 bid_up=0.91 bid_dn=0.08 halted=False[0m
+[2m2026-04-14 13:02:44.265 [INFO] __main__: STATUS t=136s delta=0.1710% dir=up agree=True chain=74602.37 bin=74574.84 open=74475.05 obi=-0.6719 ask_up=0.98 ask_dn=0.03 bid_up=0.97 bid_dn=0.02 halted=False[0m
+[2m2026-04-14 13:03:14.393 [INFO] __main__: STATUS t=106s delta=0.1241% dir=up agree=True chain=74567.44 bin=74558.96 open=74475.05 obi=0.3169 ask_up=0.96 ask_dn=0.05 bid_up=0.95 bid_dn=0.04 halted=False[0m
+[2m2026-04-14 13:03:44.507 [INFO] __main__: STATUS t=75s delta=0.1671% dir=up agree=True chain=74599.50 bin=74580.53 open=74475.05 obi=-0.4107 ask_up=0.99 ask_dn=0.02 bid_up=0.98 bid_dn=0.01 halted=False[0m
+[2m2026-04-14 13:04:14.645 [INFO] __main__: STATUS t=45s delta=0.1315% dir=up agree=True chain=74573.01 bin=74564.22 open=74475.05 obi=0.8122 ask_up=1.00 ask_dn=0.01 bid_up=0.99 bid_dn=0.01 halted=False[0m
+[2m2026-04-14 13:04:44.781 [INFO] __main__: STATUS t=15s delta=0.1703% dir=up agree=True chain=74601.90 bin=74577.45 open=74475.05 obi=0.5448 ask_up=1.00 ask_dn=0.01 bid_up=0.99 bid_dn=0.01 halted=False[0m
+[37m2026-04-14 13:05:00.108 [INFO] execution.paper_trading: paper window_ts=1776171600 [SKIP] pnl=0.0000 direction=up outcome=up - balance=$828.54 bid_up=0.99 ask_up=1.00 bid_dn=0.01 ask_dn=0.01[0m
+[93m[1m2026-04-14 13:05:00.108 [INFO] risk.position_tracker: WINDOW_SUMMARY window_pnl=$0.0000 session_pnl=$-49.0991 won=$22.5544 lost=$71.6535 wr=44.4% (4/9) consec_losses=0[0m
+[96m2026-04-14 13:05:00.110 [INFO] strategy.window_handler: REGIME chop_detected flips=3 delta_range=0.2567% avg_flips=4.5 over=6_windows[0m
+[37m2026-04-14 13:05:00.114 [INFO] strategy.window_handler: WINDOW_DECISION [SKIP] rank=1 side=up pnl=$0.0000 entry=0.00 size=$0.00 (conditions not met)[0m
+[96m[1m2026-04-14 13:05:00.114 [INFO] strategy.window_tracker: new window: btc-updown-5m-1776171900 (ts=1776171900)[0m
+2026-04-14 13:05:00.126 [INFO] strategy.window_tracker: Gamma priceToBeat not yet available for btc-updown-5m-1776171900 — fetching in background
+[96m2026-04-14 13:05:00.164 [INFO] strategy.window_handler: REGIME vol_stddev=0.078% chop_flips=4.5 outcome=5U/1D over 6w sprt=dormant llr=1.46 age=128w bankroll=$828.54[0m
+[96m2026-04-14 13:05:00.164 [WARNING] __main__: window open price captured: 74620.86 (RTDS boundary fallback, oracle_age=1000ms)[0m
+[96m2026-04-14 13:05:00.165 [INFO] __main__: window open price captured: 74597.79 (binance)[0m
+2026-04-14 13:05:00.165 [INFO] strategy.momentum_signal: momentum_signal: waiting for full market data
+2026-04-14 13:05:00.681 [INFO] market_data.clob_market_ws: CLOB market subscribed for tokens up=673236831219 down=506918199917
+[2m2026-04-14 13:05:14.825 [INFO] __main__: STATUS t=285s delta=0.0065% dir=up agree=False chain=74625.68 bin=74587.62 open=74620.86 obi=-0.6639 ask_up=0.45 ask_dn=0.57 bid_up=0.43 bid_dn=0.55 halted=False[0m
+[2m2026-04-14 13:05:44.950 [INFO] __main__: STATUS t=255s delta=-0.0120% dir=down agree=True chain=74611.93 bin=74586.22 open=74620.86 obi=0.6522 ask_up=0.43 ask_dn=0.58 bid_up=0.42 bid_dn=0.57 halted=False[0m
+[2m2026-04-14 13:06:15.099 [INFO] __main__: STATUS t=225s delta=-0.0498% dir=down agree=True chain=74583.67 bin=74561.13 open=74620.86 obi=-0.9451 ask_up=0.26 ask_dn=0.75 bid_up=0.25 bid_dn=0.74 halted=False[0m
+[2m2026-04-14 13:06:45.208 [INFO] __main__: STATUS t=195s delta=-0.0350% dir=down agree=True chain=74594.76 bin=74571.12 open=74620.86 obi=0.1419 ask_up=0.31 ask_dn=0.70 bid_up=0.30 bid_dn=0.69 halted=False[0m
+2026-04-14 13:06:50.226 [INFO] strategy.momentum_signal: signal_eval rank=1 side=up latest_pct=-0.0667 stddev=0.0065 n=40 min_delta=0.06 max_var=0.050
+[37m2026-04-14 13:06:50.226 [INFO] strategy.momentum_signal: [SKIP] rank=1 side=up reason=conditions_not_met latest_pct=-0.0667 need=>=0.06 stddev=0.0065 max_var=0.050[0m
+[2m2026-04-14 13:07:15.341 [INFO] __main__: STATUS t=165s delta=-0.0140% dir=down agree=True chain=74610.41 bin=74589.66 open=74620.86 obi=-0.6865 ask_up=0.38 ask_dn=0.63 bid_up=0.37 bid_dn=0.62 halted=False[0m
+[2m2026-04-14 13:07:45.453 [INFO] __main__: STATUS t=135s delta=-0.0473% dir=down agree=True chain=74585.55 bin=74561.14 open=74620.86 obi=0.4782 ask_up=0.25 ask_dn=0.76 bid_up=0.24 bid_dn=0.75 halted=False[0m
+[2m2026-04-14 13:08:15.584 [INFO] __main__: STATUS t=104s delta=-0.0738% dir=down agree=True chain=74565.78 bin=74537.50 open=74620.86 obi=0.2112 ask_up=0.09 ask_dn=0.92 bid_up=0.08 bid_dn=0.91 halted=False[0m
+[2m2026-04-14 13:08:45.704 [INFO] __main__: STATUS t=74s delta=-0.0156% dir=down agree=True chain=74609.21 bin=74588.60 open=74620.86 obi=-0.2292 ask_up=0.34 ask_dn=0.67 bid_up=0.33 bid_dn=0.66 halted=False[0m
+[2m2026-04-14 13:09:15.839 [INFO] __main__: STATUS t=44s delta=-0.0191% dir=down agree=True chain=74606.63 bin=74584.21 open=74620.86 obi=-0.5189 ask_up=0.24 ask_dn=0.77 bid_up=0.23 bid_dn=0.76 halted=False[0m
+[2m2026-04-14 13:09:45.959 [INFO] __main__: STATUS t=14s delta=-0.0328% dir=down agree=True chain=74596.39 bin=74577.53 open=74620.86 obi=0.7942 ask_up=0.14 ask_dn=0.87 bid_up=0.13 bid_dn=0.86 halted=False[0m
+[37m2026-04-14 13:10:00.018 [INFO] execution.paper_trading: paper window_ts=1776171900 [SKIP] pnl=0.0000 direction=down outcome=down - balance=$828.54 bid_up=0.01 ask_up=0.02 bid_dn=0.98 ask_dn=0.99[0m
+[93m[1m2026-04-14 13:10:00.019 [INFO] risk.position_tracker: WINDOW_SUMMARY window_pnl=$0.0000 session_pnl=$-49.0991 won=$22.5544 lost=$71.6535 wr=44.4% (4/9) consec_losses=0[0m
+[96m2026-04-14 13:10:00.021 [INFO] strategy.window_handler: REGIME chop_detected flips=4 delta_range=0.0871% avg_flips=3.3 over=6_windows[0m
+[37m2026-04-14 13:10:00.030 [INFO] strategy.window_handler: WINDOW_DECISION [SKIP] rank=1 side=up pnl=$0.0000 entry=0.00 size=$0.00 (conditions not met)[0m
+[96m[1m2026-04-14 13:10:00.031 [INFO] strategy.window_tracker: new window: btc-updown-5m-1776172200 (ts=1776172200)[0m
+2026-04-14 13:10:00.049 [INFO] strategy.window_tracker: Gamma priceToBeat not yet available for btc-updown-5m-1776172200 — fetching in background
+[96m2026-04-14 13:10:00.101 [INFO] strategy.window_handler: REGIME vol_stddev=0.078% chop_flips=3.3 outcome=4U/2D over 6w sprt=dormant llr=1.46 age=129w bankroll=$828.54[0m
+[96m2026-04-14 13:10:00.101 [WARNING] __main__: window open price captured: 74608.92 (RTDS boundary fallback, oracle_age=1000ms)[0m
+[96m2026-04-14 13:10:00.101 [INFO] __main__: window open price captured: 74583.65 (binance)[0m
+2026-04-14 13:10:00.102 [INFO] strategy.momentum_signal: momentum_signal: waiting for full market data
+2026-04-14 13:10:00.862 [INFO] market_data.clob_market_ws: CLOB market subscribed for tokens up=893459505565 down=772262140452
+[2m2026-04-14 13:10:16.002 [INFO] __main__: STATUS t=284s delta=-0.0122% dir=down agree=True chain=74599.85 bin=74569.80 open=74608.92 obi=-0.2020 ask_up=0.38 ask_dn=0.63 bid_up=0.37 bid_dn=0.62 halted=False[0m
+[2m2026-04-14 13:10:46.192 [INFO] __main__: STATUS t=254s delta=-0.0151% dir=down agree=True chain=74597.63 bin=74569.80 open=74608.92 obi=-0.5093 ask_up=0.34 ask_dn=0.68 bid_up=0.32 bid_dn=0.66 halted=False[0m
+[2m2026-04-14 13:11:16.324 [INFO] __main__: STATUS t=224s delta=-0.0373% dir=down agree=True chain=74581.12 bin=74555.35 open=74608.92 obi=0.1015 ask_up=0.26 ask_dn=0.75 bid_up=0.25 bid_dn=0.74 halted=False[0m
+2026-04-14 13:11:19.943 [INFO] shared.ipc: IPC: received authenticated signal_update (summary=signals_summary_1776172280.json)
+2026-04-14 13:11:19.943 [INFO] __main__: received new signal from orchestrator: rank=1 side=Up
+[2m2026-04-14 13:11:46.438 [INFO] __main__: STATUS t=194s delta=-0.0520% dir=down agree=True chain=74570.11 bin=74545.10 open=74608.92 obi=-0.5067 ask_up=0.21 ask_dn=0.80 bid_up=0.20 bid_dn=0.79 halted=False[0m
+2026-04-14 13:11:50.205 [INFO] strategy.momentum_signal: signal_eval rank=1 side=up latest_pct=-0.0855 stddev=0.0046 n=40 min_delta=0.06 max_var=0.050
+[37m2026-04-14 13:11:50.205 [INFO] strategy.momentum_signal: [SKIP] rank=1 side=up reason=conditions_not_met latest_pct=-0.0855 need=>=0.06 stddev=0.0046 max_var=0.050[0m
+[2m2026-04-14 13:12:16.641 [INFO] __main__: STATUS t=163s delta=-0.0723% dir=down agree=True chain=74554.96 bin=74528.38 open=74608.92 obi=-0.8118 ask_up=0.12 ask_dn=0.89 bid_up=0.11 bid_dn=0.88 halted=False[0m
+[2m2026-04-14 13:12:46.750 [INFO] __main__: STATUS t=133s delta=-0.0279% dir=down agree=True chain=74588.07 bin=74559.81 open=74608.92 obi=0.6687 ask_up=0.30 ask_dn=0.71 bid_up=0.29 bid_dn=0.70 halted=False[0m
+[2m2026-04-14 13:13:16.880 [INFO] __main__: STATUS t=103s delta=-0.0229% dir=down agree=True chain=74591.85 bin=74570.70 open=74608.92 obi=-0.5650 ask_up=0.27 ask_dn=0.74 bid_up=0.26 bid_dn=0.73 halted=False[0m
+[2m2026-04-14 13:13:46.994 [INFO] __main__: STATUS t=73s delta=-0.0322% dir=down agree=True chain=74584.88 bin=74560.65 open=74608.92 obi=-0.8110 ask_up=0.13 ask_dn=0.88 bid_up=0.12 bid_dn=0.87 halted=False[0m
+[2m2026-04-14 13:14:17.223 [INFO] __main__: STATUS t=43s delta=-0.0373% dir=down agree=True chain=74581.10 bin=74554.50 open=74608.92 obi=0.3014 ask_up=0.08 ask_dn=0.93 bid_up=0.07 bid_dn=0.92 halted=False[0m
+[2m2026-04-14 13:14:47.347 [INFO] __main__: STATUS t=13s delta=-0.0354% dir=down agree=True chain=74582.51 bin=74557.34 open=74608.92 obi=0.2067 ask_up=0.04 ask_dn=0.97 bid_up=0.03 bid_dn=0.96 halted=False[0m
+[37m2026-04-14 13:15:00.151 [INFO] execution.paper_trading: paper window_ts=1776172200 [SKIP] pnl=0.0000 direction=down outcome=down - balance=$828.54 bid_up=0.02 ask_up=0.99 bid_dn=0.97 ask_dn=0.98[0m
+[93m[1m2026-04-14 13:15:00.152 [INFO] risk.position_tracker: WINDOW_SUMMARY window_pnl=$0.0000 session_pnl=$-49.0991 won=$22.5544 lost=$71.6535 wr=44.4% (4/9) consec_losses=0[0m
+[37m2026-04-14 13:15:00.159 [INFO] strategy.window_handler: WINDOW_DECISION [SKIP] rank=1 side=up pnl=$0.0000 entry=0.00 size=$0.00 (conditions not met)[0m
+[95m2026-04-14 13:15:00.159 [INFO] strategy.window_handler: Signal refreshed (same pattern): up_230.0_200.0_0.06_0.05 — rank 1->1, keeping SPRT state (age=130w, trades=3, LLR=1.46)[0m
+2026-04-14 13:15:00.159 [INFO] strategy.window_handler: SIGNAL_SWAP_ACTIVE: {"rank":1,"side":"up","observeFromS":230.0,"observeToS":200.0,"minDeltaPct":0.06,"maxVariancePct":0.05,"trainWinRatePct":97.56,"oosWinRatePct":96.43,"oosBhAdjustedPValue":1.03656e-09,"oosMatches":28,"avgEntryPrice":0.8464,"evPerTrade":0.0879,"smartScore":8.01,"wfFoldsAppeared":5,"wfTotalTestFolds":6,"wfFoldIndices":[3,4,5,6,7]}
+2026-04-14 13:15:00.159 [INFO] strategy.window_handler: switched to new signal: #1 up (previous: #1 up)
+[96m[1m2026-04-14 13:15:00.159 [INFO] strategy.window_tracker: new window: btc-updown-5m-1776172500 (ts=1776172500)[0m
+2026-04-14 13:15:00.172 [INFO] strategy.window_tracker: Gamma priceToBeat not yet available for btc-updown-5m-1776172500 — fetching in background
+[96m2026-04-14 13:15:00.213 [INFO] strategy.window_handler: REGIME vol_stddev=0.078% chop_flips=3.0 outcome=4U/2D over 6w sprt=dormant llr=1.46 age=130w bankroll=$828.54[0m
+[96m2026-04-14 13:15:00.214 [WARNING] __main__: window open price captured: 74596.04 (RTDS boundary fallback, oracle_age=1000ms)[0m
+[96m2026-04-14 13:15:00.214 [INFO] __main__: window open price captured: 74576.51 (binance)[0m
+2026-04-14 13:15:00.214 [INFO] strategy.momentum_signal: momentum_signal: waiting for full market data
+2026-04-14 13:15:01.065 [INFO] market_data.clob_market_ws: CLOB market subscribed for tokens up=834122579947 down=946935178900
+[2m2026-04-14 13:15:17.555 [INFO] __main__: STATUS t=282s delta=-0.0028% dir=down agree=True chain=74593.92 bin=74569.06 open=74596.04 obi=-0.7212 ask_up=0.46 ask_dn=0.55 bid_up=0.45 bid_dn=0.54 halted=False[0m
+[2m2026-04-14 13:15:47.670 [INFO] __main__: STATUS t=252s delta=0.0005% dir=up agree=False chain=74596.39 bin=74573.20 open=74596.04 obi=0.5278 ask_up=0.53 ask_dn=0.48 bid_up=0.52 bid_dn=0.47 halted=False[0m
+[2m2026-04-14 13:16:17.796 [INFO] __main__: STATUS t=222s delta=0.0069% dir=up agree=False chain=74601.17 bin=74579.44 open=74596.04 obi=-0.9448 ask_up=0.53 ask_dn=0.48 bid_up=0.52 bid_dn=0.47 halted=False[0m
+[2m2026-04-14 13:16:47.914 [INFO] __main__: STATUS t=192s delta=-0.0135% dir=down agree=True chain=74585.94 bin=74561.47 open=74596.04 obi=0.2938 ask_up=0.34 ask_dn=0.67 bid_up=0.33 bid_dn=0.66 halted=False[0m
+2026-04-14 13:16:50.174 [INFO] strategy.momentum_signal: signal_eval rank=1 side=up latest_pct=-0.0463 stddev=0.0087 n=40 min_delta=0.06 max_var=0.050
+[37m2026-04-14 13:16:50.174 [INFO] strategy.momentum_signal: [SKIP] rank=1 side=up reason=conditions_not_met latest_pct=-0.0463 need=>=0.06 stddev=0.0087 max_var=0.050[0m
+[2m2026-04-14 13:17:18.035 [INFO] __main__: STATUS t=162s delta=-0.0264% dir=down agree=True chain=74576.35 bin=74555.00 open=74596.04 obi=-0.2785 ask_up=0.29 ask_dn=0.72 bid_up=0.28 bid_dn=0.71 halted=False[0m
+[2m2026-04-14 13:17:48.149 [INFO] __main__: STATUS t=132s delta=0.0379% dir=up agree=True chain=74624.31 bin=74615.36 open=74596.04 obi=0.9980 ask_up=0.69 ask_dn=0.32 bid_up=0.68 bid_dn=0.31 halted=False[0m
+[2m2026-04-14 13:18:18.281 [INFO] __main__: STATUS t=102s delta=0.0999% dir=up agree=True chain=74670.57 bin=74646.98 open=74596.04 obi=-0.6869 ask_up=0.89 ask_dn=0.12 bid_up=0.88 bid_dn=0.11 halted=False[0m
+[2m2026-04-14 13:18:48.407 [INFO] __main__: STATUS t=72s delta=0.1259% dir=up agree=True chain=74689.93 bin=74666.05 open=74596.04 obi=-0.6342 ask_up=0.96 ask_dn=0.05 bid_up=0.95 bid_dn=0.04 halted=False[0m
+[2m2026-04-14 13:19:18.534 [INFO] __main__: STATUS t=41s delta=0.1070% dir=up agree=True chain=74675.88 bin=74654.12 open=74596.04 obi=-0.9986 ask_up=0.95 ask_dn=0.06 bid_up=0.94 bid_dn=0.05 halted=False[0m
+[2m2026-04-14 13:19:48.656 [INFO] __main__: STATUS t=11s delta=0.0859% dir=up agree=True chain=74660.14 bin=74636.40 open=74596.04 obi=-0.9821 ask_up=1.00 ask_dn=0.01 bid_up=0.99 bid_dn=0.01 halted=False[0m
+[37m2026-04-14 13:20:00.218 [INFO] execution.paper_trading: paper window_ts=1776172500 [SKIP] pnl=0.0000 direction=up outcome=up - balance=$828.54 bid_up=0.99 ask_up=1.00 bid_dn=0.01 ask_dn=0.01[0m
+[93m[1m2026-04-14 13:20:00.218 [INFO] risk.position_tracker: WINDOW_SUMMARY window_pnl=$0.0000 session_pnl=$-49.0991 won=$22.5544 lost=$71.6535 wr=44.4% (4/9) consec_losses=0[0m
+[96m2026-04-14 13:20:00.225 [INFO] strategy.window_handler: REGIME chop_detected flips=4 delta_range=0.1681% avg_flips=3.2 over=6_windows[0m
+[37m2026-04-14 13:20:00.229 [INFO] strategy.window_handler: WINDOW_DECISION [SKIP] rank=1 side=up pnl=$0.0000 entry=0.00 size=$0.00 (conditions not met)[0m
+[96m[1m2026-04-14 13:20:00.229 [INFO] strategy.window_tracker: new window: btc-updown-5m-1776172800 (ts=1776172800)[0m
+2026-04-14 13:20:00.242 [INFO] strategy.window_tracker: Gamma priceToBeat not yet available for btc-updown-5m-1776172800 — fetching in background
+2026-04-14 13:20:00.287 [INFO] market_data.clob_market_ws: CLOB market subscribed for tokens up=879765417390 down=610260064795
+[96m2026-04-14 13:20:00.291 [INFO] strategy.window_handler: REGIME vol_stddev=0.079% chop_flips=3.2 outcome=4U/2D over 6w sprt=dormant llr=1.46 age=131w bankroll=$828.54[0m
+[96m2026-04-14 13:20:00.295 [WARNING] __main__: window open price captured: 74648.61 (RTDS boundary fallback, oracle_age=1000ms)[0m
+[96m2026-04-14 13:20:00.295 [INFO] __main__: window open price captured: 74621.91 (binance)[0m
+2026-04-14 13:20:00.295 [INFO] strategy.momentum_signal: momentum_signal: waiting for full market data
+[2m2026-04-14 13:20:18.681 [INFO] __main__: STATUS t=281s delta=0.0295% dir=up agree=False chain=74670.61 bin=74635.59 open=74648.61 obi=-0.8529 ask_up=0.59 ask_dn=0.44 bid_up=0.56 bid_dn=0.41 halted=False[0m
+[2m2026-04-14 13:20:48.800 [INFO] __main__: STATUS t=251s delta=0.0213% dir=up agree=False chain=74664.49 bin=74641.99 open=74648.61 obi=-0.1583 ask_up=0.58 ask_dn=0.43 bid_up=0.57 bid_dn=0.42 halted=False[0m
+[2m2026-04-14 13:21:18.920 [INFO] __main__: STATUS t=221s delta=0.0224% dir=up agree=False chain=74665.34 bin=74638.44 open=74648.61 obi=0.7794 ask_up=0.59 ask_dn=0.42 bid_up=0.58 bid_dn=0.41 halted=False[0m
+[2m2026-04-14 13:21:49.042 [INFO] __main__: STATUS t=191s delta=0.0557% dir=up agree=True chain=74690.22 bin=74663.60 open=74648.61 obi=0.5429 ask_up=0.76 ask_dn=0.25 bid_up=0.75 bid_dn=0.24 halted=False[0m
+2026-04-14 13:21:50.045 [INFO] strategy.momentum_signal: signal_eval rank=1 side=up latest_pct=0.0201 stddev=0.0112 n=40 min_delta=0.06 max_var=0.050
+[37m2026-04-14 13:21:50.046 [INFO] strategy.momentum_signal: [SKIP] rank=1 side=up reason=conditions_not_met latest_pct=0.0201 need=>=0.06 stddev=0.0112 max_var=0.050[0m
+[2m2026-04-14 13:22:19.160 [INFO] __main__: STATUS t=161s delta=0.0672% dir=up agree=True chain=74698.77 bin=74674.10 open=74648.61 obi=-0.0609 ask_up=0.83 ask_dn=0.18 bid_up=0.82 bid_dn=0.17 halted=False[0m
+[2m2026-04-14 13:22:49.278 [INFO] __main__: STATUS t=131s delta=0.0436% dir=up agree=True chain=74681.18 bin=74654.31 open=74648.61 obi=-0.8894 ask_up=0.72 ask_dn=0.29 bid_up=0.71 bid_dn=0.28 halted=False[0m
+[2m2026-04-14 13:23:19.412 [INFO] __main__: STATUS t=101s delta=0.0913% dir=up agree=True chain=74716.75 bin=74691.40 open=74648.61 obi=-0.8744 ask_up=0.91 ask_dn=0.10 bid_up=0.90 bid_dn=0.09 halted=False[0m
+[2m2026-04-14 13:23:49.531 [INFO] __main__: STATUS t=70s delta=0.1328% dir=up agree=True chain=74747.75 bin=74726.27 open=74648.61 obi=0.4066 ask_up=0.99 ask_dn=0.02 bid_up=0.98 bid_dn=0.01 halted=False[0m
+[2m2026-04-14 13:24:19.678 [INFO] __main__: STATUS t=40s delta=0.1015% dir=up agree=True chain=74724.41 bin=74703.74 open=74648.61 obi=-0.7453 ask_up=0.99 ask_dn=0.02 bid_up=0.98 bid_dn=0.01 halted=False[0m
+[2m2026-04-14 13:24:49.814 [INFO] __main__: STATUS t=10s delta=0.1206% dir=up agree=True chain=74738.66 bin=74712.89 open=74648.61 obi=0.0578 ask_up=1.00 ask_dn=0.01 bid_up=0.99 bid_dn=0.01 halted=False[0m
+[37m2026-04-14 13:25:00.109 [INFO] execution.paper_trading: paper window_ts=1776172800 [SKIP] pnl=0.0000 direction=up outcome=up - balance=$828.54 bid_up=0.99 ask_up=1.00 bid_dn=0.01 ask_dn=0.01[0m
+[93m[1m2026-04-14 13:25:00.110 [INFO] risk.position_tracker: WINDOW_SUMMARY window_pnl=$0.0000 session_pnl=$-49.0991 won=$22.5544 lost=$71.6535 wr=44.4% (4/9) consec_losses=0[0m
+[37m2026-04-14 13:25:00.116 [INFO] strategy.window_handler: WINDOW_DECISION [SKIP] rank=1 side=up pnl=$0.0000 entry=0.00 size=$0.00 (conditions not met)[0m
+[96m[1m2026-04-14 13:25:00.116 [INFO] strategy.window_tracker: new window: btc-updown-5m-1776173100 (ts=1776173100)[0m
+2026-04-14 13:25:00.133 [INFO] strategy.window_tracker: Gamma priceToBeat not yet available for btc-updown-5m-1776173100 — fetching in background
+[96m2026-04-14 13:25:00.175 [INFO] strategy.window_handler: REGIME vol_stddev=0.081% chop_flips=2.7 outcome=4U/2D over 6w sprt=dormant llr=1.46 age=132w bankroll=$828.54[0m
+[96m2026-04-14 13:25:00.175 [WARNING] __main__: window open price captured: 74737.53 (RTDS boundary fallback, oracle_age=2000ms)[0m
+[96m2026-04-14 13:25:00.175 [INFO] __main__: window open price captured: 74712.89 (binance)[0m
+2026-04-14 13:25:00.177 [INFO] strategy.momentum_signal: momentum_signal: waiting for full market data
+2026-04-14 13:25:00.481 [INFO] market_data.clob_market_ws: CLOB market subscribed for tokens up=159851922226 down=107683058486
+[2m2026-04-14 13:25:20.006 [INFO] __main__: STATUS t=280s delta=-0.0081% dir=down agree=True chain=74731.47 bin=74703.26 open=74737.53 obi=-0.1890 ask_up=0.44 ask_dn=0.57 bid_up=0.43 bid_dn=0.56 halted=False[0m
+[2m2026-04-14 13:25:50.116 [INFO] __main__: STATUS t=250s delta=0.0106% dir=up agree=False chain=74745.49 bin=74716.04 open=74737.53 obi=0.7239 ask_up=0.54 ask_dn=0.47 bid_up=0.53 bid_dn=0.46 halted=False[0m
+[2m2026-04-14 13:26:20.234 [INFO] __main__: STATUS t=220s delta=-0.0053% dir=down agree=True chain=74733.59 bin=74700.00 open=74737.53 obi=-0.1859 ask_up=0.43 ask_dn=0.58 bid_up=0.42 bid_dn=0.57 halted=False[0m
+2026-04-14 13:26:25.410 [INFO] shared.ipc: IPC: received authenticated signal_update (summary=signals_summary_1776173185.json)
+2026-04-14 13:26:25.410 [INFO] __main__: received new signal from orchestrator: rank=1 side=Up
+2026-04-14 13:26:50.139 [INFO] strategy.momentum_signal: signal_eval rank=1 side=up latest_pct=-0.0660 stddev=0.0037 n=40 min_delta=0.06 max_var=0.050
+[37m2026-04-14 13:26:50.139 [INFO] strategy.momentum_signal: [SKIP] rank=1 side=up reason=conditions_not_met latest_pct=-0.0660 need=>=0.06 stddev=0.0037 max_var=0.050[0m
+[2m2026-04-14 13:26:50.389 [INFO] __main__: STATUS t=190s delta=-0.0163% dir=down agree=True chain=74725.34 bin=74688.19 open=74737.53 obi=-0.3133 ask_up=0.32 ask_dn=0.69 bid_up=0.31 bid_dn=0.68 halted=False[0m
+[2m2026-04-14 13:27:20.510 [INFO] __main__: STATUS t=159s delta=-0.0089% dir=down agree=True chain=74730.92 bin=74693.97 open=74737.53 obi=0.6020 ask_up=0.42 ask_dn=0.59 bid_up=0.41 bid_dn=0.58 halted=False[0m
+[2m2026-04-14 13:27:50.625 [INFO] __main__: STATUS t=129s delta=-0.0199% dir=down agree=True chain=74722.66 bin=74687.28 open=74737.53 obi=-0.0206 ask_up=0.33 ask_dn=0.68 bid_up=0.32 bid_dn=0.67 halted=False[0m
+[2m2026-04-14 13:28:20.779 [INFO] __main__: STATUS t=99s delta=-0.0725% dir=down agree=True chain=74683.34 bin=74640.01 open=74737.53 obi=0.2371 ask_up=0.07 ask_dn=0.94 bid_up=0.06 bid_dn=0.93 halted=False[0m
+[2m2026-04-14 13:28:50.889 [INFO] __main__: STATUS t=69s delta=-0.1494% dir=down agree=True chain=74625.90 bin=74600.01 open=74737.53 obi=0.3266 ask_up=0.02 ask_dn=0.99 bid_up=0.01 bid_dn=0.98 halted=False[0m
+[2m2026-04-14 13:29:21.025 [INFO] __main__: STATUS t=39s delta=-0.1444% dir=down agree=True chain=74629.62 bin=74600.00 open=74737.53 obi=-0.4844 ask_up=0.01 ask_dn=1.00 bid_up=0.01 bid_dn=0.99 halted=False[0m
+[2m2026-04-14 13:29:51.157 [INFO] __main__: STATUS t=9s delta=-0.1838% dir=down agree=True chain=74600.19 bin=74559.86 open=74737.53 obi=-0.8595 ask_up=0.01 ask_dn=1.00 bid_up=0.01 bid_dn=0.99 halted=False[0m
+[37m2026-04-14 13:30:00.198 [INFO] execution.paper_trading: paper window_ts=1776173100 [SKIP] pnl=0.0000 direction=down outcome=down - balance=$828.54 bid_up=0.01 ask_up=0.01 bid_dn=0.99 ask_dn=1.00[0m
+[93m[1m2026-04-14 13:30:00.198 [INFO] risk.position_tracker: WINDOW_SUMMARY window_pnl=$0.0000 session_pnl=$-49.0991 won=$22.5544 lost=$71.6535 wr=44.4% (4/9) consec_losses=0[0m
+[37m2026-04-14 13:30:00.203 [INFO] strategy.window_handler: WINDOW_DECISION [SKIP] rank=1 side=up pnl=$0.0000 entry=0.00 size=$0.00 (conditions not met)[0m
+[95m2026-04-14 13:30:00.204 [INFO] strategy.window_handler: Signal refreshed (same pattern): up_230.0_200.0_0.06_0.05 — rank 1->1, keeping SPRT state (age=133w, trades=3, LLR=1.46)[0m
+2026-04-14 13:30:00.204 [INFO] strategy.window_handler: SIGNAL_SWAP_ACTIVE: {"rank":1,"side":"up","observeFromS":230.0,"observeToS":200.0,"minDeltaPct":0.06,"maxVariancePct":0.05,"trainWinRatePct":97.56,"oosWinRatePct":96.43,"oosBhAdjustedPValue":1.33897e-09,"oosMatches":28,"avgEntryPrice":0.8464,"evPerTrade":0.0879,"smartScore":8.01,"wfFoldsAppeared":5,"wfTotalTestFolds":6,"wfFoldIndices":[3,4,5,6,7]}
+2026-04-14 13:30:00.204 [INFO] strategy.window_handler: switched to new signal: #1 up (previous: #1 up)
+[96m[1m2026-04-14 13:30:00.204 [INFO] strategy.window_tracker: new window: btc-updown-5m-1776173400 (ts=1776173400)[0m
+2026-04-14 13:30:00.216 [INFO] strategy.window_tracker: Gamma priceToBeat not yet available for btc-updown-5m-1776173400 — fetching in background
+[96m2026-04-14 13:30:00.258 [INFO] strategy.window_handler: REGIME vol_stddev=0.097% chop_flips=2.3 outcome=3U/3D over 6w sprt=dormant llr=1.46 age=133w bankroll=$828.54[0m
+[96m2026-04-14 13:30:00.258 [WARNING] __main__: window open price captured: 74552.03 (RTDS boundary fallback, oracle_age=2000ms)[0m
+[96m2026-04-14 13:30:00.260 [INFO] __main__: window open price captured: 74500.00 (binance)[0m
+2026-04-14 13:30:00.262 [INFO] strategy.momentum_signal: momentum_signal: waiting for full market data
+2026-04-14 13:30:00.685 [INFO] market_data.clob_market_ws: CLOB market subscribed for tokens up=801156909485 down=268890572492
+[2m2026-04-14 13:30:21.378 [INFO] __main__: STATUS t=279s delta=0.0227% dir=up agree=False chain=74568.97 bin=74549.99 open=74552.03 obi=0.9669 ask_up=0.60 ask_dn=0.41 bid_up=0.59 bid_dn=0.40 halted=False[0m
+[2m2026-04-14 13:30:51.490 [INFO] __main__: STATUS t=249s delta=0.0631% dir=up agree=True chain=74599.09 bin=74570.75 open=74552.03 obi=-0.3626 ask_up=0.68 ask_dn=0.33 bid_up=0.67 bid_dn=0.32 halted=False[0m
+[2m2026-04-14 13:31:21.634 [INFO] __main__: STATUS t=218s delta=0.0428% dir=up agree=False chain=74583.97 bin=74541.78 open=74552.03 obi=0.2460 ask_up=0.60 ask_dn=0.41 bid_up=0.59 bid_dn=0.40 halted=False[0m
+2026-04-14 13:31:50.239 [INFO] strategy.momentum_signal: signal_eval rank=1 side=up latest_pct=0.0765 stddev=0.0301 n=40 min_delta=0.06 max_var=0.050
+[96m2026-04-14 13:31:50.240 [INFO] strategy.momentum_signal: KELLY sizing: p_adj=0.934 base=0.934 total_disc=0.000 vol=0.000 chop=0.000 outcome=0.000 feedback=+0.000[0m
+[96m2026-04-14 13:31:50.240 [INFO] strategy.momentum_signal: KELLY bet: entry=0.73 raw_f=0.757 frac_f=0.189 bankroll=$828.54 kelly_bet=$41.43 sprt=1.00 final=$41.43[0m
+[92m[1m2026-04-14 13:31:50.240 [INFO] strategy.momentum_signal: FIRED rank=1 side=up t=189.8s dir=0.0765% stddev=0.0301% n=40 oos_wr=96.4% bh_p=1.34e-09 avg_entry=0.85 ask=0.73 size=$41.43[0m
+2026-04-14 13:31:50.240 [INFO] strategy.momentum_signal: SKIP_MAKER (high conf) rank=1 oos_wr=96.4% stddev=0.0301% → cross on fire
+2026-04-14 13:31:50.240 [INFO] execution.paper_trading: paper momentum1 taker: id=paper-12 price=0.73 size=56.7534 [filled]
+2026-04-14 13:31:50.491 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.0000 ema=0.0000 cusum=0.000/0.800 threshold=1.2605 fire=0.0765% current=0.0765%
+2026-04-14 13:31:51.243 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.1862 ema=0.0186 cusum=0.000/0.800 threshold=1.2605 fire=0.0765% current=0.0622%
+[2m2026-04-14 13:31:51.745 [INFO] __main__: STATUS t=188s delta=0.1088% dir=up agree=True chain=74633.18 bin=74598.42 open=74552.03 obi=0.9426 ask_up=0.72 ask_dn=0.29 bid_up=0.71 bid_dn=0.28 halted=False[0m
+2026-04-14 13:31:53.000 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.0361 ema=0.0910 cusum=0.000/0.800 threshold=1.2605 fire=0.0765% current=0.0737%
+2026-04-14 13:32:03.055 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.0000 ema=0.0196 cusum=0.000/0.800 threshold=1.2605 fire=0.0765% current=0.0820%
+2026-04-14 13:32:13.094 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.0000 ema=0.0003 cusum=0.000/0.800 threshold=1.2605 fire=0.0765% current=0.1458%
+[2m2026-04-14 13:32:21.879 [INFO] __main__: STATUS t=158s delta=0.2093% dir=up agree=True chain=74708.07 bin=74695.49 open=74552.03 obi=0.8334 ask_up=0.91 ask_dn=0.10 bid_up=0.90 bid_dn=0.09 halted=False[0m
+2026-04-14 13:32:23.134 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.0000 ema=0.0000 cusum=0.000/0.800 threshold=1.2605 fire=0.0765% current=0.1985%
+2026-04-14 13:32:33.171 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.0000 ema=0.0000 cusum=0.000/0.800 threshold=1.2605 fire=0.0765% current=0.1749%
+2026-04-14 13:32:43.212 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.0000 ema=0.0000 cusum=0.000/0.800 threshold=1.2605 fire=0.0765% current=0.1904%
+[2m2026-04-14 13:32:51.998 [INFO] __main__: STATUS t=128s delta=0.2203% dir=up agree=True chain=74716.25 bin=74672.00 open=74552.03 obi=-0.4506 ask_up=0.96 ask_dn=0.05 bid_up=0.95 bid_dn=0.04 halted=False[0m
+2026-04-14 13:32:53.252 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.0000 ema=0.0000 cusum=0.000/0.800 threshold=1.2605 fire=0.0765% current=0.1609%
+2026-04-14 13:33:03.301 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.0000 ema=0.0000 cusum=0.000/0.800 threshold=1.2605 fire=0.0765% current=0.1940%
+2026-04-14 13:33:13.343 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.0000 ema=0.0000 cusum=0.000/0.800 threshold=1.2605 fire=0.0765% current=0.3467%
+[2m2026-04-14 13:33:22.129 [INFO] __main__: STATUS t=98s delta=0.4083% dir=up agree=True chain=74856.46 bin=74825.53 open=74552.03 obi=0.2275 ask_up=1.00 ask_dn=0.99 bid_up=0.01 bid_dn=0.01 halted=False[0m
+2026-04-14 13:33:23.386 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.0000 ema=0.0000 cusum=0.000/0.800 threshold=1.2605 fire=0.0765% current=0.3631%
+2026-04-14 13:33:33.431 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.0000 ema=0.0000 cusum=0.000/0.800 threshold=1.2605 fire=0.0765% current=0.4151%
+2026-04-14 13:33:43.473 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.0000 ema=0.0000 cusum=0.000/0.800 threshold=1.2605 fire=0.0765% current=0.4518%
+[2m2026-04-14 13:33:52.261 [INFO] __main__: STATUS t=68s delta=0.4395% dir=up agree=True chain=74879.68 bin=74832.07 open=74552.03 obi=0.1435 ask_up=1.00 ask_dn=0.01 bid_up=0.99 bid_dn=0.01 halted=False[0m
+2026-04-14 13:33:53.517 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.0000 ema=0.0000 cusum=0.000/0.800 threshold=1.2605 fire=0.0765% current=0.3711%
+2026-04-14 13:34:03.569 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.0000 ema=0.0000 cusum=0.000/0.800 threshold=1.2605 fire=0.0765% current=0.4004%
+2026-04-14 13:34:13.610 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.0000 ema=0.0000 cusum=0.000/0.800 threshold=1.2605 fire=0.0765% current=0.3326%
+[2m2026-04-14 13:34:22.396 [INFO] __main__: STATUS t=38s delta=0.3587% dir=up agree=True chain=74819.43 bin=74766.90 open=74552.03 obi=0.2283 ask_up=1.00 ask_dn=0.01 bid_up=0.99 bid_dn=0.01 halted=False[0m
+2026-04-14 13:34:23.651 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.0000 ema=0.0000 cusum=0.000/0.800 threshold=1.2605 fire=0.0765% current=0.2882%
+2026-04-14 13:34:33.697 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.0000 ema=0.0000 cusum=0.000/0.800 threshold=1.2605 fire=0.0765% current=0.2874%
+2026-04-14 13:34:43.747 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.0000 ema=0.0000 cusum=0.000/0.800 threshold=1.2605 fire=0.0765% current=0.2158%
+[2m2026-04-14 13:34:52.545 [INFO] __main__: STATUS t=7s delta=0.2745% dir=up agree=True chain=74756.70 bin=74729.35 open=74552.03 obi=-0.5583 ask_up=1.00 ask_dn=0.01 bid_up=0.99 bid_dn=0.01 halted=False[0m
+2026-04-14 13:34:53.801 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.0000 ema=0.0000 cusum=0.000/0.800 threshold=1.2605 fire=0.0765% current=0.2378%
+[92m[1m2026-04-14 13:35:00.080 [INFO] execution.paper_trading: paper window_ts=1776173400 [WIN] pnl=15.0170 direction=up outcome=up rule#1(fill) balance=$843.55 bid_up=0.99 ask_up=1.00 bid_dn=0.01 ask_dn=0.01[0m
+[93m[1m2026-04-14 13:35:00.080 [INFO] risk.position_tracker: WINDOW_SUMMARY window_pnl=$15.0170 session_pnl=$-34.0821 won=$37.5714 lost=$71.6535 wr=50.0% (5/10) consec_losses=0[0m
+[96m2026-04-14 13:35:00.083 [INFO] strategy.window_handler: REGIME chop_detected flips=3 delta_range=0.5133% avg_flips=2.3 over=6_windows[0m
+[92m[1m2026-04-14 13:35:00.091 [INFO] strategy.window_handler: WINDOW_DECISION [WIN] rank=1 side=up pnl=$15.0170 entry=0.73 size=$41.43[0m
+[96m[1m2026-04-14 13:35:00.092 [INFO] strategy.window_tracker: new window: btc-updown-5m-1776173700 (ts=1776173700)[0m
+2026-04-14 13:35:00.110 [INFO] strategy.window_tracker: Gamma priceToBeat not yet available for btc-updown-5m-1776173700 — fetching in background
+[96m2026-04-14 13:35:00.166 [INFO] strategy.window_handler: REGIME vol_stddev=0.111% chop_flips=2.3 outcome=3U/3D over 6w sprt=dormant llr=1.37 age=134w bankroll=$843.55[0m
+[96m2026-04-14 13:35:00.166 [INFO] strategy.window_handler: KELLY wr_adj=92.8% base=96.4% total_disc=0.7% vol=5.5% chop=0.0% outcome=0.0% feedback=+0.0%[0m
+[96m2026-04-14 13:35:00.166 [WARNING] __main__: window open price captured: 74766.35 (RTDS boundary fallback, oracle_age=1000ms)[0m
+[96m2026-04-14 13:35:00.169 [INFO] __main__: window open price captured: 74743.37 (binance)[0m
+2026-04-14 13:35:00.171 [INFO] strategy.momentum_signal: momentum_signal: waiting for full market data
+2026-04-14 13:35:00.917 [INFO] market_data.clob_market_ws: CLOB market subscribed for tokens up=409047403773 down=280268368298
+[2m2026-04-14 13:35:22.560 [INFO] __main__: STATUS t=277s delta=0.0393% dir=up agree=True chain=74795.70 bin=74771.99 open=74766.35 obi=-0.0652 ask_up=0.56 ask_dn=0.45 bid_up=0.55 bid_dn=0.44 halted=False[0m
+[2m2026-04-14 13:35:52.678 [INFO] __main__: STATUS t=247s delta=0.0283% dir=up agree=False chain=74787.50 bin=74756.33 open=74766.35 obi=-0.5676 ask_up=0.53 ask_dn=0.48 bid_up=0.52 bid_dn=0.47 halted=False[0m
+[2m2026-04-14 13:36:22.843 [INFO] __main__: STATUS t=217s delta=0.0132% dir=up agree=False chain=74776.19 bin=74750.70 open=74766.35 obi=-0.4741 ask_up=0.47 ask_dn=0.54 bid_up=0.46 bid_dn=0.53 halted=False[0m
+2026-04-14 13:36:50.190 [INFO] strategy.momentum_signal: signal_eval rank=1 side=up latest_pct=0.1397 stddev=0.0452 n=40 min_delta=0.06 max_var=0.050
+[96m2026-04-14 13:36:50.190 [INFO] strategy.momentum_signal: KELLY sizing: p_adj=0.928 base=0.934 total_disc=0.007 vol=0.055 chop=0.000 outcome=0.000 feedback=+0.000[0m
+[96m2026-04-14 13:36:50.190 [INFO] strategy.momentum_signal: KELLY bet: entry=0.80 raw_f=0.638 frac_f=0.160 bankroll=$843.55 kelly_bet=$42.18 sprt=1.00 final=$42.18[0m
+[92m[1m2026-04-14 13:36:50.190 [INFO] strategy.momentum_signal: FIRED rank=1 side=up t=189.8s dir=0.1397% stddev=0.0452% n=40 oos_wr=96.4% bh_p=1.34e-09 avg_entry=0.85 ask=0.80 size=$42.18[0m
+2026-04-14 13:36:50.191 [INFO] execution.paper_trading: paper momentum1 maker: id=paper-13 price=0.79 size=53.3924 [resting]
+2026-04-14 13:36:50.191 [INFO] strategy.momentum_signal: MAKER PLACED rank=1 side=up price=0.79 (ask=0.80 -1tick) size=$42.18 timeout=3s
+[2m2026-04-14 13:36:52.953 [INFO] __main__: STATUS t=187s delta=0.1681% dir=up agree=True chain=74892.02 bin=74872.27 open=74766.35 obi=0.7840 ask_up=0.82 ask_dn=0.19 bid_up=0.81 bid_dn=0.18 halted=False[0m
+2026-04-14 13:36:53.205 [INFO] execution.paper_trading: paper cancel: paper-13 (maker escalation)
+2026-04-14 13:36:53.205 [INFO] execution.paper_trading: paper momentum1 taker: id=paper-14 price=0.82 size=51.4390 [filled]
+2026-04-14 13:36:53.205 [INFO] strategy.momentum_signal: TAKER ESCALATION rank=1 side=up maker_price=0.79 taker_price=0.82 elapsed=3.0s size=$42.18
+2026-04-14 13:36:53.456 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.0000 ema=0.0000 cusum=0.000/0.800 threshold=1.2605 fire=0.1397% current=0.1417%
+2026-04-14 13:37:03.503 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.0000 ema=0.0182 cusum=0.000/0.800 threshold=1.2605 fire=0.1397% current=0.1774%
+2026-04-14 13:37:13.540 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.0000 ema=0.0046 cusum=0.000/0.800 threshold=1.2605 fire=0.1397% current=0.1964%
+[2m2026-04-14 13:37:23.088 [INFO] __main__: STATUS t=157s delta=0.2371% dir=up agree=True chain=74943.60 bin=74920.51 open=74766.35 obi=0.0463 ask_up=0.88 ask_dn=0.13 bid_up=0.87 bid_dn=0.12 halted=False[0m
+2026-04-14 13:37:23.590 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.0000 ema=0.0001 cusum=0.000/0.800 threshold=1.2605 fire=0.1397% current=0.2122%
+2026-04-14 13:37:33.628 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.0000 ema=0.0000 cusum=0.000/0.800 threshold=1.2605 fire=0.1397% current=0.1900%
+2026-04-14 13:37:43.667 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.0000 ema=0.0000 cusum=0.000/0.800 threshold=1.2605 fire=0.1397% current=0.1870%
+2026-04-14 13:37:50.193 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.1640 ema=0.0245 cusum=0.000/0.800 threshold=1.2605 fire=0.1397% current=0.1168%
+[2m2026-04-14 13:37:53.205 [INFO] __main__: STATUS t=127s delta=0.1504% dir=up agree=True chain=74878.80 bin=74861.17 open=74766.35 obi=0.3280 ask_up=0.88 ask_dn=0.13 bid_up=0.87 bid_dn=0.12 halted=False[0m
+2026-04-14 13:37:53.708 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.0000 ema=0.1196 cusum=0.000/0.800 threshold=1.2605 fire=0.1397% current=0.1498%
+2026-04-14 13:37:58.227 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.1608 ema=0.0783 cusum=0.000/0.800 threshold=1.2605 fire=0.1397% current=0.1172%
+2026-04-14 13:38:08.267 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.1888 ema=0.1896 cusum=0.000/0.800 threshold=1.2605 fire=0.1397% current=0.1133%
+2026-04-14 13:38:14.792 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.4291 ema=0.2176 cusum=0.000/0.800 threshold=1.2605 fire=0.1397% current=0.0798%
+2026-04-14 13:38:20.814 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.2322 ema=0.3413 cusum=0.000/0.800 threshold=1.2605 fire=0.1397% current=0.1073%
+[2m2026-04-14 13:38:23.325 [INFO] __main__: STATUS t=97s delta=0.1401% dir=up agree=True chain=74871.13 bin=74851.07 open=74766.35 obi=0.9627 ask_up=0.92 ask_dn=0.09 bid_up=0.91 bid_dn=0.08 halted=False[0m
+2026-04-14 13:38:25.082 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.0652 ema=0.1924 cusum=0.000/0.800 threshold=1.2605 fire=0.1397% current=0.1306%
+2026-04-14 13:38:35.118 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.0000 ema=0.0033 cusum=0.000/0.800 threshold=1.2605 fire=0.1397% current=0.1862%
+2026-04-14 13:38:45.156 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.0000 ema=0.0000 cusum=0.000/0.800 threshold=1.2605 fire=0.1397% current=0.1844%
+[2m2026-04-14 13:38:53.435 [INFO] __main__: STATUS t=67s delta=0.2154% dir=up agree=True chain=74927.38 bin=74904.20 open=74766.35 obi=-0.1613 ask_up=0.99 ask_dn=0.02 bid_up=0.98 bid_dn=0.01 halted=False[0m
+2026-04-14 13:38:55.192 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.0000 ema=0.0000 cusum=0.000/0.800 threshold=1.2605 fire=0.1397% current=0.1844%
+2026-04-14 13:39:05.262 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.0000 ema=0.0000 cusum=0.000/0.800 threshold=1.2605 fire=0.1397% current=0.1771%
+2026-04-14 13:39:15.306 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.0624 ema=0.0400 cusum=0.000/0.800 threshold=1.2605 fire=0.1397% current=0.1310%
+[2m2026-04-14 13:39:23.586 [INFO] __main__: STATUS t=36s delta=0.1641% dir=up agree=True chain=74889.02 bin=74859.12 open=74766.35 obi=-0.9969 ask_up=0.99 ask_dn=0.02 bid_up=0.98 bid_dn=0.01 halted=False[0m
+2026-04-14 13:39:25.343 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.1118 ema=0.0850 cusum=0.000/0.800 threshold=1.2605 fire=0.1397% current=0.1241%
+2026-04-14 13:39:35.382 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.0000 ema=0.0061 cusum=0.000/0.800 threshold=1.2605 fire=0.1397% current=0.2050%
+2026-04-14 13:39:45.422 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.0000 ema=0.0001 cusum=0.000/0.800 threshold=1.2605 fire=0.1397% current=0.1480%
+[2m2026-04-14 13:39:53.709 [INFO] __main__: STATUS t=6s delta=0.1983% dir=up agree=True chain=74914.60 bin=74868.03 open=74766.35 obi=0.9701 ask_up=1.00 ask_dn=0.01 bid_up=0.99 bid_dn=0.00 halted=False[0m
+2026-04-14 13:39:55.466 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.0000 ema=0.0089 cusum=0.000/0.800 threshold=1.2605 fire=0.1397% current=0.1520%
+[92m[1m2026-04-14 13:40:00.236 [INFO] execution.paper_trading: paper window_ts=1776173700 [WIN] pnl=9.0738 direction=up outcome=up rule#1(fill) balance=$852.63 bid_up=1.00 ask_up=1.00 bid_dn=0.00 ask_dn=0.00[0m
+[93m[1m2026-04-14 13:40:00.237 [INFO] risk.position_tracker: WINDOW_SUMMARY window_pnl=$9.0738 session_pnl=$-25.0083 won=$46.6452 lost=$71.6535 wr=54.5% (6/11) consec_losses=0[0m
+[92m[1m2026-04-14 13:40:00.243 [INFO] strategy.window_handler: WINDOW_DECISION [WIN] rank=1 side=up pnl=$9.0738 entry=0.82 size=$42.18[0m
+[96m[1m2026-04-14 13:40:00.244 [INFO] strategy.window_tracker: new window: btc-updown-5m-1776174000 (ts=1776174000)[0m
+2026-04-14 13:40:00.256 [INFO] strategy.window_tracker: Gamma priceToBeat not yet available for btc-updown-5m-1776174000 — fetching in background
+[96m2026-04-14 13:40:00.308 [INFO] strategy.window_handler: REGIME vol_stddev=0.116% chop_flips=2.0 outcome=4U/2D over 6w sprt=dormant llr=1.29 age=135w bankroll=$852.63[0m
+[96m2026-04-14 13:40:00.308 [INFO] strategy.window_handler: KELLY wr_adj=92.5% base=96.4% total_disc=1.0% vol=8.1% chop=0.0% outcome=0.0% feedback=+0.0%[0m
+[96m2026-04-14 13:40:00.308 [WARNING] __main__: window open price captured: 74895.55 (RTDS boundary fallback, oracle_age=1000ms)[0m
+[96m2026-04-14 13:40:00.308 [INFO] __main__: window open price captured: 74867.67 (binance)[0m
+2026-04-14 13:40:00.309 [INFO] strategy.momentum_signal: momentum_signal: waiting for full market data
+2026-04-14 13:40:01.116 [INFO] market_data.clob_market_ws: CLOB market subscribed for tokens up=121362267882 down=428501648790
+[2m2026-04-14 13:40:23.915 [INFO] __main__: STATUS t=276s delta=0.1349% dir=up agree=True chain=74996.62 bin=74999.67 open=74895.55 obi=-0.9738 ask_up=0.79 ask_dn=0.23 bid_up=0.77 bid_dn=0.21 halted=False[0m
+[2m2026-04-14 13:40:54.031 [INFO] __main__: STATUS t=246s delta=0.1134% dir=up agree=True chain=74980.50 bin=74988.49 open=74895.55 obi=-0.7714 ask_up=0.80 ask_dn=0.22 bid_up=0.78 bid_dn=0.20 halted=False[0m
+[2m2026-04-14 13:41:24.173 [INFO] __main__: STATUS t=216s delta=0.1042% dir=up agree=True chain=74973.62 bin=74946.14 open=74895.55 obi=-0.7705 ask_up=0.64 ask_dn=0.37 bid_up=0.63 bid_dn=0.36 halted=False[0m
+2026-04-14 13:41:35.309 [INFO] utils.reconnect: rtds connected to wss://ws-live-data.polymarket.com
+2026-04-14 13:41:35.310 [INFO] market_data.rtds_ws: RTDS subscribed to chainlink
+2026-04-14 13:41:50.042 [INFO] strategy.momentum_signal: signal_eval rank=1 side=up latest_pct=0.1101 stddev=0.0245 n=40 min_delta=0.06 max_var=0.050
+[37m2026-04-14 13:41:50.042 [INFO] strategy.momentum_signal: [SKIP] rank=1 side=up reason=market_disagrees discount=16.1% max=15.0% ask=0.71 avg_entry=0.85[0m
+[2m2026-04-14 13:41:54.305 [INFO] __main__: STATUS t=186s delta=0.1430% dir=up agree=True chain=75002.63 bin=74966.58 open=74895.55 obi=0.4619 ask_up=0.71 ask_dn=0.30 bid_up=0.70 bid_dn=0.29 halted=False[0m
+[2m2026-04-14 13:42:24.438 [INFO] __main__: STATUS t=156s delta=0.4284% dir=up agree=True chain=75216.42 bin=75190.28 open=74895.55 obi=0.7367 ask_up=0.97 ask_dn=0.04 bid_up=0.96 bid_dn=0.03 halted=False[0m
+[2m2026-04-14 13:42:54.550 [INFO] __main__: STATUS t=125s delta=0.4419% dir=up agree=True chain=75226.53 bin=75197.93 open=74895.55 obi=0.3773 ask_up=0.99 ask_dn=0.02 bid_up=0.98 bid_dn=0.01 halted=False[0m
+[2m2026-04-14 13:43:24.672 [INFO] __main__: STATUS t=95s delta=0.4758% dir=up agree=True chain=75251.94 bin=75197.30 open=74895.55 obi=0.9924 ask_up=1.00 ask_dn=0.01 bid_up=0.99 bid_dn=0.01 halted=False[0m
+[2m2026-04-14 13:43:54.794 [INFO] __main__: STATUS t=65s delta=0.4110% dir=up agree=True chain=75203.40 bin=75192.12 open=74895.55 obi=0.3399 ask_up=1.00 ask_dn=0.01 bid_up=0.99 bid_dn=0.00 halted=False[0m
+[2m2026-04-14 13:44:24.819 [INFO] __main__: STATUS t=35s delta=0.4794% dir=up agree=True chain=75254.64 bin=75216.28 open=74895.55 obi=-0.8479 ask_up=1.00 ask_dn=0.00 bid_up=1.00 bid_dn=0.00 halted=False[0m
+[2m2026-04-14 13:44:54.948 [INFO] __main__: STATUS t=5s delta=0.4564% dir=up agree=True chain=75237.41 bin=75191.43 open=74895.55 obi=-0.7938 ask_up=1.00 ask_dn=0.00 bid_up=1.00 bid_dn=0.00 halted=False[0m
+[37m2026-04-14 13:45:00.221 [INFO] execution.paper_trading: paper window_ts=1776174000 [SKIP] pnl=0.0000 direction=up outcome=up - balance=$852.63 bid_up=1.00 ask_up=1.00 bid_dn=0.00 ask_dn=0.00[0m
+[93m[1m2026-04-14 13:45:00.226 [INFO] risk.position_tracker: WINDOW_SUMMARY window_pnl=$0.0000 session_pnl=$-25.0083 won=$46.6452 lost=$71.6535 wr=54.5% (6/11) consec_losses=0[0m
+[37m2026-04-14 13:45:00.234 [INFO] strategy.window_handler: WINDOW_DECISION [SKIP] rank=1 side=up pnl=$0.0000 entry=0.00 size=$0.00 (conditions not met)[0m
+[96m[1m2026-04-14 13:45:00.234 [INFO] strategy.window_tracker: new window: btc-updown-5m-1776174300 (ts=1776174300)[0m
+2026-04-14 13:45:00.245 [INFO] strategy.window_tracker: Gamma priceToBeat not yet available for btc-updown-5m-1776174300 — fetching in background
+[96m2026-04-14 13:45:00.278 [INFO] strategy.window_handler: REGIME vol_stddev=0.141% chop_flips=2.2 outcome=5U/1D over 6w sprt=dormant llr=1.29 age=136w bankroll=$852.63[0m
+[96m2026-04-14 13:45:00.278 [INFO] strategy.window_handler: KELLY wr_adj=91.0% base=96.4% total_disc=2.4% vol=20.4% chop=0.0% outcome=0.0% feedback=+0.0%[0m
+[96m2026-04-14 13:45:00.279 [WARNING] __main__: window open price captured: 75229.35 (RTDS boundary fallback, oracle_age=1000ms)[0m
+[96m2026-04-14 13:45:00.279 [INFO] __main__: window open price captured: 75188.49 (binance)[0m
+2026-04-14 13:45:00.279 [INFO] strategy.momentum_signal: momentum_signal: waiting for full market data
+2026-04-14 13:45:00.323 [INFO] market_data.clob_market_ws: CLOB market subscribed for tokens up=889844888975 down=428231258829
+[2m2026-04-14 13:45:25.133 [INFO] __main__: STATUS t=275s delta=-0.0844% dir=down agree=True chain=75165.83 bin=75150.66 open=75229.35 obi=-0.1677 ask_up=0.33 ask_dn=0.68 bid_up=0.32 bid_dn=0.67 halted=False[0m
+[2m2026-04-14 13:45:55.250 [INFO] __main__: STATUS t=245s delta=0.0499% dir=up agree=True chain=75266.90 bin=75287.99 open=75229.35 obi=0.2812 ask_up=0.50 ask_dn=0.51 bid_up=0.49 bid_dn=0.50 halted=False[0m
+[2m2026-04-14 13:46:25.389 [INFO] __main__: STATUS t=215s delta=0.1196% dir=up agree=True chain=75319.36 bin=75265.98 open=75229.35 obi=-0.8411 ask_up=0.67 ask_dn=0.34 bid_up=0.66 bid_dn=0.33 halted=False[0m
+2026-04-14 13:46:50.234 [INFO] strategy.momentum_signal: signal_eval rank=1 side=up latest_pct=0.0490 stddev=0.0148 n=40 min_delta=0.06 max_var=0.050
+[37m2026-04-14 13:46:50.234 [INFO] strategy.momentum_signal: [SKIP] rank=1 side=up reason=conditions_not_met latest_pct=0.0490 need=>=0.06 stddev=0.0148 max_var=0.050[0m
+[2m2026-04-14 13:46:55.506 [INFO] __main__: STATUS t=184s delta=0.1490% dir=up agree=True chain=75341.42 bin=75300.83 open=75229.35 obi=-0.9990 ask_up=0.73 ask_dn=0.28 bid_up=0.72 bid_dn=0.27 halted=False[0m
+[2m2026-04-14 13:47:25.640 [INFO] __main__: STATUS t=154s delta=0.2065% dir=up agree=True chain=75384.68 bin=75321.66 open=75229.35 obi=0.7721 ask_up=0.84 ask_dn=0.17 bid_up=0.83 bid_dn=0.16 halted=False[0m
+[2m2026-04-14 13:47:55.756 [INFO] __main__: STATUS t=124s delta=0.2492% dir=up agree=True chain=75416.83 bin=75366.61 open=75229.35 obi=-0.9841 ask_up=0.94 ask_dn=0.07 bid_up=0.93 bid_dn=0.06 halted=False[0m
+[2m2026-04-14 13:48:25.898 [INFO] __main__: STATUS t=94s delta=0.0373% dir=up agree=False chain=75257.44 bin=75210.99 open=75229.35 obi=-0.0559 ask_up=0.69 ask_dn=0.32 bid_up=0.68 bid_dn=0.31 halted=False[0m
+[2m2026-04-14 13:48:56.019 [INFO] __main__: STATUS t=64s delta=-0.0222% dir=down agree=True chain=75212.62 bin=75197.83 open=75229.35 obi=-0.0449 ask_up=0.50 ask_dn=0.51 bid_up=0.49 bid_dn=0.50 halted=False[0m
+[2m2026-04-14 13:49:26.145 [INFO] __main__: STATUS t=34s delta=-0.0917% dir=down agree=True chain=75160.39 bin=75130.76 open=75229.35 obi=-0.0185 ask_up=0.14 ask_dn=0.87 bid_up=0.13 bid_dn=0.86 halted=False[0m
+[2m2026-04-14 13:49:56.257 [INFO] __main__: STATUS t=4s delta=-0.0651% dir=down agree=True chain=75180.35 bin=75132.95 open=75229.35 obi=0.7912 ask_up=0.02 ask_dn=0.99 bid_up=0.01 bid_dn=0.98 halted=False[0m
+[37m2026-04-14 13:50:00.023 [INFO] execution.paper_trading: paper window_ts=1776174300 [SKIP] pnl=0.0000 direction=down outcome=down - balance=$852.63 bid_up=0.01 ask_up=0.01 bid_dn=0.99 ask_dn=1.00[0m
+[93m[1m2026-04-14 13:50:00.023 [INFO] risk.position_tracker: WINDOW_SUMMARY window_pnl=$0.0000 session_pnl=$-25.0083 won=$46.6452 lost=$71.6535 wr=54.5% (6/11) consec_losses=0[0m
+[96m2026-04-14 13:50:00.025 [INFO] strategy.window_handler: REGIME chop_detected flips=9 delta_range=0.4073% avg_flips=3.0 over=6_windows[0m
+[37m2026-04-14 13:50:00.033 [INFO] strategy.window_handler: WINDOW_DECISION [SKIP] rank=1 side=up pnl=$0.0000 entry=0.00 size=$0.00 (conditions not met)[0m
+[96m[1m2026-04-14 13:50:00.033 [INFO] strategy.window_tracker: new window: btc-updown-5m-1776174600 (ts=1776174600)[0m
+2026-04-14 13:50:00.049 [INFO] strategy.window_tracker: Gamma priceToBeat not yet available for btc-updown-5m-1776174600 — fetching in background
+[96m2026-04-14 13:50:00.095 [INFO] strategy.window_handler: REGIME vol_stddev=0.141% chop_flips=3.0 outcome=4U/2D over 6w sprt=dormant llr=1.29 age=137w bankroll=$852.63[0m
+[96m2026-04-14 13:50:00.095 [INFO] strategy.window_handler: KELLY wr_adj=91.0% base=96.4% total_disc=2.5% vol=20.7% chop=0.0% outcome=0.0% feedback=+0.0%[0m
+[96m2026-04-14 13:50:00.095 [WARNING] __main__: window open price captured: 75178.41 (RTDS boundary fallback, oracle_age=1000ms)[0m
+[96m2026-04-14 13:50:00.095 [INFO] __main__: window open price captured: 75128.98 (binance)[0m
+2026-04-14 13:50:00.096 [INFO] strategy.momentum_signal: momentum_signal: waiting for full market data
+2026-04-14 13:50:00.510 [INFO] market_data.clob_market_ws: CLOB market subscribed for tokens up=246094788461 down=540200538738
+[2m2026-04-14 13:50:26.463 [INFO] __main__: STATUS t=274s delta=0.0186% dir=up agree=False chain=75192.41 bin=75149.92 open=75178.41 obi=0.8244 ask_up=0.51 ask_dn=0.50 bid_up=0.50 bid_dn=0.49 halted=False[0m
+[2m2026-04-14 13:50:56.576 [INFO] __main__: STATUS t=243s delta=0.1151% dir=up agree=True chain=75264.90 bin=75219.54 open=75178.41 obi=-0.5966 ask_up=0.71 ask_dn=0.30 bid_up=0.70 bid_dn=0.29 halted=False[0m
+[2m2026-04-14 13:51:26.698 [INFO] __main__: STATUS t=213s delta=0.2189% dir=up agree=True chain=75342.98 bin=75290.97 open=75178.41 obi=-0.3506 ask_up=0.85 ask_dn=0.16 bid_up=0.84 bid_dn=0.15 halted=False[0m
+2026-04-14 13:51:50.034 [INFO] strategy.momentum_signal: signal_eval rank=1 side=up latest_pct=0.2050 stddev=0.0752 n=40 min_delta=0.06 max_var=0.050
+[37m2026-04-14 13:51:50.034 [INFO] strategy.momentum_signal: [SKIP] rank=1 side=up reason=conditions_not_met latest_pct=0.2050 need=>=0.06 stddev=0.0752 max_var=0.050[0m
+[2m2026-04-14 13:51:56.811 [INFO] __main__: STATUS t=183s delta=0.2498% dir=up agree=True chain=75366.19 bin=75345.85 open=75178.41 obi=0.2973 ask_up=0.91 ask_dn=0.10 bid_up=0.90 bid_dn=0.09 halted=False[0m
+[2m2026-04-14 13:52:26.934 [INFO] __main__: STATUS t=153s delta=0.2433% dir=up agree=True chain=75361.30 bin=75318.44 open=75178.41 obi=0.1898 ask_up=0.92 ask_dn=0.09 bid_up=0.91 bid_dn=0.08 halted=False[0m
+[2m2026-04-14 13:52:57.044 [INFO] __main__: STATUS t=123s delta=0.2627% dir=up agree=True chain=75375.89 bin=75337.66 open=75178.41 obi=0.9915 ask_up=0.95 ask_dn=0.06 bid_up=0.94 bid_dn=0.05 halted=False[0m
+[2m2026-04-14 13:53:27.187 [INFO] __main__: STATUS t=93s delta=0.3053% dir=up agree=True chain=75407.93 bin=75367.11 open=75178.41 obi=0.9076 ask_up=0.99 ask_dn=0.02 bid_up=0.98 bid_dn=0.01 halted=False[0m
+[2m2026-04-14 13:53:57.314 [INFO] __main__: STATUS t=63s delta=0.2926% dir=up agree=True chain=75398.40 bin=75342.32 open=75178.41 obi=0.9612 ask_up=1.00 ask_dn=0.01 bid_up=0.99 bid_dn=0.01 halted=False[0m
+[2m2026-04-14 13:54:27.529 [INFO] __main__: STATUS t=32s delta=0.3284% dir=up agree=True chain=75425.32 bin=75396.16 open=75178.41 obi=-0.5395 ask_up=1.00 ask_dn=0.01 bid_up=0.99 bid_dn=0.01 halted=False[0m
+[2m2026-04-14 13:54:57.667 [INFO] __main__: STATUS t=2s delta=0.2925% dir=up agree=True chain=75398.27 bin=75359.12 open=75178.41 obi=-0.7662 ask_up=1.00 ask_dn=0.00 bid_up=1.00 bid_dn=0.01 halted=False[0m
+[37m2026-04-14 13:55:00.179 [INFO] execution.paper_trading: paper window_ts=1776174600 [SKIP] pnl=0.0000 direction=up outcome=up - balance=$852.63 bid_up=1.00 ask_up=1.00 bid_dn=0.01 ask_dn=0.00[0m
+[93m[1m2026-04-14 13:55:00.179 [INFO] risk.position_tracker: WINDOW_SUMMARY window_pnl=$0.0000 session_pnl=$-25.0083 won=$46.6452 lost=$71.6535 wr=54.5% (6/11) consec_losses=0[0m
+[96m2026-04-14 13:55:00.181 [INFO] strategy.window_handler: REGIME chop_detected flips=3 delta_range=0.3623% avg_flips=3.3 over=6_windows[0m
+[37m2026-04-14 13:55:00.186 [INFO] strategy.window_handler: WINDOW_DECISION [SKIP] rank=1 side=up pnl=$0.0000 entry=0.00 size=$0.00 (conditions not met)[0m
+[96m[1m2026-04-14 13:55:00.186 [INFO] strategy.window_tracker: new window: btc-updown-5m-1776174900 (ts=1776174900)[0m
+2026-04-14 13:55:00.198 [INFO] strategy.window_tracker: Gamma priceToBeat not yet available for btc-updown-5m-1776174900 — fetching in background
+[96m2026-04-14 13:55:00.228 [INFO] strategy.window_handler: REGIME vol_stddev=0.148% chop_flips=3.3 outcome=4U/2D over 6w sprt=dormant llr=1.29 age=138w bankroll=$852.63[0m
+[96m2026-04-14 13:55:00.228 [INFO] strategy.window_handler: KELLY wr_adj=90.6% base=96.4% total_disc=2.9% vol=23.8% chop=0.0% outcome=0.0% feedback=+0.0%[0m
+[96m2026-04-14 13:55:00.228 [WARNING] __main__: window open price captured: 75396.03 (RTDS boundary fallback, oracle_age=2000ms)[0m
+[96m2026-04-14 13:55:00.228 [INFO] __main__: window open price captured: 75366.83 (binance)[0m
+2026-04-14 13:55:00.229 [INFO] strategy.momentum_signal: momentum_signal: waiting for full market data
+2026-04-14 13:55:00.729 [INFO] market_data.clob_market_ws: CLOB market subscribed for tokens up=491519184362 down=294751612121
+[2m2026-04-14 13:55:27.850 [INFO] __main__: STATUS t=272s delta=-0.0182% dir=down agree=True chain=75382.31 bin=75348.00 open=75396.03 obi=0.6258 ask_up=0.41 ask_dn=0.60 bid_up=0.40 bid_dn=0.59 halted=False[0m
+[2m2026-04-14 13:55:57.969 [INFO] __main__: STATUS t=242s delta=0.0582% dir=up agree=False chain=75439.91 bin=75394.60 open=75396.03 obi=0.8584 ask_up=0.56 ask_dn=0.45 bid_up=0.55 bid_dn=0.44 halted=False[0m
+[2m2026-04-14 13:56:28.125 [INFO] __main__: STATUS t=212s delta=0.0630% dir=up agree=True chain=75443.50 bin=75405.43 open=75396.03 obi=-0.4507 ask_up=0.59 ask_dn=0.42 bid_up=0.58 bid_dn=0.41 halted=False[0m
+2026-04-14 13:56:36.765 [INFO] shared.ipc: IPC: received authenticated signal_update (summary=signals_summary_1776174997.json)
+2026-04-14 13:56:36.765 [INFO] __main__: received new signal from orchestrator: rank=1 side=Up
+2026-04-14 13:56:50.203 [INFO] strategy.momentum_signal: signal_eval rank=1 side=up latest_pct=0.0149 stddev=0.0144 n=40 min_delta=0.06 max_var=0.050
+[37m2026-04-14 13:56:50.203 [INFO] strategy.momentum_signal: [SKIP] rank=1 side=up reason=conditions_not_met latest_pct=0.0149 need=>=0.06 stddev=0.0144 max_var=0.050[0m
+[2m2026-04-14 13:56:58.235 [INFO] __main__: STATUS t=182s delta=0.1169% dir=up agree=True chain=75484.17 bin=75472.11 open=75396.03 obi=0.9112 ask_up=0.76 ask_dn=0.26 bid_up=0.74 bid_dn=0.24 halted=False[0m
+[2m2026-04-14 13:57:28.359 [INFO] __main__: STATUS t=152s delta=0.1531% dir=up agree=True chain=75511.45 bin=75461.91 open=75396.03 obi=0.4999 ask_up=0.83 ask_dn=0.18 bid_up=0.82 bid_dn=0.17 halted=False[0m
+[2m2026-04-14 13:57:58.472 [INFO] __main__: STATUS t=122s delta=0.1271% dir=up agree=True chain=75491.85 bin=75450.00 open=75396.03 obi=0.6783 ask_up=0.85 ask_dn=0.16 bid_up=0.84 bid_dn=0.15 halted=False[0m
+[2m2026-04-14 13:58:28.595 [INFO] __main__: STATUS t=91s delta=0.1301% dir=up agree=True chain=75494.09 bin=75455.24 open=75396.03 obi=-0.8562 ask_up=0.89 ask_dn=0.12 bid_up=0.88 bid_dn=0.11 halted=False[0m
+[2m2026-04-14 13:58:58.716 [INFO] __main__: STATUS t=61s delta=0.1425% dir=up agree=True chain=75503.44 bin=75470.09 open=75396.03 obi=0.8747 ask_up=0.95 ask_dn=0.06 bid_up=0.94 bid_dn=0.05 halted=False[0m
+[2m2026-04-14 13:59:28.844 [INFO] __main__: STATUS t=31s delta=0.1951% dir=up agree=True chain=75543.12 bin=75499.00 open=75396.03 obi=0.1809 ask_up=1.00 ask_dn=0.01 bid_up=0.99 bid_dn=0.01 halted=False[0m
+[2m2026-04-14 13:59:58.967 [INFO] __main__: STATUS t=1s delta=0.2406% dir=up agree=True chain=75577.47 bin=75529.00 open=75396.03 obi=-0.0626 ask_up=1.00 ask_dn=0.01 bid_up=0.99 bid_dn=0.01 halted=False[0m
+[37m2026-04-14 14:00:00.229 [INFO] execution.paper_trading: paper window_ts=1776174900 [SKIP] pnl=0.0000 direction=up outcome=up - balance=$852.63 bid_up=0.99 ask_up=1.00 bid_dn=0.01 ask_dn=0.01[0m
+[93m[1m2026-04-14 14:00:00.229 [INFO] risk.position_tracker: WINDOW_SUMMARY window_pnl=$0.0000 session_pnl=$-25.0083 won=$46.6452 lost=$71.6535 wr=54.5% (6/11) consec_losses=0[0m
+[96m2026-04-14 14:00:00.231 [INFO] strategy.window_handler: REGIME chop_detected flips=4 delta_range=0.2750% avg_flips=3.7 over=6_windows[0m
+[37m2026-04-14 14:00:00.235 [INFO] strategy.window_handler: WINDOW_DECISION [SKIP] rank=1 side=up pnl=$0.0000 entry=0.00 size=$0.00 (conditions not met)[0m
+[95m2026-04-14 14:00:00.235 [INFO] strategy.window_handler: Signal refreshed (same pattern): up_230.0_200.0_0.06_0.05 — rank 1->1, keeping SPRT state (age=139w, trades=5, LLR=1.29)[0m
+2026-04-14 14:00:00.235 [INFO] strategy.window_handler: SIGNAL_SWAP_ACTIVE: {"rank":1,"side":"up","observeFromS":230.0,"observeToS":200.0,"minDeltaPct":0.06,"maxVariancePct":0.05,"trainWinRatePct":97.62,"oosWinRatePct":96.55,"oosBhAdjustedPValue":6.71174e-10,"oosMatches":29,"avgEntryPrice":0.8397,"evPerTrade":0.0959,"smartScore":8.7,"wfFoldsAppeared":5,"wfTotalTestFolds":6,"wfFoldIndices":[3,4,5,6,7]}
+2026-04-14 14:00:00.235 [INFO] strategy.window_handler: switched to new signal: #1 up (previous: #1 up)
+[96m[1m2026-04-14 14:00:00.236 [INFO] strategy.window_tracker: new window: btc-updown-5m-1776175200 (ts=1776175200)[0m
+2026-04-14 14:00:00.255 [INFO] strategy.window_tracker: Gamma priceToBeat not yet available for btc-updown-5m-1776175200 — fetching in background
+[96m2026-04-14 14:00:00.318 [INFO] strategy.window_handler: REGIME vol_stddev=0.152% chop_flips=3.7 outcome=5U/1D over 6w sprt=dormant llr=1.29 age=139w bankroll=$852.63[0m
+[96m2026-04-14 14:00:00.319 [INFO] strategy.window_handler: KELLY wr_adj=90.4% base=96.5% total_disc=3.1% vol=26.0% chop=0.0% outcome=0.0% feedback=+0.0%[0m
+[96m2026-04-14 14:00:00.319 [WARNING] __main__: window open price captured: 75582.22 (RTDS boundary fallback, oracle_age=1000ms)[0m
+[96m2026-04-14 14:00:00.320 [INFO] __main__: window open price captured: 75524.99 (binance)[0m
+2026-04-14 14:00:00.320 [INFO] strategy.momentum_signal: momentum_signal: waiting for full market data
+2026-04-14 14:00:00.922 [INFO] market_data.clob_market_ws: CLOB market subscribed for tokens up=100464532955 down=802702802733
+[2m2026-04-14 14:00:28.979 [INFO] __main__: STATUS t=271s delta=0.0318% dir=up agree=False chain=75606.24 bin=75555.12 open=75582.22 obi=-0.8387 ask_up=0.99 ask_dn=0.99 bid_up=0.01 bid_dn=0.01 halted=False[0m
+[2m2026-04-14 14:00:59.104 [INFO] __main__: STATUS t=241s delta=-0.1352% dir=down agree=True chain=75480.01 bin=75458.00 open=75582.22 obi=0.9985 ask_up=0.28 ask_dn=0.74 bid_up=0.26 bid_dn=0.72 halted=False[0m
+[2m2026-04-14 14:01:29.235 [INFO] __main__: STATUS t=211s delta=-0.1348% dir=down agree=True chain=75480.32 bin=75428.40 open=75582.22 obi=0.9993 ask_up=0.23 ask_dn=0.78 bid_up=0.22 bid_dn=0.77 halted=False[0m
+2026-04-14 14:01:50.066 [INFO] strategy.momentum_signal: signal_eval rank=1 side=up latest_pct=-0.1172 stddev=0.0300 n=40 min_delta=0.06 max_var=0.050
+[37m2026-04-14 14:01:50.066 [INFO] strategy.momentum_signal: [SKIP] rank=1 side=up reason=conditions_not_met latest_pct=-0.1172 need=>=0.06 stddev=0.0300 max_var=0.050[0m
+[2m2026-04-14 14:01:59.350 [INFO] __main__: STATUS t=181s delta=-0.0687% dir=down agree=True chain=75530.29 bin=75503.54 open=75582.22 obi=0.2718 ask_up=0.35 ask_dn=0.66 bid_up=0.34 bid_dn=0.65 halted=False[0m
+[2m2026-04-14 14:02:29.467 [INFO] __main__: STATUS t=151s delta=-0.1595% dir=down agree=True chain=75461.68 bin=75422.16 open=75582.22 obi=-0.3230 ask_up=0.16 ask_dn=0.85 bid_up=0.15 bid_dn=0.84 halted=False[0m
+[2m2026-04-14 14:02:59.568 [INFO] __main__: STATUS t=120s delta=-0.1788% dir=down agree=True chain=75447.09 bin=75400.00 open=75582.22 obi=0.6750 ask_up=0.10 ask_dn=0.91 bid_up=0.09 bid_dn=0.90 halted=False[0m
+[2m2026-04-14 14:03:29.730 [INFO] __main__: STATUS t=90s delta=-0.2024% dir=down agree=True chain=75429.21 bin=75385.74 open=75582.22 obi=0.9228 ask_up=0.06 ask_dn=0.95 bid_up=0.05 bid_dn=0.94 halted=False[0m
+[2m2026-04-14 14:03:59.857 [INFO] __main__: STATUS t=60s delta=-0.1724% dir=down agree=True chain=75451.92 bin=75405.61 open=75582.22 obi=-0.7005 ask_up=0.03 ask_dn=0.98 bid_up=0.02 bid_dn=0.97 halted=False[0m
+[2m2026-04-14 14:04:30.009 [INFO] __main__: STATUS t=30s delta=-0.1307% dir=down agree=True chain=75483.46 bin=75423.69 open=75582.22 obi=0.7903 ask_up=0.02 ask_dn=0.99 bid_up=0.01 bid_dn=0.98 halted=False[0m
+[2m2026-04-14 14:05:00.145 [INFO] __main__: STATUS t=300s delta=-0.1683% dir=down agree=True chain=75455.03 bin=75409.50 open=75582.22 obi=-0.2472 ask_up=0.01 ask_dn=1.00 bid_up=0.01 bid_dn=0.99 halted=False[0m
+[37m2026-04-14 14:05:00.151 [INFO] execution.paper_trading: paper window_ts=1776175200 [SKIP] pnl=0.0000 direction=down outcome=down - balance=$852.63 bid_up=0.01 ask_up=0.01 bid_dn=0.99 ask_dn=1.00[0m
+[93m[1m2026-04-14 14:05:00.151 [INFO] risk.position_tracker: WINDOW_SUMMARY window_pnl=$0.0000 session_pnl=$-25.0083 won=$46.6452 lost=$71.6535 wr=54.5% (6/11) consec_losses=0[0m
+[37m2026-04-14 14:05:00.157 [INFO] strategy.window_handler: WINDOW_DECISION [SKIP] rank=1 side=up pnl=$0.0000 entry=0.00 size=$0.00 (conditions not met)[0m
+[96m[1m2026-04-14 14:05:00.157 [INFO] strategy.window_tracker: new window: btc-updown-5m-1776175500 (ts=1776175500)[0m
+2026-04-14 14:05:00.168 [INFO] strategy.window_tracker: Gamma priceToBeat not yet available for btc-updown-5m-1776175500 — fetching in background
+2026-04-14 14:05:00.177 [INFO] market_data.clob_market_ws: CLOB market subscribed for tokens up=110264709386 down=452151721038
+[96m2026-04-14 14:05:00.219 [INFO] strategy.window_handler: REGIME vol_stddev=0.159% chop_flips=3.5 outcome=4U/2D over 6w sprt=dormant llr=1.29 age=140w bankroll=$852.63[0m
+[96m2026-04-14 14:05:00.220 [INFO] strategy.window_handler: KELLY wr_adj=90.0% base=96.5% total_disc=3.6% vol=29.6% chop=0.0% outcome=0.0% feedback=+0.0%[0m
+[96m2026-04-14 14:05:00.220 [WARNING] __main__: window open price captured: 75455.03 (RTDS boundary fallback, oracle_age=1000ms)[0m
+[96m2026-04-14 14:05:00.220 [INFO] __main__: window open price captured: 75409.51 (binance)[0m
+[2m2026-04-14 14:05:30.349 [INFO] __main__: STATUS t=270s delta=-0.0418% dir=down agree=True chain=75423.52 bin=75378.68 open=75455.03 obi=-0.1513 ask_up=0.37 ask_dn=0.64 bid_up=0.36 bid_dn=0.63 halted=False[0m
+[2m2026-04-14 14:06:00.455 [INFO] __main__: STATUS t=240s delta=0.0309% dir=up agree=False chain=75478.31 bin=75429.89 open=75455.03 obi=-0.8016 ask_up=0.52 ask_dn=0.49 bid_up=0.51 bid_dn=0.48 halted=False[0m
+[2m2026-04-14 14:06:30.610 [INFO] __main__: STATUS t=209s delta=-0.0415% dir=down agree=True chain=75423.71 bin=75376.18 open=75455.03 obi=0.1845 ask_up=0.99 ask_dn=0.66 bid_up=0.01 bid_dn=0.65 halted=False[0m
+2026-04-14 14:06:50.183 [INFO] strategy.momentum_signal: signal_eval rank=1 side=up latest_pct=-0.0209 stddev=0.0317 n=40 min_delta=0.06 max_var=0.050
+[37m2026-04-14 14:06:50.184 [INFO] strategy.momentum_signal: [SKIP] rank=1 side=up reason=conditions_not_met latest_pct=-0.0209 need=>=0.06 stddev=0.0317 max_var=0.050[0m
+[2m2026-04-14 14:07:00.723 [INFO] __main__: STATUS t=179s delta=0.1702% dir=up agree=True chain=75583.43 bin=75576.19 open=75455.03 obi=0.8476 ask_up=0.89 ask_dn=0.12 bid_up=0.88 bid_dn=0.11 halted=False[0m
+[2m2026-04-14 14:07:30.854 [INFO] __main__: STATUS t=149s delta=0.2182% dir=up agree=True chain=75619.67 bin=75568.01 open=75455.03 obi=-0.0579 ask_up=0.91 ask_dn=0.10 bid_up=0.90 bid_dn=0.09 halted=False[0m
+[2m2026-04-14 14:08:00.971 [INFO] __main__: STATUS t=119s delta=0.2105% dir=up agree=True chain=75613.84 bin=75575.45 open=75455.03 obi=-0.9015 ask_up=0.93 ask_dn=0.08 bid_up=0.92 bid_dn=0.07 halted=False[0m
+[2m2026-04-14 14:08:31.101 [INFO] __main__: STATUS t=89s delta=0.0858% dir=up agree=True chain=75519.78 bin=75471.48 open=75455.03 obi=0.7182 ask_up=0.80 ask_dn=0.21 bid_up=0.79 bid_dn=0.20 halted=False[0m
+[2m2026-04-14 14:09:01.211 [INFO] __main__: STATUS t=59s delta=-0.0557% dir=down agree=True chain=75413.03 bin=75371.19 open=75455.03 obi=0.9893 ask_up=0.36 ask_dn=0.66 bid_up=0.34 bid_dn=0.64 halted=False[0m
+[2m2026-04-14 14:09:31.348 [INFO] __main__: STATUS t=29s delta=0.1242% dir=up agree=True chain=75548.77 bin=75486.00 open=75455.03 obi=-0.8257 ask_up=0.92 ask_dn=0.09 bid_up=0.91 bid_dn=0.08 halted=False[0m
+[37m2026-04-14 14:10:00.213 [INFO] execution.paper_trading: paper window_ts=1776175500 [SKIP] pnl=0.0000 direction=up outcome=up - balance=$852.63 bid_up=0.99 ask_up=1.00 bid_dn=0.01 ask_dn=0.01[0m
+[93m[1m2026-04-14 14:10:00.213 [INFO] risk.position_tracker: WINDOW_SUMMARY window_pnl=$0.0000 session_pnl=$-25.0083 won=$46.6452 lost=$71.6535 wr=54.5% (6/11) consec_losses=0[0m
+[96m2026-04-14 14:10:00.215 [INFO] strategy.window_handler: REGIME chop_detected flips=7 delta_range=0.3834% avg_flips=4.3 over=6_windows[0m
+[37m2026-04-14 14:10:00.219 [INFO] strategy.window_handler: WINDOW_DECISION [SKIP] rank=1 side=up pnl=$0.0000 entry=0.00 size=$0.00 (conditions not met)[0m
+[96m[1m2026-04-14 14:10:00.219 [INFO] strategy.window_tracker: new window: btc-updown-5m-1776175800 (ts=1776175800)[0m
+2026-04-14 14:10:00.231 [INFO] strategy.window_tracker: Gamma priceToBeat not yet available for btc-updown-5m-1776175800 — fetching in background
+[96m2026-04-14 14:10:00.260 [INFO] strategy.window_handler: REGIME vol_stddev=0.161% chop_flips=4.3 outcome=4U/2D over 6w sprt=dormant llr=1.29 age=141w bankroll=$852.63[0m
+[96m2026-04-14 14:10:00.261 [INFO] strategy.window_handler: KELLY wr_adj=89.9% base=96.5% total_disc=3.7% vol=30.5% chop=0.0% outcome=0.0% feedback=+0.0%[0m
+[96m2026-04-14 14:10:00.261 [WARNING] __main__: window open price captured: 75603.04 (RTDS boundary fallback, oracle_age=4000ms)[0m
+[96m2026-04-14 14:10:00.261 [INFO] __main__: window open price captured: 75560.49 (binance)[0m
+2026-04-14 14:10:00.262 [INFO] strategy.momentum_signal: momentum_signal: waiting for full market data
+2026-04-14 14:10:00.407 [INFO] market_data.clob_market_ws: CLOB market subscribed for tokens up=173931973346 down=812578209477
+[2m2026-04-14 14:10:01.535 [INFO] __main__: STATUS t=298s delta=0.0000% dir=none agree=False chain=75603.04 bin=75564.57 open=75603.04 obi=0.9786 ask_up=0.47 ask_dn=0.54 bid_up=0.46 bid_dn=0.53 halted=False[0m
+[2m2026-04-14 14:10:31.655 [INFO] __main__: STATUS t=268s delta=-0.0675% dir=down agree=True chain=75552.00 bin=75496.81 open=75603.04 obi=-0.0127 ask_up=0.37 ask_dn=0.64 bid_up=0.36 bid_dn=0.63 halted=False[0m
+[2m2026-04-14 14:11:01.812 [INFO] __main__: STATUS t=238s delta=-0.0295% dir=down agree=True chain=75580.75 bin=75501.74 open=75603.04 obi=-0.8380 ask_up=0.37 ask_dn=0.64 bid_up=0.36 bid_dn=0.63 halted=False[0m
+[2m2026-04-14 14:11:31.928 [INFO] __main__: STATUS t=208s delta=-0.0830% dir=down agree=True chain=75540.29 bin=75499.84 open=75603.04 obi=0.8647 ask_up=0.32 ask_dn=0.69 bid_up=0.31 bid_dn=0.68 halted=False[0m
+2026-04-14 14:11:42.527 [INFO] shared.ipc: IPC: received authenticated signal_update (summary=signals_summary_1776175902.json)
+2026-04-14 14:11:42.527 [INFO] __main__: received new signal from orchestrator: rank=1 side=Up
+2026-04-14 14:11:50.248 [INFO] strategy.momentum_signal: signal_eval rank=1 side=up latest_pct=-0.1446 stddev=0.0188 n=40 min_delta=0.06 max_var=0.050
+[37m2026-04-14 14:11:50.248 [INFO] strategy.momentum_signal: [SKIP] rank=1 side=up reason=conditions_not_met latest_pct=-0.1446 need=>=0.06 stddev=0.0188 max_var=0.050[0m
+[2m2026-04-14 14:12:02.097 [INFO] __main__: STATUS t=178s delta=-0.0794% dir=down agree=True chain=75543.03 bin=75490.64 open=75603.04 obi=-0.7685 ask_up=0.28 ask_dn=0.73 bid_up=0.27 bid_dn=0.72 halted=False[0m
+[2m2026-04-14 14:12:32.234 [INFO] __main__: STATUS t=148s delta=-0.0817% dir=down agree=True chain=75541.26 bin=75502.60 open=75603.04 obi=0.5657 ask_up=0.29 ask_dn=0.73 bid_up=0.27 bid_dn=0.71 halted=False[0m
+[2m2026-04-14 14:13:02.373 [INFO] __main__: STATUS t=118s delta=-0.0800% dir=down agree=True chain=75542.56 bin=75497.33 open=75603.04 obi=0.0905 ask_up=0.24 ask_dn=0.77 bid_up=0.23 bid_dn=0.76 halted=False[0m
+[2m2026-04-14 14:13:32.493 [INFO] __main__: STATUS t=88s delta=0.0085% dir=up agree=False chain=75609.44 bin=75573.99 open=75603.04 obi=-0.8705 ask_up=0.50 ask_dn=0.52 bid_up=0.48 bid_dn=0.50 halted=False[0m
+[2m2026-04-14 14:14:02.731 [INFO] __main__: STATUS t=57s delta=0.0441% dir=up agree=True chain=75636.36 bin=75608.98 open=75603.04 obi=0.9138 ask_up=0.75 ask_dn=0.26 bid_up=0.74 bid_dn=0.25 halted=False[0m
+[2m2026-04-14 14:14:32.866 [INFO] __main__: STATUS t=27s delta=0.0189% dir=up agree=False chain=75617.33 bin=75577.68 open=75603.04 obi=0.2765 ask_up=0.63 ask_dn=0.38 bid_up=0.62 bid_dn=0.37 halted=False[0m
+[37m2026-04-14 14:15:00.225 [INFO] execution.paper_trading: paper window_ts=1776175800 [SKIP] pnl=0.0000 direction=down outcome=down - balance=$852.63 bid_up=0.53 ask_up=0.76 bid_dn=0.24 ask_dn=0.47[0m
+[93m[1m2026-04-14 14:15:00.225 [INFO] risk.position_tracker: WINDOW_SUMMARY window_pnl=$0.0000 session_pnl=$-25.0083 won=$46.6452 lost=$71.6535 wr=54.5% (6/11) consec_losses=0[0m
+[96m2026-04-14 14:15:00.227 [INFO] strategy.window_handler: REGIME chop_detected flips=11 delta_range=0.2197% avg_flips=6.0 over=6_windows[0m
+[37m2026-04-14 14:15:00.231 [INFO] strategy.window_handler: WINDOW_DECISION [SKIP] rank=1 side=up pnl=$0.0000 entry=0.00 size=$0.00 (conditions not met)[0m
+[95m2026-04-14 14:15:00.232 [INFO] strategy.window_handler: Signal refreshed (same pattern): up_230.0_200.0_0.06_0.05 — rank 1->1, keeping SPRT state (age=142w, trades=5, LLR=1.29)[0m
+2026-04-14 14:15:00.232 [INFO] strategy.window_handler: SIGNAL_SWAP_ACTIVE: {"rank":1,"side":"up","observeFromS":230.0,"observeToS":200.0,"minDeltaPct":0.06,"maxVariancePct":0.05,"trainWinRatePct":97.62,"oosWinRatePct":96.55,"oosBhAdjustedPValue":6.7319e-10,"oosMatches":29,"avgEntryPrice":0.8397,"evPerTrade":0.0959,"smartScore":8.74,"wfFoldsAppeared":5,"wfTotalTestFolds":6,"wfFoldIndices":[3,4,5,6,7]}
+2026-04-14 14:15:00.232 [INFO] strategy.window_handler: switched to new signal: #1 up (previous: #1 up)
+[96m[1m2026-04-14 14:15:00.232 [INFO] strategy.window_tracker: new window: btc-updown-5m-1776176100 (ts=1776176100)[0m
+2026-04-14 14:15:00.242 [INFO] strategy.window_tracker: Gamma priceToBeat not yet available for btc-updown-5m-1776176100 — fetching in background
+[96m2026-04-14 14:15:00.280 [INFO] strategy.window_handler: REGIME vol_stddev=0.155% chop_flips=6.0 outcome=3U/3D over 6w sprt=dormant llr=1.29 age=142w bankroll=$852.63[0m
+[96m2026-04-14 14:15:00.280 [INFO] strategy.window_handler: KELLY wr_adj=90.2% base=96.5% total_disc=3.3% vol=27.6% chop=20.0% outcome=0.0% feedback=+0.0%[0m
+[96m2026-04-14 14:15:00.280 [WARNING] __main__: window open price captured: 75598.29 (RTDS boundary fallback, oracle_age=2000ms)[0m
+[96m2026-04-14 14:15:00.280 [INFO] __main__: window open price captured: 75573.99 (binance)[0m
+2026-04-14 14:15:00.281 [INFO] strategy.momentum_signal: momentum_signal: waiting for full market data
+2026-04-14 14:15:00.644 [INFO] market_data.clob_market_ws: CLOB market subscribed for tokens up=584724438096 down=563251994671
+[2m2026-04-14 14:15:02.904 [INFO] __main__: STATUS t=297s delta=0.0182% dir=up agree=False chain=75612.03 bin=75559.08 open=75598.29 obi=-0.2804 ask_up=0.45 ask_dn=0.56 bid_up=0.44 bid_dn=0.55 halted=False[0m
+[2m2026-04-14 14:15:33.021 [INFO] __main__: STATUS t=267s delta=-0.0293% dir=down agree=True chain=75576.16 bin=75544.44 open=75598.29 obi=0.3733 ask_up=0.42 ask_dn=0.59 bid_up=0.41 bid_dn=0.58 halted=False[0m
+[2m2026-04-14 14:16:03.159 [INFO] __main__: STATUS t=237s delta=-0.0419% dir=down agree=True chain=75566.60 bin=75519.91 open=75598.29 obi=-0.7621 ask_up=0.35 ask_dn=0.67 bid_up=0.33 bid_dn=0.65 halted=False[0m
+[2m2026-04-14 14:16:33.274 [INFO] __main__: STATUS t=207s delta=-0.0143% dir=down agree=True chain=75587.46 bin=75545.99 open=75598.29 obi=0.4272 ask_up=0.42 ask_dn=0.59 bid_up=0.41 bid_dn=0.58 halted=False[0m
+2026-04-14 14:16:50.092 [INFO] strategy.momentum_signal: signal_eval rank=1 side=up latest_pct=0.0083 stddev=0.0330 n=40 min_delta=0.06 max_var=0.050
+[37m2026-04-14 14:16:50.092 [INFO] strategy.momentum_signal: [SKIP] rank=1 side=up reason=conditions_not_met latest_pct=0.0083 need=>=0.06 stddev=0.0330 max_var=0.050[0m
+[2m2026-04-14 14:17:03.403 [INFO] __main__: STATUS t=177s delta=0.0946% dir=up agree=True chain=75669.84 bin=75631.90 open=75598.29 obi=-0.5726 ask_up=0.71 ask_dn=0.30 bid_up=0.70 bid_dn=0.29 halted=False[0m
+[2m2026-04-14 14:17:33.517 [INFO] __main__: STATUS t=146s delta=0.1516% dir=up agree=True chain=75712.90 bin=75670.67 open=75598.29 obi=-0.0856 ask_up=0.85 ask_dn=0.16 bid_up=0.84 bid_dn=0.15 halted=False[0m
+[2m2026-04-14 14:18:03.642 [INFO] __main__: STATUS t=116s delta=0.0675% dir=up agree=True chain=75649.29 bin=75607.35 open=75598.29 obi=-0.0207 ask_up=0.68 ask_dn=0.34 bid_up=0.66 bid_dn=0.32 halted=False[0m
+[2m2026-04-14 14:18:33.767 [INFO] __main__: STATUS t=86s delta=-0.0146% dir=down agree=True chain=75587.27 bin=75529.72 open=75598.29 obi=0.6559 ask_up=0.31 ask_dn=0.70 bid_up=0.30 bid_dn=0.69 halted=False[0m
+[2m2026-04-14 14:19:03.897 [INFO] __main__: STATUS t=56s delta=-0.0225% dir=down agree=True chain=75581.27 bin=75546.20 open=75598.29 obi=-0.0749 ask_up=0.30 ask_dn=0.72 bid_up=0.28 bid_dn=0.70 halted=False[0m
+[2m2026-04-14 14:19:34.006 [INFO] __main__: STATUS t=26s delta=-0.0135% dir=down agree=True chain=75588.12 bin=75548.00 open=75598.29 obi=0.9186 ask_up=0.27 ask_dn=0.74 bid_up=0.26 bid_dn=0.73 halted=False[0m
+[37m2026-04-14 14:20:00.105 [INFO] execution.paper_trading: paper window_ts=1776176100 [SKIP] pnl=0.0000 direction=down outcome=down - balance=$852.63 bid_up=0.02 ask_up=0.03 bid_dn=0.97 ask_dn=0.98[0m
+[93m[1m2026-04-14 14:20:00.106 [INFO] risk.position_tracker: WINDOW_SUMMARY window_pnl=$0.0000 session_pnl=$-25.0083 won=$46.6452 lost=$71.6535 wr=54.5% (6/11) consec_losses=0[0m
+[96m2026-04-14 14:20:00.108 [INFO] strategy.window_handler: REGIME chop_detected flips=13 delta_range=0.2365% avg_flips=6.7 over=6_windows[0m
+[37m2026-04-14 14:20:00.112 [INFO] strategy.window_handler: WINDOW_DECISION [SKIP] rank=1 side=up pnl=$0.0000 entry=0.00 size=$0.00 (conditions not met)[0m
+[96m[1m2026-04-14 14:20:00.113 [INFO] strategy.window_tracker: new window: btc-updown-5m-1776176400 (ts=1776176400)[0m
+2026-04-14 14:20:00.127 [INFO] strategy.window_tracker: Gamma priceToBeat not yet available for btc-updown-5m-1776176400 — fetching in background
+[96m2026-04-14 14:20:00.196 [INFO] strategy.window_handler: REGIME vol_stddev=0.156% chop_flips=6.7 outcome=3U/3D over 6w sprt=dormant llr=1.29 age=143w bankroll=$852.63[0m
+[96m2026-04-14 14:20:00.196 [INFO] strategy.window_handler: KELLY wr_adj=89.5% base=96.5% total_disc=4.0% vol=28.0% chop=33.3% outcome=0.0% feedback=+0.0%[0m
+[96m2026-04-14 14:20:00.196 [WARNING] __main__: window open price captured: 75592.30 (RTDS boundary fallback, oracle_age=2000ms)[0m
+[96m2026-04-14 14:20:00.196 [INFO] __main__: window open price captured: 75553.72 (binance)[0m
+2026-04-14 14:20:00.197 [INFO] strategy.momentum_signal: momentum_signal: waiting for full market data
+2026-04-14 14:20:00.844 [INFO] market_data.clob_market_ws: CLOB market subscribed for tokens up=843518775943 down=215182558272
+[2m2026-04-14 14:20:04.082 [INFO] __main__: STATUS t=296s delta=0.0273% dir=up agree=False chain=75612.91 bin=75576.76 open=75592.30 obi=-0.8489 ask_up=0.50 ask_dn=0.51 bid_up=0.49 bid_dn=0.50 halted=False[0m
+[2m2026-04-14 14:20:34.209 [INFO] __main__: STATUS t=266s delta=0.0913% dir=up agree=True chain=75661.33 bin=75628.56 open=75592.30 obi=-0.0933 ask_up=0.74 ask_dn=0.27 bid_up=0.73 bid_dn=0.26 halted=False[0m
+[2m2026-04-14 14:21:04.320 [INFO] __main__: STATUS t=236s delta=0.1000% dir=up agree=True chain=75667.89 bin=75621.88 open=75592.30 obi=0.3425 ask_up=0.72 ask_dn=0.29 bid_up=0.71 bid_dn=0.28 halted=False[0m
+[2m2026-04-14 14:21:34.430 [INFO] __main__: STATUS t=206s delta=0.1395% dir=up agree=True chain=75697.78 bin=75653.81 open=75592.30 obi=-0.2391 ask_up=0.80 ask_dn=0.21 bid_up=0.79 bid_dn=0.20 halted=False[0m
+2026-04-14 14:21:50.241 [INFO] strategy.momentum_signal: signal_eval rank=1 side=up latest_pct=0.0631 stddev=0.0066 n=40 min_delta=0.06 max_var=0.050
+[96m2026-04-14 14:21:50.241 [INFO] strategy.momentum_signal: KELLY sizing: p_adj=0.895 base=0.935 total_disc=0.040 vol=0.280 chop=0.333 outcome=0.000 feedback=+0.000[0m
+[96m2026-04-14 14:21:50.241 [INFO] strategy.momentum_signal: KELLY bet: entry=0.75 raw_f=0.582 frac_f=0.145 bankroll=$852.63 kelly_bet=$42.63 sprt=1.00 final=$42.63[0m
+[92m[1m2026-04-14 14:21:50.242 [INFO] strategy.momentum_signal: FIRED rank=1 side=up t=189.8s dir=0.0631% stddev=0.0066% n=40 oos_wr=96.5% bh_p=6.73e-10 avg_entry=0.84 ask=0.75 size=$42.63[0m
+2026-04-14 14:21:50.242 [INFO] strategy.momentum_signal: SKIP_MAKER (high conf) rank=1 oos_wr=96.5% stddev=0.0066% → cross on fire
+2026-04-14 14:21:50.242 [INFO] execution.paper_trading: paper momentum1 taker: id=paper-15 price=0.75 size=56.8400 [filled]
+2026-04-14 14:21:50.493 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.0000 ema=0.0000 cusum=0.000/0.800 threshold=1.2605 fire=0.0631% current=0.0631%
+2026-04-14 14:22:00.546 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.0000 ema=0.0000 cusum=0.000/0.800 threshold=1.2605 fire=0.0631% current=0.1014%
+[2m2026-04-14 14:22:04.563 [INFO] __main__: STATUS t=175s delta=0.1535% dir=up agree=True chain=75708.30 bin=75663.78 open=75592.30 obi=-0.1283 ask_up=0.84 ask_dn=0.17 bid_up=0.83 bid_dn=0.16 halted=False[0m
+2026-04-14 14:22:10.584 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.0000 ema=0.0000 cusum=0.000/0.800 threshold=1.2605 fire=0.0631% current=0.0958%
+2026-04-14 14:22:20.623 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.0000 ema=0.0000 cusum=0.000/0.800 threshold=1.2605 fire=0.0631% current=0.1630%
+2026-04-14 14:22:30.662 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.0000 ema=0.0000 cusum=0.000/0.800 threshold=1.2605 fire=0.0631% current=0.1583%
+[2m2026-04-14 14:22:34.678 [INFO] __main__: STATUS t=145s delta=0.2048% dir=up agree=True chain=75747.12 bin=75664.76 open=75592.30 obi=-0.5229 ask_up=0.84 ask_dn=0.17 bid_up=0.83 bid_dn=0.16 halted=False[0m
+2026-04-14 14:22:40.699 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.0000 ema=0.0000 cusum=0.000/0.800 threshold=1.2605 fire=0.0631% current=0.1198%
+2026-04-14 14:22:50.732 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.0000 ema=0.0000 cusum=0.000/0.800 threshold=1.2605 fire=0.0631% current=0.1138%
+2026-04-14 14:23:00.777 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.0000 ema=0.0000 cusum=0.000/0.800 threshold=1.2605 fire=0.0631% current=0.1215%
+[2m2026-04-14 14:23:04.853 [INFO] __main__: STATUS t=115s delta=0.1821% dir=up agree=True chain=75729.92 bin=75680.11 open=75592.30 obi=-0.0100 ask_up=0.92 ask_dn=0.09 bid_up=0.91 bid_dn=0.08 halted=False[0m
+2026-04-14 14:23:10.875 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.0000 ema=0.0000 cusum=0.000/0.800 threshold=1.2605 fire=0.0631% current=0.1307%
+2026-04-14 14:23:20.917 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.0000 ema=0.0000 cusum=0.000/0.800 threshold=1.2605 fire=0.0631% current=0.1518%
+2026-04-14 14:23:30.958 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.0000 ema=0.0000 cusum=0.000/0.800 threshold=1.2605 fire=0.0631% current=0.1618%
+[2m2026-04-14 14:23:34.976 [INFO] __main__: STATUS t=85s delta=0.2203% dir=up agree=True chain=75758.82 bin=75714.61 open=75592.30 obi=-0.6140 ask_up=0.98 ask_dn=0.03 bid_up=0.97 bid_dn=0.02 halted=False[0m
+2026-04-14 14:23:40.997 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.0000 ema=0.0000 cusum=0.000/0.800 threshold=1.2605 fire=0.0631% current=0.1663%
+2026-04-14 14:23:51.038 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.0000 ema=0.0000 cusum=0.000/0.800 threshold=1.2605 fire=0.0631% current=0.1663%
+2026-04-14 14:24:01.082 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.0000 ema=0.0000 cusum=0.000/0.800 threshold=1.2605 fire=0.0631% current=0.1535%
+[2m2026-04-14 14:24:05.105 [INFO] __main__: STATUS t=55s delta=0.2112% dir=up agree=True chain=75751.93 bin=75689.67 open=75592.30 obi=0.7206 ask_up=1.00 ask_dn=0.01 bid_up=0.99 bid_dn=0.01 halted=False[0m
+2026-04-14 14:24:11.129 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.0000 ema=0.0000 cusum=0.000/0.800 threshold=1.2605 fire=0.0631% current=0.1361%
+2026-04-14 14:24:21.169 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.0000 ema=0.0000 cusum=0.000/0.800 threshold=1.2605 fire=0.0631% current=0.1038%
+2026-04-14 14:24:25.688 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.3080 ema=0.0524 cusum=0.000/0.800 threshold=1.2605 fire=0.0631% current=0.0437%
+2026-04-14 14:24:33.970 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.5165 ema=0.4087 cusum=0.000/0.800 threshold=1.2605 fire=0.0631% current=0.0305%
+[2m2026-04-14 14:24:35.225 [INFO] __main__: STATUS t=25s delta=0.0967% dir=up agree=True chain=75665.41 bin=75614.79 open=75592.30 obi=-0.9048 ask_up=0.94 ask_dn=0.07 bid_up=0.93 bid_dn=0.06 halted=False[0m
+2026-04-14 14:24:36.481 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.8432 ema=0.5161 cusum=0.000/0.800 threshold=1.2605 fire=0.0631% current=0.0099%
+2026-04-14 14:24:37.234 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.6471 ema=0.5713 cusum=0.000/0.800 threshold=1.2605 fire=0.0631% current=0.0223%
+2026-04-14 14:24:39.494 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.8468 ema=0.6220 cusum=0.000/0.800 threshold=1.2605 fire=0.0631% current=0.0097%
+2026-04-14 14:24:39.996 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=1.0833 ema=0.7015 cusum=0.000/0.800 threshold=1.2605 fire=0.0631% current=-0.0053%
+2026-04-14 14:24:42.506 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.8197 ema=0.9237 cusum=0.000/0.800 threshold=1.2605 fire=0.0631% current=0.0114%
+2026-04-14 14:24:44.013 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=1.1045 ema=0.9035 cusum=0.000/0.800 threshold=1.2605 fire=0.0631% current=-0.0066%
+2026-04-14 14:24:53.045 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.5949 ema=0.9690 cusum=0.000/0.800 threshold=1.2605 fire=0.0631% current=0.0256%
+[92m[1m2026-04-14 14:25:00.077 [INFO] execution.paper_trading: paper window_ts=1776176400 [WIN] pnl=13.9258 direction=up outcome=up rule#1(fill) balance=$866.55 bid_up=0.99 ask_up=1.00 bid_dn=0.01 ask_dn=0.01[0m
+[93m[1m2026-04-14 14:25:00.082 [INFO] risk.position_tracker: WINDOW_SUMMARY window_pnl=$13.9258 session_pnl=$-11.0825 won=$60.5710 lost=$71.6535 wr=58.3% (7/12) consec_losses=0[0m
+[92m[1m2026-04-14 14:25:00.104 [INFO] strategy.window_handler: WINDOW_DECISION [WIN] rank=1 side=up pnl=$13.9258 entry=0.75 size=$42.63[0m
+[96m[1m2026-04-14 14:25:00.105 [INFO] strategy.window_tracker: new window: btc-updown-5m-1776176700 (ts=1776176700)[0m
+2026-04-14 14:25:00.117 [INFO] strategy.window_tracker: Gamma priceToBeat not yet available for btc-updown-5m-1776176700 — fetching in background
+[96m2026-04-14 14:25:00.156 [INFO] strategy.window_handler: REGIME vol_stddev=0.152% chop_flips=6.2 outcome=3U/3D over 6w sprt=dormant llr=1.21 age=144w bankroll=$866.55[0m
+[96m2026-04-14 14:25:00.157 [INFO] strategy.window_handler: KELLY wr_adj=90.4% base=96.5% total_disc=3.1% vol=26.1% chop=23.3% outcome=0.0% feedback=+0.0%[0m
+[96m2026-04-14 14:25:00.157 [WARNING] __main__: window open price captured: 75660.46 (RTDS boundary fallback, oracle_age=1000ms)[0m
+[96m2026-04-14 14:25:00.157 [INFO] __main__: window open price captured: 75608.66 (binance)[0m
+2026-04-14 14:25:00.157 [INFO] strategy.momentum_signal: momentum_signal: waiting for full market data
+2026-04-14 14:25:01.036 [INFO] market_data.clob_market_ws: CLOB market subscribed for tokens up=439468606844 down=733327461138
+[2m2026-04-14 14:25:05.440 [INFO] __main__: STATUS t=295s delta=-0.0032% dir=down agree=True chain=75658.02 bin=75612.08 open=75660.46 obi=0.8729 ask_up=0.50 ask_dn=0.51 bid_up=0.49 bid_dn=0.50 halted=False[0m
+[2m2026-04-14 14:25:35.547 [INFO] __main__: STATUS t=264s delta=0.0073% dir=up agree=False chain=75666.01 bin=75619.01 open=75660.46 obi=0.1507 ask_up=0.55 ask_dn=0.46 bid_up=0.54 bid_dn=0.45 halted=False[0m
+[2m2026-04-14 14:26:05.664 [INFO] __main__: STATUS t=234s delta=0.0434% dir=up agree=False chain=75693.29 bin=75649.99 open=75660.46 obi=0.9221 ask_up=0.64 ask_dn=0.38 bid_up=0.62 bid_dn=0.36 halted=False[0m
+[2m2026-04-14 14:26:35.781 [INFO] __main__: STATUS t=204s delta=0.1383% dir=up agree=True chain=75765.10 bin=75724.77 open=75660.46 obi=0.6365 ask_up=0.84 ask_dn=0.17 bid_up=0.83 bid_dn=0.16 halted=False[0m
+2026-04-14 14:26:48.170 [INFO] shared.ipc: IPC: received authenticated signal_update (summary=signals_summary_1776176808.json)
+2026-04-14 14:26:48.171 [INFO] __main__: received new signal from orchestrator: rank=1 side=Up
+2026-04-14 14:26:50.087 [INFO] strategy.momentum_signal: signal_eval rank=1 side=up latest_pct=0.1844 stddev=0.0374 n=40 min_delta=0.06 max_var=0.050
+[96m2026-04-14 14:26:50.087 [INFO] strategy.momentum_signal: KELLY sizing: p_adj=0.904 base=0.935 total_disc=0.031 vol=0.261 chop=0.233 outcome=0.000 feedback=+0.000[0m
+[96m2026-04-14 14:26:50.087 [INFO] strategy.momentum_signal: KELLY bet: entry=0.89 raw_f=0.129 frac_f=0.032 bankroll=$866.55 kelly_bet=$27.96 sprt=1.00 final=$27.96[0m
+[92m[1m2026-04-14 14:26:50.087 [INFO] strategy.momentum_signal: FIRED rank=1 side=up t=189.9s dir=0.1844% stddev=0.0374% n=40 oos_wr=96.5% bh_p=6.73e-10 avg_entry=0.84 ask=0.89 size=$27.96[0m
+2026-04-14 14:26:50.087 [INFO] execution.paper_trading: paper momentum1 maker: id=paper-16 price=0.88 size=31.7727 [resting]
+2026-04-14 14:26:50.087 [INFO] strategy.momentum_signal: MAKER PLACED rank=1 side=up price=0.88 (ask=0.89 -1tick) size=$27.96 timeout=3s
+2026-04-14 14:26:53.099 [INFO] execution.paper_trading: paper cancel: paper-16 (maker escalation)
+[37m2026-04-14 14:26:53.099 [INFO] strategy.momentum_signal: [SKIP] rank=1 reason=TAKER_NO_EDGE_AT_NEW_PRICE ask=0.93 p=0.904 raw_f=-0.369 maker_was=0.88[0m
+[2m2026-04-14 14:27:05.901 [INFO] __main__: STATUS t=174s delta=0.2578% dir=up agree=True chain=75855.52 bin=75815.41 open=75660.46 obi=0.8798 ask_up=0.95 ask_dn=0.06 bid_up=0.94 bid_dn=0.05 halted=False[0m
+[2m2026-04-14 14:27:36.019 [INFO] __main__: STATUS t=144s delta=0.2664% dir=up agree=True chain=75862.05 bin=75849.98 open=75660.46 obi=-0.3616 ask_up=0.98 ask_dn=0.03 bid_up=0.97 bid_dn=0.02 halted=False[0m
+[2m2026-04-14 14:28:06.142 [INFO] __main__: STATUS t=114s delta=0.1880% dir=up agree=True chain=75802.67 bin=75768.04 open=75660.46 obi=0.9375 ask_up=0.95 ask_dn=0.06 bid_up=0.94 bid_dn=0.05 halted=False[0m
+[2m2026-04-14 14:28:36.250 [INFO] __main__: STATUS t=84s delta=0.1686% dir=up agree=True chain=75787.99 bin=75744.23 open=75660.46 obi=-0.5815 ask_up=0.96 ask_dn=0.05 bid_up=0.95 bid_dn=0.04 halted=False[0m
+[2m2026-04-14 14:29:06.384 [INFO] __main__: STATUS t=54s delta=0.2458% dir=up agree=True chain=75846.43 bin=75804.60 open=75660.46 obi=-0.0403 ask_up=1.00 ask_dn=0.01 bid_up=0.99 bid_dn=0.01 halted=False[0m
+[2m2026-04-14 14:29:36.508 [INFO] __main__: STATUS t=23s delta=0.2583% dir=up agree=True chain=75855.88 bin=75811.32 open=75660.46 obi=-0.2458 ask_up=1.00 ask_dn=0.01 bid_up=0.99 bid_dn=0.01 halted=False[0m
+[37m2026-04-14 14:30:00.116 [INFO] execution.paper_trading: paper window_ts=1776176700 [SKIP] pnl=0.0000 direction=up outcome=up - balance=$866.55 bid_up=0.99 ask_up=1.00 bid_dn=0.01 ask_dn=0.01[0m
+[93m[1m2026-04-14 14:30:00.116 [INFO] risk.position_tracker: WINDOW_SUMMARY window_pnl=$0.0000 session_pnl=$-11.0825 won=$60.5710 lost=$71.6535 wr=58.3% (7/12) consec_losses=0[0m
+[96m2026-04-14 14:30:00.119 [INFO] strategy.window_handler: REGIME chop_detected flips=3 delta_range=0.3187% avg_flips=6.0 over=6_windows[0m
+[37m2026-04-14 14:30:00.128 [INFO] strategy.window_handler: WINDOW_DECISION [SKIP] rank=1 side=up pnl=$0.0000 entry=0.00 size=$0.00 (conditions not met)[0m
+[95m2026-04-14 14:30:00.129 [INFO] strategy.window_handler: Signal refreshed (same pattern): up_230.0_200.0_0.06_0.05 — rank 1->1, keeping SPRT state (age=145w, trades=6, LLR=1.21)[0m
+2026-04-14 14:30:00.130 [INFO] strategy.window_handler: SIGNAL_SWAP_ACTIVE: {"rank":1,"side":"up","observeFromS":230.0,"observeToS":200.0,"minDeltaPct":0.06,"maxVariancePct":0.05,"trainWinRatePct":97.62,"oosWinRatePct":96.55,"oosBhAdjustedPValue":7.5863e-10,"oosMatches":29,"avgEntryPrice":0.8397,"evPerTrade":0.0959,"smartScore":8.8,"wfFoldsAppeared":5,"wfTotalTestFolds":6,"wfFoldIndices":[3,4,5,6,7]}
+2026-04-14 14:30:00.130 [INFO] strategy.window_handler: switched to new signal: #1 up (previous: #1 up)
+[96m[1m2026-04-14 14:30:00.132 [INFO] strategy.window_tracker: new window: btc-updown-5m-1776177000 (ts=1776177000)[0m
+2026-04-14 14:30:00.145 [INFO] strategy.window_tracker: Gamma priceToBeat not yet available for btc-updown-5m-1776177000 — fetching in background
+[96m2026-04-14 14:30:00.207 [INFO] strategy.window_handler: REGIME vol_stddev=0.158% chop_flips=6.0 outcome=3U/3D over 6w sprt=dormant llr=1.21 age=145w bankroll=$866.55[0m
+[96m2026-04-14 14:30:00.208 [INFO] strategy.window_handler: KELLY wr_adj=90.0% base=96.5% total_disc=3.5% vol=29.2% chop=20.0% outcome=0.0% feedback=+0.0%[0m
+[96m2026-04-14 14:30:00.208 [WARNING] __main__: window open price captured: 75891.05 (RTDS boundary fallback, oracle_age=1000ms)[0m
+[96m2026-04-14 14:30:00.208 [INFO] __main__: window open price captured: 75855.08 (binance)[0m
+2026-04-14 14:30:00.210 [INFO] strategy.momentum_signal: momentum_signal: waiting for full market data
+2026-04-14 14:30:00.249 [INFO] market_data.clob_market_ws: CLOB market subscribed for tokens up=543274372948 down=524643550867
+[2m2026-04-14 14:30:06.561 [INFO] __main__: STATUS t=293s delta=-0.0091% dir=down agree=True chain=75884.13 bin=75851.57 open=75891.05 obi=0.5320 ask_up=0.99 ask_dn=0.99 bid_up=0.01 bid_dn=0.01 halted=False[0m
+[2m2026-04-14 14:30:36.686 [INFO] __main__: STATUS t=263s delta=0.0577% dir=up agree=False chain=75934.81 bin=75888.00 open=75891.05 obi=-0.7559 ask_up=0.62 ask_dn=0.39 bid_up=0.61 bid_dn=0.38 halted=False[0m
+[2m2026-04-14 14:31:06.814 [INFO] __main__: STATUS t=233s delta=0.1459% dir=up agree=True chain=76001.76 bin=75951.52 open=75891.05 obi=-0.9988 ask_up=0.74 ask_dn=0.28 bid_up=0.72 bid_dn=0.26 halted=False[0m
+[2m2026-04-14 14:31:36.929 [INFO] __main__: STATUS t=203s delta=0.1281% dir=up agree=True chain=75988.23 bin=75957.80 open=75891.05 obi=-0.4527 ask_up=0.71 ask_dn=0.30 bid_up=0.70 bid_dn=0.29 halted=False[0m
+2026-04-14 14:31:50.233 [INFO] strategy.momentum_signal: signal_eval rank=1 side=up latest_pct=0.1012 stddev=0.0245 n=40 min_delta=0.06 max_var=0.050
+[96m2026-04-14 14:31:50.233 [INFO] strategy.momentum_signal: KELLY sizing: p_adj=0.900 base=0.935 total_disc=0.035 vol=0.292 chop=0.200 outcome=0.000 feedback=+0.000[0m
+[96m2026-04-14 14:31:50.233 [INFO] strategy.momentum_signal: KELLY bet: entry=0.77 raw_f=0.567 frac_f=0.142 bankroll=$866.55 kelly_bet=$43.33 sprt=1.00 final=$43.33[0m
+[92m[1m2026-04-14 14:31:50.233 [INFO] strategy.momentum_signal: FIRED rank=1 side=up t=189.8s dir=0.1012% stddev=0.0245% n=40 oos_wr=96.5% bh_p=7.59e-10 avg_entry=0.84 ask=0.77 size=$43.33[0m
+2026-04-14 14:31:50.233 [INFO] strategy.momentum_signal: SKIP_MAKER (high conf) rank=1 oos_wr=96.5% stddev=0.0245% → cross on fire
+2026-04-14 14:31:50.233 [INFO] execution.paper_trading: paper momentum1 taker: id=paper-17 price=0.77 size=56.2727 [filled]
+2026-04-14 14:31:50.484 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.0000 ema=0.0000 cusum=0.000/0.800 threshold=1.2830 fire=0.1012% current=0.1012%
+2026-04-14 14:32:00.525 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.0000 ema=0.0012 cusum=0.000/0.800 threshold=1.2830 fire=0.1012% current=0.1252%
+[2m2026-04-14 14:32:07.053 [INFO] __main__: STATUS t=173s delta=0.1815% dir=up agree=True chain=76028.79 bin=75989.44 open=75891.05 obi=-0.3963 ask_up=0.81 ask_dn=0.20 bid_up=0.80 bid_dn=0.19 halted=False[0m
+2026-04-14 14:32:10.568 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.0000 ema=0.0000 cusum=0.000/0.800 threshold=1.2830 fire=0.1012% current=0.1409%
+2026-04-14 14:32:20.608 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.0000 ema=0.0000 cusum=0.000/0.800 threshold=1.2830 fire=0.1012% current=0.1436%
+2026-04-14 14:32:30.648 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.0000 ema=0.0000 cusum=0.000/0.800 threshold=1.2830 fire=0.1012% current=0.1536%
+[2m2026-04-14 14:32:37.175 [INFO] __main__: STATUS t=143s delta=0.2342% dir=up agree=True chain=76068.76 bin=76023.70 open=75891.05 obi=-0.4830 ask_up=0.89 ask_dn=0.13 bid_up=0.87 bid_dn=0.11 halted=False[0m
+2026-04-14 14:32:40.687 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.0000 ema=0.0000 cusum=0.000/0.800 threshold=1.2830 fire=0.1012% current=0.1650%
+2026-04-14 14:32:50.728 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.0000 ema=0.0000 cusum=0.000/0.800 threshold=1.2830 fire=0.1012% current=0.1775%
+2026-04-14 14:32:57.255 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.4163 ema=0.0416 cusum=0.000/0.800 threshold=1.2830 fire=0.1012% current=0.0591%
+2026-04-14 14:32:58.510 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.2633 ema=0.1955 cusum=0.000/0.800 threshold=1.2830 fire=0.1012% current=0.0746%
+2026-04-14 14:32:59.014 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.4163 ema=0.2233 cusum=0.000/0.800 threshold=1.2830 fire=0.1012% current=0.0591%
+2026-04-14 14:33:01.290 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.6625 ema=0.3791 cusum=0.000/0.800 threshold=1.2830 fire=0.1012% current=0.0342%
+2026-04-14 14:33:03.560 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.4307 ema=0.4977 cusum=0.000/0.800 threshold=1.2830 fire=0.1012% current=0.0576%
+2026-04-14 14:33:04.063 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.2065 ema=0.4572 cusum=0.000/0.800 threshold=1.2830 fire=0.1012% current=0.0803%
+2026-04-14 14:33:04.817 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.0245 ema=0.3521 cusum=0.000/0.800 threshold=1.2830 fire=0.1012% current=0.0987%
+[2m2026-04-14 14:33:07.327 [INFO] __main__: STATUS t=113s delta=0.1541% dir=up agree=True chain=76007.98 bin=75969.89 open=75891.05 obi=-0.9940 ask_up=0.83 ask_dn=0.21 bid_up=0.79 bid_dn=0.17 halted=False[0m
+2026-04-14 14:33:08.080 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.1851 ema=0.1260 cusum=0.000/0.800 threshold=1.2830 fire=0.1012% current=0.0825%
+2026-04-14 14:33:09.587 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.4193 ema=0.1969 cusum=0.000/0.800 threshold=1.2830 fire=0.1012% current=0.0588%
+2026-04-14 14:33:10.343 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.5767 ema=0.2756 cusum=0.000/0.800 threshold=1.2830 fire=0.1012% current=0.0429%
+2026-04-14 14:33:11.098 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.7666 ema=0.3913 cusum=0.000/0.800 threshold=1.2830 fire=0.1012% current=0.0236%
+2026-04-14 14:33:12.356 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.9848 ema=0.5838 cusum=0.000/0.800 threshold=1.2830 fire=0.1012% current=0.0015%
+2026-04-14 14:33:12.607 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=1.2249 ema=0.6479 cusum=0.000/0.800 threshold=1.2830 fire=0.1012% current=-0.0228%
+2026-04-14 14:33:15.118 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=1.0534 ema=0.9805 cusum=0.000/0.800 threshold=1.2830 fire=0.1012% current=-0.0054%
+2026-04-14 14:33:16.374 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=1.3012 ema=1.0577 cusum=0.000/0.800 threshold=1.2830 fire=0.1012% current=-0.0305%
+2026-04-14 14:33:18.633 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=1.1511 ema=1.1757 cusum=0.000/0.800 threshold=1.2830 fire=0.1012% current=-0.0153%
+2026-04-14 14:33:21.896 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=1.4061 ema=1.2506 cusum=0.000/0.800 threshold=1.2830 fire=0.1012% current=-0.0411%
+2026-04-14 14:33:23.152 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=1.1231 ema=1.2578 cusum=0.000/0.800 threshold=1.2830 fire=0.1012% current=-0.0125%
+2026-04-14 14:33:26.917 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.9718 ema=1.1233 cusum=0.000/0.800 threshold=1.2830 fire=0.1012% current=0.0029%
+2026-04-14 14:33:30.934 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.6882 ema=0.9659 cusum=0.000/0.800 threshold=1.2830 fire=0.1012% current=0.0316%
+2026-04-14 14:33:31.185 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.4669 ema=0.9160 cusum=0.000/0.800 threshold=1.2830 fire=0.1012% current=0.0540%
+2026-04-14 14:33:35.206 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.6178 ema=0.5615 cusum=0.000/0.800 threshold=1.2830 fire=0.1012% current=0.0387%
+[2m2026-04-14 14:33:37.464 [INFO] __main__: STATUS t=83s delta=0.1100% dir=up agree=False chain=75974.54 bin=75883.44 open=75891.05 obi=-0.6272 ask_up=0.66 ask_dn=0.35 bid_up=0.65 bid_dn=0.34 halted=False[0m
+2026-04-14 14:33:37.466 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=1.0991 ema=0.6441 cusum=0.000/0.800 threshold=1.2830 fire=0.1012% current=-0.0100%
+2026-04-14 14:33:41.232 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.9335 ema=1.0175 cusum=0.000/0.800 threshold=1.2830 fire=0.1012% current=0.0067%
+2026-04-14 14:33:41.985 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=1.1451 ema=1.0155 cusum=0.000/0.800 threshold=1.2830 fire=0.1012% current=-0.0147%
+2026-04-14 14:33:42.237 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=1.4302 ema=1.0570 cusum=0.000/0.800 threshold=1.2830 fire=0.1012% current=-0.0435%
+2026-04-14 14:33:44.747 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=2.6465 ema=1.4026 cusum=0.070/0.800 threshold=1.2830 fire=0.1012% current=-0.1667%
+2026-04-14 14:33:44.998 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=2.4539 ema=1.5077 cusum=0.244/0.800 threshold=1.2830 fire=0.1012% current=-0.1472%
+2026-04-14 14:33:45.249 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=2.6854 ema=1.6255 cusum=0.537/0.800 threshold=1.2830 fire=0.1012% current=-0.1706%
+2026-04-14 14:33:45.500 [INFO] strategy.momentum_signal: EROSION CUSUM BREACH (not yet sustained): rank=1 cusum=0.933 limit=0.800 duration=0.00s need=4.0s
+2026-04-14 14:33:45.750 [INFO] strategy.momentum_signal: EROSION CUSUM BREACH (not yet sustained): rank=1 cusum=1.423 limit=0.800 duration=0.25s need=4.0s
+2026-04-14 14:33:46.002 [INFO] strategy.momentum_signal: EROSION CUSUM BREACH (not yet sustained): rank=1 cusum=2.014 limit=0.800 duration=0.50s need=4.0s
+2026-04-14 14:33:46.253 [INFO] strategy.momentum_signal: EROSION CUSUM BREACH (not yet sustained): rank=1 cusum=2.694 limit=0.800 duration=0.75s need=4.0s
+2026-04-14 14:33:46.504 [INFO] strategy.momentum_signal: EROSION CUSUM BREACH (not yet sustained): rank=1 cusum=3.455 limit=0.800 duration=1.00s need=4.0s
+2026-04-14 14:33:46.756 [INFO] strategy.momentum_signal: EROSION CUSUM BREACH (not yet sustained): rank=1 cusum=4.291 limit=0.800 duration=1.26s need=4.0s
+2026-04-14 14:33:47.007 [INFO] strategy.momentum_signal: EROSION CUSUM BREACH (not yet sustained): rank=1 cusum=5.193 limit=0.800 duration=1.51s need=4.0s
+2026-04-14 14:33:47.258 [INFO] strategy.momentum_signal: EROSION CUSUM BREACH (not yet sustained): rank=1 cusum=6.141 limit=0.800 duration=1.76s need=4.0s
+2026-04-14 14:33:47.510 [INFO] strategy.momentum_signal: EROSION CUSUM BREACH (not yet sustained): rank=1 cusum=7.153 limit=0.800 duration=2.01s need=4.0s
+2026-04-14 14:33:47.761 [INFO] strategy.momentum_signal: EROSION CUSUM BREACH (not yet sustained): rank=1 cusum=8.255 limit=0.800 duration=2.26s need=4.0s
+2026-04-14 14:33:48.013 [INFO] strategy.momentum_signal: EROSION CUSUM BREACH (not yet sustained): rank=1 cusum=9.446 limit=0.800 duration=2.51s need=4.0s
+2026-04-14 14:33:48.264 [INFO] strategy.momentum_signal: EROSION CUSUM BREACH (not yet sustained): rank=1 cusum=10.717 limit=0.800 duration=2.76s need=4.0s
+2026-04-14 14:33:48.515 [INFO] strategy.momentum_signal: EROSION CUSUM BREACH (not yet sustained): rank=1 cusum=12.060 limit=0.800 duration=3.02s need=4.0s
+2026-04-14 14:33:48.766 [INFO] strategy.momentum_signal: EROSION CUSUM BREACH (not yet sustained): rank=1 cusum=13.469 limit=0.800 duration=3.27s need=4.0s
+2026-04-14 14:33:49.017 [INFO] strategy.momentum_signal: EROSION CUSUM BREACH (not yet sustained): rank=1 cusum=14.922 limit=0.800 duration=3.52s need=4.0s
+2026-04-14 14:33:49.268 [INFO] strategy.momentum_signal: EROSION CUSUM BREACH (not yet sustained): rank=1 cusum=16.415 limit=0.800 duration=3.77s need=4.0s
+2026-04-14 14:33:49.520 [INFO] strategy.momentum_signal: EROSION CUSUM TRIGGERED: rank=1 cusum=17.945 >= limit=0.800 sustained=4.02s ema=2.8628 erosion=3.1892 threshold=1.2830 fire=0.1012% current=-0.2216% top_bid=0.300
+2026-04-14 14:33:49.521 [INFO] strategy.momentum_signal: EARLY EXIT TRIGGERED: rank=1 side=up erosion=3.1892 threshold=1.2830 cusum=17.945 fire=0.1012% current=-0.2216% sell_bid=0.30 entry=0.77 — post-fire erosion exceeded safe threshold (sustained)
+2026-04-14 14:33:49.521 [INFO] execution.paper_trading: EARLY EXIT: sell_price=0.30 size=56.27 pnl=-26.7858 balance=$839.77 orders=1
+[2m2026-04-14 14:34:07.591 [INFO] __main__: STATUS t=52s delta=-0.2181% dir=down agree=True chain=75725.51 bin=75650.05 open=75891.05 obi=-0.8827 ask_up=0.05 ask_dn=0.96 bid_up=0.04 bid_dn=0.95 halted=False[0m
+[2m2026-04-14 14:34:37.718 [INFO] __main__: STATUS t=22s delta=-0.2781% dir=down agree=True chain=75679.99 bin=75657.85 open=75891.05 obi=0.6481 ask_up=0.01 ask_dn=1.00 bid_up=0.01 bid_dn=0.99 halted=False[0m
+[91m[1m2026-04-14 14:35:00.070 [INFO] execution.paper_trading: paper window_ts=1776177000 [LOSS] pnl=-26.7858 direction=down outcome=down rule#1(fill) balance=$839.77 bid_up=0.01 ask_up=0.01 bid_dn=0.99 ask_dn=1.00[0m
+[93m[1m2026-04-14 14:35:00.072 [INFO] risk.position_tracker: WINDOW_SUMMARY window_pnl=$-26.7858 session_pnl=$-37.8683 won=$60.5710 lost=$98.4393 wr=53.8% (7/13) consec_losses=1[0m
+[96m2026-04-14 14:35:00.077 [INFO] strategy.window_handler: REGIME chop_detected flips=5 delta_range=0.5636% avg_flips=6.5 over=6_windows[0m
+[91m[1m2026-04-14 14:35:00.089 [INFO] strategy.window_handler: WINDOW_DECISION [LOSS] rank=1 side=up pnl=$-26.7858 entry=0.77 size=$43.33[0m
+2026-04-14 14:35:00.106 [INFO] strategy.kelly: bankroll sync: local=$822.96 api=$839.77 drift=+16.80 — updating
+[96m[1m2026-04-14 14:35:00.110 [INFO] strategy.window_tracker: new window: btc-updown-5m-1776177300 (ts=1776177300)[0m
+2026-04-14 14:35:00.153 [INFO] strategy.window_tracker: Gamma priceToBeat not yet available for btc-updown-5m-1776177300 — fetching in background
+[96m2026-04-14 14:35:00.240 [INFO] strategy.window_handler: REGIME vol_stddev=0.176% chop_flips=6.5 outcome=3U/3D over 6w sprt=dormant llr=1.98 age=146w bankroll=$839.77[0m
+[96m2026-04-14 14:35:00.240 [INFO] strategy.window_handler: KELLY wr_adj=89.0% base=96.5% total_disc=4.5% vol=37.8% chop=30.0% outcome=0.0% feedback=+0.0%[0m
+[96m2026-04-14 14:35:00.241 [WARNING] __main__: window open price captured: 75681.97 (RTDS boundary fallback, oracle_age=2000ms)[0m
+[96m2026-04-14 14:35:00.241 [INFO] __main__: window open price captured: 75647.58 (binance)[0m
+2026-04-14 14:35:00.241 [INFO] strategy.momentum_signal: momentum_signal: waiting for full market data
+2026-04-14 14:35:00.469 [INFO] market_data.clob_market_ws: CLOB market subscribed for tokens up=538761119102 down=581931833600
+[2m2026-04-14 14:35:07.791 [INFO] __main__: STATUS t=292s delta=0.0723% dir=up agree=True chain=75736.70 bin=75693.39 open=75681.97 obi=0.3089 ask_up=0.62 ask_dn=0.39 bid_up=0.61 bid_dn=0.38 halted=False[0m
+[2m2026-04-14 14:35:37.917 [INFO] __main__: STATUS t=262s delta=0.0568% dir=up agree=True chain=75724.93 bin=75712.32 open=75681.97 obi=-0.5428 ask_up=0.60 ask_dn=0.41 bid_up=0.59 bid_dn=0.40 halted=False[0m
+[2m2026-04-14 14:36:08.063 [INFO] __main__: STATUS t=232s delta=0.1382% dir=up agree=True chain=75786.55 bin=75744.40 open=75681.97 obi=0.8307 ask_up=0.74 ask_dn=0.27 bid_up=0.73 bid_dn=0.26 halted=False[0m
+[2m2026-04-14 14:36:38.181 [INFO] __main__: STATUS t=202s delta=0.0736% dir=up agree=True chain=75737.64 bin=75699.99 open=75681.97 obi=-0.7188 ask_up=0.62 ask_dn=0.39 bid_up=0.61 bid_dn=0.38 halted=False[0m
+2026-04-14 14:36:50.227 [INFO] strategy.momentum_signal: signal_eval rank=1 side=up latest_pct=-0.0669 stddev=0.0365 n=40 min_delta=0.06 max_var=0.050
+[37m2026-04-14 14:36:50.228 [INFO] strategy.momentum_signal: [SKIP] rank=1 side=up reason=conditions_not_met latest_pct=-0.0669 need=>=0.06 stddev=0.0365 max_var=0.050[0m
+[2m2026-04-14 14:37:08.312 [INFO] __main__: STATUS t=172s delta=0.0012% dir=up agree=False chain=75682.85 bin=75619.01 open=75681.97 obi=-0.0440 ask_up=0.45 ask_dn=0.56 bid_up=0.44 bid_dn=0.55 halted=False[0m
+[2m2026-04-14 14:37:38.430 [INFO] __main__: STATUS t=142s delta=-0.0946% dir=down agree=True chain=75610.34 bin=75540.70 open=75681.97 obi=-0.2180 ask_up=0.23 ask_dn=0.78 bid_up=0.22 bid_dn=0.77 halted=False[0m
+[2m2026-04-14 14:38:08.565 [INFO] __main__: STATUS t=111s delta=-0.2013% dir=down agree=True chain=75529.60 bin=75479.34 open=75681.97 obi=-0.4702 ask_up=0.09 ask_dn=0.92 bid_up=0.08 bid_dn=0.91 halted=False[0m
+[2m2026-04-14 14:38:38.696 [INFO] __main__: STATUS t=81s delta=-0.3370% dir=down agree=True chain=75426.92 bin=75350.69 open=75681.97 obi=-0.5061 ask_up=0.02 ask_dn=0.99 bid_up=0.01 bid_dn=0.98 halted=False[0m
+[2m2026-04-14 14:39:08.830 [INFO] __main__: STATUS t=51s delta=-0.3183% dir=down agree=True chain=75441.05 bin=75402.03 open=75681.97 obi=-0.8474 ask_up=0.01 ask_dn=1.00 bid_up=0.01 bid_dn=0.99 halted=False[0m
+[2m2026-04-14 14:39:38.955 [INFO] __main__: STATUS t=21s delta=-0.2803% dir=down agree=True chain=75469.85 bin=75428.92 open=75681.97 obi=0.8399 ask_up=0.01 ask_dn=1.00 bid_up=0.01 bid_dn=0.99 halted=False[0m
+[37m2026-04-14 14:40:00.050 [INFO] execution.paper_trading: paper window_ts=1776177300 [SKIP] pnl=0.0000 direction=down outcome=down - balance=$839.77 bid_up=0.01 ask_up=0.01 bid_dn=0.99 ask_dn=1.00[0m
+[93m[1m2026-04-14 14:40:00.051 [INFO] risk.position_tracker: WINDOW_SUMMARY window_pnl=$0.0000 session_pnl=$-37.8683 won=$60.5710 lost=$98.4393 wr=53.8% (7/13) consec_losses=1[0m
+[96m2026-04-14 14:40:00.054 [INFO] strategy.window_handler: REGIME chop_detected flips=3 delta_range=0.6042% avg_flips=5.8 over=6_windows[0m
+[37m2026-04-14 14:40:00.105 [INFO] strategy.window_handler: WINDOW_DECISION [SKIP] rank=1 side=up pnl=$0.0000 entry=0.00 size=$0.00 (conditions not met)[0m
+[96m[1m2026-04-14 14:40:00.105 [INFO] strategy.window_tracker: new window: btc-updown-5m-1776177600 (ts=1776177600)[0m
+2026-04-14 14:40:00.120 [INFO] strategy.window_tracker: Gamma priceToBeat not yet available for btc-updown-5m-1776177600 — fetching in background
+[96m2026-04-14 14:40:00.176 [INFO] strategy.window_handler: REGIME vol_stddev=0.188% chop_flips=5.8 outcome=2U/4D over 6w sprt=dormant llr=1.98 age=147w bankroll=$839.77[0m
+[96m2026-04-14 14:40:00.178 [INFO] strategy.window_handler: KELLY wr_adj=88.3% base=96.5% total_disc=5.3% vol=43.8% chop=16.7% outcome=38.1% feedback=+0.0%[0m
+[96m2026-04-14 14:40:00.180 [WARNING] __main__: window open price captured: 75488.67 (RTDS boundary fallback, oracle_age=2000ms)[0m
+[96m2026-04-14 14:40:00.180 [INFO] __main__: window open price captured: 75420.01 (binance)[0m
+2026-04-14 14:40:00.182 [INFO] strategy.momentum_signal: momentum_signal: waiting for full market data
+2026-04-14 14:40:00.690 [INFO] market_data.clob_market_ws: CLOB market subscribed for tokens up=929631454874 down=313451894202
+[2m2026-04-14 14:40:08.995 [INFO] __main__: STATUS t=291s delta=-0.0899% dir=down agree=True chain=75420.77 bin=75373.24 open=75488.67 obi=0.8486 ask_up=0.38 ask_dn=0.63 bid_up=0.37 bid_dn=0.62 halted=False[0m
+[2m2026-04-14 14:40:39.104 [INFO] __main__: STATUS t=261s delta=-0.2409% dir=down agree=True chain=75306.85 bin=75252.64 open=75488.67 obi=-0.6012 ask_up=0.19 ask_dn=0.82 bid_up=0.18 bid_dn=0.81 halted=False[0m
+[2m2026-04-14 14:41:09.220 [INFO] __main__: STATUS t=231s delta=-0.1926% dir=down agree=True chain=75343.25 bin=75288.87 open=75488.67 obi=0.4531 ask_up=0.25 ask_dn=0.76 bid_up=0.24 bid_dn=0.75 halted=False[0m
+[2m2026-04-14 14:41:39.339 [INFO] __main__: STATUS t=201s delta=-0.1497% dir=down agree=True chain=75375.64 bin=75319.31 open=75488.67 obi=-0.8436 ask_up=0.25 ask_dn=0.77 bid_up=0.23 bid_dn=0.75 halted=False[0m
+2026-04-14 14:41:50.129 [INFO] strategy.momentum_signal: signal_eval rank=1 side=up latest_pct=-0.2517 stddev=0.0337 n=40 min_delta=0.06 max_var=0.050
+[37m2026-04-14 14:41:50.129 [INFO] strategy.momentum_signal: [SKIP] rank=1 side=up reason=conditions_not_met latest_pct=-0.2517 need=>=0.06 stddev=0.0337 max_var=0.050[0m
+2026-04-14 14:41:54.021 [INFO] shared.ipc: IPC: received authenticated signal_update (summary=signals_summary_1776177714.json)
+2026-04-14 14:41:54.022 [INFO] __main__: received new signal from orchestrator: rank=1 side=Up
+[2m2026-04-14 14:42:09.361 [INFO] __main__: STATUS t=171s delta=-0.1285% dir=down agree=True chain=75391.65 bin=75338.06 open=75488.67 obi=-0.9757 ask_up=0.25 ask_dn=0.76 bid_up=0.24 bid_dn=0.75 halted=False[0m
+[2m2026-04-14 14:42:39.473 [INFO] __main__: STATUS t=141s delta=-0.0943% dir=down agree=True chain=75417.45 bin=75369.61 open=75488.67 obi=0.9996 ask_up=0.30 ask_dn=0.71 bid_up=0.29 bid_dn=0.70 halted=False[0m
+[2m2026-04-14 14:43:09.593 [INFO] __main__: STATUS t=110s delta=0.0013% dir=up agree=False chain=75489.69 bin=75433.99 open=75488.67 obi=-0.2838 ask_up=0.51 ask_dn=0.50 bid_up=0.50 bid_dn=0.49 halted=False[0m
+[2m2026-04-14 14:43:39.710 [INFO] __main__: STATUS t=80s delta=0.0656% dir=up agree=False chain=75538.21 bin=75483.18 open=75488.67 obi=-0.9041 ask_up=0.71 ask_dn=0.30 bid_up=0.70 bid_dn=0.29 halted=False[0m
+[2m2026-04-14 14:44:09.882 [INFO] __main__: STATUS t=50s delta=0.0147% dir=up agree=False chain=75499.78 bin=75455.09 open=75488.67 obi=0.4025 ask_up=0.66 ask_dn=0.35 bid_up=0.65 bid_dn=0.34 halted=False[0m
+[2m2026-04-14 14:44:39.991 [INFO] __main__: STATUS t=20s delta=-0.0419% dir=down agree=True chain=75457.05 bin=75400.02 open=75488.67 obi=0.8549 ask_up=0.24 ask_dn=0.77 bid_up=0.23 bid_dn=0.76 halted=False[0m
+[37m2026-04-14 14:45:00.070 [INFO] execution.paper_trading: paper window_ts=1776177600 [SKIP] pnl=0.0000 direction=down outcome=down - balance=$839.77 bid_up=0.01 ask_up=0.01 bid_dn=0.99 ask_dn=1.00[0m
+[93m[1m2026-04-14 14:45:00.070 [INFO] risk.position_tracker: WINDOW_SUMMARY window_pnl=$0.0000 session_pnl=$-37.8683 won=$60.5710 lost=$98.4393 wr=53.8% (7/13) consec_losses=1[0m
+[96m2026-04-14 14:45:00.075 [INFO] strategy.window_handler: REGIME chop_detected flips=4 delta_range=0.3245% avg_flips=4.7 over=6_windows[0m
+[37m2026-04-14 14:45:00.081 [INFO] strategy.window_handler: WINDOW_DECISION [SKIP] rank=1 side=up pnl=$0.0000 entry=0.00 size=$0.00 (conditions not met)[0m
+[95m2026-04-14 14:45:00.082 [INFO] strategy.window_handler: Signal refreshed (same pattern): up_230.0_200.0_0.06_0.05 — rank 1->1, keeping SPRT state (age=148w, trades=7, LLR=1.98)[0m
+2026-04-14 14:45:00.082 [INFO] strategy.window_handler: SIGNAL_SWAP_ACTIVE: {"rank":1,"side":"up","observeFromS":230.0,"observeToS":200.0,"minDeltaPct":0.06,"maxVariancePct":0.05,"trainWinRatePct":97.62,"oosWinRatePct":93.75,"oosBhAdjustedPValue":8.54862e-10,"oosMatches":32,"avgEntryPrice":0.8344,"evPerTrade":0.0731,"smartScore":6.03,"wfFoldsAppeared":5,"wfTotalTestFolds":6,"wfFoldIndices":[3,4,5,6,7]}
+2026-04-14 14:45:00.082 [INFO] strategy.window_handler: switched to new signal: #1 up (previous: #1 up)
+[96m[1m2026-04-14 14:45:00.082 [INFO] strategy.window_tracker: new window: btc-updown-5m-1776177900 (ts=1776177900)[0m
+2026-04-14 14:45:00.098 [INFO] strategy.window_tracker: Gamma priceToBeat not yet available for btc-updown-5m-1776177900 — fetching in background
+[96m2026-04-14 14:45:00.135 [INFO] strategy.window_handler: REGIME vol_stddev=0.189% chop_flips=4.7 outcome=2U/4D over 6w sprt=dormant llr=1.98 age=148w bankroll=$839.77[0m
+[96m2026-04-14 14:45:00.135 [INFO] strategy.window_handler: KELLY wr_adj=85.4% base=93.8% total_disc=5.3% vol=44.4% chop=0.0% outcome=38.1% feedback=+0.0%[0m
+[96m2026-04-14 14:45:00.136 [WARNING] __main__: window open price captured: 75426.77 (RTDS boundary fallback, oracle_age=2000ms)[0m
+[96m2026-04-14 14:45:00.136 [INFO] __main__: window open price captured: 75376.44 (binance)[0m
+2026-04-14 14:45:00.137 [INFO] strategy.momentum_signal: momentum_signal: waiting for full market data
+2026-04-14 14:45:00.909 [INFO] market_data.clob_market_ws: CLOB market subscribed for tokens up=308701955627 down=378359668199
+[2m2026-04-14 14:45:10.225 [INFO] __main__: STATUS t=290s delta=0.0330% dir=up agree=False chain=75451.67 bin=75381.82 open=75426.77 obi=-0.7619 ask_up=0.54 ask_dn=0.47 bid_up=0.53 bid_dn=0.46 halted=False[0m
+[2m2026-04-14 14:45:40.349 [INFO] __main__: STATUS t=260s delta=-0.1210% dir=down agree=True chain=75335.47 bin=75298.61 open=75426.77 obi=-0.9758 ask_up=0.31 ask_dn=0.70 bid_up=0.30 bid_dn=0.69 halted=False[0m
+[2m2026-04-14 14:46:10.475 [INFO] __main__: STATUS t=230s delta=-0.1336% dir=down agree=True chain=75325.99 bin=75273.25 open=75426.77 obi=-0.6872 ask_up=0.27 ask_dn=0.74 bid_up=0.26 bid_dn=0.73 halted=False[0m
+[2m2026-04-14 14:46:40.594 [INFO] __main__: STATUS t=199s delta=-0.1917% dir=down agree=True chain=75282.17 bin=75234.38 open=75426.77 obi=-0.3268 ask_up=0.20 ask_dn=0.81 bid_up=0.19 bid_dn=0.80 halted=False[0m
+2026-04-14 14:46:50.133 [INFO] strategy.momentum_signal: signal_eval rank=1 side=up latest_pct=-0.2300 stddev=0.0176 n=40 min_delta=0.06 max_var=0.050
+[37m2026-04-14 14:46:50.133 [INFO] strategy.momentum_signal: [SKIP] rank=1 side=up reason=conditions_not_met latest_pct=-0.2300 need=>=0.06 stddev=0.0176 max_var=0.050[0m
+[2m2026-04-14 14:47:10.730 [INFO] __main__: STATUS t=169s delta=-0.0859% dir=down agree=True chain=75362.00 bin=75326.25 open=75426.77 obi=0.7504 ask_up=0.29 ask_dn=0.72 bid_up=0.28 bid_dn=0.71 halted=False[0m
+[2m2026-04-14 14:47:40.844 [INFO] __main__: STATUS t=139s delta=-0.0694% dir=down agree=True chain=75374.45 bin=75353.69 open=75426.77 obi=0.3288 ask_up=0.32 ask_dn=0.69 bid_up=0.31 bid_dn=0.68 halted=False[0m
+[2m2026-04-14 14:48:10.992 [INFO] __main__: STATUS t=109s delta=-0.0661% dir=down agree=True chain=75376.94 bin=75335.99 open=75426.77 obi=-0.6153 ask_up=0.30 ask_dn=0.71 bid_up=0.29 bid_dn=0.70 halted=False[0m
+[2m2026-04-14 14:48:41.111 [INFO] __main__: STATUS t=79s delta=-0.0775% dir=down agree=True chain=75368.34 bin=75321.01 open=75426.77 obi=-0.9988 ask_up=0.19 ask_dn=0.82 bid_up=0.18 bid_dn=0.81 halted=False[0m
+[2m2026-04-14 14:49:11.234 [INFO] __main__: STATUS t=49s delta=-0.1405% dir=down agree=True chain=75320.77 bin=75242.26 open=75426.77 obi=-0.9942 ask_up=0.03 ask_dn=0.98 bid_up=0.02 bid_dn=0.97 halted=False[0m
+[2m2026-04-14 14:49:41.362 [INFO] __main__: STATUS t=19s delta=-0.2460% dir=down agree=True chain=75241.22 bin=75178.99 open=75426.77 obi=-0.2482 ask_up=0.01 ask_dn=1.00 bid_up=0.01 bid_dn=0.99 halted=False[0m
+[37m2026-04-14 14:50:00.199 [INFO] execution.paper_trading: paper window_ts=1776177900 [SKIP] pnl=0.0000 direction=down outcome=down - balance=$839.77 bid_up=0.01 ask_up=0.01 bid_dn=0.99 ask_dn=1.00[0m
+[93m[1m2026-04-14 14:50:00.200 [INFO] risk.position_tracker: WINDOW_SUMMARY window_pnl=$0.0000 session_pnl=$-37.8683 won=$60.5710 lost=$98.4393 wr=53.8% (7/13) consec_losses=1[0m
+[96m2026-04-14 14:50:00.202 [INFO] strategy.window_handler: REGIME chop_detected flips=3 delta_range=0.3104% avg_flips=3.0 over=6_windows[0m
+[37m2026-04-14 14:50:00.207 [INFO] strategy.window_handler: WINDOW_DECISION [SKIP] rank=1 side=up pnl=$0.0000 entry=0.00 size=$0.00 (conditions not met)[0m
+[96m[1m2026-04-14 14:50:00.207 [INFO] strategy.window_tracker: new window: btc-updown-5m-1776178200 (ts=1776178200)[0m
+2026-04-14 14:50:00.218 [INFO] strategy.window_tracker: Gamma priceToBeat not yet available for btc-updown-5m-1776178200 — fetching in background
+[96m2026-04-14 14:50:00.266 [INFO] strategy.window_handler: REGIME vol_stddev=0.199% chop_flips=3.0 outcome=2U/4D over 6w sprt=dormant llr=1.98 age=149w bankroll=$839.77[0m
+[96m2026-04-14 14:50:00.266 [INFO] strategy.window_handler: KELLY wr_adj=84.8% base=93.8% total_disc=6.0% vol=49.6% chop=0.0% outcome=38.1% feedback=+0.0%[0m
+[96m2026-04-14 14:50:00.267 [WARNING] __main__: window open price captured: 75228.95 (RTDS boundary fallback, oracle_age=1000ms)[0m
+[96m2026-04-14 14:50:00.267 [INFO] __main__: window open price captured: 75182.62 (binance)[0m
+2026-04-14 14:50:00.268 [INFO] strategy.momentum_signal: momentum_signal: waiting for full market data
+2026-04-14 14:50:01.131 [INFO] market_data.clob_market_ws: CLOB market subscribed for tokens up=718617877068 down=906226927430
+[2m2026-04-14 14:50:11.584 [INFO] __main__: STATUS t=288s delta=-0.0051% dir=down agree=True chain=75225.12 bin=75180.36 open=75228.95 obi=-0.0129 ask_up=0.50 ask_dn=0.51 bid_up=0.49 bid_dn=0.50 halted=False[0m
+[2m2026-04-14 14:50:41.700 [INFO] __main__: STATUS t=258s delta=-0.0650% dir=down agree=True chain=75180.06 bin=75141.89 open=75228.95 obi=0.7383 ask_up=0.41 ask_dn=0.60 bid_up=0.40 bid_dn=0.59 halted=False[0m
+[2m2026-04-14 14:51:11.832 [INFO] __main__: STATUS t=228s delta=0.0036% dir=up agree=False chain=75231.68 bin=75169.61 open=75228.95 obi=-0.8771 ask_up=0.50 ask_dn=0.51 bid_up=0.49 bid_dn=0.50 halted=False[0m
+[2m2026-04-14 14:51:41.946 [INFO] __main__: STATUS t=198s delta=0.0044% dir=up agree=False chain=75232.27 bin=75190.96 open=75228.95 obi=-0.2054 ask_up=0.51 ask_dn=0.50 bid_up=0.50 bid_dn=0.49 halted=False[0m
+2026-04-14 14:51:50.231 [INFO] strategy.momentum_signal: signal_eval rank=1 side=up latest_pct=-0.0597 stddev=0.0268 n=40 min_delta=0.06 max_var=0.050
+[37m2026-04-14 14:51:50.232 [INFO] strategy.momentum_signal: [SKIP] rank=1 side=up reason=conditions_not_met latest_pct=-0.0597 need=>=0.06 stddev=0.0268 max_var=0.050[0m
+[2m2026-04-14 14:52:12.080 [INFO] __main__: STATUS t=168s delta=0.0771% dir=up agree=False chain=75286.97 bin=75224.26 open=75228.95 obi=-0.8170 ask_up=0.65 ask_dn=0.37 bid_up=0.63 bid_dn=0.35 halted=False[0m
+[2m2026-04-14 14:52:42.191 [INFO] __main__: STATUS t=138s delta=0.0330% dir=up agree=False chain=75253.79 bin=75203.64 open=75228.95 obi=-0.0398 ask_up=0.58 ask_dn=0.43 bid_up=0.57 bid_dn=0.42 halted=False[0m
+[2m2026-04-14 14:53:12.336 [INFO] __main__: STATUS t=108s delta=0.0409% dir=up agree=False chain=75259.70 bin=75205.31 open=75228.95 obi=-0.9125 ask_up=0.68 ask_dn=0.35 bid_up=0.65 bid_dn=0.32 halted=False[0m
+[2m2026-04-14 14:53:42.448 [INFO] __main__: STATUS t=78s delta=-0.0532% dir=down agree=True chain=75188.90 bin=75145.38 open=75228.95 obi=0.6545 ask_up=0.29 ask_dn=0.72 bid_up=0.28 bid_dn=0.71 halted=False[0m
+[2m2026-04-14 14:54:12.590 [INFO] __main__: STATUS t=47s delta=0.0145% dir=up agree=False chain=75239.88 bin=75215.61 open=75228.95 obi=0.1552 ask_up=0.60 ask_dn=0.41 bid_up=0.59 bid_dn=0.40 halted=False[0m
+[2m2026-04-14 14:54:42.705 [INFO] __main__: STATUS t=17s delta=0.0481% dir=up agree=False chain=75265.10 bin=75222.90 open=75228.95 obi=-0.4056 ask_up=0.84 ask_dn=0.17 bid_up=0.83 bid_dn=0.16 halted=False[0m
+[37m2026-04-14 14:55:00.034 [INFO] execution.paper_trading: paper window_ts=1776178200 [SKIP] pnl=0.0000 direction=up outcome=up - balance=$839.77 bid_up=0.99 ask_up=1.00 bid_dn=0.01 ask_dn=0.01[0m
+[93m[1m2026-04-14 14:55:00.034 [INFO] risk.position_tracker: WINDOW_SUMMARY window_pnl=$0.0000 session_pnl=$-37.8683 won=$60.5710 lost=$98.4393 wr=53.8% (7/13) consec_losses=1[0m
+[96m2026-04-14 14:55:00.036 [INFO] strategy.window_handler: REGIME chop_detected flips=16 delta_range=0.1849% avg_flips=5.7 over=6_windows[0m
+[37m2026-04-14 14:55:00.041 [INFO] strategy.window_handler: WINDOW_DECISION [SKIP] rank=1 side=up pnl=$0.0000 entry=0.00 size=$0.00 (conditions not met)[0m
+[2m2026-04-14 14:55:00.041 [INFO] strategy.signal_lifecycle: STATUS signal=up_230.0_200.0_0.06_0.05 age=150w since_last_fire=0w[0m
+[96m[1m2026-04-14 14:55:00.041 [INFO] strategy.window_tracker: new window: btc-updown-5m-1776178500 (ts=1776178500)[0m
+2026-04-14 14:55:00.069 [INFO] strategy.window_tracker: Gamma priceToBeat not yet available for btc-updown-5m-1776178500 — fetching in background
+[96m2026-04-14 14:55:00.120 [INFO] strategy.window_handler: REGIME vol_stddev=0.199% chop_flips=5.7 outcome=2U/4D over 6w sprt=dormant llr=1.98 age=150w bankroll=$839.77[0m
+[96m2026-04-14 14:55:00.120 [INFO] strategy.window_handler: KELLY wr_adj=84.8% base=93.8% total_disc=6.0% vol=49.6% chop=13.3% outcome=38.1% feedback=+0.0%[0m
+[96m2026-04-14 14:55:00.120 [WARNING] __main__: window open price captured: 75298.07 (RTDS boundary fallback, oracle_age=1000ms)[0m
+[96m2026-04-14 14:55:00.121 [INFO] __main__: window open price captured: 75253.20 (binance)[0m
+2026-04-14 14:55:00.121 [INFO] strategy.momentum_signal: momentum_signal: waiting for full market data
+2026-04-14 14:55:00.328 [INFO] market_data.clob_market_ws: CLOB market subscribed for tokens up=778148835416 down=903844063691
+[2m2026-04-14 14:55:12.714 [INFO] __main__: STATUS t=287s delta=-0.0071% dir=down agree=True chain=75292.72 bin=75240.73 open=75298.07 obi=-0.9743 ask_up=0.51 ask_dn=0.50 bid_up=0.50 bid_dn=0.49 halted=False[0m
+[2m2026-04-14 14:55:42.831 [INFO] __main__: STATUS t=257s delta=-0.0611% dir=down agree=True chain=75252.04 bin=75205.64 open=75298.07 obi=-0.7021 ask_up=0.35 ask_dn=0.66 bid_up=0.34 bid_dn=0.65 halted=False[0m
+[2m2026-04-14 14:56:12.957 [INFO] __main__: STATUS t=227s delta=-0.0360% dir=down agree=True chain=75271.00 bin=75226.00 open=75298.07 obi=-0.1349 ask_up=0.43 ask_dn=0.58 bid_up=0.42 bid_dn=0.57 halted=False[0m
+[2m2026-04-14 14:56:43.078 [INFO] __main__: STATUS t=197s delta=-0.1335% dir=down agree=True chain=75197.55 bin=75160.00 open=75298.07 obi=0.8192 ask_up=0.21 ask_dn=0.80 bid_up=0.20 bid_dn=0.79 halted=False[0m
+2026-04-14 14:56:50.103 [INFO] strategy.momentum_signal: signal_eval rank=1 side=up latest_pct=-0.1958 stddev=0.0465 n=40 min_delta=0.06 max_var=0.050
+[37m2026-04-14 14:56:50.104 [INFO] strategy.momentum_signal: [SKIP] rank=1 side=up reason=conditions_not_met latest_pct=-0.1958 need=>=0.06 stddev=0.0465 max_var=0.050[0m
+2026-04-14 14:56:59.677 [INFO] shared.ipc: IPC: received authenticated signal_update (summary=signals_summary_1776178620.json)
+2026-04-14 14:56:59.678 [INFO] __main__: received new signal from orchestrator: rank=1 side=Up
+[2m2026-04-14 14:57:13.193 [INFO] __main__: STATUS t=167s delta=-0.1190% dir=down agree=True chain=75208.51 bin=75173.11 open=75298.07 obi=0.8634 ask_up=0.24 ask_dn=0.77 bid_up=0.23 bid_dn=0.76 halted=False[0m
+[2m2026-04-14 14:57:43.303 [INFO] __main__: STATUS t=137s delta=-0.1104% dir=down agree=True chain=75214.95 bin=75178.01 open=75298.07 obi=0.9977 ask_up=0.21 ask_dn=0.80 bid_up=0.20 bid_dn=0.79 halted=False[0m
+[2m2026-04-14 14:58:13.421 [INFO] __main__: STATUS t=107s delta=-0.1490% dir=down agree=True chain=75185.89 bin=75143.17 open=75298.07 obi=-0.7224 ask_up=0.09 ask_dn=0.92 bid_up=0.08 bid_dn=0.91 halted=False[0m
+[2m2026-04-14 14:58:43.534 [INFO] __main__: STATUS t=76s delta=-0.1392% dir=down agree=True chain=75193.22 bin=75147.96 open=75298.07 obi=-0.3188 ask_up=0.08 ask_dn=0.93 bid_up=0.07 bid_dn=0.92 halted=False[0m
+[2m2026-04-14 14:59:13.659 [INFO] __main__: STATUS t=46s delta=-0.1911% dir=down agree=True chain=75154.15 bin=75108.23 open=75298.07 obi=0.3086 ask_up=0.02 ask_dn=0.99 bid_up=0.01 bid_dn=0.98 halted=False[0m
+[2m2026-04-14 14:59:43.785 [INFO] __main__: STATUS t=16s delta=-0.2366% dir=down agree=True chain=75119.95 bin=75063.81 open=75298.07 obi=0.2770 ask_up=0.01 ask_dn=1.00 bid_up=0.01 bid_dn=0.99 halted=False[0m
+[37m2026-04-14 15:00:00.104 [INFO] execution.paper_trading: paper window_ts=1776178500 [SKIP] pnl=0.0000 direction=down outcome=down - balance=$839.77 bid_up=0.01 ask_up=0.01 bid_dn=0.99 ask_dn=1.00[0m
+[93m[1m2026-04-14 15:00:00.104 [INFO] risk.position_tracker: WINDOW_SUMMARY window_pnl=$0.0000 session_pnl=$-37.8683 won=$60.5710 lost=$98.4393 wr=53.8% (7/13) consec_losses=1[0m
+[96m2026-04-14 15:00:00.106 [INFO] strategy.window_handler: REGIME chop_detected flips=4 delta_range=0.3150% avg_flips=5.8 over=6_windows[0m
+[37m2026-04-14 15:00:00.110 [INFO] strategy.window_handler: WINDOW_DECISION [SKIP] rank=1 side=up pnl=$0.0000 entry=0.00 size=$0.00 (conditions not met)[0m
+[95m2026-04-14 15:00:00.110 [INFO] strategy.window_handler: Signal refreshed (same pattern): up_230.0_200.0_0.06_0.05 — rank 1->1, keeping SPRT state (age=151w, trades=7, LLR=1.98)[0m
+2026-04-14 15:00:00.110 [INFO] strategy.window_handler: SIGNAL_SWAP_ACTIVE: {"rank":1,"side":"up","observeFromS":230.0,"observeToS":200.0,"minDeltaPct":0.06,"maxVariancePct":0.05,"trainWinRatePct":97.62,"oosWinRatePct":93.75,"oosBhAdjustedPValue":8.42808e-10,"oosMatches":32,"avgEntryPrice":0.8344,"evPerTrade":0.0731,"smartScore":6.03,"wfFoldsAppeared":5,"wfTotalTestFolds":6,"wfFoldIndices":[3,4,5,6,7]}
+2026-04-14 15:00:00.110 [INFO] strategy.window_handler: switched to new signal: #1 up (previous: #1 up)
+[96m[1m2026-04-14 15:00:00.110 [INFO] strategy.window_tracker: new window: btc-updown-5m-1776178800 (ts=1776178800)[0m
+2026-04-14 15:00:00.120 [INFO] strategy.window_tracker: Gamma priceToBeat not yet available for btc-updown-5m-1776178800 — fetching in background
+[96m2026-04-14 15:00:00.177 [INFO] strategy.window_handler: REGIME vol_stddev=0.211% chop_flips=5.8 outcome=1U/5D over 6w sprt=dormant llr=1.98 age=151w bankroll=$839.77[0m
+[96m2026-04-14 15:00:00.177 [INFO] strategy.window_handler: KELLY wr_adj=81.6% base=93.8% total_disc=9.1% vol=55.4% chop=16.7% outcome=76.2% feedback=+0.0%[0m
+[96m2026-04-14 15:00:00.178 [WARNING] __main__: window open price captured: 75076.78 (RTDS boundary fallback, oracle_age=1000ms)[0m
+[96m2026-04-14 15:00:00.178 [INFO] __main__: window open price captured: 75013.62 (binance)[0m
+2026-04-14 15:00:00.179 [INFO] strategy.momentum_signal: momentum_signal: waiting for full market data
+2026-04-14 15:00:00.523 [INFO] market_data.clob_market_ws: CLOB market subscribed for tokens up=238110449288 down=869586828213
+[2m2026-04-14 15:00:13.855 [INFO] __main__: STATUS t=286s delta=-0.0766% dir=down agree=True chain=75019.29 bin=74980.00 open=75076.78 obi=-0.9994 ask_up=0.47 ask_dn=0.54 bid_up=0.46 bid_dn=0.53 halted=False[0m
+[2m2026-04-14 15:00:43.971 [INFO] __main__: STATUS t=256s delta=-0.0504% dir=down agree=True chain=75038.94 bin=74946.81 open=75076.78 obi=0.1028 ask_up=0.35 ask_dn=0.66 bid_up=0.34 bid_dn=0.65 halted=False[0m
+[2m2026-04-14 15:01:14.130 [INFO] __main__: STATUS t=226s delta=-0.1161% dir=down agree=True chain=74989.62 bin=74946.24 open=75076.78 obi=-0.9961 ask_up=0.31 ask_dn=0.70 bid_up=0.30 bid_dn=0.69 halted=False[0m
+[2m2026-04-14 15:01:44.236 [INFO] __main__: STATUS t=196s delta=-0.0107% dir=down agree=True chain=75068.78 bin=75027.40 open=75076.78 obi=0.9302 ask_up=0.55 ask_dn=0.46 bid_up=0.54 bid_dn=0.45 halted=False[0m
+2026-04-14 15:01:50.008 [INFO] strategy.momentum_signal: signal_eval rank=1 side=up latest_pct=-0.0501 stddev=0.0461 n=40 min_delta=0.06 max_var=0.050
+[37m2026-04-14 15:01:50.008 [INFO] strategy.momentum_signal: [SKIP] rank=1 side=up reason=conditions_not_met latest_pct=-0.0501 need=>=0.06 stddev=0.0461 max_var=0.050[0m
+[2m2026-04-14 15:02:14.355 [INFO] __main__: STATUS t=166s delta=0.0696% dir=up agree=True chain=75129.05 bin=75087.25 open=75076.78 obi=0.3594 ask_up=0.71 ask_dn=0.30 bid_up=0.70 bid_dn=0.29 halted=False[0m
+[2m2026-04-14 15:02:44.467 [INFO] __main__: STATUS t=136s delta=0.0075% dir=up agree=False chain=75082.40 bin=75032.01 open=75076.78 obi=-0.7380 ask_up=0.57 ask_dn=0.44 bid_up=0.56 bid_dn=0.43 halted=False[0m
+[2m2026-04-14 15:03:14.589 [INFO] __main__: STATUS t=105s delta=0.0164% dir=up agree=False chain=75089.08 bin=75049.34 open=75076.78 obi=0.7030 ask_up=0.58 ask_dn=0.44 bid_up=0.56 bid_dn=0.42 halted=False[0m
+[2m2026-04-14 15:03:44.706 [INFO] __main__: STATUS t=75s delta=0.0818% dir=up agree=True chain=75138.20 bin=75104.00 open=75076.78 obi=-0.1530 ask_up=0.86 ask_dn=0.15 bid_up=0.85 bid_dn=0.14 halted=False[0m
+[2m2026-04-14 15:04:14.829 [INFO] __main__: STATUS t=45s delta=0.0327% dir=up agree=False chain=75101.33 bin=75063.75 open=75076.78 obi=-0.5649 ask_up=0.78 ask_dn=0.23 bid_up=0.77 bid_dn=0.22 halted=False[0m
+[2m2026-04-14 15:04:44.938 [INFO] __main__: STATUS t=15s delta=-0.0019% dir=down agree=True chain=75075.35 bin=75055.08 open=75076.78 obi=0.7738 ask_up=0.84 ask_dn=0.18 bid_up=0.82 bid_dn=0.16 halted=False[0m
+[37m2026-04-14 15:05:00.017 [INFO] execution.paper_trading: paper window_ts=1776178800 [SKIP] pnl=0.0000 direction=down outcome=down - balance=$839.77 bid_up=0.02 ask_up=0.03 bid_dn=0.97 ask_dn=0.98[0m
+[93m[1m2026-04-14 15:05:00.017 [INFO] risk.position_tracker: WINDOW_SUMMARY window_pnl=$0.0000 session_pnl=$-37.8683 won=$60.5710 lost=$98.4393 wr=53.8% (7/13) consec_losses=1[0m
+[96m2026-04-14 15:05:00.025 [INFO] strategy.window_handler: REGIME chop_detected flips=12 delta_range=0.2567% avg_flips=7.0 over=6_windows[0m
+[37m2026-04-14 15:05:00.030 [INFO] strategy.window_handler: WINDOW_DECISION [SKIP] rank=1 side=up pnl=$0.0000 entry=0.00 size=$0.00 (conditions not met)[0m
+[96m[1m2026-04-14 15:05:00.030 [INFO] strategy.window_tracker: new window: btc-updown-5m-1776179100 (ts=1776179100)[0m
+2026-04-14 15:05:00.045 [INFO] strategy.window_tracker: Gamma priceToBeat not yet available for btc-updown-5m-1776179100 — fetching in background
+[96m2026-04-14 15:05:00.097 [INFO] strategy.window_handler: REGIME vol_stddev=0.208% chop_flips=7.0 outcome=1U/5D over 6w sprt=dormant llr=1.98 age=152w bankroll=$839.77[0m
+[96m2026-04-14 15:05:00.098 [INFO] strategy.window_handler: KELLY wr_adj=81.6% base=93.8% total_disc=9.1% vol=54.2% chop=40.0% outcome=76.2% feedback=+0.0%[0m
+[96m2026-04-14 15:05:00.098 [WARNING] __main__: window open price captured: 75048.51 (RTDS boundary fallback, oracle_age=2000ms)[0m
+[96m2026-04-14 15:05:00.099 [INFO] __main__: window open price captured: 75008.95 (binance)[0m
+2026-04-14 15:05:00.099 [INFO] strategy.momentum_signal: momentum_signal: waiting for full market data
+2026-04-14 15:05:00.736 [INFO] market_data.clob_market_ws: CLOB market subscribed for tokens up=907050945146 down=474246395241
+[2m2026-04-14 15:05:15.168 [INFO] __main__: STATUS t=285s delta=-0.0553% dir=down agree=True chain=75006.98 bin=74967.90 open=75048.51 obi=0.7827 ask_up=0.41 ask_dn=0.60 bid_up=0.40 bid_dn=0.59 halted=False[0m
+[2m2026-04-14 15:05:45.284 [INFO] __main__: STATUS t=255s delta=-0.1446% dir=down agree=True chain=74939.96 bin=74884.96 open=75048.51 obi=0.0200 ask_up=0.23 ask_dn=0.78 bid_up=0.22 bid_dn=0.77 halted=False[0m
+[2m2026-04-14 15:06:15.468 [INFO] __main__: STATUS t=225s delta=-0.1619% dir=down agree=True chain=74926.98 bin=74891.70 open=75048.51 obi=0.3379 ask_up=0.22 ask_dn=0.79 bid_up=0.21 bid_dn=0.78 halted=False[0m
+[2m2026-04-14 15:06:45.577 [INFO] __main__: STATUS t=194s delta=-0.1489% dir=down agree=True chain=74936.79 bin=74901.94 open=75048.51 obi=0.9860 ask_up=0.24 ask_dn=0.77 bid_up=0.23 bid_dn=0.76 halted=False[0m
+2026-04-14 15:06:50.094 [INFO] strategy.momentum_signal: signal_eval rank=1 side=up latest_pct=-0.1847 stddev=0.0213 n=40 min_delta=0.06 max_var=0.050
+[37m2026-04-14 15:06:50.094 [INFO] strategy.momentum_signal: [SKIP] rank=1 side=up reason=conditions_not_met latest_pct=-0.1847 need=>=0.06 stddev=0.0213 max_var=0.050[0m
+[2m2026-04-14 15:07:15.697 [INFO] __main__: STATUS t=164s delta=-0.1038% dir=down agree=True chain=74970.58 bin=74931.63 open=75048.51 obi=0.0956 ask_up=0.27 ask_dn=0.74 bid_up=0.26 bid_dn=0.73 halted=False[0m
+[2m2026-04-14 15:07:45.814 [INFO] __main__: STATUS t=134s delta=-0.0989% dir=down agree=True chain=74974.26 bin=74931.62 open=75048.51 obi=0.4849 ask_up=0.25 ask_dn=0.76 bid_up=0.24 bid_dn=0.75 halted=False[0m
+[2m2026-04-14 15:08:15.935 [INFO] __main__: STATUS t=104s delta=-0.1753% dir=down agree=True chain=74916.92 bin=74883.33 open=75048.51 obi=0.7865 ask_up=0.11 ask_dn=0.90 bid_up=0.10 bid_dn=0.89 halted=False[0m
+[2m2026-04-14 15:08:46.048 [INFO] __main__: STATUS t=74s delta=-0.3012% dir=down agree=True chain=74822.48 bin=74743.05 open=75048.51 obi=0.0424 ask_up=0.01 ask_dn=1.00 bid_up=0.01 bid_dn=0.99 halted=False[0m
+[2m2026-04-14 15:09:16.180 [INFO] __main__: STATUS t=44s delta=-0.4737% dir=down agree=True chain=74693.03 bin=74621.29 open=75048.51 obi=-0.6970 ask_up=0.01 ask_dn=1.00 bid_up=0.01 bid_dn=0.99 halted=False[0m
+[2m2026-04-14 15:09:46.306 [INFO] __main__: STATUS t=14s delta=-0.4768% dir=down agree=True chain=74690.66 bin=74656.86 open=75048.51 obi=0.7170 ask_up=0.01 ask_dn=1.00 bid_up=0.01 bid_dn=0.99 halted=False[0m
+[37m2026-04-14 15:10:00.126 [INFO] execution.paper_trading: paper window_ts=1776179100 [SKIP] pnl=0.0000 direction=down outcome=down - balance=$839.77 bid_up=0.01 ask_up=0.01 bid_dn=0.99 ask_dn=1.00[0m
+[93m[1m2026-04-14 15:10:00.126 [INFO] risk.position_tracker: WINDOW_SUMMARY window_pnl=$0.0000 session_pnl=$-37.8683 won=$60.5710 lost=$98.4393 wr=53.8% (7/13) consec_losses=1[0m
+[37m2026-04-14 15:10:00.134 [INFO] strategy.window_handler: WINDOW_DECISION [SKIP] rank=1 side=up pnl=$0.0000 entry=0.00 size=$0.00 (conditions not met)[0m
+[96m[1m2026-04-14 15:10:00.134 [INFO] strategy.window_tracker: new window: btc-updown-5m-1776179400 (ts=1776179400)[0m
+2026-04-14 15:10:00.142 [INFO] strategy.window_tracker: Gamma priceToBeat not yet available for btc-updown-5m-1776179400 — fetching in background
+[96m2026-04-14 15:10:00.178 [INFO] strategy.window_handler: REGIME vol_stddev=0.228% chop_flips=6.8 outcome=1U/5D over 6w sprt=dormant llr=1.98 age=153w bankroll=$839.77[0m
+[96m2026-04-14 15:10:00.179 [INFO] strategy.window_handler: KELLY wr_adj=81.6% base=93.8% total_disc=9.1% vol=64.1% chop=36.7% outcome=76.2% feedback=+0.0%[0m
+[96m2026-04-14 15:10:00.182 [WARNING] __main__: window open price captured: 74724.35 (RTDS boundary fallback, oracle_age=2000ms)[0m
+[96m2026-04-14 15:10:00.184 [INFO] __main__: window open price captured: 74694.58 (binance)[0m
+2026-04-14 15:10:00.184 [INFO] strategy.momentum_signal: momentum_signal: waiting for full market data
+2026-04-14 15:10:00.938 [INFO] market_data.clob_market_ws: CLOB market subscribed for tokens up=219977318183 down=955303992642
+[2m2026-04-14 15:10:16.503 [INFO] __main__: STATUS t=283s delta=0.0072% dir=up agree=False chain=74729.70 bin=74646.16 open=74724.35 obi=0.8345 ask_up=0.47 ask_dn=0.54 bid_up=0.46 bid_dn=0.53 halted=False[0m
+[2m2026-04-14 15:10:46.614 [INFO] __main__: STATUS t=253s delta=0.0213% dir=up agree=False chain=74740.25 bin=74705.52 open=74724.35 obi=-0.5277 ask_up=0.57 ask_dn=0.44 bid_up=0.56 bid_dn=0.43 halted=False[0m
+[2m2026-04-14 15:11:16.759 [INFO] __main__: STATUS t=223s delta=0.1519% dir=up agree=True chain=74837.86 bin=74803.86 open=74724.35 obi=-0.6356 ask_up=0.79 ask_dn=0.22 bid_up=0.78 bid_dn=0.21 halted=False[0m
+[2m2026-04-14 15:11:46.876 [INFO] __main__: STATUS t=193s delta=0.1980% dir=up agree=True chain=74872.28 bin=74834.31 open=74724.35 obi=-0.2464 ask_up=0.87 ask_dn=0.14 bid_up=0.86 bid_dn=0.13 halted=False[0m
+2026-04-14 15:11:50.138 [INFO] strategy.momentum_signal: signal_eval rank=1 side=up latest_pct=0.1472 stddev=0.0282 n=40 min_delta=0.06 max_var=0.050
+[37m2026-04-14 15:11:50.138 [INFO] strategy.momentum_signal: [SKIP] rank=1 side=up reason=KELLY_NO_EDGE p_adj=0.816 entry=0.87 raw_f=-0.415 total_disc=0.091 vol=0.641 chop=0.367 outcome=0.762[0m
+2026-04-14 15:12:05.430 [INFO] shared.ipc: IPC: received authenticated signal_update (summary=signals_summary_1776179525.json)
+2026-04-14 15:12:05.431 [INFO] __main__: received new signal from orchestrator: rank=1 side=Up
+[2m2026-04-14 15:12:17.067 [INFO] __main__: STATUS t=163s delta=0.1030% dir=up agree=True chain=74801.30 bin=74751.75 open=74724.35 obi=-0.6315 ask_up=0.72 ask_dn=0.29 bid_up=0.71 bid_dn=0.28 halted=False[0m
+[2m2026-04-14 15:12:47.190 [INFO] __main__: STATUS t=133s delta=-0.0156% dir=down agree=True chain=74712.69 bin=74665.81 open=74724.35 obi=0.7197 ask_up=0.43 ask_dn=0.60 bid_up=0.40 bid_dn=0.57 halted=False[0m
+[2m2026-04-14 15:13:17.348 [INFO] __main__: STATUS t=103s delta=0.0340% dir=up agree=True chain=74749.76 bin=74731.99 open=74724.35 obi=0.4008 ask_up=0.50 ask_dn=0.51 bid_up=0.49 bid_dn=0.50 halted=False[0m
+[2m2026-04-14 15:13:47.465 [INFO] __main__: STATUS t=73s delta=0.0737% dir=up agree=True chain=74779.44 bin=74750.04 open=74724.35 obi=0.5742 ask_up=0.70 ask_dn=0.31 bid_up=0.69 bid_dn=0.30 halted=False[0m
+[2m2026-04-14 15:14:17.622 [INFO] __main__: STATUS t=42s delta=0.1031% dir=up agree=True chain=74801.37 bin=74761.44 open=74724.35 obi=-0.7965 ask_up=0.87 ask_dn=0.15 bid_up=0.85 bid_dn=0.13 halted=False[0m
+[2m2026-04-14 15:14:47.738 [INFO] __main__: STATUS t=12s delta=0.0604% dir=up agree=True chain=74769.48 bin=74734.85 open=74724.35 obi=-0.7268 ask_up=0.99 ask_dn=0.99 bid_up=0.01 bid_dn=0.01 halted=False[0m
+[37m2026-04-14 15:15:00.040 [INFO] execution.paper_trading: paper window_ts=1776179400 [SKIP] pnl=0.0000 direction=up outcome=up - balance=$839.77 bid_up=0.99 ask_up=1.00 bid_dn=0.01 ask_dn=0.01[0m
+[93m[1m2026-04-14 15:15:00.040 [INFO] risk.position_tracker: WINDOW_SUMMARY window_pnl=$0.0000 session_pnl=$-37.8683 won=$60.5710 lost=$98.4393 wr=53.8% (7/13) consec_losses=1[0m
+[96m2026-04-14 15:15:00.042 [INFO] strategy.window_handler: REGIME chop_detected flips=6 delta_range=0.3455% avg_flips=7.2 over=6_windows[0m
+[37m2026-04-14 15:15:00.047 [INFO] strategy.window_handler: WINDOW_DECISION [SKIP] rank=1 side=up pnl=$0.0000 entry=0.00 size=$0.00 (conditions not met)[0m
+[95m2026-04-14 15:15:00.048 [INFO] strategy.window_handler: Signal refreshed (same pattern): up_230.0_200.0_0.06_0.05 — rank 1->1, keeping SPRT state (age=154w, trades=7, LLR=1.98)[0m
+2026-04-14 15:15:00.048 [INFO] strategy.window_handler: SIGNAL_SWAP_ACTIVE: {"rank":1,"side":"up","observeFromS":230.0,"observeToS":200.0,"minDeltaPct":0.06,"maxVariancePct":0.05,"trainWinRatePct":97.62,"oosWinRatePct":93.75,"oosBhAdjustedPValue":7.38546e-10,"oosMatches":32,"avgEntryPrice":0.8344,"evPerTrade":0.0731,"smartScore":6.03,"wfFoldsAppeared":5,"wfTotalTestFolds":6,"wfFoldIndices":[3,4,5,6,7]}
+2026-04-14 15:15:00.048 [INFO] strategy.window_handler: switched to new signal: #1 up (previous: #1 up)
+[96m[1m2026-04-14 15:15:00.048 [INFO] strategy.window_tracker: new window: btc-updown-5m-1776179700 (ts=1776179700)[0m
+2026-04-14 15:15:00.061 [INFO] strategy.window_tracker: Gamma priceToBeat not yet available for btc-updown-5m-1776179700 — fetching in background
+[96m2026-04-14 15:15:00.097 [INFO] strategy.window_handler: REGIME vol_stddev=0.228% chop_flips=7.2 outcome=2U/4D over 6w sprt=dormant llr=1.98 age=154w bankroll=$839.77[0m
+[96m2026-04-14 15:15:00.098 [INFO] strategy.window_handler: KELLY wr_adj=83.0% base=93.8% total_disc=7.7% vol=64.2% chop=43.3% outcome=38.1% feedback=+0.0%[0m
+[96m2026-04-14 15:15:00.098 [WARNING] __main__: window open price captured: 74782.93 (RTDS boundary fallback, oracle_age=1000ms)[0m
+[96m2026-04-14 15:15:00.098 [INFO] __main__: window open price captured: 74756.43 (binance)[0m
+2026-04-14 15:15:00.098 [INFO] strategy.momentum_signal: momentum_signal: waiting for full market data
+2026-04-14 15:15:00.138 [INFO] market_data.clob_market_ws: CLOB market subscribed for tokens up=558226887434 down=196840885498
+[2m2026-04-14 15:15:17.868 [INFO] __main__: STATUS t=282s delta=0.0003% dir=up agree=False chain=74783.14 bin=74743.56 open=74782.93 obi=-0.3815 ask_up=0.51 ask_dn=0.50 bid_up=0.50 bid_dn=0.49 halted=False[0m
+[2m2026-04-14 15:15:47.979 [INFO] __main__: STATUS t=252s delta=-0.0084% dir=down agree=True chain=74776.62 bin=74750.00 open=74782.93 obi=-0.3822 ask_up=0.50 ask_dn=0.51 bid_up=0.49 bid_dn=0.50 halted=False[0m
+[2m2026-04-14 15:16:18.111 [INFO] __main__: STATUS t=222s delta=0.0197% dir=up agree=False chain=74797.67 bin=74768.33 open=74782.93 obi=-0.9694 ask_up=0.61 ask_dn=0.40 bid_up=0.60 bid_dn=0.39 halted=False[0m
+[2m2026-04-14 15:16:48.212 [INFO] __main__: STATUS t=192s delta=-0.0140% dir=down agree=True chain=74772.49 bin=74727.91 open=74782.93 obi=0.2102 ask_up=0.46 ask_dn=0.55 bid_up=0.45 bid_dn=0.54 halted=False[0m
+2026-04-14 15:16:50.220 [INFO] strategy.momentum_signal: signal_eval rank=1 side=up latest_pct=-0.0736 stddev=0.0249 n=40 min_delta=0.06 max_var=0.050
+[37m2026-04-14 15:16:50.220 [INFO] strategy.momentum_signal: [SKIP] rank=1 side=up reason=conditions_not_met latest_pct=-0.0736 need=>=0.06 stddev=0.0249 max_var=0.050[0m
+[2m2026-04-14 15:17:18.347 [INFO] __main__: STATUS t=162s delta=0.0489% dir=up agree=True chain=74819.50 bin=74791.09 open=74782.93 obi=-0.1809 ask_up=0.64 ask_dn=0.37 bid_up=0.63 bid_dn=0.36 halted=False[0m
+[2m2026-04-14 15:17:48.461 [INFO] __main__: STATUS t=132s delta=0.0857% dir=up agree=True chain=74847.01 bin=74817.66 open=74782.93 obi=0.5978 ask_up=0.74 ask_dn=0.28 bid_up=0.72 bid_dn=0.26 halted=False[0m
+[2m2026-04-14 15:18:18.675 [INFO] __main__: STATUS t=101s delta=0.0723% dir=up agree=True chain=74836.97 bin=74794.11 open=74782.93 obi=-0.9950 ask_up=0.75 ask_dn=0.26 bid_up=0.74 bid_dn=0.25 halted=False[0m
+[2m2026-04-14 15:18:48.792 [INFO] __main__: STATUS t=71s delta=0.0133% dir=up agree=False chain=74792.90 bin=74760.37 open=74782.93 obi=-0.9672 ask_up=0.53 ask_dn=0.48 bid_up=0.52 bid_dn=0.47 halted=False[0m
+[2m2026-04-14 15:19:18.919 [INFO] __main__: STATUS t=41s delta=0.0307% dir=up agree=False chain=74805.92 bin=74769.99 open=74782.93 obi=-0.0717 ask_up=0.62 ask_dn=0.39 bid_up=0.61 bid_dn=0.38 halted=False[0m
+[2m2026-04-14 15:19:49.037 [INFO] __main__: STATUS t=11s delta=0.0025% dir=up agree=False chain=74784.77 bin=74757.15 open=74782.93 obi=-0.5090 ask_up=0.43 ask_dn=0.58 bid_up=0.42 bid_dn=0.57 halted=False[0m
+[37m2026-04-14 15:20:00.081 [INFO] execution.paper_trading: paper window_ts=1776179700 [SKIP] pnl=0.0000 direction=up outcome=up - balance=$839.77 bid_up=0.99 ask_up=1.00 bid_dn=0.01 ask_dn=0.01[0m
+[93m[1m2026-04-14 15:20:00.081 [INFO] risk.position_tracker: WINDOW_SUMMARY window_pnl=$0.0000 session_pnl=$-37.8683 won=$60.5710 lost=$98.4393 wr=53.8% (7/13) consec_losses=1[0m
+[96m2026-04-14 15:20:00.083 [INFO] strategy.window_handler: REGIME chop_detected flips=8 delta_range=0.1600% avg_flips=8.0 over=6_windows[0m
+[37m2026-04-14 15:20:00.087 [INFO] strategy.window_handler: WINDOW_DECISION [SKIP] rank=1 side=up pnl=$0.0000 entry=0.00 size=$0.00 (conditions not met)[0m
+[96m[1m2026-04-14 15:20:00.087 [INFO] strategy.window_tracker: new window: btc-updown-5m-1776180000 (ts=1776180000)[0m
+2026-04-14 15:20:00.103 [INFO] strategy.window_tracker: Gamma priceToBeat not yet available for btc-updown-5m-1776180000 — fetching in background
+[96m2026-04-14 15:20:00.144 [INFO] strategy.window_handler: REGIME vol_stddev=0.228% chop_flips=8.0 outcome=3U/3D over 6w sprt=dormant llr=1.98 age=155w bankroll=$839.77[0m
+[96m2026-04-14 15:20:00.144 [INFO] strategy.window_handler: KELLY wr_adj=83.1% base=93.8% total_disc=7.7% vol=64.1% chop=60.0% outcome=0.0% feedback=+0.0%[0m
+[96m2026-04-14 15:20:00.145 [WARNING] __main__: window open price captured: 74822.94 (RTDS boundary fallback, oracle_age=2000ms)[0m
+[96m2026-04-14 15:20:00.145 [INFO] __main__: window open price captured: 74801.45 (binance)[0m
+2026-04-14 15:20:00.145 [INFO] strategy.momentum_signal: momentum_signal: waiting for full market data
+2026-04-14 15:20:00.340 [INFO] market_data.clob_market_ws: CLOB market subscribed for tokens up=720071720880 down=712973214288
+[2m2026-04-14 15:20:19.235 [INFO] __main__: STATUS t=281s delta=0.0531% dir=up agree=True chain=74862.70 bin=74830.04 open=74822.94 obi=0.8941 ask_up=0.60 ask_dn=0.41 bid_up=0.59 bid_dn=0.40 halted=False[0m
+[2m2026-04-14 15:20:49.368 [INFO] __main__: STATUS t=251s delta=0.0362% dir=up agree=True chain=74850.06 bin=74823.28 open=74822.94 obi=0.9722 ask_up=0.56 ask_dn=0.45 bid_up=0.55 bid_dn=0.44 halted=False[0m
+[2m2026-04-14 15:21:19.491 [INFO] __main__: STATUS t=221s delta=0.1267% dir=up agree=True chain=74917.78 bin=74883.41 open=74822.94 obi=-0.7976 ask_up=0.75 ask_dn=0.26 bid_up=0.74 bid_dn=0.25 halted=False[0m
+[2m2026-04-14 15:21:49.606 [INFO] __main__: STATUS t=190s delta=0.1526% dir=up agree=True chain=74937.13 bin=74905.51 open=74822.94 obi=-0.0594 ask_up=0.82 ask_dn=0.19 bid_up=0.81 bid_dn=0.18 halted=False[0m
+2026-04-14 15:21:50.108 [INFO] strategy.momentum_signal: signal_eval rank=1 side=up latest_pct=0.1104 stddev=0.0164 n=40 min_delta=0.06 max_var=0.050
+[96m2026-04-14 15:21:50.109 [INFO] strategy.momentum_signal: KELLY sizing: p_adj=0.831 base=0.907 total_disc=0.077 vol=0.641 chop=0.600 outcome=0.000 feedback=+0.000[0m
+[96m2026-04-14 15:21:50.109 [INFO] strategy.momentum_signal: KELLY bet: entry=0.82 raw_f=0.059 frac_f=0.015 bankroll=$839.77 kelly_bet=$12.37 sprt=1.00 final=$12.37[0m
+[92m[1m2026-04-14 15:21:50.109 [INFO] strategy.momentum_signal: FIRED rank=1 side=up t=189.9s dir=0.1104% stddev=0.0164% n=40 oos_wr=93.8% bh_p=7.39e-10 avg_entry=0.83 ask=0.82 size=$12.37[0m
+2026-04-14 15:21:50.109 [INFO] execution.paper_trading: paper momentum1 maker: id=paper-18 price=0.81 size=15.2716 [resting]
+2026-04-14 15:21:50.109 [INFO] strategy.momentum_signal: MAKER PLACED rank=1 side=up price=0.81 (ask=0.82 -1tick) size=$12.37 timeout=3s
+[92m[1m2026-04-14 15:21:52.618 [INFO] execution.paper_trading: paper momentum1 maker fill: id=paper-18 price=0.81[0m
+2026-04-14 15:21:52.618 [INFO] strategy.momentum_signal: MAKER FILLED rank=1 side=up price=0.81 size=$12.37
+2026-04-14 15:21:52.869 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.0000 ema=0.0000 cusum=0.000/0.800 threshold=1.1732 fire=0.1104% current=0.1104%
+2026-04-14 15:21:58.390 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.1622 ema=0.0499 cusum=0.000/0.800 threshold=1.1732 fire=0.1104% current=0.0925%
+2026-04-14 15:22:08.442 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.1295 ema=0.1922 cusum=0.000/0.800 threshold=1.1732 fire=0.1104% current=0.0961%
+2026-04-14 15:22:18.484 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.1125 ema=0.1276 cusum=0.000/0.800 threshold=1.1732 fire=0.1104% current=0.0979%
+[2m2026-04-14 15:22:19.739 [INFO] __main__: STATUS t=160s delta=0.1406% dir=up agree=True chain=74928.15 bin=74896.21 open=74822.94 obi=-0.3123 ask_up=0.83 ask_dn=0.18 bid_up=0.82 bid_dn=0.17 halted=False[0m
+2026-04-14 15:22:20.742 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.2726 ema=0.1344 cusum=0.000/0.800 threshold=1.1732 fire=0.1104% current=0.0803%
+2026-04-14 15:22:20.993 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.5173 ema=0.1727 cusum=0.000/0.800 threshold=1.1732 fire=0.1104% current=0.0533%
+2026-04-14 15:22:31.032 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=0.5637 ema=0.5961 cusum=0.000/0.800 threshold=1.1732 fire=0.1104% current=0.0482%
+2026-04-14 15:22:34.546 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=1.3495 ema=0.6333 cusum=0.000/0.800 threshold=1.1732 fire=0.1104% current=-0.0386%
+2026-04-14 15:22:35.550 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=1.1897 ema=0.8324 cusum=0.000/0.800 threshold=1.1732 fire=0.1104% current=-0.0209%
+2026-04-14 15:22:37.809 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=1.5072 ema=1.1391 cusum=0.000/0.800 threshold=1.1732 fire=0.1104% current=-0.0560%
+2026-04-14 15:22:38.813 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=1.3185 ema=1.2264 cusum=0.003/0.800 threshold=1.1732 fire=0.1104% current=-0.0352%
+2026-04-14 15:22:39.566 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=1.3187 ema=1.2514 cusum=0.064/0.800 threshold=1.1732 fire=0.1104% current=-0.0352%
+2026-04-14 15:22:40.069 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=1.3187 ema=1.2642 cusum=0.140/0.800 threshold=1.1732 fire=0.1104% current=-0.0352%
+2026-04-14 15:22:40.570 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=1.3187 ema=1.2745 cusum=0.238/0.800 threshold=1.1732 fire=0.1104% current=-0.0352%
+2026-04-14 15:22:40.821 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=1.3187 ema=1.2789 cusum=0.294/0.800 threshold=1.1732 fire=0.1104% current=-0.0352%
+2026-04-14 15:22:41.073 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=1.3187 ema=1.2829 cusum=0.354/0.800 threshold=1.1732 fire=0.1104% current=-0.0352%
+2026-04-14 15:22:41.324 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=1.3185 ema=1.2865 cusum=0.417/0.800 threshold=1.1732 fire=0.1104% current=-0.0352%
+2026-04-14 15:22:41.575 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=1.3185 ema=1.2897 cusum=0.483/0.800 threshold=1.1732 fire=0.1104% current=-0.0352%
+2026-04-14 15:22:41.827 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=1.3187 ema=1.2926 cusum=0.553/0.800 threshold=1.1732 fire=0.1104% current=-0.0352%
+2026-04-14 15:22:42.078 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=1.3187 ema=1.2952 cusum=0.625/0.800 threshold=1.1732 fire=0.1104% current=-0.0352%
+2026-04-14 15:22:42.331 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=1.3187 ema=1.2975 cusum=0.699/0.800 threshold=1.1732 fire=0.1104% current=-0.0352%
+2026-04-14 15:22:42.583 [INFO] strategy.momentum_signal: post-fire erosion: rank=1 erosion=1.3185 ema=1.2996 cusum=0.775/0.800 threshold=1.1732 fire=0.1104% current=-0.0352%
+2026-04-14 15:22:42.834 [INFO] strategy.momentum_signal: EROSION CUSUM BREACH (not yet sustained): rank=1 cusum=0.854 limit=0.800 duration=0.00s need=4.0s
+2026-04-14 15:22:43.086 [INFO] strategy.momentum_signal: EROSION CUSUM BREACH (not yet sustained): rank=1 cusum=0.934 limit=0.800 duration=0.25s need=4.0s
+2026-04-14 15:22:43.338 [INFO] strategy.momentum_signal: EROSION CUSUM BREACH (not yet sustained): rank=1 cusum=1.015 limit=0.800 duration=0.50s need=4.0s
+2026-04-14 15:22:43.589 [INFO] strategy.momentum_signal: EROSION CUSUM BREACH (not yet sustained): rank=1 cusum=1.094 limit=0.800 duration=0.75s need=4.0s
+2026-04-14 15:22:43.841 [INFO] strategy.momentum_signal: EROSION CUSUM BREACH (not yet sustained): rank=1 cusum=1.170 limit=0.800 duration=1.01s need=4.0s
+2026-04-14 15:22:44.092 [INFO] strategy.momentum_signal: EROSION CUSUM BREACH (not yet sustained): rank=1 cusum=1.243 limit=0.800 duration=1.26s need=4.0s
+2026-04-14 15:22:44.343 [INFO] strategy.momentum_signal: EROSION CUSUM BREACH (not yet sustained): rank=1 cusum=1.314 limit=0.800 duration=1.51s need=4.0s
+2026-04-14 15:22:44.594 [INFO] strategy.momentum_signal: EROSION CUSUM BREACH (not yet sustained): rank=1 cusum=1.383 limit=0.800 duration=1.76s need=4.0s
+2026-04-14 15:22:44.846 [INFO] strategy.momentum_signal: EROSION CUSUM BREACH (not yet sustained): rank=1 cusum=1.451 limit=0.800 duration=2.01s need=4.0s
+2026-04-14 15:22:45.096 [INFO] strategy.momentum_signal: EROSION CUSUM BREACH (not yet sustained): rank=1 cusum=1.517 limit=0.800 duration=2.26s need=4.0s
+2026-04-14 15:22:45.348 [INFO] strategy.momentum_signal: EROSION CUSUM BREACH (not yet sustained): rank=1 cusum=1.581 limit=0.800 duration=2.51s need=4.0s
+2026-04-14 15:22:45.599 [INFO] strategy.momentum_signal: EROSION CUSUM BREACH (not yet sustained): rank=1 cusum=1.644 limit=0.800 duration=2.77s need=4.0s
+2026-04-14 15:22:45.850 [INFO] strategy.momentum_signal: EROSION CUSUM BREACH (not yet sustained): rank=1 cusum=1.706 limit=0.800 duration=3.02s need=4.0s
+2026-04-14 15:22:46.102 [INFO] strategy.momentum_signal: EROSION CUSUM BREACH (not yet sustained): rank=1 cusum=1.766 limit=0.800 duration=3.27s need=4.0s
+2026-04-14 15:22:46.353 [INFO] strategy.momentum_signal: EROSION CUSUM BREACH (not yet sustained): rank=1 cusum=1.826 limit=0.800 duration=3.52s need=4.0s
+2026-04-14 15:22:46.604 [INFO] strategy.momentum_signal: EROSION CUSUM BREACH (not yet sustained): rank=1 cusum=1.885 limit=0.800 duration=3.77s need=4.0s
+2026-04-14 15:22:46.855 [INFO] strategy.momentum_signal: EROSION CUSUM TRIGGERED: rank=1 cusum=1.943 >= limit=0.800 sustained=4.02s ema=1.2814 erosion=1.2745 threshold=1.1732 fire=0.1104% current=-0.0303% top_bid=0.550
+2026-04-14 15:22:46.855 [INFO] strategy.momentum_signal: EARLY EXIT TRIGGERED: rank=1 side=up erosion=1.2745 threshold=1.1732 cusum=1.943 fire=0.1104% current=-0.0303% sell_bid=0.55 entry=0.81 — post-fire erosion exceeded safe threshold (sustained)
+2026-04-14 15:22:46.855 [INFO] execution.paper_trading: EARLY EXIT: sell_price=0.55 size=15.27 pnl=-3.9706 balance=$835.80 orders=1
+[2m2026-04-14 15:22:49.869 [INFO] __main__: STATUS t=130s delta=0.0123% dir=up agree=False chain=74832.14 bin=74800.27 open=74822.94 obi=-0.5979 ask_up=0.56 ask_dn=0.45 bid_up=0.55 bid_dn=0.44 halted=False[0m
+[2m2026-04-14 15:23:20.009 [INFO] __main__: STATUS t=100s delta=0.0680% dir=up agree=True chain=74873.84 bin=74841.93 open=74822.94 obi=-0.5567 ask_up=0.65 ask_dn=0.36 bid_up=0.64 bid_dn=0.35 halted=False[0m
+[2m2026-04-14 15:23:50.130 [INFO] __main__: STATUS t=70s delta=0.0953% dir=up agree=True chain=74894.26 bin=74863.93 open=74822.94 obi=-0.9196 ask_up=0.86 ask_dn=0.15 bid_up=0.85 bid_dn=0.14 halted=False[0m
+[2m2026-04-14 15:24:20.246 [INFO] __main__: STATUS t=40s delta=0.1142% dir=up agree=True chain=74908.42 bin=74884.08 open=74822.94 obi=-0.4355 ask_up=0.95 ask_dn=0.06 bid_up=0.94 bid_dn=0.05 halted=False[0m
+[2m2026-04-14 15:24:50.366 [INFO] __main__: STATUS t=10s delta=0.1455% dir=up agree=True chain=74931.78 bin=74908.82 open=74822.94 obi=0.9935 ask_up=1.00 ask_dn=0.01 bid_up=0.99 bid_dn=0.01 halted=False[0m
+[91m[1m2026-04-14 15:25:00.159 [INFO] execution.paper_trading: paper window_ts=1776180000 [LOSS] pnl=-3.9706 direction=up outcome=up rule#1(fill) balance=$835.80 bid_up=0.99 ask_up=1.00 bid_dn=0.01 ask_dn=0.01[0m
+[93m[1m2026-04-14 15:25:00.160 [INFO] risk.position_tracker: WINDOW_SUMMARY window_pnl=$-3.9706 session_pnl=$-41.8389 won=$60.5710 lost=$102.4099 wr=50.0% (7/14) consec_losses=2[0m
+[91m[1m2026-04-14 15:25:00.166 [INFO] strategy.window_handler: WINDOW_DECISION [LOSS] rank=1 side=up pnl=$-3.9706 entry=0.81 size=$12.37[0m
+2026-04-14 15:25:00.168 [INFO] strategy.kelly: bankroll sync: local=$827.34 api=$835.80 drift=+8.46 — updating
+[96m[1m2026-04-14 15:25:00.171 [INFO] strategy.window_tracker: new window: btc-updown-5m-1776180300 (ts=1776180300)[0m
+2026-04-14 15:25:00.187 [INFO] strategy.window_tracker: Gamma priceToBeat not yet available for btc-updown-5m-1776180300 — fetching in background
+[96m2026-04-14 15:25:00.224 [INFO] strategy.window_handler: REGIME vol_stddev=0.230% chop_flips=5.7 outcome=3U/3D over 6w sprt=dormant llr=2.75 age=156w bankroll=$835.80[0m
+[96m2026-04-14 15:25:00.225 [INFO] strategy.window_handler: KELLY wr_adj=82.9% base=93.8% total_disc=7.8% vol=65.1% chop=13.3% outcome=0.0% feedback=+0.0%[0m
+[96m2026-04-14 15:25:00.225 [WARNING] __main__: window open price captured: 74944.33 (RTDS boundary fallback, oracle_age=1000ms)[0m
+[96m2026-04-14 15:25:00.225 [INFO] __main__: window open price captured: 74909.00 (binance)[0m
+2026-04-14 15:25:00.225 [INFO] strategy.momentum_signal: momentum_signal: waiting for full market data
+2026-04-14 15:25:00.539 [INFO] market_data.clob_market_ws: CLOB market subscribed for tokens up=393123983190 down=292702241552
+[2m2026-04-14 15:25:20.578 [INFO] __main__: STATUS t=279s delta=-0.0284% dir=down agree=True chain=74923.05 bin=74889.40 open=74944.33 obi=-0.2406 ask_up=0.44 ask_dn=0.57 bid_up=0.43 bid_dn=0.56 halted=False[0m
