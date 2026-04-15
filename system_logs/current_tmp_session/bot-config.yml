@@ -1,0 +1,168 @@
+# =============================================================================
+# Polymarket BTC 5-Minute Trading Bot - Configuration
+# =============================================================================
+
+# ---------------------------------------------------------------------------
+# Mode
+# ---------------------------------------------------------------------------
+mode:
+  trading: "paper"         # "paper" or "live"
+  log_level: "INFO"        # DEBUG, INFO, WARNING, ERROR
+  log_dir: "data/logs"     # directory for log files
+  log_retention_days: 7    # delete log files older than this many days
+
+# ---------------------------------------------------------------------------
+# Strategy - signal execution and entry filters
+# ---------------------------------------------------------------------------
+rules_strategy:
+  enabled: true
+  max_position_usd: 75.0    # Max USDC to risk per window
+  entry_window_stop: 5      # Stop entering within N seconds of close
+  min_win_rate: 0.50         # Reject signals below this OOS win rate (fraction)
+  maker_timeout_s: 3.0       # Maker order timeout before taker fallback (0=taker only)
+  max_chop_flips: 0          # Skip trade if avg chop flips >= this (0=disabled)
+  max_entry_gap_pct: 15.0    # Skip if bid >N% below signal avg_entry (0=disabled)
+  skip_maker_min_oos_wr_pct: 96.0   # Cross spread on fire when oos_wr >= this (0=disabled)
+  skip_maker_max_stddev_pct: 0.035  # AND-gate: also require stddev <= this (0=no stddev gate)
+  # Subsample the variance accumulator to this cadence (seconds) so the bot's
+  # live stddev lines up with the engine's historical backtest values. Must
+  # match PolyDataCollector's snapshot_interval_s — the engine's max_variance
+  # thresholds were measured on data sampled at that rate, and the bot sees
+  # Binance updates faster than the collector records them. Without this,
+  # live stddev runs systematically higher than the backtest and marginal
+  # cells get rejected live that would have passed historically. 0 disables
+  # subsampling (accept every strategy tick).
+  variance_subsample_interval_s: 1.0
+  # Post-window grace for narrow observation windows. Signals whose window
+  # span is < narrow_observe_window_threshold_s are re-evaluated up to
+  # post_observe_grace_s after window close, so that price movement barely
+  # missing the window (e.g. delta crossing threshold ~5s late) still fires.
+  narrow_observe_window_threshold_s: 60.0
+  post_observe_grace_s: 10.0
+
+# ---------------------------------------------------------------------------
+# Risk management
+# ---------------------------------------------------------------------------
+risk:
+  max_daily_loss_usd: 100.0
+  max_consecutive_losses: 10
+  cancel_unfilled_at_sec: 5
+  max_position_per_window_usd: 75.0
+
+# ---------------------------------------------------------------------------
+# Data connections
+# ---------------------------------------------------------------------------
+connections:
+  binance_ws: "wss://stream.binance.com:9443/stream?streams=btcusdt@trade/btcusdt@depth5@100ms"
+  rtds_ws: "wss://ws-live-data.polymarket.com"
+  clob_market_ws: "wss://ws-subscriptions-clob.polymarket.com/ws/market"
+  clob_user_ws: "wss://ws-subscriptions-clob.polymarket.com/ws/user"
+  clob_rest: "https://clob.polymarket.com"
+  gamma_rest: "https://gamma-api.polymarket.com"
+  chain_id: 137
+  signature_type: 1          # Polymarket CLOB: 0=EOA, 1=Magic/proxy, 2=Gnosis Safe
+  rtds_ping_interval_sec: 5
+  reconnect_base_delay_sec: 1.0
+  reconnect_max_delay_sec: 30.0
+  binance_stale_sec: 15.0
+  chainlink_stale_sec: 30.0
+  clob_book_stale_sec: 60.0
+
+# ---------------------------------------------------------------------------
+# Paper trading
+# ---------------------------------------------------------------------------
+paper:
+  log_every_window: true
+  simulated_fill_delay_sec: 2.5
+  starting_balance_usd: 1000.0
+
+# ---------------------------------------------------------------------------
+# IPC - orchestrator signal delivery
+# ---------------------------------------------------------------------------
+ipc:
+  host: "127.0.0.1"
+  port: 19731
+  stale_signal_warning_hours: 6
+  visualizer_enabled: true
+  visualizer_host: "127.0.0.1"
+  visualizer_port: 19732
+
+# ---------------------------------------------------------------------------
+# Signal lifecycle - signal health, decay, and age scaling
+# ---------------------------------------------------------------------------
+signal_lifecycle:
+  fire_stall_windows: 50         # ~4 hours with no fires = fire-rate stall
+  shadow_tracking_windows: 500   # ~42 hours of continued observation after decay
+  bet_scaling_enabled: true
+  age_taper_start_windows: 300   # ~25 hours - no age effect before this
+  age_taper_end_windows: 500     # ~42 hours - age taper fully applied
+  age_floor: 0.5                 # age alone never reduces below 50%
+  min_bet_scale: 0.10            # absolute floor - never bet less than 10% of base
+  sprt_activation_minutes: 45    # SPRT only affects sizing after this long without update
+
+# ---------------------------------------------------------------------------
+# Bet sizing - Kelly criterion and bankroll management
+# ---------------------------------------------------------------------------
+sizing:
+  kelly_fraction: 0.25           # quarter-Kelly (conservative start)
+  kelly_min_bet: 1.00            # minimum $1 bet, below this skip
+  kelly_max_bet_pct: 5.0         # max bet as % of bankroll
+  bankroll: 1000.00              # starting/current bankroll for Kelly sizing
+  warmup_minutes: 30.0           # cap bets to min for this long after start (0=off)
+  wilson_max_shrink_pct: 3.0     # max Wilson win rate correction (percentage points)
+  kelly_regime_cap: 0.12         # max regime penalty on win rate (all factors combined)
+  vol_weight: 1.0                # regime weight for volatility (0-1)
+  chop_weight: 1.0               # regime weight for chop (0-1)
+  outcome_weight: 0.8            # regime weight for outcome bias (0-1)
+  feedback_min_trades: 10        # trades before performance feedback activates
+  # v3.0 P6: hostile regime double-cap. When vol_disc or chop_disc exceed
+  # hostile_regime_threshold (severity*weight above the floor), bet dollars
+  # are multiplied by hostile_regime_multiplier in addition to the regime
+  # cap reducing adjusted_p. Protects against sizing through storms.
+  hostile_regime_threshold: 0.20
+  hostile_regime_multiplier: 0.5
+  # v3.1: hostile-regime SKIP gate. Above this severity the fire is aborted
+  # entirely instead of merely halved. Leaves a [hostile_regime_threshold,
+  # hostile_regime_skip_threshold) halving band intact. 0 disables.
+  hostile_regime_skip_threshold: 0.25
+
+# ---------------------------------------------------------------------------
+# Regime detection - volatility, chop, and outcome bias
+# ---------------------------------------------------------------------------
+regime:
+  vol_lookback_windows: 24       # ~2 hours of 5-min returns
+  vol_normal_pct: 0.10           # normal vol (stddev) - no bet reduction
+  vol_high_pct: 0.30             # high vol (stddev) - full severity
+  vol_min_samples: 6             # min returns before vol scaling is active
+  chop_lookback_windows: 6       # ~30 min of recent windows
+  chop_normal_flips: 5.0         # normal direction flips per window
+  chop_high_flips: 10.0          # high chop - full severity
+  chop_min_samples: 3            # min windows before chop scaling is active
+  outcome_lookback_windows: 6    # rolling window of recent outcomes
+  outcome_normal_agreement: 0.50 # 50% agreement = no concern
+  outcome_high_agreement: 0.15   # 15% agreement = full severity
+  cache_staleness_minutes: 30.0  # discard cached regime data older than this (0=off)
+
+# ---------------------------------------------------------------------------
+# Erosion - post-fire CUSUM exit detection
+# ---------------------------------------------------------------------------
+erosion:
+  ema_alpha: 0.10                # EMA smoothing on raw erosion (half-life ~1.7s at 4Hz)
+  cusum_tolerance: 0.05          # ignore exceedances < 5% above threshold
+  cusum_limit: 0.80              # cumulative excess needed to trigger exit
+  cusum_decay: 0.95              # CUSUM bleed-off rate when erosion dips below threshold
+  panic_multiplier: 2.20         # panic only on genuine catastrophic reversal
+  panic_min_duration_s: 3.0      # breach must persist N seconds before panic fires
+  cusum_sustain_s: 4.0           # v2.9: CUSUM breach must persist N seconds before exit
+  cusum_suppress_top_bid: 0.85   # v2.9: suppress CUSUM exit if our side's top bid >= this
+  # v3.0 delta-reversal gate. Only permit a CUSUM exit when the live delta
+  # has reversed by at least this many percentage points versus the fire-time
+  # delta. v2.9 session post-mortem: 4 of 6 CUSUM exits were premature and
+  # every one of them had |current - fire| <= 0.14 pp; the 2 valid exits both
+  # had reversals >= 0.16 pp. 0 disables the gate.
+  cusum_min_reversal_pp: 0.15
+  # v3.1: overwhelming-breach override. When the CUSUM accumulator reaches
+  # cusum_override_multiplier * cusum_limit, the reversal-pp and top-bid
+  # suppressions are bypassed because the breach is too large to attribute
+  # to noise. 0 disables the override (always honor suppressions).
+  cusum_override_multiplier: 2.0
