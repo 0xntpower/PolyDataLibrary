@@ -4,7 +4,7 @@ Long-term market history archive for BTC 5-minute Up/Down prediction markets.
 
 ## How It Works
 
-The PolyDataCollector maintains a rolling pool of ~600 active Parquet files. When new markets push the pool over its limit, the oldest resolved files are moved here instead of being deleted. This preserves all historical market data for future research.
+The PolyDataCollector maintains a rolling pool of ~500 active Parquet files (v3.3; shrunk from 600 to keep the engine's freshest fold closer to the present). When new markets push the pool over its limit, the oldest resolved files are moved here instead of being deleted. This preserves all historical market data for future research.
 
 ## Directory Structure
 
