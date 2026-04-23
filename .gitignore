@@ -1,2 +1,3 @@
 # Raw parquet staging (compressed into zips by the collector)
 markets/_staged/
+system_logs/current_tmp_session/
