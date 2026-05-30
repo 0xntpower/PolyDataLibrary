@@ -4,31 +4,46 @@ Long-term market history archive for BTC 5-minute Up/Down prediction markets.
 
 ## How It Works
 
-The PolyDataCollector maintains a rolling pool of ~500 active Parquet files (v3.3; shrunk from 600 to keep the engine's freshest fold closer to the present). When new markets push the pool over its limit, the oldest resolved files are moved here instead of being deleted. This preserves all historical market data for future research.
+The PolyDataCollector drains resolved market windows through a **three-tier pool**
+— active (`data/`, ~500 files) → historical (`historical/`, ~1000 files) →
+this archive. When the collector's historical pool overflows, the oldest resolved
+files land here (in `markets/`) instead of being deleted, preserving all
+historical market data for future research.
 
 ## Directory Structure
 
 ```
-markets/
-  _staged/          ← raw Parquet files awaiting compression (gitignored)
-  1712345678.zip    ← compressed archive of 1000 market files (committed)
-  1712456789.zip
+markets/                ← compressed market-window archives
+  _staged/              ← raw Parquet files awaiting compression (gitignored)
+  1712345678.zip        ← compressed archive of ~1000 market files (committed)
+  ...
+archive/                ← curated research artifacts
+  legendary_signals/    ← notable discovered signals + dev progress
+  past-trading-logs/    ← older trading-session logs
+system_logs/            ← per-version PAPER-trading session logs (v1.8 … v3.4)
+  v3.4_paper_logs/      ← bot/orchestrator logs + post-mortem + configs
+  skip_tuner/           ← skip-decision tuning scripts/data
   ...
 ```
 
-## Archive Process
+> Note: only **paper-session** logs are kept here. Live-session logs were removed
+> because they embedded real on-chain account identifiers.
 
-1. Oldest files from the collector's active pool are moved to `markets/_staged/`
+## Archive Process (markets/)
+
+1. Oldest files from the collector's historical pool are moved to `markets/_staged/`
 2. A background task in the collector periodically checks `_staged/`
-3. When 1000+ files accumulate, they are compressed into a timestamped ZIP archive in `markets/`
+3. When ~1000 files accumulate, they are compressed into a timestamped ZIP in `markets/`
 4. The raw staged files are deleted after successful compression
 
 ZIP filenames use the Unix timestamp of their creation (e.g., `1712345678.zip`).
 
 ## Git Strategy
 
-- `markets/_staged/` is gitignored (raw parquets are transient)
-- ZIP archives in `markets/` are committed to preserve long-term history
+- `markets/_staged/` and `system_logs/current_tmp_session/` are gitignored (transient)
+- ZIP archives in `markets/`, the curated `archive/` artifacts, and the
+  `system_logs/` paper-session sets are committed to preserve long-term history
+- Python bytecode / caches / editor backups are gitignored (see `.gitignore`)
 
 ## License
 
