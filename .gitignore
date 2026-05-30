@@ -1,3 +1,20 @@
 # Raw parquet staging (compressed into zips by the collector)
 markets/_staged/
 system_logs/current_tmp_session/
+
+# Python bytecode / type & test caches (never commit)
+__pycache__/
+*.pyc
+*.pyo
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+
+# Editor / backup artifacts
+*.bak
+*.swp
+*~
+
+# OS cruft
+Thumbs.db
+.DS_Store
